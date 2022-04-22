@@ -19,8 +19,8 @@ public class DetallePedido extends Entity<UUID> {
         Id = id;
         Instrucciones = instrucion;
         Cantidad = new CantidadValue(cantidad);
-        Precio = precio;
-        Subtotal =new PrecioValue(cantidad);
+        Precio =  precio;
+        Subtotal =new PrecioValue(precio.Value+cantidad);
         //esta mal el subtotal
     }
 

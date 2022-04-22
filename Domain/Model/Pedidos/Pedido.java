@@ -30,6 +30,9 @@ public class Pedido extends AggregateRoot<UUID> {
 
     public void AgregarItem (UUID productoId, int cantidad, PrecioValue precio, String inatruccion){
         ArrayList<DetallePedido> uax=Detalle;
+        // ArrayList<DetallePedido> uax=Detalle.stream().findFirst((Detalle)->DetallePedido.productoId()==productoId) ;
+
+
         if (uax==null){
             DetallePedido   detallePedido = new DetallePedido(productoId, inatruccion, cantidad, precio);
             Detalle.add(detallePedido);
