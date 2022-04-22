@@ -23,9 +23,9 @@ public class App {
         System.out.println("Descripcion:"+objProducto2.Nombre+" Precio:"+objProducto2.PrecioVenta.Value+" Stock:"+objProducto2.StockActual.Value);
         System.out.println("Cliente: "+objCliente.NombreCompleto.Value);
  
-        for(int i = 0; i < objPedido.Detalle.size(); i++) {
-            System.out.println(objPedido.Detalle.get(i).ProductoId.toString());
-        }
+        // for(int i = 0; i < objPedido.Detalle.size(); i++) {
+        //     System.out.println(objPedido.Detalle.get(i).ProductoId.toString());
+        // }
         // System.out.println(" "+objPedido.ConsolidarPedido());
 
  

@@ -26,9 +26,18 @@ public class Vuelo extends AggregateRoot<UUID> {
     private Date Fecha_salida;
     private double Precio;
 
-    public Vuelo(String nroVuelo, Date fecha_salida, Date fecha_arribe, double precio) {
+    // ricky
+    public Vuelo() {
+        key = UUID.randomUUID();
+
+        ListaTripulante = new ArrayList<Tripulante>();
+        ListaAsiento = new ArrayList<AsientoDisponible>();
+    }
+
+    public Vuelo(Date fecha_salida, Date fecha_arribe, double precio) {
         Key = UUID.randomUUID();
-        NroVuelo = new NumeroVuelo(nroVuelo);
+        // NroVuelo = new NumeroVuelo(nroVuelo);
+        NroVuelo = null;// INFO: Solicitar al aeropuerto cuendo se completen los datos requeridos.
         Aeronave = null;
         ListaTripulante = new ArrayList<Tripulante>(); // INFO: Luego se asignan tripulantes en el vuelo.
         Precio = precio;
@@ -50,11 +59,13 @@ public class Vuelo extends AggregateRoot<UUID> {
             System.out.println("No existe una aeronave asignada para crear los asientos disponibles.");
             return null;
         }
-        JSONArray asientos_de_aeronave = Aeronave.getJSONArray("asientos");
+        JSONArray asientos_de_aeronave = Aeronave.getJSONArray("aeronave");
+        System.out.println("Se registro aeronave");
+
         ArrayList<AsientoDisponible> arr = new ArrayList<AsientoDisponible>();
         for (int i = 0; i < asientos_de_aeronave.length(); i++) {
             JSONObject asiento = asientos_de_aeronave.getJSONObject(i);
-            arr.add(new AsientoDisponible(Key, asiento, "comercial", this.Precio));
+            arr.add(new AsientoDisponible(asiento, "comercial", Precio));
         }
         System.out.println("Se crearon los asientos disponibles");
         return arr;
@@ -79,11 +90,11 @@ public class Vuelo extends AggregateRoot<UUID> {
 
     @Override
     public String toString() {
-        return "\n[VUELO]: " + this.key + "\n" +
-                "[Aeronave]: " + this.Aeronave + "\n" +
-                "\nTripulantes: " + this.ListaTripulante + "\n" +
-                "Asientos: " + this.ListaAsiento + "\n\n" +
-                "[Aeropuerto Origen]: " + this.AeropuertoOrigen + " Itinerario: " + this.Fecha_salida + "\n" +
-                "[Aeropuerto Destino]: " + this.AeropuertoDestino + " Itinerario: " + this.Fecha_arribe + "\n";
+        return "\n[VUELO]: " + Key + "\n" +
+                "[Aeronave]: " + Aeronave + "\n" +
+                "\nTripulantes: " + ListaTripulante+ "\n" +
+                "Asientos: " + ListaAsiento + "\n\n" +
+                "[Aeropuerto Origen]: " + AeropuertoOrigen + " Itinerario: " + Fecha_salida + "\n" +
+                "[Aeropuerto Destino]: " + AeropuertoDestino + " Itinerario: " + Fecha_arribe + "\n";
     }
 }

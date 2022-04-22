@@ -3,6 +3,7 @@ package Domain.Event;
 import java.time.LocalDateTime;
 import java.util.UUID;
 import org.json.JSONObject;
+
 import ShareKernel.core.DomainEvent;
 
 public class AsientoDisponibleAgregado extends DomainEvent {
@@ -20,10 +21,5 @@ public class AsientoDisponibleAgregado extends DomainEvent {
         Asiento = asiento;
     }
 
-    @Override
-    public String toString() {
-        return "\n[ASIENTOS_DISPONIBLES]:  Clase: " + Clase + " - Precio: " + Precio + "Bs - "
-                + Asiento.toString();
-    }
 
 }

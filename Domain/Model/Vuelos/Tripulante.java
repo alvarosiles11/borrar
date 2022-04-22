@@ -1,13 +1,12 @@
 package Domain.Model.Vuelos;
 
-import java.time.LocalDateTime;
 import java.util.UUID;
 
 import org.json.JSONObject;
 
-import ShareKernel.core.DomainEvent;
+import ShareKernel.core.Entity;
 
-public class Tripulante extends DomainEvent {
+public class Tripulante extends Entity<UUID> {
 
     public UUID Key;
 
@@ -15,10 +14,16 @@ public class Tripulante extends DomainEvent {
     public JSONObject Personal;;
 
     public Tripulante(String descripcion, JSONObject personal) {
-        super(LocalDateTime.now());
         Key = UUID.randomUUID();
         Descripcion = descripcion;
         Personal = personal;
     }
+
+    @Override
+    public String toString() {
+    return "\n[TRIPULANTE]: " + this.Descripcion + " - " +
+    this.Personal.toString();
+    }
+ 
 
 }
