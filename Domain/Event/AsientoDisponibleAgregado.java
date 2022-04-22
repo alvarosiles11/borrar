@@ -1,28 +1,29 @@
 package Domain.Event;
 
 import java.time.LocalDateTime;
+import java.util.UUID;
 import org.json.JSONObject;
 import ShareKernel.core.DomainEvent;
 
 public class AsientoDisponibleAgregado extends DomainEvent {
 
-    // public UUID Key;
-    private JSONObject asiento; // INFO: DEL MICROSERVICIO AERONAVE.
-    private double precio;
-    private String clase;
+    public UUID Key;
+    public JSONObject Asiento; // INFO: DEL MICROSERVICIO AERONAVE.
+    public double Precio;
+    public String Clase;
 
-    public AsientoDisponibleAgregado(JSONObject asiento, String clase, double precio) {
+    public AsientoDisponibleAgregado(UUID key, JSONObject asiento, String clase, double precio) {
         super(LocalDateTime.now());
-        // Key = key;
-        this.precio = precio;
-        this.clase = clase;
-        this.asiento = asiento;
+        Key = key;
+        Precio = precio;
+        Clase = clase;
+        Asiento = asiento;
     }
 
     @Override
     public String toString() {
-        return "\n[ASIENTOS_DISPONIBLES]:  Clase: " + this.clase + " - Precio: " + this.precio + "Bs - "
-                + this.asiento.toString();
+        return "\n[ASIENTOS_DISPONIBLES]:  Clase: " + Clase + " - Precio: " + Precio + "Bs - "
+                + Asiento.toString();
     }
 
 }
