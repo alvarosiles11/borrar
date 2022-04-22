@@ -1,14 +1,19 @@
 package Domain.ValueObjects;
 
- 
-public record PrecioValue(double precio) {
-    public static double Precio;
+import ShareKernel.core.*;
 
-    public PrecioValue {
+public class PrecioValue extends ValueObject {
+    public double Value;
+
+    public PrecioValue(double precio) {
         if (precio < 0) {
-            System.out.println("Price value cannot be negative");
-            // throw new IllegalArgumentException("Price value cannot be negative");
+            try {
+                throw new BussinessRuleValidateExeption("Price value cannot be negative");
+            } catch (BussinessRuleValidateExeption e) {
+                 e.printStackTrace();
+            }
         }
-        Precio = precio;
+        Value = precio;
     }
+
 }
