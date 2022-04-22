@@ -25,7 +25,7 @@ public class Vuelo extends AggregateRoot<UUID> {
     private double precio;
 
     public void vueloCompletado() {
-        var event = new VueloCreado(key, CodigoSeguridad);
+        var event = new VueloCreado(key, fecha_salida, fecha_arribe, precio);
         addDomainEvent(event);
     }
 

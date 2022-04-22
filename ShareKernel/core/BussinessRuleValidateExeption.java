@@ -14,17 +14,17 @@ public class BussinessRuleValidateExeption extends Exception {
         return Details;
     }
 
-    private void setDetails(String details) {
-        Details = details;
-    }
+    // private void setDetails(String details) {
+    //     Details = details;
+    // }
 
     public BussinessRule getBrokenRule() {
         return BrokenRule;
     }
 
-    private void setBrokenRule(BussinessRule brokenRule) {
-        BrokenRule = brokenRule;
-    }
+    // private void setBrokenRule(BussinessRule brokenRule) {
+    //     BrokenRule = brokenRule;
+    // }
 
     public BussinessRuleValidateExeption(String message) {
         Details = message;
