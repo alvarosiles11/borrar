@@ -3,6 +3,8 @@ package ShareKernel.rule;
 
 import ShareKernel.core.BussinessRule;
 
+// INFO: StringNotNullOrEmptyRule, valida el objeto.  
+
 public class NotNullRule implements BussinessRule {
 
     private Object _value;

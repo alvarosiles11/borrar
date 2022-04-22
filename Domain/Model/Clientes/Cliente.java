@@ -6,12 +6,12 @@ import ShareKernel.core.AggregateRoot;
 import ShareKernel.valueObjects.PersonNameValue;
 
 public class Cliente extends AggregateRoot<UUID> {
-    
-    public PersonNameValue NombreCompleto;
+
     public UUID Id;
-    public Cliente (String nombre){
+    public PersonNameValue NombreCompleto;
+
+    public Cliente(String nombre) {
         Id = UUID.randomUUID();
         NombreCompleto = new PersonNameValue(nombre);
-
     }
 }

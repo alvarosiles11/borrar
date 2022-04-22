@@ -2,6 +2,8 @@ package ShareKernel.rule;
 
 import ShareKernel.core.BussinessRule;
 
+// INFO: StringNotNullOrEmptyRule, valida el campo String.  
+
 public class StringNotNullOrEmptyRule implements BussinessRule {
 
     private String _value;

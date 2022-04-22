@@ -1,5 +1,7 @@
 package ShareKernel.core;
 
+// INFO: BussinessRuleValidateExeption, creamos excepciones propias de BussinessRule.  
+
 public class BussinessRuleValidateExeption extends Exception {
 
     public BussinessRule BrokenRule;
@@ -15,7 +17,7 @@ public class BussinessRuleValidateExeption extends Exception {
     }
 
     // private void setDetails(String details) {
-    //     Details = details;
+    // Details = details;
     // }
 
     public BussinessRule getBrokenRule() {
@@ -23,7 +25,7 @@ public class BussinessRuleValidateExeption extends Exception {
     }
 
     // private void setBrokenRule(BussinessRule brokenRule) {
-    //     BrokenRule = brokenRule;
+    // BrokenRule = brokenRule;
     // }
 
     public BussinessRuleValidateExeption(String message) {

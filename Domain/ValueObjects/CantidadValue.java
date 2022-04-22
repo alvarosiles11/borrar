@@ -1,20 +1,20 @@
-package Domain.Model.ValueObjects;
+package Domain.ValueObjects;
 
 import ShareKernel.core.BussinessRuleValidateExeption;
 import ShareKernel.core.ValueObject;
 
-public   class CantidadValue extends ValueObject {
+public class CantidadValue extends ValueObject {
     public Integer Value;
 
-    public CantidadValue(Integer precio) {
-        if (precio <= 0) {
+    public CantidadValue(Integer cantidad) {
+        if (cantidad <= 0) {
             try {
                 throw new BussinessRuleValidateExeption("La cantidad no puede ser negativa o cero");
             } catch (BussinessRuleValidateExeption e) {
-                 e.printStackTrace();
+                e.printStackTrace();
             }
         }
-        Value = precio;
+        Value = cantidad;
     }
 
 }

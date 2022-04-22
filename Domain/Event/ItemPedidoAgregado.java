@@ -3,7 +3,7 @@ package Domain.Event;
 import java.time.LocalDateTime;
 import java.util.UUID;
 
-import Domain.Model.ValueObjects.CantidadValue;
+import Domain.ValueObjects.CantidadValue;
 import Domain.ValueObjects.PrecioValue;
 import ShareKernel.core.DomainEvent;
 

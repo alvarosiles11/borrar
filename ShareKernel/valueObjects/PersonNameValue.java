@@ -5,10 +5,9 @@ import ShareKernel.core.BussinessRuleValidateExeption;
 import ShareKernel.core.ValueObject;
 import ShareKernel.rule.StringNotNullOrEmptyRule;
 
- 
-public class PersonNameValue extends ValueObject{
+public class PersonNameValue extends ValueObject {
 
-    public static String Name;
+    public String Value;
 
     public PersonNameValue(String nombre) {
         try {
@@ -20,12 +19,9 @@ public class PersonNameValue extends ValueObject{
             try {
                 throw new BussinessRuleValidateExeption("PersonName can't be more than 500 characters");
             } catch (BussinessRuleValidateExeption e) {
-                 e.printStackTrace();
+                e.printStackTrace();
             }
         }
-        Name = nombre;
+        Value = nombre;
     }
-
-
- 
 }

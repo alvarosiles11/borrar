@@ -2,7 +2,7 @@ package Domain.Model.Pedidos;
 
 import java.util.UUID;
 
-import Domain.Model.ValueObjects.CantidadValue;
+import Domain.ValueObjects.CantidadValue;
 import Domain.ValueObjects.PrecioValue;
 import ShareKernel.core.Entity;
 
