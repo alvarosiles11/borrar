@@ -12,14 +12,14 @@ import ShareKernel.core.AggregateRoot;
 import ShareKernel.core.DomainEvent;
 
 public class Pedido extends AggregateRoot<UUID> {
-    
+
     public UUID Id;
     public UUID clienteId;
     public NumeroPedido NroPedido;
     public PrecioValue Total;
     public ArrayList<DetallePedido> Detalle;
 
-    public Pedido( String nroPedido){
+    public Pedido(String nroPedido) {
         Id = UUID.randomUUID();
         // NroPedido =nroPedido;
         NroPedido = new NumeroPedido(nroPedido);
@@ -28,15 +28,16 @@ public class Pedido extends AggregateRoot<UUID> {
 
     }
 
-    public void AgregarItem (UUID productoId, int cantidad, double precio, String inatruccion){
-        DetallePedido detalle = new DetallePedido(productoId, inatruccion, cantidad, precio);
-         if (detalle==null){
-             detalle = new DetallePedido(productoId, inatruccion, cantidad, precio);
-             detalle.
-         }
+    public void AgregarItem (UUID productoId, int cantidad, PrecioValue precio, String inatruccion){
+        ArrayList<DetallePedido> uax=Detalle;
+        if (uax==null){
+            DetallePedido   detallePedido = new DetallePedido(productoId, inatruccion, cantidad, precio);
+            Detalle.add(detallePedido);
+         } 
+        //  me falta modificar el pedido
     }
 
-    public void ConsolidarPedido(){
+    public void ConsolidarPedido() {
         DomainEvent evento = new PedidoCreado(Id, NroPedido);
         addDomainEvent(evento);
     }

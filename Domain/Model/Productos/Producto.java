@@ -14,11 +14,11 @@ public class Producto extends AggregateRoot<UUID>{
     public CantidadValue StockActual;
 
 
-    public Producto (String nombre, PrecioValue precio, CantidadValue cantidad){
+    public Producto (String nombre, double precio, Integer cantidad){
         Id= UUID.randomUUID();
         Nombre = nombre;
-        PrecioVenta = precio;
-        StockActual = cantidad;
+        PrecioVenta = new PrecioValue(precio);
+        StockActual = new CantidadValue(cantidad);
     }
 
 }

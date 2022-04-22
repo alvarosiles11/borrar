@@ -15,15 +15,16 @@ public class DetallePedido extends Entity<UUID> {
     public PrecioValue Precio;
     public PrecioValue Subtotal;
 
-    public DetallePedido(UUID id, String instrucion, Integer cantidad, double precio) {
+    public DetallePedido(UUID id, String instrucion, Integer cantidad, PrecioValue precio) {
         Id = id;
         Instrucciones = instrucion;
         Cantidad = new CantidadValue(cantidad);
-        Precio = new PrecioValue(precio);
-        Subtotal = new PrecioValue(precio * cantidad);
+        Precio = precio;
+        Subtotal =new PrecioValue(cantidad);
+        //esta mal el subtotal
     }
 
-    public void ModificarPedido(Integer cantidad, double precio){
+    public void ModificarPedido(Integer cantidad, double precio) {
         Cantidad = new CantidadValue(cantidad);
         Precio = new PrecioValue(precio);
         Subtotal = new PrecioValue(precio * cantidad);

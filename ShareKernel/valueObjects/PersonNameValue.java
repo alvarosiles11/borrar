@@ -16,7 +16,7 @@ public class PersonNameValue extends ValueObject{
         } catch (BussinessRuleValidateExeption e1) {
             e1.printStackTrace();
         }
-        if (nombre.length() < 500) {
+        if (nombre.length() > 500) {
             try {
                 throw new BussinessRuleValidateExeption("PersonName can't be more than 500 characters");
             } catch (BussinessRuleValidateExeption e) {
