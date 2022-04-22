@@ -1,10 +1,7 @@
 package Domain.Model.Pedidos;
 
 import java.util.ArrayList;
-import java.util.Collection;
-import java.util.List;
 import java.util.UUID;
-
 import Domain.Event.PedidoCreado;
 import Domain.Model.Pedidos.ValueObjects.NumeroPedido;
 import Domain.ValueObjects.PrecioValue;
