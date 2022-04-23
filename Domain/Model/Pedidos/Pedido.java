@@ -5,8 +5,11 @@ import java.util.UUID;
 import Domain.Event.PedidoCreado;
 import Domain.Model.Pedidos.ValueObjects.NumeroPedido;
 import Domain.ValueObjects.PrecioValue;
-import ShareKernel.core.AggregateRoot;
-import ShareKernel.core.DomainEvent;
+
+import kernel.core.*;
+
+// import ShareKernel.core.AggregateRoot;
+// import ShareKernel.core.DomainEvent;
 
 public class Pedido extends AggregateRoot<UUID> {
 

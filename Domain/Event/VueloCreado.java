@@ -1,11 +1,10 @@
 package Domain.Event;
 
-import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.UUID;
- 
 
-import ShareKernel.core.DomainEvent;
+// import ShareKernel.core.DomainEvent;
+import kernel.core.*;
 
 public class VueloCreado extends DomainEvent {
 
@@ -15,7 +14,7 @@ public class VueloCreado extends DomainEvent {
     public double Precio;
 
     public VueloCreado(UUID key, Date fecha_salida, Date fecha_arribe, double precio) {
-        super(LocalDateTime.now());
+        super(new Date());
         Key = key;
         Fecha_salida = fecha_salida;
         Fecha_arribe = fecha_arribe;

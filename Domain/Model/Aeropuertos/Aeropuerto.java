@@ -2,7 +2,8 @@ package Domain.Model.Aeropuertos;
 
 import java.util.UUID;
 
-import ShareKernel.core.AggregateRoot;
+// import ShareKernel.core.AggregateRoot;
+import kernel.core.*;
 
 public class Aeropuerto extends AggregateRoot<UUID> {
 

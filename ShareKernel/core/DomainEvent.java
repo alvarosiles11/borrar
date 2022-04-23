@@ -1,19 +1,19 @@
 package ShareKernel.core;
 
-import java.time.LocalDateTime;
+import java.util.*;
 import java.util.UUID;
 
 public abstract class DomainEvent {
 
-    public LocalDateTime OcurredOn;
+    public Date OcurredOn;
     public UUID Key;
 
-    public DomainEvent(LocalDateTime ocurredOn) {
+    public DomainEvent(Date ocurredOn) {
         OcurredOn = ocurredOn;
         Key = UUID.randomUUID();
     }
 
-    public LocalDateTime getOcurredOn() {
+    public Date getOcurredOn() {
         return OcurredOn;
     }
 

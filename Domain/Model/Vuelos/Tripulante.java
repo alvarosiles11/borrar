@@ -2,7 +2,7 @@ package Domain.Model.Vuelos;
 
 import java.util.UUID;
 
-import org.json.JSONObject;
+import com.google.gson.Gson;
 
 import ShareKernel.core.Entity;
 
@@ -11,9 +11,9 @@ public class Tripulante extends Entity<UUID> {
     public UUID Key;
 
     public String Descripcion; // cargo
-    public JSONObject Personal;;
+    public Gson Personal;
 
-    public Tripulante(String descripcion, JSONObject personal) {
+    public Tripulante(String descripcion, Gson personal) {
         Key = UUID.randomUUID();
         Descripcion = descripcion;
         Personal = personal;

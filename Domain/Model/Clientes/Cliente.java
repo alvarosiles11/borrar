@@ -2,9 +2,11 @@ package Domain.Model.Clientes;
 
 import java.util.UUID;
 
-import ShareKernel.core.AggregateRoot;
-import ShareKernel.valueObjects.PersonNameValue;
-
+import Domain.ValueObjects.PersonNameValue;
+// import ShareKernel.core.AggregateRoot;
+// import ShareKernel.valueObjects.PersonNameValue;
+import kernel.core.*;
+ 
 public class Cliente extends AggregateRoot<UUID> {
 
     public UUID Id;

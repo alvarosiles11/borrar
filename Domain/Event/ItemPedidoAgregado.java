@@ -1,11 +1,12 @@
 package Domain.Event;
 
-import java.time.LocalDateTime;
+ import java.util.Date;
 import java.util.UUID;
 
 import Domain.ValueObjects.CantidadValue;
 import Domain.ValueObjects.PrecioValue;
-import ShareKernel.core.DomainEvent;
+// import ShareKernel.core.DomainEvent;
+import kernel.core.*;
 
 public class ItemPedidoAgregado extends DomainEvent {
 
@@ -14,7 +15,7 @@ public class ItemPedidoAgregado extends DomainEvent {
     public CantidadValue Cantidad;
 
     public ItemPedidoAgregado(UUID productoId, PrecioValue precio,CantidadValue cantidad) {
-        super(LocalDateTime.now());
+        super(new Date());
         ProductoId = productoId;
         Precio = precio;
         Cantidad = cantidad;

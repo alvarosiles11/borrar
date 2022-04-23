@@ -5,8 +5,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.UUID;
 
-import org.json.JSONArray;
-import org.json.JSONObject;
+import com.google.gson.Gson;
+
+ 
 
 import Domain.Event.VueloCreado;
 import Domain.Model.Vuelos.ValueObjects.NumeroVuelo;
@@ -17,11 +18,11 @@ public class Vuelo extends AggregateRoot<UUID> {
 
     public UUID Key;
     public NumeroVuelo NroVuelo;
-    private JSONObject Aeronave;
+    private Gson Aeronave;
     private ArrayList<Tripulante> ListaTripulante;
     private ArrayList<AsientoDisponible> ListaAsiento;
-    private JSONObject AeropuertoOrigen;
-    private JSONObject AeropuertoDestino;
+    private Gson AeropuertoOrigen;
+    private Gson AeropuertoDestino;
     private Date Fecha_arribe;
     private Date Fecha_salida;
     private double Precio;
@@ -49,7 +50,7 @@ public class Vuelo extends AggregateRoot<UUID> {
         System.out.println("Se a creado un nuevo vuelo");
     }
 
-    public void AgregarAeronave(JSONObject aeronave) {
+    public void AgregarAeronave(Gson aeronave) {
         Aeronave = aeronave;
         ListaAsiento = AgregarAsientosDisponibless();
     }
@@ -64,7 +65,7 @@ public class Vuelo extends AggregateRoot<UUID> {
 
         ArrayList<AsientoDisponible> arr = new ArrayList<AsientoDisponible>();
         for (int i = 0; i < asientos_de_aeronave.length(); i++) {
-            JSONObject asiento = asientos_de_aeronave.getJSONObject(i);
+            Gson asiento = asientos_de_aeronave.getJSONObject(i);
             arr.add(new AsientoDisponible(asiento, "comercial", Precio));
         }
         System.out.println("Se crearon los asientos disponibles");
@@ -75,11 +76,11 @@ public class Vuelo extends AggregateRoot<UUID> {
         ListaTripulante.add(t);
     }
 
-    public void AgregarAeropuertoOrigen(JSONObject aeropuertoOrigen) {
+    public void AgregarAeropuertoOrigen(Gson aeropuertoOrigen) {
         AeropuertoOrigen = aeropuertoOrigen;
     }
 
-    public void AgregarAeropuertoDestino(JSONObject aeropuertoDestino) {
+    public void AgregarAeropuertoDestino(Gson aeropuertoDestino) {
         AeropuertoDestino = aeropuertoDestino;
     }
 

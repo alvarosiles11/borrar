@@ -1,6 +1,7 @@
 package Domain.ValueObjects;
 
-import ShareKernel.core.*;
+import kernel.core.*;
+import kernel.core.BussinessRuleValidateExeption;
 
 public class PrecioValue extends ValueObject {
     public double Value;
@@ -8,9 +9,9 @@ public class PrecioValue extends ValueObject {
     public PrecioValue(double precio) {
         if (precio < 0) {
             try {
-                throw new BussinessRuleValidateExeption("Price value cannot be negative");
+                throw new BussinessRuleValidateExeption("Precio no puede ser negativo");
             } catch (BussinessRuleValidateExeption e) {
-                 e.printStackTrace();
+                e.printStackTrace();
             }
         }
         Value = precio;

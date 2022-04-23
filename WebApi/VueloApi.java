@@ -3,6 +3,8 @@ package WebApi;
 import java.util.List;
 import java.util.UUID;
 
+import com.google.gson.Gson;
+
 import org.json.JSONArray;
 import org.json.JSONObject;
 
@@ -39,13 +41,13 @@ public class VueloApi {
     @PostMapping("/registro")
     public Vuelo register(@RequestBody Vuelo vuelo) {
 
-        JSONObject aeve = new JSONObject(new Aeronave("bomfo", "2001"));
+        Gson aeve = new Gson(new Aeronave("bomfo", "2001"));
 
         JSONArray arr = new JSONArray();
-        arr.put(new JSONObject().put("key", UUID.randomUUID().toString()).put("numero", "1"));
-        arr.put(new JSONObject().put("key", UUID.randomUUID().toString()).put("numero", "2"));
-        arr.put(new JSONObject().put("key", UUID.randomUUID().toString()).put("numero", "3"));
-        arr.put(new JSONObject().put("key", UUID.randomUUID().toString()).put("numero", "4"));
+        arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero", "1"));
+        arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero", "2"));
+        arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero", "3"));
+        arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero", "4"));
         aeve.put("asientos", arr);
 
         vuelo.AgregarAeronave(aeve);
