@@ -11,7 +11,7 @@ public class Aeronave extends AggregateRoot<UUID> {
     public String Modelo;
 
     // public PersonNameValue NombreCompleto;
-    public Aeronave(  String marca, String modelo) {
+    public Aeronave(String marca, String modelo) {
         Key = UUID.randomUUID();
         Marca = marca;
         Modelo = modelo;

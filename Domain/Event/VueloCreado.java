@@ -8,18 +8,15 @@ import kernel.core.*;
 
 public class VueloCreado extends DomainEvent {
 
-    public UUID Key;
+    public UUID KeyAeronave;
     public Date Fecha_arribe; // INFO: YYYY-MM-DD HH:MM:SS
     public Date Fecha_salida;
-    public double Precio;
 
-    public VueloCreado(UUID key, Date fecha_salida, Date fecha_arribe, double precio) {
+    public VueloCreado(UUID KeyAeronave, Date fecha_salida, Date fecha_arribe) {
         super(new Date());
-        Key = key;
+        KeyAeronave = KeyAeronave;
         Fecha_salida = fecha_salida;
         Fecha_arribe = fecha_arribe;
-        Precio = precio;
-
     }
 
 }

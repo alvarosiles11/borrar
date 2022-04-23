@@ -1,29 +1,25 @@
 package Domain.Model.Vuelos;
 
 import java.util.UUID;
-
-import com.google.gson.Gson;
-
 import kernel.core.Entity;
 
 public class AsientoDisponible extends Entity<UUID> {
 
-    public UUID Key;
-    public Gson Asiento; // INFO: DEL MICROSERVICIO AERONAVE.
+    public UUID KeyAeronave;
+    public String Numero;
     public double Precio;
     public String Clase;
 
-    public AsientoDisponible(Gson asiento, String clase, double precio) {
-        Key = UUID.randomUUID();
+    public AsientoDisponible(UUID keyAeronave,String numero, String clase, double precio) {
+        key = UUID.randomUUID();
+        KeyAeronave = keyAeronave;
         Precio = precio;
         Clase = clase;
-        Asiento = asiento;
+        Numero = numero;
     }
 
-    
     @Override
     public String toString() {
-        return "\n[ASIENTOS_DISPONIBLES]:  Clase: " + Clase + " - Precio: " + Precio + "Bs - "
-                + Asiento.toString();
+        return "\n[ASIENTOS_DISPONIBLES]: Nro: " + Numero + " Clase: " + Clase + " - Precio: " + Precio + "Bs";
     }
 }
