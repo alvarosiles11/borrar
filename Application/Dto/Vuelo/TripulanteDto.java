@@ -2,11 +2,24 @@ package Application.Dto.Vuelo;
 
 import java.util.UUID;
 
-import com.google.gson.Gson;
-
 public class TripulanteDto {
-    public UUID Key;
-    public String Descripcion; // cargo
-    public Gson Personal; // personal datos
+    private UUID Key;
+    private String Descripcion; // cargo
+
+    public UUID getKey() {
+        return Key;
+    }
+
+    public void setKey(UUID key) {
+        Key = key;
+    }
+
+    public String getDescripcion() {
+        return Descripcion;
+    }
+
+    public void setDescripcion(String descripcion) {
+        Descripcion = descripcion;
+    }
 
 }

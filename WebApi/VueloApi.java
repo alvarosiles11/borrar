@@ -18,10 +18,31 @@ import kernel.http.annotation.RequestBody;
 import kernel.http.annotation.RequestMapping;
 import kernel.http.annotation.RestController;
 
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
+import Application.Dto.Vuelo.VueloDto;
+// import Application.Dto.AeronaveDto;
+// import Application.UseCases.Command.Aeronaves.CrearAeronaveCommand;
+// import Application.UseCases.Queries.Aeronaves.GetAeronaveByKeyQuery;
+import Domain.Model.Aeronaves.*;
+import kernel.http.HttpStatus;
+import kernel.http.Exception.HttpException;
+import kernel.http.annotation.*;
+import kernel.mediator.Mediator;
+import kernel.mediator.Response;
+
 @RestController
 @RequestMapping("/vuelo")
 
 public class VueloApi {
+
+    private Mediator _mediator;
+
+    public VueloApi(Mediator mediator) {
+        _mediator = mediator;
+    }
 
     @GetMapping("/")
     public List<Vuelo> getAll() {
@@ -30,6 +51,13 @@ public class VueloApi {
         vuelos.add(new Vuelo());
         return vuelos;
     }
+
+    // @GetMapping("/{key}")
+    // public VueloDto getByKey(@PathVariable GetAeronaveByKeyQuery request) throws
+    // HttpException {
+    // AeronaveDto aeronaveDto = _mediator.send(request).data;
+    // return aeronaveDto;
+    // }
 
     @GetMapping("/{key}")
     public Vuelo getByKey(@PathVariable String key) throws HttpException {

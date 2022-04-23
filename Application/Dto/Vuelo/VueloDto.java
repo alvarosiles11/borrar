@@ -1,14 +1,12 @@
 package Application.Dto.Vuelo;
 
 import java.util.ArrayList;
-import java.util.UUID;
-
 import com.google.gson.Gson;
 
 public class VueloDto {
-    public UUID Key;
-    private ArrayList<TripulanteDto> ListaTripulante;
-    private ArrayList<AsientoDisponibleDto> ListaAsiento;
+
+    public ArrayList<TripulanteDto> ListaTripulante;
+    public ArrayList<AsientoDisponibleDto> ListaAsiento;
 
     public VueloDto() {
         ListaTripulante = new ArrayList<TripulanteDto>();
