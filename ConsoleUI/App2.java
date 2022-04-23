@@ -14,7 +14,6 @@ public class App2 {
 
         Date fecha_salida = new Date();
         Date fecha_arribe = new Date();
-        fecha_arribe.setDate(fecha_arribe.getDate() + 1);
         Vuelo vuelo1 = new Vuelo(fecha_salida, fecha_arribe, 450.0);
 
         Gson personal001 = _test_CrearPersonal("Javier", "Flores");

@@ -11,8 +11,8 @@ import com.google.gson.Gson;
 
 import Domain.Event.VueloCreado;
 import Domain.Model.Vuelos.ValueObjects.NumeroVuelo;
-import ShareKernel.core.AggregateRoot;
-import ShareKernel.core.DomainEvent;
+import kernel.core.AggregateRoot;
+import kernel.core.DomainEvent;
 
 public class Vuelo extends AggregateRoot<UUID> {
 

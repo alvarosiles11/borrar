@@ -4,7 +4,7 @@ import java.util.UUID;
 
 import com.google.gson.Gson;
 
-import ShareKernel.core.Entity;
+import kernel.core.Entity;
 
 public class AsientoDisponible extends Entity<UUID> {
 

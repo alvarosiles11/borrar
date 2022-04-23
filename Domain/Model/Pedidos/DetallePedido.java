@@ -4,7 +4,7 @@ import java.util.UUID;
 
 import Domain.ValueObjects.CantidadValue;
 import Domain.ValueObjects.PrecioValue;
-import ShareKernel.core.Entity;
+import kernel.core.*;
 
 public class DetallePedido extends Entity<UUID> {
 

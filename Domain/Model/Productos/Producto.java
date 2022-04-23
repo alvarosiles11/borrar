@@ -4,8 +4,8 @@ import java.util.UUID;
 
 import Domain.ValueObjects.CantidadValue;
 import Domain.ValueObjects.PrecioValue;
-import ShareKernel.core.AggregateRoot;
-
+import kernel.core.AggregateRoot;
+ 
 public class Producto extends AggregateRoot<UUID> {
 
     public UUID Id;

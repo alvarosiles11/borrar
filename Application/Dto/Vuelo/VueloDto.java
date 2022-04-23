@@ -6,7 +6,6 @@ import java.util.UUID;
 
 import com.google.gson.Gson;
 
-
 public class VueloDto {
     public UUID Key;
     public String NroVuelo;
