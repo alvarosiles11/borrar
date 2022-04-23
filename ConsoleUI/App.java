@@ -1,34 +1,40 @@
 package ConsoleUI;
 
-import Domain.Model.Clientes.Cliente;
-import Domain.Model.Pedidos.Pedido;
-import Domain.Model.Productos.Producto;
+import java.util.Date;
 
+import Domain.Model.Aeronaves.Aeronave;
+import Domain.Model.Aeropuertos.Aeropuerto;
+import Domain.Model.Vuelos.AsientoDisponible;
+import Domain.Model.Vuelos.Tripulante;
+import Domain.Model.Vuelos.Vuelo;
 
 public class App {
-    
     public static void main(String[] args) {
-        Producto objProducto1 = new Producto("Pepsi 500ml", 22.5,5);
-        Producto objProducto2 = new Producto("Hamburguesa simple", 22.5, 10);
-        Cliente objCliente = new Cliente("Jose Carlos Gutierrez");
+        System.out.println("Hola vamos a crear un vuelo!");
+        System.out.println("");
 
+        Aeronave aeronave = new Aeronave("Boeing", "777");
 
-        Pedido objPedido = new Pedido("12");
-        objPedido.AgregarItem(objProducto1.Id, 2, objProducto1.PrecioVenta, "Fria");
-        objPedido.AgregarItem(objProducto2.Id, 1, objProducto2.PrecioVenta, "");
+        Date fecha_salida = new Date();
+        Date fecha_arribe = new Date();
+        Vuelo vuelo1 = new Vuelo(fecha_salida, fecha_arribe);
 
-        objPedido.ConsolidarPedido();
-        
-        System.out.println("Descripcion:"+objProducto1.Nombre+" Precio:"+objProducto1.PrecioVenta.Value+" Stock:"+objProducto1.StockActual.Value);
-        System.out.println("Descripcion:"+objProducto2.Nombre+" Precio:"+objProducto2.PrecioVenta.Value+" Stock:"+objProducto2.StockActual.Value);
-        System.out.println("Cliente: "+objCliente.NombreCompleto.Value);
- 
-        // for(int i = 0; i < objPedido.Detalle.size(); i++) {
-        //     System.out.println(objPedido.Detalle.get(i).ProductoId.toString());
-        // }
-        // System.out.println(" "+objPedido.ConsolidarPedido());
+        vuelo1.AgregarAeronave(aeronave);
+        vuelo1.AgregarAsientosDisponibles(new AsientoDisponible(aeronave.Key, "A1", "Comercial", 750));
+        vuelo1.AgregarAsientosDisponibles(new AsientoDisponible(aeronave.Key, "A2", "Comercial", 750));
+        vuelo1.AgregarAsientosDisponibles(new AsientoDisponible(aeronave.Key, "A3", "Comercial", 750));
+        vuelo1.AgregarAsientosDisponibles(new AsientoDisponible(aeronave.Key, "A4", "Comercial", 750));
 
- 
+        vuelo1.AgregarTripulante(new Tripulante("Piloto"));
+        vuelo1.AgregarTripulante(new Tripulante("Co-Piloto"));
+        vuelo1.AgregarTripulante(new Tripulante("Asistente vuelo"));
+        vuelo1.AgregarTripulante(new Tripulante("Asistente vuelo auxiliar"));
+
+        vuelo1.AgregarAeropuertoOrigen(new Aeropuerto("Viru-Viru", "Santa cruz"));
+        vuelo1.AgregarAeropuertoDestino(new Aeropuerto("san jorge", "La paz"));
+
+        System.out.println(vuelo1.toString());
 
     }
+
 }

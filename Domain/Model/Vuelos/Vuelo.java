@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
-import com.google.gson.Gson;
 import Domain.Event.VueloCreado;
 import Domain.Model.Aeronaves.Aeronave;
 import Domain.Model.Aeropuertos.Aeropuerto;
@@ -23,7 +22,7 @@ public class Vuelo extends AggregateRoot<UUID> {
     private Aeropuerto AeropuertoDestino;
     private Date Fecha_arribe;
     private Date Fecha_salida;
- 
+
     public Vuelo() {
         key = UUID.randomUUID();
         ListaTripulante = new ArrayList<Tripulante>();

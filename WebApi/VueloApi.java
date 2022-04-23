@@ -1,20 +1,22 @@
 package WebApi;
 
-import java.util.List;
-import java.util.UUID;
-
-import com.google.gson.Gson;
-
 // import org.json.JSONArray;
 // import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.List;
 
-import Domain.Model.Aeronaves.Aeronave;
 import Domain.Model.Vuelos.Vuelo;
 import kernel.http.HttpStatus;
 import kernel.http.Exception.HttpException;
-import kernel.http.annotation.*;
+import kernel.http.annotation.DeleteMapping;
+import kernel.http.annotation.GetMapping;
+import kernel.http.annotation.PathVariable;
+import kernel.http.annotation.PostMapping;
+import kernel.http.annotation.PutMapping;
+import kernel.http.annotation.RequestBody;
+import kernel.http.annotation.RequestMapping;
+import kernel.http.annotation.RestController;
 
 @RestController
 @RequestMapping("/vuelo")
@@ -44,10 +46,14 @@ public class VueloApi {
         // Gson aeve = new Gson(new Aeronave("bomfo", "2001"));
 
         // JSONArray arr = new JSONArray();
-        // arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero", "1"));
-        // arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero", "2"));
-        // arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero", "3"));
-        // arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero", "4"));
+        // arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero",
+        // "1"));
+        // arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero",
+        // "2"));
+        // arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero",
+        // "3"));
+        // arr.put(new Gson().put("key", UUID.randomUUID().toString()).put("numero",
+        // "4"));
         // aeve.put("asientos", arr);
 
         // vuelo.AgregarAeronave(aeve);
