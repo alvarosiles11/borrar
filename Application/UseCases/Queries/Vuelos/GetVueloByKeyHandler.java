@@ -1,7 +1,7 @@
-package Application.UseCases.Queries;
+package Application.UseCases.Queries.Vuelos;
 
+import Application.Dto.VueloDto;
 import kernel.mediator.RequestHandler;
-import Application.Dto.Vuelo.VueloDto;
 
 public class GetVueloByKeyHandler implements RequestHandler<GetVueloByKeyQuery, VueloDto> {
 

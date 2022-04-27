@@ -8,6 +8,10 @@ public class Tripulante extends Entity<UUID> {
     public UUID Key;
     public String Cargo; // cargo
 
+    
+    public Tripulante() {
+    }
+
     public Tripulante(String cargo) {
         Key = UUID.randomUUID();
         Cargo = cargo;

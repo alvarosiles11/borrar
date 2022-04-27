@@ -1,8 +1,8 @@
-package Application.UseCases.Queries;
+package Application.UseCases.Queries.Vuelos;
 
 import java.util.UUID;
 
-import Application.Dto.Vuelo.VueloDto;
+import Application.Dto.VueloDto;
 import kernel.mediator.Request;
 
 public class GetVueloByKeyQuery implements Request<VueloDto> {

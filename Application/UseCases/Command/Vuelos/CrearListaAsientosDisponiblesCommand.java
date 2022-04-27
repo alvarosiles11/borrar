@@ -2,7 +2,8 @@ package Application.UseCases.Command.Vuelos;
 
 import java.util.List;
 import java.util.UUID;
-import Application.Dto.Vuelo.AsientoDisponibleDto;
+
+import Application.Dto.AsientoDisponibleDto;
 import kernel.mediator.Request;
 
 public class CrearListaAsientosDisponiblesCommand implements Request<UUID> {

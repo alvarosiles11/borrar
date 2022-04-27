@@ -3,7 +3,7 @@ package Application.UseCases.Command.Vuelos;
 import java.util.List;
 import java.util.UUID;
 
-import Application.Dto.Vuelo.TripulanteDto;
+import Application.Dto.TripulanteDto;
 import kernel.mediator.Request;
 
 public class CrearListaTripulantesCommand implements Request<UUID> {

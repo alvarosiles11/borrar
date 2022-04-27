@@ -1,4 +1,4 @@
-package Application.Dto.Vuelo;
+package Application.Dto;
 
 import java.util.UUID;
 
