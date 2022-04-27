@@ -1,33 +1,15 @@
 package Application.Dto;
 
-import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+
 import com.google.gson.Gson;
 
 public class VueloDto {
 
-    public ArrayList<TripulanteDto> ListaTripulante;
-    public ArrayList<AsientoDisponibleDto> ListaAsiento;
-
-    public VueloDto() {
-        ListaTripulante = new ArrayList<TripulanteDto>();
-        ListaAsiento = new ArrayList<AsientoDisponibleDto>();
-    }
-
-    public ArrayList<TripulanteDto> getListaTripulante() {
-        return ListaTripulante;
-    }
-
-    public void setListaTripulante(ArrayList<TripulanteDto> listaTripulante) {
-        ListaTripulante = listaTripulante;
-    }
-
-    public ArrayList<AsientoDisponibleDto> getListaAsiento() {
-        return ListaAsiento;
-    }
-
-    public void setListaAsiento(ArrayList<AsientoDisponibleDto> listaAsiento) {
-        ListaAsiento = listaAsiento;
-    }
+    public UUID nrovuelo;
+    public List<TripulanteDto> listaTripulante;
+    public List<AsientoDisponibleDto> listaAsientoDisponible;
 
     @Override
     public String toString() {

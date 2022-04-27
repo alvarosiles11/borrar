@@ -34,49 +34,31 @@ public class TripulanteApi {
         return new ArrayList<>();
     }
 
-
-
-
-
-
     // @PostMapping("/registro")
-    // public Response<Tripulante> register(@RequestBody CrearTripulanteCommand tripulante) {
-    //      System.out.println("registro exitoso");
-    //     return _mediator.send(tripulante);
+    // public Response<Tripulante> register(@RequestBody CrearTripulanteCommand
+    // tripulante) {
+    // System.out.println("registro exitoso");
+    // return _mediator.send(tripulante);
     // }
 
     @PostMapping("/registro")
     public Response<Tripulante> register(@RequestBody CrearTripulanteCommand tripulante) {
-         System.out.println("registro exitoso");
-         Response<Tripulante> response = _mediator.send(tripulante);
+        System.out.println("registro exitoso");
+        Response<Tripulante> response = _mediator.send(tripulante);
         return response;
     }
 
-
-
-
-
-
-
-
-
-
-
-
-
     @GetMapping("/{key}")
-    public TripulanteDto getByKey(@PathVariable GetTripulanteByKeyQuery request)  {
+    public TripulanteDto getByKey(@PathVariable GetTripulanteByKeyQuery request) {
         System.out.println("getByKey exitoso");
         return new TripulanteDto();
     }
 
-
-
-
     // @PutMapping("/{key}")
-    // public Tripulante edit(@RequestBody Tripulante tripulante, @PathVariable String key) {
-    //     System.out.println("edit exitoso");
-    //     return new Tripulante();
+    // public Tripulante edit(@RequestBody Tripulante tripulante, @PathVariable
+    // String key) {
+    // System.out.println("edit exitoso");
+    // return new Tripulante();
     // }
 
     @DeleteMapping("/{key}")

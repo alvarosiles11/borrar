@@ -13,11 +13,10 @@ import kernel.mediator.IMediator;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        
         IMediator.registerHandler(GetTripulanteByKeyHandler.class);
         IMediator.registerHandler(CrearTripulanteHandler.class);
 
-        IServiceCollection.AddTransient(ITripulanteFactory.class,TripulanteFactory.class);
+        IServiceCollection.AddTransient(ITripulanteFactory.class, TripulanteFactory.class);
         IServiceCollection.AddTransient(ITripulanteRepository.class, MemoryTripulanteRepository.class);
 
         // Create the kernel
