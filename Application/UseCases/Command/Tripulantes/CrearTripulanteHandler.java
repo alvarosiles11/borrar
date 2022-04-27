@@ -16,7 +16,7 @@ public class CrearTripulanteHandler implements RequestHandler<CrearTripulanteCom
     // INFO = "HILO Metodo que crea un tripulante"
     @Override
     public Tripulante handle(CrearTripulanteCommand arg0) {
-        Tripulante tripulante = _ITripulanteFactory.Create(arg0.getDescripcion());
+        Tripulante tripulante = _ITripulanteFactory.Create(arg0.descripcion);
         return tripulante;
     }
 }

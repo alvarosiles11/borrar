@@ -1,27 +1,16 @@
 package Application.Dto;
 
-import java.util.UUID;
+import com.google.gson.Gson;
 
 public class TripulanteDto {
-    private UUID Key;
-    private String Descripcion; // cargo
+    public String descripcion; // cargo
 
     public TripulanteDto() {
     }
-    public UUID getKey() {
-        return Key;
-    }
-
-    public void setKey(UUID key) {
-        Key = key;
-    }
-
-    public String getDescripcion() {
-        return Descripcion;
-    }
-
-    public void setDescripcion(String descripcion) {
-        Descripcion = descripcion;
+   
+    @Override
+    public String toString() {
+        return new Gson().toJson(this);
     }
 
 }

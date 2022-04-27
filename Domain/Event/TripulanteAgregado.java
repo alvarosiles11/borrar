@@ -1,12 +1,12 @@
 package Domain.Event;
 
- import java.util.Date;
+ import java.time.LocalDateTime;
 import java.util.UUID;
 
 import com.google.gson.Gson;
 
 // import ShareKernel.core.DomainEvent;
-import kernel.core.*;
+import kernel.core.DomainEvent;
 
 public class TripulanteAgregado extends DomainEvent {
 
@@ -16,7 +16,7 @@ public class TripulanteAgregado extends DomainEvent {
     public Gson Personal;;
 
     public TripulanteAgregado(UUID key,String descripcion, Gson personal) {
-        super(new Date());
+        super(LocalDateTime.now());
         Key = key;
         Descripcion = descripcion;
         Personal = personal;

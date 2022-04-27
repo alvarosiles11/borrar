@@ -1,5 +1,6 @@
 package Domain.Event;
 
+import java.time.LocalDateTime;
 import java.util.Date;
 import java.util.UUID;
 
@@ -13,7 +14,7 @@ public class VueloCreado extends DomainEvent {
     public Date Fecha_salida;
 
     public VueloCreado(UUID keyAeronave, Date fecha_salida, Date fecha_arribe) {
-        super(new Date());
+        super(LocalDateTime.now());
         KeyAeronave = keyAeronave;
         Fecha_salida = fecha_salida;
         Fecha_arribe = fecha_arribe;
