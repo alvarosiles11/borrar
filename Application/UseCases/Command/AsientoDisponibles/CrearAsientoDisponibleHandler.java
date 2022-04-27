@@ -1,27 +1,21 @@
 package Application.UseCases.Command.AsientoDisponibles;
 
+import Domain.Factories.IAsientoDisponibleFactory;
 import Domain.Model.Vuelos.AsientoDisponible;
 import kernel.mediator.RequestHandler;
 
 public class CrearAsientoDisponibleHandler implements RequestHandler<CrearAsientoDisponibleCommand, AsientoDisponible> {
 
-    // private ITripulanteFactory _ITripulanteFactory;
+    private IAsientoDisponibleFactory _IAsientoDisponibleFactory;
 
-    // INFO = "Constructor de CrearTripulanteHandler"
-    // public CrearAsientoDisponibleHandler(ITripulanteFactory ITripulanteFactory) {
-    // this._ITripulanteFactory = ITripulanteFactory;
-    // }
+    public CrearAsientoDisponibleHandler(IAsientoDisponibleFactory iAsientoDisponibleFactory) {
+        this._IAsientoDisponibleFactory = iAsientoDisponibleFactory;
+    }
 
-    // INFO = "HILO Metodo que crea un tripulante"
-    // @Override
-    // public Tripulante handle(CrearTripulanteCommand arg0) {
-    // Tripulante tripulante = _ITripulanteFactory.Create(arg0.descripcion);
-    // return tripulante;
-    // }
-
-    // TODO FaLTa Factory
     @Override
     public AsientoDisponible handle(CrearAsientoDisponibleCommand arg0) {
-        return null;
+        AsientoDisponible tripulante = _IAsientoDisponibleFactory.Create(arg0.nrovuelo, arg0.clase, arg0.precio, arg0.estado);
+        return tripulante;
     }
+
 }

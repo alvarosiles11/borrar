@@ -11,5 +11,4 @@ public class TripulanteFactory implements ITripulanteFactory {
     public Tripulante Create(String descripcion) {
         return new Tripulante(descripcion);
     }
-
 }

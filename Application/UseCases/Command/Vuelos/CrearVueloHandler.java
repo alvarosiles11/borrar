@@ -1,28 +1,21 @@
 package Application.UseCases.Command.Vuelos;
 
+import Domain.Factories.IVueloFactory;
 import Domain.Model.Vuelos.Vuelo;
 import kernel.mediator.RequestHandler;
 
 public class CrearVueloHandler implements RequestHandler<CrearVueloCommand, Vuelo> {
 
+	private IVueloFactory _IVueloFactory;
+
 	@Override
 	public Vuelo handle(CrearVueloCommand arg0) {
-		// Vuelo vuelo = _ITripulanteFactory.Create(arg0.descripcion);
-		return null;
+		Vuelo vuelo = _IVueloFactory.Create(arg0.nrovuelo);
+		return vuelo;
 	}
 
-	// private ITripulanteFactory _ITripulanteFactory;
-
-	// INFO = "Constructor de CrearTripulanteHandler"
-	// public CrearTripulanteHandler(ITripulanteFactory ITripulanteFactory) {
-	// this._ITripulanteFactory = ITripulanteFactory;
-	// }
-
-	// INFO = "HILO Metodo que crea un tripulante"
-	// @Override
-	// public Tripulante handle(CrearTripulanteCommand arg0) {
-	// Tripulante tripulante = _ITripulanteFactory.Create(arg0.descripcion);
-	// return tripulante;
-	// }
+	public CrearVueloHandler(IVueloFactory iVueloFactory) {
+		this._IVueloFactory = iVueloFactory;
+	}
 
 }

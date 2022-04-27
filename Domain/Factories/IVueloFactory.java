@@ -1,7 +1,9 @@
 package Domain.Factories;
 
+import java.util.UUID;
+
 import Domain.Model.Vuelos.Vuelo;
 
 public interface IVueloFactory {
-    Vuelo Create (String nroVuelo);
+    Vuelo Create(UUID nroVuelo);
 }

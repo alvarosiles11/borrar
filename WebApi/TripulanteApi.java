@@ -11,6 +11,7 @@ import kernel.http.annotation.DeleteMapping;
 import kernel.http.annotation.GetMapping;
 import kernel.http.annotation.PathVariable;
 import kernel.http.annotation.PostMapping;
+import kernel.http.annotation.PutMapping;
 import kernel.http.annotation.RequestBody;
 import kernel.http.annotation.RequestMapping;
 import kernel.http.annotation.RestController;
@@ -34,13 +35,6 @@ public class TripulanteApi {
         return new ArrayList<>();
     }
 
-    // @PostMapping("/registro")
-    // public Response<Tripulante> register(@RequestBody CrearTripulanteCommand
-    // tripulante) {
-    // System.out.println("registro exitoso");
-    // return _mediator.send(tripulante);
-    // }
-
     @PostMapping("/registro")
     public Response<Tripulante> register(@RequestBody CrearTripulanteCommand tripulante) {
         System.out.println("registro exitoso");
@@ -54,12 +48,11 @@ public class TripulanteApi {
         return new TripulanteDto();
     }
 
-    // @PutMapping("/{key}")
-    // public Tripulante edit(@RequestBody Tripulante tripulante, @PathVariable
-    // String key) {
-    // System.out.println("edit exitoso");
-    // return new Tripulante();
-    // }
+    @PutMapping("/{key}")
+    public Tripulante edit(@RequestBody Tripulante tripulante, @PathVariable String key) {
+        System.out.println("edit exitoso");
+        return tripulante;
+    }
 
     @DeleteMapping("/{key}")
     public String delete(@PathVariable String key) {

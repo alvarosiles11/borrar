@@ -1,12 +1,13 @@
 package Domain.Factories;
 
-// import Domain.Model.Vuelos.Vuelo;
+import java.util.UUID;
 
-// public class VueloFactory implements IVueloFactory {
+import Domain.Model.Vuelos.Vuelo;
 
-//     @Override
-//     public Vuelo Create(String nroVuelo) {
-//         return new Vuelo(nroVuelo);
-//     }
-    
-// }
+public class VueloFactory implements IVueloFactory {
+
+    @Override
+    public Vuelo Create(UUID nroVuelo) {
+        return new Vuelo(nroVuelo);
+    }
+}

@@ -4,17 +4,18 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
+
 import Domain.Event.VueloCreado;
 import Domain.Model.Aeronaves.Aeronave;
 import Domain.Model.Aeropuertos.Aeropuerto;
-import Domain.Model.Vuelos.ValueObjects.NumeroVuelo;
 import kernel.core.AggregateRoot;
 import kernel.core.DomainEvent;
 
 public class Vuelo extends AggregateRoot<UUID> {
 
     public UUID Key;
-    public NumeroVuelo NroVuelo;
+    // public NumeroVuelo NroVuelo;
+    public UUID nroVuelo;
     private Aeronave _Aeronave;
     private List<Tripulante> ListaTripulante;
     private List<AsientoDisponible> ListaAsiento;
@@ -23,8 +24,10 @@ public class Vuelo extends AggregateRoot<UUID> {
     private Date Fecha_arribe;
     private Date Fecha_salida;
 
-    public Vuelo() {
+    public Vuelo(UUID _nroVuelo) {
         key = UUID.randomUUID();
+        nroVuelo = _nroVuelo;
+        // NroVuelo = new NumeroVuelo(nroVuelo);
         ListaTripulante = new ArrayList<Tripulante>();
         ListaAsiento = new ArrayList<AsientoDisponible>();
     }
@@ -32,7 +35,7 @@ public class Vuelo extends AggregateRoot<UUID> {
     public Vuelo(Date fecha_salida, Date fecha_arribe) {
         Key = UUID.randomUUID();
         // NroVuelo = new NumeroVuelo(nroVuelo);
-        NroVuelo = null;// INFO: Solicitar al aeropuerto cuendo se completen los datos requeridos.
+        // NroVuelo = null;// INFO: Solicitar al aeropuerto cuendo se completen los datos requeridos.
         _Aeronave = null;
         ListaTripulante = new ArrayList<Tripulante>(); // INFO: Luego se asignan tripulantes en el vuelo.
         ListaAsiento = new ArrayList<AsientoDisponible>();

@@ -3,10 +3,10 @@ package WebApi;
 import java.util.ArrayList;
 import java.util.List;
 
-import Application.Dto.VueloDto;
-import Application.UseCases.Command.Vuelos.CrearVueloCommand;
-import Application.UseCases.Queries.Vuelos.GetVueloByKeyQuery;
-import Domain.Model.Vuelos.Vuelo;
+import Application.Dto.AsientoDisponibleDto;
+import Application.UseCases.Command.Tripulantes.CrearTripulanteCommand;
+import Application.UseCases.Queries.Tripulantes.GetTripulanteByKeyQuery;
+import Domain.Model.Vuelos.AsientoDisponible;
 import kernel.http.annotation.DeleteMapping;
 import kernel.http.annotation.GetMapping;
 import kernel.http.annotation.PathVariable;
@@ -19,45 +19,44 @@ import kernel.mediator.Mediator;
 import kernel.mediator.Response;
 
 @RestController
-@RequestMapping("/vuelo")
+@RequestMapping("/asiento")
 
-public class VueloApi {
+public class AsientoDisponibleApi {
 
     private Mediator _mediator;
 
-    public VueloApi(Mediator mediator) {
+    public AsientoDisponibleApi(Mediator mediator) {
         _mediator = mediator;
     }
 
     @GetMapping("/")
-    public List<Vuelo> getAll() {
+    public List<AsientoDisponible> getAll() {
         System.out.println("getAll exitoso");
         return new ArrayList<>();
     }
 
- 
     @PostMapping("/registro")
-    public Response<Vuelo> register(@RequestBody CrearVueloCommand param) {
+    public Response<AsientoDisponible> register(@RequestBody CrearTripulanteCommand asiento) {
         System.out.println("registro exitoso");
-        Response<Vuelo> response = _mediator.send(param);
+        Response<AsientoDisponible> response = _mediator.send(asiento);
         return response;
     }
 
     @GetMapping("/{key}")
-    public VueloDto getByKey(@PathVariable GetVueloByKeyQuery request) {
+    public AsientoDisponibleDto getByKey(@PathVariable GetTripulanteByKeyQuery request) {
         System.out.println("getByKey exitoso");
-        return new VueloDto();
+        return new AsientoDisponibleDto();
     }
 
     @PutMapping("/{key}")
-    public Vuelo edit(@RequestBody Vuelo _Vuelo, @PathVariable String key) {
+    public AsientoDisponible edit(@RequestBody AsientoDisponible tripulante, @PathVariable String key) {
         System.out.println("edit exitoso");
-        return _Vuelo;
+        return tripulante;
     }
 
     @DeleteMapping("/{key}")
     public String delete(@PathVariable String key) {
         System.out.println("delete exitoso");
-        return "delete exito";
+        return "exito";
     }
 }
