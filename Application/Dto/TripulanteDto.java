@@ -6,6 +6,8 @@ public class TripulanteDto {
     private UUID Key;
     private String Descripcion; // cargo
 
+    public TripulanteDto() {
+    }
     public UUID getKey() {
         return Key;
     }

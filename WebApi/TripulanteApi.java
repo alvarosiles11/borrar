@@ -59,7 +59,8 @@ public class TripulanteApi {
     }
 
     @DeleteMapping("/{key}")
-    public void delete(@PathVariable String key) {
+    public String delete(@PathVariable String key) {
         System.out.println("delete exitoso");
+        return "exito";
     }
 }
