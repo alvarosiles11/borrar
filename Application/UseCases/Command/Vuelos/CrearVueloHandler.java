@@ -10,12 +10,13 @@ public class CrearVueloHandler implements RequestHandler<CrearVueloCommand, Vuel
 
 	@Override
 	public Vuelo handle(CrearVueloCommand arg0) {
-		Vuelo vuelo = _IVueloFactory.Create(arg0.nrovuelo);
-		return vuelo;
+		Vuelo obj = _IVueloFactory.Create(arg0.nrovuelo, arg0.listaTripulante, arg0.listaAsientoDisponible);
+		return obj;
 	}
 
-	public CrearVueloHandler(IVueloFactory iVueloFactory) {
-		this._IVueloFactory = iVueloFactory;
-	}
 
+	public CrearVueloHandler(IVueloFactory factory) {
+	this._IVueloFactory = factory;
+	}
+ 
 }

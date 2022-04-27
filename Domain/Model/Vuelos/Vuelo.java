@@ -17,28 +17,46 @@ public class Vuelo extends AggregateRoot<UUID> {
     // public NumeroVuelo NroVuelo;
     public UUID nroVuelo;
     private Aeronave _Aeronave;
-    private List<Tripulante> ListaTripulante;
-    private List<AsientoDisponible> ListaAsiento;
+    public List<Tripulante> listaTripulante;
+    public List<AsientoDisponible> listaAsiento;
     private Aeropuerto AeropuertoOrigen;
     private Aeropuerto AeropuertoDestino;
     private Date Fecha_arribe;
     private Date Fecha_salida;
 
-    public Vuelo(UUID _nroVuelo) {
+    public Vuelo(UUID _nroVuelo, Integer cantidad, String clase) {
+        key = UUID.randomUUID();
+        nroVuelo = _nroVuelo;
+
+        // NroVuelo = new NumeroVuelo(nroVuelo);
+        // listaTripulante = _ListaTripulante;
+        // listaAsiento = _ListaAsiento;
+    }
+
+    public void AgregarAsiento(UUID _nroVuelo, Integer _cantidad, String _clase, double _precio) {
+
+        for (int i = 0; i < _cantidad; i++) {
+            listaAsiento.add(new AsientoDisponible(_nroVuelo, _clase, _precio, "activo"));
+        }
+
+    }
+
+    public Vuelo(UUID _nroVuelo, List<Tripulante> _ListaTripulante, List<AsientoDisponible> _ListaAsiento) {
         key = UUID.randomUUID();
         nroVuelo = _nroVuelo;
         // NroVuelo = new NumeroVuelo(nroVuelo);
-        ListaTripulante = new ArrayList<Tripulante>();
-        ListaAsiento = new ArrayList<AsientoDisponible>();
+        listaTripulante = _ListaTripulante;
+        listaAsiento = _ListaAsiento;
     }
 
     public Vuelo(Date fecha_salida, Date fecha_arribe) {
         Key = UUID.randomUUID();
         // NroVuelo = new NumeroVuelo(nroVuelo);
-        // NroVuelo = null;// INFO: Solicitar al aeropuerto cuendo se completen los datos requeridos.
+        // NroVuelo = null;// INFO: Solicitar al aeropuerto cuendo se completen los
+        // datos requeridos.
         _Aeronave = null;
-        ListaTripulante = new ArrayList<Tripulante>(); // INFO: Luego se asignan tripulantes en el vuelo.
-        ListaAsiento = new ArrayList<AsientoDisponible>();
+        listaTripulante = new ArrayList<Tripulante>(); // INFO: Luego se asignan tripulantes en el vuelo.
+        listaAsiento = new ArrayList<AsientoDisponible>();
         AeropuertoOrigen = null;
         AeropuertoDestino = null;
         Fecha_arribe = fecha_arribe;
@@ -51,14 +69,14 @@ public class Vuelo extends AggregateRoot<UUID> {
     }
 
     public void AgregarAsientosDisponibles(AsientoDisponible t) {
-        ListaAsiento.parallelStream().filter(p -> p.getKey() == t.getKey()).findFirst().ifPresent(p -> {
+        listaAsiento.parallelStream().filter(p -> p.getKey() == t.getKey()).findFirst().ifPresent(p -> {
             throw new RuntimeException("El asiento ya existe");
         });
-        ListaAsiento.add(t);
+        listaAsiento.add(t);
     }
 
     public void AgregarTripulante(Tripulante t) {
-        ListaTripulante.add(t);
+        listaTripulante.add(t);
     }
 
     public void AgregarAeropuertoOrigen(Aeropuerto aeropuertoOrigen) {
@@ -78,8 +96,8 @@ public class Vuelo extends AggregateRoot<UUID> {
     public String toString() {
         return "\n[VUELO]: " + Key + "\n" +
                 "[Aeronave]: " + _Aeronave.Marca + "\n" +
-                "\nTripulantes: " + ListaTripulante + "\n" +
-                "Asientos: " + ListaAsiento + "\n\n" +
+                "\nTripulantes: " + listaTripulante + "\n" +
+                "Asientos: " + listaAsiento + "\n\n" +
                 "[Aeropuerto Origen]: " + AeropuertoOrigen.Nombre + " Itinerario: " + Fecha_salida + "\n" +
                 "[Aeropuerto Destino]: " + AeropuertoDestino.Nombre + " Itinerario: " + Fecha_arribe + "\n";
     }
