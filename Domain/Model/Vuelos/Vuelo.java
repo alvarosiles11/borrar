@@ -1,50 +1,37 @@
 package Domain.Model.Vuelos;
 
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
 import com.google.gson.Gson;
 
-import Domain.Model.Aeronaves.Aeronave;
 import SharedKernel.core.AggregateRoot;
 
 public class Vuelo extends AggregateRoot<UUID> {
 
     public String nroVuelo;
-    // private Aeronave aeronave;
+    public String keyAeronave;
+    public String keyAeropuertoOrigen;
+    public String keyAeropuertoDestino;
+    public Date fecha_salida;
+    public Date fecha_arribe;
     public List<Tripulante> listaTripulante;
-    public List<AsientoDisponible> listaAsiento;
-    // private Aeropuerto AeropuertoOrigen;
-    // private Aeropuerto AeropuertoDestino;
-    // private Date Fecha_arribe;
-    // private Date Fecha_salida;
 
-    public Vuelo(String _nroVuelo, List<Tripulante> _ListaTripulante, List<AsientoDisponible> _ListaAsiento) {
+    public Vuelo(String _nroVuelo, String _keyAeronave, String _keyAeropuertoOrigen, String _keyAeropuertoDestino, Date fecha_salida2, Date fecha_arribe2, List<Tripulante> _listaTripulante) {
         key = UUID.randomUUID();
         nroVuelo = _nroVuelo;
-        // aeronave = null;
-        listaTripulante = _ListaTripulante;
-        listaAsiento = _ListaAsiento;
-        // AeropuertoOrigen = null;
-        // AeropuertoDestino = null;
-        // Fecha_arribe = null;
-        // Fecha_salida = null;
+        keyAeronave = _keyAeronave;
+        keyAeropuertoOrigen = _keyAeropuertoOrigen;
+        keyAeropuertoDestino = _keyAeropuertoDestino;
+        fecha_salida = fecha_salida2;
+        fecha_arribe = fecha_arribe2;
+        listaTripulante = _listaTripulante;
+        System.out.println(new Date().toString());
         System.out.println("Se a creado un nuevo vuelo");
     }
 
-    // public Vuelo(String _nroVuelo, Date _fecha_salida, Date _fecha_arribe,
-    // List<Tripulante> _ListaTripulante, List<AsientoDisponible> _ListaAsiento) {
-    // key = UUID.randomUUID();
-    // nroVuelo = _nroVuelo;
-    // aeronave = null;
-    // listaTripulante = _ListaTripulante;
-    // listaAsiento = _ListaAsiento;
-    // AeropuertoOrigen = null;
-    // AeropuertoDestino = null;
-    // Fecha_arribe = _fecha_arribe;
-    // Fecha_salida = _fecha_salida;
-    // System.out.println("Se a creado un nuevo vuelo");
-    // }
+ 
 
     // public void AgregarAeronave(Aeronave _aeronave) {
     // aeronave = _aeronave;
@@ -84,6 +71,7 @@ public class Vuelo extends AggregateRoot<UUID> {
 
     @Override
     public String toString() {
-        return new Gson().toJson(this, Aeronave.class);
+        return new Gson().toJson(this);
     }
+
 }

@@ -24,7 +24,15 @@ public class GetVueloByKeyHandler implements RequestHandler<GetVueloByKeyQuery, 
 		}
 
 		VueloDto vueloDto = new VueloDto();
+
+		//aqui muestrare los datos del vuelo
 		vueloDto.nroVuelo = vuelo.nroVuelo;
+		vueloDto.keyAeronave = vuelo.keyAeronave;
+		vueloDto.keyAeropuertoOrigen = vuelo.keyAeropuertoOrigen;
+		vueloDto.keyAeropuertoDestino = vuelo.keyAeropuertoDestino;
+		vueloDto.fecha_salida = vuelo.fecha_salida;
+		vueloDto.fecha_arribe = vuelo.fecha_arribe;
+		vueloDto.listaTripulante = vuelo.listaTripulante;
 		return vueloDto;
 	}
 

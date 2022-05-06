@@ -8,7 +8,7 @@ public class TripulanteFactory implements ITripulanteFactory {
     }
 
     @Override
-    public Tripulante Create(String nrovuelo, String descripcion, String nombre) {
-        return new Tripulante(nrovuelo,descripcion,nombre);
+    public Tripulante Create(String _keyTripulante, String _cargo) {
+        return new Tripulante(_keyTripulante,_cargo);
     }
 }

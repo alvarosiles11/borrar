@@ -1,5 +1,5 @@
 package Domain.Repositories;
 
-public class IUnitOfWork {
-    // TODO
+public interface IUnitOfWork {
+    public void commit();
 }

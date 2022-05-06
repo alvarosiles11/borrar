@@ -8,15 +8,13 @@ import SharedKernel.core.Entity;
 
 public class Tripulante extends Entity<UUID> {
 
-    public String nrovuelo;
-    public String descripcion; // cargo
-    public String nombre; // nombre completo
+    public String keyTripulante; // tripulante
+    public String cargo; // cargo
 
-    public Tripulante(String _nrovuelo, String _descripcion, String _nombre) {
+    public Tripulante(String _keyTripulante, String _cargo) {
         this.key = UUID.randomUUID();
-        this.nrovuelo = _nrovuelo;
-        this.descripcion = _descripcion;
-        this.nombre = _nombre;
+        this.keyTripulante = _keyTripulante;
+        this.cargo = _cargo;
     }
 
     @Override

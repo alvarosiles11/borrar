@@ -5,14 +5,13 @@ import SharedKernel.mediator.Request;
 
 public class CrearTripulanteCommand implements Request<TripulanteDto> {
 
-    public String nroVuelo;
-    public String descripcion;
-    public String nombre;
+    public String keyTripulante; //tripulante
+    public String cargo; // cargo
+    
 
     public CrearTripulanteCommand(TripulanteDto ero) {
-        this.nroVuelo = ero.nrovuelo;
-        this.descripcion = ero.descripcion;
-        this.nombre = ero.nombre;
-    }
+        this.keyTripulante = ero.keyTripulante;
+        this.cargo = ero.cargo;
+     }
 
 }

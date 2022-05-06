@@ -23,7 +23,8 @@ public class GetTripulanteByKeyHandler implements RequestHandler<GetTripulanteBy
         }
 
         TripulanteDto tripulanteDto = new TripulanteDto();
-        tripulanteDto.nrovuelo = tripulante.nrovuelo;
+        tripulanteDto.keyTripulante = tripulante.keyTripulante;
+        tripulanteDto.cargo = tripulante.cargo;
         return tripulanteDto;
 
     }

@@ -20,7 +20,7 @@ public class CrearTripulanteHandler implements RequestHandler<CrearTripulanteCom
     @Override
     public Tripulante handle(CrearTripulanteCommand arg0) {
         Tripulante tripulanteDto;
-        tripulanteDto = _ITripulanteFactory.Create(arg0.nroVuelo,arg0.descripcion,arg0.nombre);
+        tripulanteDto = _ITripulanteFactory.Create(arg0.keyTripulante,arg0.cargo);
         _ITripulanteRepository.Create(tripulanteDto);
         return tripulanteDto;
     }

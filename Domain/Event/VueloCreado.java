@@ -2,29 +2,33 @@ package Domain.Event;
 
 import java.time.LocalDateTime;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
-
-// import ShareKernel.core.DomainEvent;
+import Domain.Model.Vuelos.Tripulante;
 import SharedKernel.core.DomainEvent;
 
 public class VueloCreado extends DomainEvent {
 
     public UUID KeyAeronave;
-    public Date Fecha_arribe; // INFO: YYYY-MM-DD HH:MM:SS
-    public Date Fecha_salida;
+    public String nroVuelo;
+    public String keyAeronave;
+    public String keyAeropuertoOrigen;
+    public String keyAeropuertoDestino;
+    public Date fecha_salida;
+    public Date fecha_arribe;
+    public List<Tripulante> listaTripulante;
 
-    // TODO quizas necesite este constructor con estos atributos
-    // public String nroVuelo;
-    // public List<Tripulante> listaTripulante;
-    // public List<AsientoDisponible> listaAsientoDisponible;
-
-    public VueloCreado(UUID keyAeronave, Date fecha_salida, Date fecha_arribe) {
+    public VueloCreado(String _nroVuelo, String _keyAeronave,
+            String _keyAeropuertoOrigen, String _keyAeropuertoDestino,
+            Date _fecha_salida, Date _fecha_arribe,
+            List<Tripulante> _listaTripulante) {
         super(LocalDateTime.now());
-        KeyAeronave = keyAeronave;
-        Fecha_salida = fecha_salida;
-        Fecha_arribe = fecha_arribe;
+        nroVuelo = _nroVuelo;
+        keyAeronave = _keyAeronave;
+        keyAeropuertoOrigen = _keyAeropuertoOrigen;
+        keyAeropuertoDestino = _keyAeropuertoDestino;
+        fecha_salida = _fecha_salida;
+        fecha_arribe = _fecha_arribe;
+        listaTripulante = _listaTripulante;
     }
-
-    // TODO implementar getters y setters
-
 }

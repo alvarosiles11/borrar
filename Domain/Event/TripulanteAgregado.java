@@ -6,16 +6,11 @@ import SharedKernel.core.DomainEvent;
 
 public class TripulanteAgregado extends DomainEvent {
 
-    public String nrovuelo;
-    public String descripcion; // cargo
-    public String nombre; // nombre completo
-
-    public TripulanteAgregado(String nrovuelo, String descripcion, String nombre) {
+    public String keyTripulante; // tripulante
+    public String cargo; // cargo
+    public TripulanteAgregado(String keyTripulante, String cargo) {
         super(LocalDateTime.now());
-        this.nrovuelo = nrovuelo;
-        this.descripcion = descripcion;
-        this.nombre = nombre;
-    }
-    // TODO implementar getters y setters
-
+        this.keyTripulante = keyTripulante;
+        this.cargo = cargo;
+     }
 }
