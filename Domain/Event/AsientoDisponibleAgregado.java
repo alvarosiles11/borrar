@@ -1,28 +1,25 @@
 package Domain.Event;
 
 import java.time.LocalDateTime;
-import java.util.UUID;
 
-import com.google.gson.Gson;
-
-// import ShareKernel.core.DomainEvent;
-import kernel.core.*;
+import SharedKernel.core.DomainEvent;
 
 public class AsientoDisponibleAgregado extends DomainEvent {
 
-    public UUID Key;
-    public Gson Asiento; // INFO: DEL MICROSERVICIO AERONAVE.
-    public double Precio;
-    public String Clase;
+    public String nroVuelo;
+    public String matricula;
+    public String clase;
+    public double precio;
+    public String estado;
 
-    // public LocalDateTime salida= LocalDateTime.now();
-
-    public AsientoDisponibleAgregado(UUID key, Gson asiento, String clase, double precio) {
+    public AsientoDisponibleAgregado(String nroVuelo, String matricula, String clase, double precio, String estado) {
         super(LocalDateTime.now());
-        Key = key;
-        Precio = precio;
-        Clase = clase;
-        Asiento = asiento;
+        this.nroVuelo = nroVuelo;
+        this.matricula = matricula;
+        this.clase = clase;
+        this.precio = precio;
+        this.estado = estado;
     }
+    // TODO implementar getters y setters
 
 }

@@ -3,7 +3,7 @@ package Domain.Model.Aeronaves;
 import java.util.UUID;
 
 // import ShareKernel.core.AggregateRoot;
-import kernel.core.*;
+import SharedKernel.core.*;
 
 public class Aeronave extends AggregateRoot<UUID> {
     public UUID Key;

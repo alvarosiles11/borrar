@@ -3,17 +3,13 @@ package Application.UseCases.Queries.Vuelos;
 import java.util.UUID;
 
 import Application.Dto.VueloDto;
-import kernel.mediator.Request;
+import SharedKernel.mediator.Request;
 
 public class GetVueloByKeyQuery implements Request<VueloDto> {
 
-	public UUID key;
+	public UUID Key;
 
-	public GetVueloByKeyQuery() {
-		System.out.println("Entro a GetVueloByKeyQuery");
-	}
-
-	public GetVueloByKeyQuery(UUID key) {
-		this.key = key;
+	public GetVueloByKeyQuery(UUID Key) {
+		this.Key = Key;
 	}
 }

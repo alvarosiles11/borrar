@@ -1,5 +1,6 @@
 package Domain.Infraestructure.MemoryRepository;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import Domain.Model.Vuelos.AsientoDisponible;
@@ -13,6 +14,9 @@ public class MemoryDatabase {
     private List<Tripulante> _tripulantes;
 
     public MemoryDatabase() {
+        _vuelo = new ArrayList<>();
+        _asientoDisponibles = new ArrayList<>();
+        _tripulantes = new ArrayList<>();
     }
 
     public List<Vuelo> get_vuelo() {

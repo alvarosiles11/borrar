@@ -1,30 +1,21 @@
 package Domain.Event;
 
- import java.time.LocalDateTime;
-import java.util.UUID;
+import java.time.LocalDateTime;
 
-import com.google.gson.Gson;
-
-// import ShareKernel.core.DomainEvent;
-import kernel.core.DomainEvent;
+import SharedKernel.core.DomainEvent;
 
 public class TripulanteAgregado extends DomainEvent {
 
-    public UUID Key;
+    public String nrovuelo;
+    public String descripcion; // cargo
+    public String nombre; // nombre completo
 
-    public String Descripcion; // cargo
-    public Gson Personal;;
-
-    public TripulanteAgregado(UUID key,String descripcion, Gson personal) {
+    public TripulanteAgregado(String nrovuelo, String descripcion, String nombre) {
         super(LocalDateTime.now());
-        Key = key;
-        Descripcion = descripcion;
-        Personal = personal;
+        this.nrovuelo = nrovuelo;
+        this.descripcion = descripcion;
+        this.nombre = nombre;
     }
-
-    @Override
-    public String toString() {
-        return "\n[TRIPULANTE]: " + this.Descripcion + " - " + this.Personal.toString();
-    }
+    // TODO implementar getters y setters
 
 }

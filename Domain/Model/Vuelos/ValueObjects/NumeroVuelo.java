@@ -1,8 +1,8 @@
 package Domain.Model.Vuelos.ValueObjects;
 
-import kernel.core.BussinessRuleValidateExeption;
-import kernel.core.ValueObject;
-import kernel.rule.StringNotNullOrEmptyRule;
+import SharedKernel.core.BussinessRuleValidateExeption;
+import SharedKernel.core.ValueObject;
+import SharedKernel.rule.StringNotNullOrEmptyRule;
 
 public class NumeroVuelo extends ValueObject {
     public String Value;

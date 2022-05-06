@@ -2,21 +2,26 @@ package Application.UseCases.Command.Vuelos;
 
 import Domain.Factories.IVueloFactory;
 import Domain.Model.Vuelos.Vuelo;
-import kernel.mediator.RequestHandler;
+import Domain.Repositories.IVueloRepository;
+import SharedKernel.mediator.RequestHandler;
 
 public class CrearVueloHandler implements RequestHandler<CrearVueloCommand, Vuelo> {
 
 	private IVueloFactory _IVueloFactory;
+	private IVueloRepository _IVueloRepository;
+
+	public CrearVueloHandler(IVueloFactory iVueloFactory, IVueloRepository iVueloRepository) {
+		this._IVueloFactory = iVueloFactory;
+		this._IVueloRepository = iVueloRepository;
+	}
 
 	@Override
 	public Vuelo handle(CrearVueloCommand arg0) {
-		Vuelo obj = _IVueloFactory.Create(arg0.nrovuelo, arg0.listaTripulante, arg0.listaAsientoDisponible);
-		return obj;
+		Vuelo vueloDTO;
+		vueloDTO = _IVueloFactory.Create(arg0.nroVuelo, arg0.listaTripulante, arg0.listaAsientoDisponible);
+		_IVueloRepository.Create(vueloDTO);
+		System.out.println("paso");
+		return vueloDTO;
 	}
 
-
-	public CrearVueloHandler(IVueloFactory factory) {
-	this._IVueloFactory = factory;
-	}
- 
 }

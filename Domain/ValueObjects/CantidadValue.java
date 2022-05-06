@@ -1,7 +1,7 @@
 package Domain.ValueObjects;
 
-import kernel.core.BussinessRuleValidateExeption;
-import kernel.core.ValueObject;
+import SharedKernel.core.BussinessRuleValidateExeption;
+import SharedKernel.core.ValueObject;
 
 public class CantidadValue extends ValueObject {
     public Integer Value;

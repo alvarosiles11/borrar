@@ -3,6 +3,6 @@ package Domain.Factories;
 import Domain.Model.Vuelos.Tripulante;
 
 public interface ITripulanteFactory {
-    public Tripulante Create(String descripcion);
+    public Tripulante Create(String nrovuelo, String descripcion, String nombre);
 
 }

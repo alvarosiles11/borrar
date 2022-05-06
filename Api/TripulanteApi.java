@@ -1,4 +1,4 @@
-package WebApi;
+package Api;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,16 +7,17 @@ import Application.Dto.TripulanteDto;
 import Application.UseCases.Command.Tripulantes.CrearTripulanteCommand;
 import Application.UseCases.Queries.Tripulantes.GetTripulanteByKeyQuery;
 import Domain.Model.Vuelos.Tripulante;
-import kernel.http.annotation.DeleteMapping;
-import kernel.http.annotation.GetMapping;
-import kernel.http.annotation.PathVariable;
-import kernel.http.annotation.PostMapping;
-import kernel.http.annotation.PutMapping;
-import kernel.http.annotation.RequestBody;
-import kernel.http.annotation.RequestMapping;
-import kernel.http.annotation.RestController;
-import kernel.mediator.Mediator;
-import kernel.mediator.Response;
+import SharedKernel.http.Exception.HttpException;
+import SharedKernel.http.annotation.DeleteMapping;
+import SharedKernel.http.annotation.GetMapping;
+import SharedKernel.http.annotation.PathVariable;
+import SharedKernel.http.annotation.PostMapping;
+import SharedKernel.http.annotation.PutMapping;
+import SharedKernel.http.annotation.RequestBody;
+import SharedKernel.http.annotation.RequestMapping;
+import SharedKernel.http.annotation.RestController;
+import SharedKernel.mediator.Mediator;
+import SharedKernel.mediator.Response;
 
 @RestController
 @RequestMapping("/tripulante")
@@ -37,15 +38,12 @@ public class TripulanteApi {
 
     @PostMapping("/registro")
     public Response<Tripulante> register(@RequestBody CrearTripulanteCommand tripulante) {
-        System.out.println("registro exitoso");
-        Response<Tripulante> response = _mediator.send(tripulante);
-        return response;
+        return _mediator.send(tripulante);
     }
 
     @GetMapping("/{key}")
-    public TripulanteDto getByKey(@PathVariable GetTripulanteByKeyQuery request) {
-        System.out.println("getByKey exitoso");
-        return new TripulanteDto();
+    public Response<TripulanteDto> getByKey(@PathVariable GetTripulanteByKeyQuery request) throws HttpException {
+        return _mediator.send(request);
     }
 
     @PutMapping("/{key}")

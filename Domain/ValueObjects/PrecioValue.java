@@ -1,7 +1,7 @@
 package Domain.ValueObjects;
 
-import kernel.core.*;
-import kernel.core.BussinessRuleValidateExeption;
+import SharedKernel.core.*;
+import SharedKernel.core.BussinessRuleValidateExeption;
 
 public class PrecioValue extends ValueObject {
     public double Value;

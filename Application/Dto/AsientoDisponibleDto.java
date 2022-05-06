@@ -1,16 +1,16 @@
 package Application.Dto;
 
-import java.util.UUID;
-
 import com.google.gson.Gson;
 
 public class AsientoDisponibleDto {
 
-    // atributos y getters y setters
-    public UUID nrovuelo;
+    public String nrovuelo;
+    public String matricula;
     public String clase;
     public double precio;
     public String estado;
+
+    // TODO implementar getters y setters
 
     @Override
     public String toString() {

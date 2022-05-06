@@ -4,18 +4,19 @@ import java.util.UUID;
 
 import com.google.gson.Gson;
 
-// import kernel.core.AggregateRoot;
-import kernel.core.Entity;
- 
+import SharedKernel.core.Entity;
+
 public class Tripulante extends Entity<UUID> {
 
-     public String descripcion; // cargo
+    public String nrovuelo;
+    public String descripcion; // cargo
+    public String nombre; // nombre completo
 
-    
-
-    public Tripulante(String _descripcion) {
+    public Tripulante(String _nrovuelo, String _descripcion, String _nombre) {
         this.key = UUID.randomUUID();
+        this.nrovuelo = _nrovuelo;
         this.descripcion = _descripcion;
+        this.nombre = _nombre;
     }
 
     @Override
@@ -23,13 +24,4 @@ public class Tripulante extends Entity<UUID> {
         return new Gson().toJson(this);
     }
 
- 
-
-    // @Override
-    // public String toString() {
-    //     return "\n[TRIPULANTE]: Key: " + Key + " Cargo" + Cargo;
-    // }
-
- 
-    
 }

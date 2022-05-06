@@ -1,9 +1,9 @@
 
 package Domain.ValueObjects;
 
-import kernel.core.BussinessRuleValidateExeption;
-import kernel.core.ValueObject;
-import kernel.rule.StringNotNullOrEmptyRule;
+import SharedKernel.core.BussinessRuleValidateExeption;
+import SharedKernel.core.ValueObject;
+import SharedKernel.rule.StringNotNullOrEmptyRule;
 
  
 public class PersonNameValue extends ValueObject {

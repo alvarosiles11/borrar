@@ -1,4 +1,4 @@
-package WebApi;
+package Api;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -7,16 +7,17 @@ import Application.Dto.VueloDto;
 import Application.UseCases.Command.Vuelos.CrearVueloCommand;
 import Application.UseCases.Queries.Vuelos.GetVueloByKeyQuery;
 import Domain.Model.Vuelos.Vuelo;
-import kernel.http.annotation.DeleteMapping;
-import kernel.http.annotation.GetMapping;
-import kernel.http.annotation.PathVariable;
-import kernel.http.annotation.PostMapping;
-import kernel.http.annotation.PutMapping;
-import kernel.http.annotation.RequestBody;
-import kernel.http.annotation.RequestMapping;
-import kernel.http.annotation.RestController;
-import kernel.mediator.Mediator;
-import kernel.mediator.Response;
+import SharedKernel.http.Exception.HttpException;
+import SharedKernel.http.annotation.DeleteMapping;
+import SharedKernel.http.annotation.GetMapping;
+import SharedKernel.http.annotation.PathVariable;
+import SharedKernel.http.annotation.PostMapping;
+import SharedKernel.http.annotation.PutMapping;
+import SharedKernel.http.annotation.RequestBody;
+import SharedKernel.http.annotation.RequestMapping;
+import SharedKernel.http.annotation.RestController;
+import SharedKernel.mediator.Mediator;
+import SharedKernel.mediator.Response;
 
 @RestController
 @RequestMapping("/vuelo")
@@ -31,23 +32,22 @@ public class VueloApi {
 
     @GetMapping("/")
     public List<Vuelo> getAll() {
+        List<Vuelo> vuelos = new ArrayList<>();
         System.out.println("getAll exitoso");
-        return new ArrayList<>();
+        return vuelos;
+    }
+
+    @PostMapping("/registro")
+    public Response<Vuelo> register(@RequestBody CrearVueloCommand vuelo) {
+        return _mediator.send(vuelo);
     }
 
  
-    @PostMapping("/registro")
-    public Response<Vuelo> register(@RequestBody CrearVueloCommand param) {
-        System.out.println("registro exitoso");
-        Response<Vuelo> response = _mediator.send(param);
-        return response;
-    }
-
     @GetMapping("/{key}")
-    public VueloDto getByKey(@PathVariable GetVueloByKeyQuery request) {
-        System.out.println("getByKey exitoso");
-        return new VueloDto();
+    public Response<VueloDto> getByKey(@PathVariable GetVueloByKeyQuery request) throws HttpException {
+        return _mediator.send(request);
     }
+ 
 
     @PutMapping("/{key}")
     public Vuelo edit(@RequestBody Vuelo _Vuelo, @PathVariable String key) {
