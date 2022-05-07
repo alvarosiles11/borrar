@@ -39,11 +39,6 @@ public class Vuelo extends AggregateRoot<UUID> {
         fecha_salida = _fecha_salida;
         fecha_arribe = _fecha_arribe;
         listaTripulante = _listaTripulante;
-
-        // addDomainEvent(new VueloCreado(key, _nroVuelo, _keyAeronave, _keyAeropuertoOrigen, _keyAeropuertoDestino,
-                // _fecha_arribe, _fecha_arribe, _listaTripulante));
-
-        // System.out.println(new Date().toString());
         System.out.println("Se a creado un nuevo vuelo");
     }
 

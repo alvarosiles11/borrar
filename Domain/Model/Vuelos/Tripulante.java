@@ -17,12 +17,6 @@ public class Tripulante extends Entity<UUID> {
         this.cargo = _cargo;
     }
 
-    
-    // public void eventCreado() {
-    //     addDomainEvent(new VueloCreado(key, nroVuelo, keyAeronave, keyAeropuertoOrigen, keyAeropuertoDestino,
-    //             fecha_salida, fecha_arribe, listaTripulante));
-    // }
-
     @Override
     public String toString() {
         return new Gson().toJson(this, Tripulante.class);
