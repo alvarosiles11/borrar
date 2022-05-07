@@ -21,6 +21,8 @@ public class CrearTripulanteHandler implements RequestHandler<CrearTripulanteCom
     public Tripulante handle(CrearTripulanteCommand arg0) {
         Tripulante tripulanteDto;
         tripulanteDto = _ITripulanteFactory.Create(arg0.keyTripulante,arg0.cargo);
+        // tripulanteDto.eventCreado();
+
         _ITripulanteRepository.Create(tripulanteDto);
         return tripulanteDto;
     }

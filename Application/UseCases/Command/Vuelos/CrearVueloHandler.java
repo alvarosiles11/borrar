@@ -23,6 +23,10 @@ public class CrearVueloHandler implements RequestHandler<CrearVueloCommand, Vuel
 		Vuelo vueloDTO;
 		vueloDTO = _IVueloFactory.Create(arg0.nroVuelo, arg0.keyAeronave, arg0.keyAeropuertoOrigen,
 				arg0.keyAeropuertoDestino, arg0.fecha_salida, arg0.fecha_arribe, arg0.listaTripulante);
+
+				vueloDTO.eventCreado();
+
+
 		_IVueloRepository.Create(vueloDTO);
 		_unitOfWor.commit();
 		return vueloDTO;

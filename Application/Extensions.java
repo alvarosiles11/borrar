@@ -23,6 +23,5 @@ public class Extensions {
         IMediator.registerHandler(GetTripulanteByKeyHandler.class);
         IMediator.registerHandler(CrearTripulanteCommand.class);
         IServiceCollection.AddTransient(ITripulanteFactory.class, TripulanteFactory.class);
-
     }
 }
