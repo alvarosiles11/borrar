@@ -54,8 +54,4 @@ public class Vuelo extends AggregateRoot<UUID> {
         listaTripulante.add(tripulante);
     }
 
-    @Override
-    public String toString() {
-        return new Gson().toJson(this, Vuelo.class);
-    }
 }

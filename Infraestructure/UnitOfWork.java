@@ -7,9 +7,6 @@ import Infraestructure.Context.MongoDB.WriteDbContext;
 import SharedKernel.core.DomainEvent;
 import SharedKernel.mediator.Mediator;
 
- 
-
-
 public class UnitOfWork implements IUnitOfWork {
 
     private WriteDbContext _context;
@@ -19,9 +16,10 @@ public class UnitOfWork implements IUnitOfWork {
         _context = context;
         _mediator = mediator;
     }
-    
+
     @Override
     public void commit() {
+
         List<DomainEvent> events = _context.getDomainEvents();
         for (DomainEvent domainEvent : events) {
             _mediator.notify(domainEvent);

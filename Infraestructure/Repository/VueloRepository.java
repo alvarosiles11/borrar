@@ -23,6 +23,7 @@ public class VueloRepository implements IVueloRepository {
 
     @Override
     public Vuelo FindByKey(UUID arg0) {
-         return null;
+          return _vuelos.Single(obj -> obj.key.toString().equals(arg0.toString()));
+
     }
 }
