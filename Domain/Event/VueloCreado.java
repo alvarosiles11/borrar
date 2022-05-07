@@ -9,7 +9,7 @@ import SharedKernel.core.DomainEvent;
 
 public class VueloCreado extends DomainEvent {
 
-    public UUID KeyAeronave;
+    public UUID keyVuelo;
     public String nroVuelo;
     public String keyAeronave;
     public String keyAeropuertoOrigen;
@@ -18,11 +18,12 @@ public class VueloCreado extends DomainEvent {
     public Date fecha_arribe;
     public List<Tripulante> listaTripulante;
 
-    public VueloCreado(String _nroVuelo, String _keyAeronave,
+    public VueloCreado(UUID _keyVuelo,String _nroVuelo, String _keyAeronave,
             String _keyAeropuertoOrigen, String _keyAeropuertoDestino,
             Date _fecha_salida, Date _fecha_arribe,
             List<Tripulante> _listaTripulante) {
         super(LocalDateTime.now());
+        keyVuelo = _keyVuelo;
         nroVuelo = _nroVuelo;
         keyAeronave = _keyAeronave;
         keyAeropuertoOrigen = _keyAeropuertoOrigen;

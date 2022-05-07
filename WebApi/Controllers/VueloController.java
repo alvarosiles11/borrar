@@ -1,12 +1,12 @@
-package WebApi;
+package WebApi.Controllers;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import Application.Dto.TripulanteDto;
-import Application.UseCases.Command.Tripulantes.CrearTripulanteCommand;
-import Application.UseCases.Queries.Tripulantes.GetTripulanteByKeyQuery;
-import Domain.Model.Vuelos.Tripulante;
+import Application.Dto.VueloDto;
+import Application.UseCases.Command.Vuelos.CrearVueloCommand;
+import Application.UseCases.Queries.Vuelos.GetVueloByKeyQuery;
+import Domain.Model.Vuelos.Vuelo;
 import SharedKernel.http.Exception.HttpException;
 import SharedKernel.http.annotation.DeleteMapping;
 import SharedKernel.http.annotation.GetMapping;
@@ -20,41 +20,44 @@ import SharedKernel.mediator.Mediator;
 import SharedKernel.mediator.Response;
 
 @RestController
-@RequestMapping("/tripulante")
+@RequestMapping("/vuelo")
 
-public class TripulanteApi {
+public class VueloController {
 
     private Mediator _mediator;
 
-    public TripulanteApi(Mediator mediator) {
+    public VueloController(Mediator mediator) {
         _mediator = mediator;
     }
 
     @GetMapping("/")
-    public List<Tripulante> getAll() {
+    public List<Vuelo> getAll() {
+        List<Vuelo> vuelos = new ArrayList<>();
         System.out.println("getAll exitoso");
-        return new ArrayList<>();
+        return vuelos;
     }
 
     @PostMapping("/registro")
-    public Response<Tripulante> register(@RequestBody CrearTripulanteCommand tripulante) {
-        return _mediator.send(tripulante);
+    public Response<Vuelo> register(@RequestBody CrearVueloCommand vuelo) {
+        return _mediator.send(vuelo);
     }
 
+ 
     @GetMapping("/{key}")
-    public Response<TripulanteDto> getByKey(@PathVariable GetTripulanteByKeyQuery request) throws HttpException {
+    public Response<VueloDto> getByKey(@PathVariable GetVueloByKeyQuery request) throws HttpException {
         return _mediator.send(request);
     }
+ 
 
     @PutMapping("/{key}")
-    public Tripulante edit(@RequestBody Tripulante tripulante, @PathVariable String key) {
+    public Vuelo edit(@RequestBody Vuelo _Vuelo, @PathVariable String key) {
         System.out.println("edit exitoso");
-        return tripulante;
+        return _Vuelo;
     }
 
     @DeleteMapping("/{key}")
     public String delete(@PathVariable String key) {
         System.out.println("delete exitoso");
-        return "exito";
+        return "delete exito";
     }
 }

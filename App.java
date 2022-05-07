@@ -7,35 +7,45 @@ import Domain.Factories.ITripulanteFactory;
 import Domain.Factories.IVueloFactory;
 import Domain.Factories.TripulanteFactory;
 import Domain.Factories.VueloFactory;
-import Domain.Infraestructure.MemoryRepository.MemoryDatabase;
-import Domain.Infraestructure.MemoryRepository.MemoryTripulanteRepository;
-import Domain.Infraestructure.MemoryRepository.MemoryVueloRepository;
+import Infraestructure.MemoryRepository.MemoryDatabase;
+import Infraestructure.MemoryRepository.MemoryTripulanteRepository;
+import Infraestructure.MemoryRepository.MemoryVueloRepository;
 import Domain.Repositories.ITripulanteRepository;
 import Domain.Repositories.IVueloRepository;
 import SharedKernel.extensions.IServiceCollection;
 import SharedKernel.http.Rest;
 import SharedKernel.mediator.IMediator;
-import WebApi.TripulanteApi;
-import WebApi.VueloApi;
+import WebApi.Controllers.TripulanteController;
+import WebApi.Controllers.VueloController;
 
 public class App {
+
+
+    public static void ConfigureServices() {
+        SharedKernel.Extensions.AddKernel();
+        Infraestructure.Extensions.AddInfraestructure();
+        WebApi.Extensions.AddControllers();
+    }
+
     public static void main(String[] args) throws Exception {
 
-        IMediator.registerHandler(GetVueloByKeyHandler.class);
-        IMediator.registerHandler(CrearVueloHandler.class);
-        IMediator.registerHandler(GetTripulanteByKeyHandler.class);
-        IMediator.registerHandler(CrearTripulanteHandler.class);
+        ConfigureServices();
 
-        IServiceCollection.AddSingleton(MemoryDatabase.class);
+        // IMediator.registerHandler(GetVueloByKeyHandler.class);
+        // IMediator.registerHandler(CrearVueloHandler.class);
+        // IMediator.registerHandler(GetTripulanteByKeyHandler.class);
+        // IMediator.registerHandler(CrearTripulanteHandler.class);
 
-        IServiceCollection.AddTransient(IVueloFactory.class, VueloFactory.class);
-        IServiceCollection.AddTransient(IVueloRepository.class, MemoryVueloRepository.class);
-        IServiceCollection.AddTransient(ITripulanteFactory.class, TripulanteFactory.class);
-        IServiceCollection.AddTransient(ITripulanteRepository.class, MemoryTripulanteRepository.class);
+        // IServiceCollection.AddSingleton(MemoryDatabase.class);
 
-        Rest.addController(VueloApi.class);
-        Rest.addController(TripulanteApi.class);
-        Rest.start();
+        // IServiceCollection.AddTransient(IVueloFactory.class, VueloFactory.class);
+        // IServiceCollection.AddTransient(IVueloRepository.class, MemoryVueloRepository.class);
+        // IServiceCollection.AddTransient(ITripulanteFactory.class, TripulanteFactory.class);
+        // IServiceCollection.AddTransient(ITripulanteRepository.class, MemoryTripulanteRepository.class);
+
+        // Rest.addController(VueloController.class);
+        // Rest.addController(TripulanteController.class);
+        // Rest.start();
         // Rest.start(82);
 
     }

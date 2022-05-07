@@ -5,15 +5,15 @@ import SharedKernel.core.ValueObject;
 import SharedKernel.rule.StringNotNullOrEmptyRule;
 
 public class NumeroVuelo extends ValueObject {
-    public String Value;
+    public String value;
 
-    public NumeroVuelo(String value) {
-        try {
-            CheckRule(new StringNotNullOrEmptyRule(value));
-        } catch (BussinessRuleValidateExeption e) {
-             e.printStackTrace();
-        }
-        Value = value;
+    public NumeroVuelo(String _value) throws BussinessRuleValidateExeption {
+        CheckRule(new StringNotNullOrEmptyRule(_value));
+        this.value = _value;
     }
 
+    @Override
+    public String toString() {
+        return value;
+    }
 }
