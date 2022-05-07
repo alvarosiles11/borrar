@@ -20,15 +20,15 @@ public class CrearVueloHandler implements RequestHandler<CrearVueloCommand, Vuel
 
 	@Override
 	public Vuelo handle(CrearVueloCommand arg0) {
-		Vuelo vueloDTO;
-		vueloDTO = _IVueloFactory.Create(arg0.nroVuelo, arg0.keyAeronave, arg0.keyAeropuertoOrigen,
+		Vuelo vuelo;
+		vuelo = _IVueloFactory.Create(arg0.nroVuelo, arg0.keyAeronave, arg0.keyAeropuertoOrigen,
 				arg0.keyAeropuertoDestino, arg0.fecha_salida, arg0.fecha_arribe, arg0.listaTripulante);
 
-				vueloDTO.eventCreado();
+				vuelo.eventCreado();
 
-
-		_IVueloRepository.Create(vueloDTO);
+				
+		_IVueloRepository.Create(vuelo);
 		_unitOfWor.commit();
-		return vueloDTO;
+		return vuelo;
 	}
 }

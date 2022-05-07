@@ -17,7 +17,7 @@ public class VueloDto {
     public List<Tripulante> listaTripulante;
 
     public VueloDto() {
-        this.listaTripulante = new ArrayList<>();
+        listaTripulante = new ArrayList<>();
     }
 
     public List<Tripulante> getListaTripulante() {

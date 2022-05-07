@@ -17,13 +17,13 @@ public class VueloRepository implements IVueloRepository {
 
     @Override
     public void Create(Vuelo arg0) {
-         _vuelos.Add(arg0);
+        _vuelos.Add(arg0);
 
     }
 
     @Override
     public Vuelo FindByKey(UUID arg0) {
-          return _vuelos.Single(obj -> obj.key.toString().equals(arg0.toString()));
+        return _vuelos.Single(obj -> obj.key.equals(arg0));
 
     }
 }

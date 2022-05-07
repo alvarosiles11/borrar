@@ -54,4 +54,5 @@ public class Vuelo extends AggregateRoot<UUID> {
         listaTripulante.add(tripulante);
     }
 
+
 }

@@ -3,6 +3,7 @@ package Application.UseCases.Command.Vuelos;
 import java.util.Date;
 import java.util.List;
 
+import Application.Dto.TripulanteDto;
 import Application.Dto.VueloDto;
 import Domain.Model.Vuelos.Tripulante;
 import SharedKernel.mediator.Request;
@@ -75,11 +76,14 @@ public class CrearVueloCommand implements Request<VueloDto> {
 		this.fecha_arribe = fecha_arribe;
 	}
 
-	public List<Tripulante> getListaTripulante() {
-		return listaTripulante;
-	}
+	// public List<Tripulante> getListaTripulante() {
+	// 	return listaTripulante;
+	// }
 
-	public void setListaTripulante(List<Tripulante> listaTripulante) {
-		this.listaTripulante = listaTripulante;
-	}
+	// public void setListaTripulante(List<Tripulante> listaTripulante) {
+	// 	this.listaTripulante = listaTripulante;
+	// }
+
+ 
+ 
 }

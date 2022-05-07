@@ -12,6 +12,7 @@ import com.mongodb.client.MongoDatabase;
 
 import org.bson.Document;
 import Infraestructure.Context.IWriteDbContext;
+import SharedKernel.JSON;
 import SharedKernel.db.DbSet;
 
 public class WriteDbContext extends IWriteDbContext {
@@ -19,7 +20,7 @@ public class WriteDbContext extends IWriteDbContext {
     private MongoClient client;
     private MongoDatabase db;
 
-    private final String DB_NAME = "dmsnur_vueloAlvaro";
+    private final String DB_NAME = "tortuga";
     private final String DB_USER = "root";
     private final String DB_PASS = "rootpassword";
     private final String DB_HOST = "servisofts.com";
@@ -65,7 +66,8 @@ public class WriteDbContext extends IWriteDbContext {
 
     @Override
     public void Add(Object obj, DbSet dbSet) {
-        this.db.getCollection(dbSet.getName()).insertOne(Document.parse(new Gson().toJson(obj, obj.getClass())));
+        this.db.getCollection(dbSet.getName())
+                .insertOne(Document.parse(JSON.getInstance().toJson(obj, obj.getClass())));
     }
 
     @Override
@@ -83,8 +85,7 @@ public class WriteDbContext extends IWriteDbContext {
     public Object Single(BooleanFunction fun, DbSet dbSet) {
         ArrayList<Object> list = new ArrayList<>();
         this.db.getCollection(dbSet.getName()).find().iterator().forEachRemaining(action -> {
-            Document doc = (Document) action;
-            Object obj = new Gson().fromJson(doc.toJson(), dbSet.get_type());
+            Object obj = parseObject(dbSet, (Document) action);
             if (fun.run(obj)) {
                 list.add(obj);
             }
@@ -93,6 +94,31 @@ public class WriteDbContext extends IWriteDbContext {
             return list.get(0);
         }
         return null;
+    }
+
+    @Override
+    public List All(DbSet dbSet) {
+        ArrayList<Object> list = new ArrayList<>();
+        this.db.getCollection(dbSet.getName()).find().iterator().forEachRemaining(action -> {
+            list.add(parseObject(dbSet, (Document) action));
+        });
+        return list;
+    }
+
+    @Override
+    public List Filter(BooleanFunction fun, DbSet dbSet) {
+        ArrayList<Object> list = new ArrayList<>();
+        this.db.getCollection(dbSet.getName()).find().iterator().forEachRemaining(action -> {
+            Object obj = parseObject(dbSet, (Document) action);
+            if (fun.run(obj)) {
+                list.add(obj);
+            }
+        });
+        return list;
+    }
+
+    public Object parseObject(DbSet dbSet, Document doc) {
+        return JSON.getInstance().fromJson(doc.toJson(), dbSet.get_type());
     }
 
 }

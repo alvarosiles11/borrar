@@ -1,5 +1,6 @@
 package Application.UseCases.Queries.Vuelos;
 
+import Application.Dto.TripulanteDto;
 import Application.Dto.VueloDto;
 import Domain.Model.Vuelos.Vuelo;
 import Domain.Repositories.IVueloRepository;
@@ -33,7 +34,13 @@ public class GetVueloByKeyHandler implements RequestHandler<GetVueloByKeyQuery, 
 		vueloDto.fecha_salida = vuelo.fecha_salida;
 		vueloDto.fecha_arribe = vuelo.fecha_arribe;
 		vueloDto.listaTripulante = vuelo.listaTripulante;
+
+		// vuelo.listaTripulante.iterator().forEachRemaining(obj -> {
+        //     vueloDto.listaTripulante.add(new TripulanteDto(obj.key, obj.keyTripulante, obj.cargo));
+        // });
 		return vueloDto;
+
+		
 	}
 
 }
