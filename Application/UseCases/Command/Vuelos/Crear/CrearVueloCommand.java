@@ -1,4 +1,4 @@
-package Application.UseCases.Command.Vuelos;
+package Application.UseCases.Command.Vuelos.Crear;
 
 import java.util.Date;
 import java.util.List;
@@ -76,14 +76,12 @@ public class CrearVueloCommand implements Request<VueloDto> {
 		this.fecha_arribe = fecha_arribe;
 	}
 
-	// public List<Tripulante> getListaTripulante() {
-	// 	return listaTripulante;
-	// }
+	public List<Tripulante> getListaTripulante() {
+	return listaTripulante;
+	}
 
-	// public void setListaTripulante(List<Tripulante> listaTripulante) {
-	// 	this.listaTripulante = listaTripulante;
-	// }
+	public void setListaTripulante(List<Tripulante> listaTripulante) {
+	this.listaTripulante = listaTripulante;
+	}
 
- 
- 
 }

@@ -40,7 +40,7 @@ public class DbSet<T> {
             Entity entity = (Entity) obj;
             _events.addAll(entity.getDomainEvents());
         } catch (Exception e) {
-            e.printStackTrace();
+            System.err.println("Not an entity");
         }
     }
 
@@ -52,9 +52,13 @@ public class DbSet<T> {
         return _name;
     }
 
-    public void Update(T obj) {
+    public void Update(T obj, BooleanFunction<T> fun) {
         addEvents(obj);
-        _context.Update(obj, this);
+        _context.Update(obj, fun, this);
+    }
+
+    public void Delete(BooleanFunction<T> fun) {
+        _context.Delete(fun, this);
     }
 
     public void Add(T obj) {
@@ -64,6 +68,14 @@ public class DbSet<T> {
 
     public T Single(BooleanFunction<T> fun) {
         return (T) _context.Single(fun, this);
+    }
+
+    public List<T> All() {
+        return (List<T>) _context.All(this);
+    }
+
+    public List<T> Filter(BooleanFunction<T> fun) {
+        return (List<T>) _context.Filter(fun, this);
     }
 
     @Override

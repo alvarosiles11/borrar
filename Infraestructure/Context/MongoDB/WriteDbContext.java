@@ -5,12 +5,13 @@ import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-import com.google.gson.Gson;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientURI;
 import com.mongodb.client.MongoDatabase;
+import com.mongodb.client.model.Filters;
 
 import org.bson.Document;
+
 import Infraestructure.Context.IWriteDbContext;
 import SharedKernel.JSON;
 import SharedKernel.db.DbSet;
@@ -20,7 +21,7 @@ public class WriteDbContext extends IWriteDbContext {
     private MongoClient client;
     private MongoDatabase db;
 
-    private final String DB_NAME = "tortuga";
+    private final String DB_NAME = "dmsnur_vuelo";
     private final String DB_USER = "root";
     private final String DB_PASS = "rootpassword";
     private final String DB_HOST = "servisofts.com";
@@ -71,14 +72,29 @@ public class WriteDbContext extends IWriteDbContext {
     }
 
     @Override
-    public void Update(Object obj, DbSet dbSet) {
-
-        System.out.println("WriteDbContext::Update Not implemented");
+    public void Update(Object obj_to_edit, BooleanFunction fun, DbSet dbSet) {
+        this.db.getCollection(dbSet.getName()).find().iterator().forEachRemaining(action -> {
+            Object obj = parseObject(dbSet, (Document) action);
+            if (fun.run(obj)) {
+                Document doc = Document.parse(JSON.getInstance().toJson(obj_to_edit, obj_to_edit.getClass()));
+                doc.entrySet().iterator().forEachRemaining(k -> {
+                    if (!k.getKey().equals("_id")) {
+                        action.replace(k.getKey(), doc.get(k.getKey()));
+                    }
+                });
+                this.db.getCollection(dbSet.getName()).replaceOne(Filters.eq("_id", action.get("_id")), action);
+            }
+        });
     }
 
     @Override
-    public void Delete(Object obj, DbSet dbSet) {
-        System.out.println("WriteDbContext::Delete Not implemented");
+    public void Delete(BooleanFunction fun, DbSet dbSet) {
+        this.db.getCollection(dbSet.getName()).find().iterator().forEachRemaining(action -> {
+            Object obj = parseObject(dbSet, (Document) action);
+            if (fun.run(obj)) {
+                this.db.getCollection(dbSet.getName()).deleteOne(action);
+            }
+        });
     }
 
     @Override

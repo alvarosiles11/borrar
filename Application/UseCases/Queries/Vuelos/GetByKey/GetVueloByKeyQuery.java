@@ -1,4 +1,4 @@
-package Application.UseCases.Queries.Vuelos;
+package Application.UseCases.Queries.Vuelos.GetByKey;
 
 import java.util.UUID;
 

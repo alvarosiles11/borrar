@@ -1,9 +1,11 @@
-package Application.UseCases.Queries.Vuelos;
+package Application.UseCases.Queries.Vuelos.GetByKey;
 
 import Application.Dto.TripulanteDto;
 import Application.Dto.VueloDto;
 import Domain.Model.Vuelos.Vuelo;
 import Domain.Repositories.IVueloRepository;
+import SharedKernel.http.HttpStatus;
+import SharedKernel.http.Exception.HttpException;
 import SharedKernel.mediator.RequestHandler;
 
 public class GetVueloByKeyHandler implements RequestHandler<GetVueloByKeyQuery, VueloDto> {
@@ -15,18 +17,21 @@ public class GetVueloByKeyHandler implements RequestHandler<GetVueloByKeyQuery, 
 	}
 
 	@Override
-	public VueloDto handle(GetVueloByKeyQuery request) {
-
-		System.out.println(request.Key);
+	public VueloDto handle(GetVueloByKeyQuery request) throws HttpException {
+		// System.out.println(request.Key);
+		// obtengo el vuelo
 		Vuelo vuelo = _IVueloRepository.FindByKey(request.Key);
 
+		// verifico si no existe el vuelo
 		if (vuelo == null) {
-			return null;
+			// return null;
+			throw new HttpException(HttpStatus.BAD_REQUEST, "Vuelo no encontrado");
 		}
 
+		// creo el dto
 		VueloDto vueloDto = new VueloDto();
 
-		//aqui muestrare los datos del vuelo
+		// lleno el dto
 		vueloDto.nroVuelo = vuelo.nroVuelo;
 		vueloDto.keyAeronave = vuelo.keyAeronave;
 		vueloDto.keyAeropuertoOrigen = vuelo.keyAeropuertoOrigen;
@@ -35,12 +40,10 @@ public class GetVueloByKeyHandler implements RequestHandler<GetVueloByKeyQuery, 
 		vueloDto.fecha_arribe = vuelo.fecha_arribe;
 		vueloDto.listaTripulante = vuelo.listaTripulante;
 
+		// retorno lista de tripulante el dto
 		// vuelo.listaTripulante.iterator().forEachRemaining(obj -> {
-        //     vueloDto.listaTripulante.add(new TripulanteDto(obj.key, obj.keyTripulante, obj.cargo));
-        // });
+ 		// 	vueloDto.listaTripulante.add(new TripulanteDto(obj.keyVuelo, obj.keyTripulante, obj.cargo));
+ 		// });
 		return vueloDto;
-
-		
 	}
-
 }

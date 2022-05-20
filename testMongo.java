@@ -15,7 +15,7 @@ public class testMongo {
     public static MongoClient mongo;
     // public static MongoDatabase db;
 
-    public static String DB_NAME = "tortuga";
+    public static String DB_NAME = "dmsnur_vuelo";
     public static String DB_USER = "root";
     public static String DB_PASS = "rootpassword";
     public static String DB_HOST = "servisofts.com";
@@ -36,6 +36,8 @@ public class testMongo {
             printDatabases(mongo);
             printTables(mongo);
             printTableData(mongo);
+            System.out.println("Conexión MongoDB exitosa");
+
         } else {
             System.out.println("Error: Conexión no establecida");
         }

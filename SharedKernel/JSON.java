@@ -1,8 +1,11 @@
 package SharedKernel;
 
 import java.lang.reflect.Type;
+import java.time.Instant;
 import java.time.LocalDate;
 import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.time.ZonedDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
@@ -15,6 +18,8 @@ import com.google.gson.JsonParseException;
 import com.google.gson.JsonPrimitive;
 import com.google.gson.JsonSerializationContext;
 import com.google.gson.JsonSerializer;
+
+// import Domain.Model.Aeronaves.Aeronave;
 
 public class JSON {
     static String formatDate = "yyyy-MM-dd";

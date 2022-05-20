@@ -13,6 +13,7 @@ public class Extensions {
     public static void AddInfraestructure() {
         Application.Extensions.AddApplication();
         IServiceCollection.AddMediator();
+        
         IServiceCollection.AddScoped(IWriteDbContext.class, WriteDbContext.class);
         IServiceCollection.AddScoped(IUnitOfWork.class, UnitOfWork.class);
         IServiceCollection.AddScoped(IVueloRepository.class, VueloRepository.class);

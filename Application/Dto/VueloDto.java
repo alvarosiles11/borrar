@@ -3,11 +3,13 @@ package Application.Dto;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.UUID;
 
 import Domain.Model.Vuelos.Tripulante;
 
 public class VueloDto {
 
+    public UUID key;
     public String nroVuelo;
     public String keyAeronave;
     public String keyAeropuertoOrigen;

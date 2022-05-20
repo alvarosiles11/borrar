@@ -1,5 +1,7 @@
 package Domain.Factories;
 
+import java.util.UUID;
+
 import Domain.Model.Vuelos.Tripulante;
 
 public class TripulanteFactory implements ITripulanteFactory {
@@ -8,7 +10,7 @@ public class TripulanteFactory implements ITripulanteFactory {
     }
 
     @Override
-    public Tripulante Create(String _keyTripulante, String _cargo) {
-        return new Tripulante(_keyTripulante,_cargo);
+    public Tripulante Create(UUID _keyVuelo, String _keyTripulante, String _cargo) {
+        return new Tripulante(_keyVuelo, _keyTripulante, _cargo);
     }
 }

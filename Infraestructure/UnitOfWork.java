@@ -5,6 +5,7 @@ import java.util.List;
 import Domain.Repositories.IUnitOfWork;
 import Infraestructure.Context.MongoDB.WriteDbContext;
 import SharedKernel.core.DomainEvent;
+import SharedKernel.http.Exception.HttpException;
 import SharedKernel.mediator.Mediator;
 
 public class UnitOfWork implements IUnitOfWork {
@@ -18,11 +19,16 @@ public class UnitOfWork implements IUnitOfWork {
     }
 
     @Override
-    public void commit() {
-
+    public void commit()   {
         List<DomainEvent> events = _context.getDomainEvents();
         for (DomainEvent domainEvent : events) {
-            _mediator.notify(domainEvent);
+
+            try {
+                _mediator.notify(domainEvent);
+            } catch (HttpException e) {
+                 e.printStackTrace();
+            }
+
         }
         _context.Commit();
     }

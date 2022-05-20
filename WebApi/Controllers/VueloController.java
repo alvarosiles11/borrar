@@ -1,14 +1,14 @@
 package WebApi.Controllers;
 
-import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
-import java.util.UUID;
 
 import Application.Dto.VueloDto;
-import Application.UseCases.Command.Vuelos.CrearVueloCommand;
-import Application.UseCases.Queries.Vuelos.GetVueloByKeyQuery;
-import Domain.Model.Vuelos.Tripulante;
+import Application.UseCases.Command.Vuelos.Crear.CrearVueloCommand;
+import Application.UseCases.Command.Vuelos.Editar.EditarVueloCommand;
+import Application.UseCases.Command.Vuelos.Eliminar.EliminarVueloCommand;
+import Application.UseCases.Queries.Tripulantes.GetAll.GetAllTripulanteQuery;
+import Application.UseCases.Queries.Vuelos.GetAll.GetAllVueloQuery;
+import Application.UseCases.Queries.Vuelos.GetByKey.GetVueloByKeyQuery;
 import Domain.Model.Vuelos.Vuelo;
 import SharedKernel.http.Exception.HttpException;
 import SharedKernel.http.annotation.DeleteMapping;
@@ -34,41 +34,39 @@ public class VueloController {
     }
 
     @GetMapping("/")
-    public List<Vuelo> getAll() {
-        List<Vuelo> vuelos = new ArrayList<>();
-
-        List<Tripulante> tripulantes = new ArrayList<>();
-
-        tripulantes.add(new Tripulante(UUID.randomUUID().toString(), "capitan"));
-        tripulantes.add(new Tripulante(UUID.randomUUID().toString(), "copiloto"));
-        tripulantes.add(new Tripulante(UUID.randomUUID().toString(), "enfermera"));
-        tripulantes.add(new Tripulante(UUID.randomUUID().toString(), "asistente"));
-
-        vuelos.add(new Vuelo("_nroVuelo", "_keyAeronave", "_keyAeropuertoOrigen", "_keyAeropuertoDestino", new Date(),
-                new Date(), tripulantes));
-        System.out.println("getAll exitoso");
-        return vuelos;
+    public Response<List<Vuelo>> getAll() throws HttpException {
+        // List<Vuelo> vuelos = new ArrayList<>();
+        // List<Tripulante> tripulantes = new ArrayList<>();
+        // System.out.println("getAll exitoso");
+        // return vuelos;
+        System.out.println("vuelo getAll exitoso");
+        return _mediator.send(new GetAllVueloQuery());
     }
 
     @PostMapping("/registro")
-    public Response<Vuelo> register(@RequestBody CrearVueloCommand vuelo) {
-        return _mediator.send(vuelo);
+    public Response<Vuelo> register(@RequestBody CrearVueloCommand _vuelo) throws HttpException {
+        System.out.println("vuelo register exitoso");
+        return _mediator.send(_vuelo);
     }
 
     @GetMapping("/{key}")
     public Response<VueloDto> getByKey(@PathVariable GetVueloByKeyQuery request) throws HttpException {
+        System.out.println("vuelo getByKey exitoso");
         return _mediator.send(request);
     }
 
     @PutMapping("/{key}")
-    public Vuelo edit(@RequestBody Vuelo _Vuelo, @PathVariable String key) {
-        System.out.println("edit exitoso");
-        return _Vuelo;
+    public Response<Vuelo> edit(@RequestBody Vuelo _Vuelo, @PathVariable EditarVueloCommand request)
+            throws HttpException {
+        System.out.println("vuelo edit exitoso");
+        request._VueloDto.key = _Vuelo.key;
+        return _mediator.send(request);
+
     }
 
     @DeleteMapping("/{key}")
-    public String delete(@PathVariable String key) {
-        System.out.println("delete exitoso");
-        return "delete exito";
+    public Response<Vuelo> delete(@PathVariable EliminarVueloCommand request) throws HttpException {
+        System.out.println("vuelo delete exitoso");
+        return _mediator.send(request);
     }
 }
