@@ -1,7 +1,6 @@
 package Infraestructure;
 
 import java.util.List;
-
 import Domain.Repositories.IUnitOfWork;
 import Infraestructure.Context.MongoDB.WriteDbContext;
 import SharedKernel.core.DomainEvent;
@@ -19,16 +18,10 @@ public class UnitOfWork implements IUnitOfWork {
     }
 
     @Override
-    public void commit()   {
+    public void commit() throws HttpException {
         List<DomainEvent> events = _context.getDomainEvents();
         for (DomainEvent domainEvent : events) {
-
-            try {
-                _mediator.notify(domainEvent);
-            } catch (HttpException e) {
-                 e.printStackTrace();
-            }
-
+            _mediator.notify(domainEvent);
         }
         _context.Commit();
     }

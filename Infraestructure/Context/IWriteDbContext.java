@@ -1,8 +1,11 @@
 package Infraestructure.Context;
+
+import Domain.Model.Aeronaves.Aeronave;
 import Domain.Model.Vuelos.Tripulante;
 import Domain.Model.Vuelos.Vuelo;
 import SharedKernel.db.DbContext;
 import SharedKernel.db.DbSet;
+
 public abstract class IWriteDbContext extends DbContext {
 
     public IWriteDbContext(Class dbContextClass) {
@@ -11,4 +14,5 @@ public abstract class IWriteDbContext extends DbContext {
 
     public DbSet<Vuelo> Vuelo;
     public DbSet<Tripulante> Tripulante;
+    public DbSet<Aeronave> Aeronave;
 }

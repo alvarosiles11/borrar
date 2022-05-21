@@ -25,11 +25,7 @@ public class Vuelo extends AggregateRoot<UUID> {
     public Vuelo() {
     }
 
-    public Vuelo(
-            // String _nroVuelo, String _keyAeronave, String _keyAeropuertoOrigen, String
-            // _keyAeropuertoDestino, Date _fecha_salida, Date _fecha_arribe,
-            // List<Tripulante> _listaTripulante) {
-            String _nroVuelo, String _keyAeronave, String _keyAeropuertoOrigen, String _keyAeropuertoDestino,
+    public Vuelo(String _nroVuelo, String _keyAeronave, String _keyAeropuertoOrigen, String _keyAeropuertoDestino,
             Date _fecha_salida, Date _fecha_arribe) {
         key = UUID.randomUUID();
 
@@ -47,9 +43,7 @@ public class Vuelo extends AggregateRoot<UUID> {
         keyAeropuertoDestino = _keyAeropuertoDestino;
         fecha_salida = _fecha_salida;
         fecha_arribe = _fecha_arribe;
-        // listaTripulante = _listaTripulante;
         listaTripulante = new ArrayList<Tripulante>();
-        ;
         // System.out.println("Se a creado un nuevo vuelo");
     }
 
