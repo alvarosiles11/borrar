@@ -18,7 +18,6 @@ public class GetVueloByKeyHandler implements RequestHandler<GetVueloByKeyQuery, 
 
 	@Override
 	public VueloDto handle(GetVueloByKeyQuery request) throws HttpException {
-		// System.out.println(request.Key);
 		// obtengo el vuelo
 		Vuelo vuelo = _IVueloRepository.FindByKey(request.Key);
 
@@ -38,12 +37,12 @@ public class GetVueloByKeyHandler implements RequestHandler<GetVueloByKeyQuery, 
 		vueloDto.keyAeropuertoDestino = vuelo.keyAeropuertoDestino;
 		vueloDto.fecha_salida = vuelo.fecha_salida;
 		vueloDto.fecha_arribe = vuelo.fecha_arribe;
-		vueloDto.listaTripulante = vuelo.listaTripulante;
+		// vueloDto.listaTripulante = vuelo.listaTripulante;
 
 		// retorno lista de tripulante el dto
-		// vuelo.listaTripulante.iterator().forEachRemaining(obj -> {
- 		// 	vueloDto.listaTripulante.add(new TripulanteDto(obj.keyVuelo, obj.keyTripulante, obj.cargo));
- 		// });
+		vuelo.listaTripulante.iterator().forEachRemaining(obj -> {
+			vueloDto.listaTripulante.add(new TripulanteDto(obj.keyVuelo, obj.keyTripulante, obj.cargo));
+		});
 		return vueloDto;
 	}
 }

@@ -3,9 +3,7 @@ package Application.UseCases.Queries.Tripulantes.GetAll;
 import java.util.List;
 
 import Domain.Model.Vuelos.Tripulante;
-import Domain.Model.Vuelos.Vuelo;
 import Domain.Repositories.ITripulanteRepository;
-import Domain.Repositories.IVueloRepository;
 import SharedKernel.mediator.RequestHandler;
 
 public class GetAllTripulanteHandler implements RequestHandler<GetAllTripulanteQuery, List<Tripulante>> {

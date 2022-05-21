@@ -83,10 +83,10 @@ public class JSON {
     }
 
     // public static void main(String[] args) {
-    //     Aeronave a = new Aeronave("Hola");
-    //     a.eventCreado();
-    //     String json = getInstance().toJson(a, Aeronave.class);
-    //     System.out.println(json);
+    // Aeronave a = new Aeronave("Hola");
+    // a.eventCreado();
+    // String json = getInstance().toJson(a, Aeronave.class);
+    // System.out.println(json);
 
     // }
 }

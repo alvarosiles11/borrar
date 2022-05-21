@@ -1,7 +1,5 @@
 package Application.UseCases.Command.Vuelos.Crear;
 
-import java.lang.reflect.Constructor;
-
 import Domain.Factories.IVueloFactory;
 import Domain.Model.Vuelos.Vuelo;
 import Domain.Repositories.IUnitOfWork;
@@ -27,13 +25,10 @@ public class CrearVueloHandler implements RequestHandler<CrearVueloCommand, Vuel
 	@Override
 	public Vuelo handle(CrearVueloCommand arg0) throws HttpException {
 
- 		
 		Vuelo vuelo = _IVueloFactory.Create(arg0.nroVuelo, arg0.keyAeronave, arg0.keyAeropuertoOrigen,
-				arg0.keyAeropuertoDestino, arg0.fecha_salida, arg0.fecha_arribe );
-
+				arg0.keyAeropuertoDestino, arg0.fecha_salida, arg0.fecha_arribe);
 		// creo el evento
 		vuelo.eventCreado();
-		// guardo el evento
 		_IVueloRepository.Create(vuelo);
 		_unitOfWor.commit();
 		return vuelo;

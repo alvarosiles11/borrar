@@ -1,5 +1,6 @@
 package Application;
 
+import Application.UseCases.Command.Tripulantes.UpdateTripulanteWhenVueloCreadoHandler;
 import Application.UseCases.Command.Tripulantes.Crear.CrearTripulanteHandler;
 import Application.UseCases.Command.Tripulantes.Editar.EditarTripulanteHandler;
 import Application.UseCases.Command.Tripulantes.Eliminar.EliminarTripulanteHandler;
@@ -34,7 +35,7 @@ public class Extensions {
         IMediator.registerHandler(EditarTripulanteHandler.class);
         IMediator.registerHandler(EliminarTripulanteHandler.class);
 
-        // IMediator.registerHandler(UpdateTripulanteWhenVueloCreadoHandler.class);
+        IMediator.registerHandler(UpdateTripulanteWhenVueloCreadoHandler.class);
         IServiceCollection.AddTransient(IVueloFactory.class, VueloFactory.class);
         IServiceCollection.AddTransient(ITripulanteFactory.class, TripulanteFactory.class);
     }

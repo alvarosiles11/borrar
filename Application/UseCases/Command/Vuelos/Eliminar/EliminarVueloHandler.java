@@ -28,9 +28,6 @@ public class EliminarVueloHandler implements RequestHandler<EliminarVueloCommand
         if (_Vuelo == null) {
             throw new HttpException(HttpStatus.BAD_REQUEST, "Vuelo no encontrada");
         }
-
         return _IVueloRepository.Delete(_Vuelo);
-
     }
-
 }

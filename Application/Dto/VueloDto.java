@@ -5,8 +5,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-import Domain.Model.Vuelos.Tripulante;
-
 public class VueloDto {
 
     public UUID key;
@@ -16,17 +14,19 @@ public class VueloDto {
     public String keyAeropuertoDestino;
     public Date fecha_salida;
     public Date fecha_arribe;
-    public List<Tripulante> listaTripulante;
+    public List<TripulanteDto> listaTripulante;
 
+    // Constructor
     public VueloDto() {
         listaTripulante = new ArrayList<>();
     }
 
-    public List<Tripulante> getListaTripulante() {
+    // getters and setters
+    public List<TripulanteDto> getListaTripulante() {
         return listaTripulante;
     }
 
-    public void setListaTripulante(List<Tripulante> listaTripulante) {
+    public void setListaTripulante(List<TripulanteDto> listaTripulante) {
         this.listaTripulante = listaTripulante;
     }
 
