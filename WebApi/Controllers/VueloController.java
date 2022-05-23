@@ -6,7 +6,6 @@ import Application.Dto.VueloDto;
 import Application.UseCases.Command.Vuelos.Crear.CrearVueloCommand;
 import Application.UseCases.Command.Vuelos.Editar.EditarVueloCommand;
 import Application.UseCases.Command.Vuelos.Eliminar.EliminarVueloCommand;
-import Application.UseCases.Queries.Tripulantes.GetAll.GetAllTripulanteQuery;
 import Application.UseCases.Queries.Vuelos.GetAll.GetAllVueloQuery;
 import Application.UseCases.Queries.Vuelos.GetByKey.GetVueloByKeyQuery;
 import Domain.Model.Vuelos.Vuelo;
@@ -58,10 +57,14 @@ public class VueloController {
     @PutMapping("/{key}")
     public Response<Vuelo> edit(@RequestBody Vuelo _Vuelo, @PathVariable EditarVueloCommand request)
             throws HttpException {
-        System.out.println("vuelo edit exitoso");
-        request._VueloDto.key = _Vuelo.key;
+        request._VueloDto.nroVuelo = _Vuelo.nroVuelo;
+        request._VueloDto.keyAeronave = _Vuelo.keyAeronave;
+        request._VueloDto.keyAeropuertoOrigen = _Vuelo.keyAeropuertoOrigen;
+        request._VueloDto.keyAeropuertoDestino = _Vuelo.keyAeropuertoDestino;
+        request._VueloDto.fecha_salida = _Vuelo.fecha_salida;
+        request._VueloDto.fecha_arribe = _Vuelo.fecha_arribe;
+        // request._VueloDto.listaTripulante = _Vuelo.listaTripulante;
         return _mediator.send(request);
-
     }
 
     @DeleteMapping("/{key}")

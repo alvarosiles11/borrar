@@ -28,7 +28,13 @@ public class EditarVueloHandler implements RequestHandler<EditarVueloCommand, Vu
         if (_Vuelo == null) {
             throw new HttpException(HttpStatus.BAD_REQUEST, "Vuelo no encontrada");
         }
-        _Vuelo.key = request._VueloDto.key;
+        _Vuelo.nroVuelo = request._VueloDto.nroVuelo;
+        _Vuelo.keyAeronave = request._VueloDto.keyAeronave;
+        _Vuelo.keyAeropuertoOrigen = request._VueloDto.keyAeropuertoOrigen;
+        _Vuelo.keyAeropuertoDestino = request._VueloDto.keyAeropuertoDestino;
+        _Vuelo.fecha_salida = request._VueloDto.fecha_salida;
+        _Vuelo.fecha_arribe = request._VueloDto.fecha_arribe;
+        // _Vuelo.listaTripulante = request._VueloDto.listaTripulante;
         _IVueloRepository.Update(_Vuelo);
         return _Vuelo;
     }
