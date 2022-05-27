@@ -11,9 +11,9 @@ import SharedKernel.mediator.RequestHandler;
 public class EliminarTripulanteHandler implements RequestHandler<EliminarTripulanteCommand, Tripulante> {
 
     // Declaro Factory, Repository, UnitOfWork
-    private ITripulanteFactory _ITripulanteFactory;
-    private ITripulanteRepository _ITripulanteRepository;
-    private IUnitOfWork _unitOfWor;
+    protected ITripulanteFactory _ITripulanteFactory;
+    protected ITripulanteRepository _ITripulanteRepository;
+    protected IUnitOfWork _unitOfWor;
 
     // Constructor
     public EliminarTripulanteHandler(ITripulanteFactory iTripulanteFactory, ITripulanteRepository iTripulanteRepository,

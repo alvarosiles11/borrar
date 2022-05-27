@@ -11,9 +11,9 @@ import SharedKernel.mediator.RequestHandler;
 public class EditarVueloHandler implements RequestHandler<EditarVueloCommand, Vuelo> {
 
     // Declaro Factory, Repository, UnitOfWork
-    private IVueloFactory _IVueloFactory;
-    private IVueloRepository _IVueloRepository;
-    private IUnitOfWork _unitOfWor;
+    protected IVueloFactory _IVueloFactory;
+    protected IVueloRepository _IVueloRepository;
+    protected IUnitOfWork _unitOfWor;
 
     // Constructor
     public EditarVueloHandler(IVueloFactory iVueloFactory, IVueloRepository iVueloRepository, IUnitOfWork unitOfWor) {

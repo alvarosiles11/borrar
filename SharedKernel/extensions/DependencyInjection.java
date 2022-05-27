@@ -2,7 +2,6 @@ package SharedKernel.extensions;
 
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 import SharedKernel.mediator.IMediator;
 

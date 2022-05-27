@@ -11,9 +11,9 @@ import SharedKernel.mediator.RequestHandler;
 public class EliminarAeronaveHandler implements RequestHandler<EliminarAeronaveCommand, Aeronave> {
 
     // Declaro Factory, Repository, UnitOfWork
-    private IAeronaveFactory _IAeronaveFactory;
+    protected IAeronaveFactory _IAeronaveFactory;
     private IAeronaveRepository _IAeronaveRepository;
-    private IUnitOfWork _unitOfWor;
+    protected IUnitOfWork _unitOfWor;
 
     // Constructor
     public EliminarAeronaveHandler(IAeronaveFactory iAeronaveFactory, IAeronaveRepository iAeronaveRepository,

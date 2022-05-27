@@ -11,13 +11,13 @@ import SharedKernel.mediator.RequestHandler;
 public class EliminarVueloHandler implements RequestHandler<EliminarVueloCommand, Vuelo> {
 
     // Declaro Factory, Repository, UnitOfWork
-    private IVueloFactory _IVueloFactory;
-    private IVueloRepository _IVueloRepository;
-    private IUnitOfWork _unitOfWor;
+    protected IVueloFactory _IVueloFactory;
+    protected IVueloRepository _IVueloRepository;
+    protected IUnitOfWork _unitOfWor;
 
     // Constructor
     public EliminarVueloHandler(IVueloFactory iVueloFactory, IVueloRepository iVueloRepository, IUnitOfWork unitOfWor) {
-        this._IVueloFactory = iVueloFactory;
+        _IVueloFactory = iVueloFactory;
         this._IVueloRepository = iVueloRepository;
         this._unitOfWor = unitOfWor;
     }

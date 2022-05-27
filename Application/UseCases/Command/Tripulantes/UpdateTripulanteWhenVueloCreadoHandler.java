@@ -7,7 +7,7 @@ import SharedKernel.mediator.NotificationHandler;
 
 public class UpdateTripulanteWhenVueloCreadoHandler implements NotificationHandler<VueloCreado> {
 
-    private ITripulanteRepository iTripulanteRepository;
+    protected ITripulanteRepository iTripulanteRepository;
 
     public UpdateTripulanteWhenVueloCreadoHandler(ITripulanteRepository _iTripulanteRepository) {
         this.iTripulanteRepository = _iTripulanteRepository;
