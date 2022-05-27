@@ -5,7 +5,7 @@ import java.util.UUID;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class TripulanteDto_Test {
+public class TripulanteDtoTest {
 
 	@Test
 	public void CheckPropertiesValid() {

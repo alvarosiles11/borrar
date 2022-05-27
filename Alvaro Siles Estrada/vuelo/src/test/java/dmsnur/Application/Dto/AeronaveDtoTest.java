@@ -5,7 +5,7 @@ import java.util.UUID;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class AeronaveDto_Test {
+public class AeronaveDtoTest {
 	@Test
 	public void CheckPropertiesValid() {
 		UUID keyAeronave = UUID.randomUUID();
