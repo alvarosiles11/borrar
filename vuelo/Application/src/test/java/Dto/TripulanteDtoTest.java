@@ -1,12 +1,9 @@
 package Dto;
 
-
 import java.util.UUID;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import  Dto.TripulanteDto;
 
 public class TripulanteDtoTest {
 
@@ -26,17 +23,33 @@ public class TripulanteDtoTest {
 		Assert.assertEquals(null, tripulanteDto.cargo);
 		// end dto
 
-		// Constructor con parametros
-		tripulanteDto = new TripulanteDto(keyVuelo, keyTripulante, cargo);
-
 		// getters and setters
-		tripulanteDto.key = key;
 		tripulanteDto.setKeyVuelo(keyVuelo);
 		tripulanteDto.setKeyTripulante(keyTripulante);
 		tripulanteDto.setCargo(cargo);
-		Assert.assertEquals(key, tripulanteDto.key);
 		Assert.assertEquals(keyVuelo, tripulanteDto.getKeyVuelo());
 		Assert.assertEquals(keyTripulante, tripulanteDto.getKeyTripulante());
 		Assert.assertEquals(cargo, tripulanteDto.getCargo());
 	}
+
+	@Test
+	public void CheckConstructor() {
+
+		UUID keyVuelo = UUID.randomUUID();
+		String keyTripulante = "12345";
+		String cargo = "Piloto";
+
+		// dto
+		TripulanteDto tripulanteDto = new TripulanteDto(keyVuelo, keyTripulante, cargo);
+
+		// getters and setters
+		tripulanteDto.setKeyVuelo(keyVuelo);
+		tripulanteDto.setKeyTripulante(keyTripulante);
+		tripulanteDto.setCargo(cargo);
+		Assert.assertEquals(keyVuelo, tripulanteDto.getKeyVuelo());
+		Assert.assertEquals(keyTripulante, tripulanteDto.getKeyTripulante());
+		Assert.assertEquals(cargo, tripulanteDto.getCargo());
+
+	}
+
 }

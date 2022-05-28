@@ -1,6 +1,5 @@
 package Dto;
 
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -8,9 +7,6 @@ import java.util.UUID;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import Dto.TripulanteDto;
-import Dto.VueloDto;
 
 public class VueloDtoTest {
 
@@ -39,6 +35,7 @@ public class VueloDtoTest {
 		Assert.assertEquals(0, vueloDto.listaTripulante.size());
 		// end dto
 
+		// getters and setters
 		vueloDto.key = key;
 		vueloDto.setNroVuelo(nroVuelo);
 		vueloDto.setKeyAeronave(keyAeronave);
@@ -56,7 +53,6 @@ public class VueloDtoTest {
 		Assert.assertEquals(fecha_salida, vueloDto.getFecha_salida());
 		Assert.assertEquals(fecha_arribe, vueloDto.getFecha_arribe());
 		Assert.assertEquals(listaTripulante, vueloDto.getListaTripulante());
-
 	}
 
 	private List<TripulanteDto> getTripulantes() {

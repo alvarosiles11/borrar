@@ -1,11 +1,9 @@
-package  Dto;
+package Dto;
 
 import java.util.UUID;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import  Dto.AeronaveDto;
 
 public class AeronaveDtoTest {
 	@Test
@@ -20,9 +18,9 @@ public class AeronaveDtoTest {
 		// end dto
 
 		// getters and setters
-		aeronaveDto.keyAeronave = keyAeronave;
+		aeronaveDto.setKeyAeronave(keyAeronave);
 		aeronaveDto.setMatricula(matricula);
-		Assert.assertEquals(keyAeronave, aeronaveDto.keyAeronave);
+ 		Assert.assertEquals(keyAeronave, aeronaveDto.getKeyAeronave());
 		Assert.assertEquals(matricula, aeronaveDto.getMatricula());
 	}
 }

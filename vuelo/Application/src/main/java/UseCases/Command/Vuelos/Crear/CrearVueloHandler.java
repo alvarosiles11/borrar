@@ -15,10 +15,10 @@ public class CrearVueloHandler implements RequestHandler<CrearVueloCommand, Vuel
 	private IUnitOfWork _unitOfWor;
 
 	// Constructor
-	public CrearVueloHandler(IVueloFactory iVueloFactory, IVueloRepository iVueloRepository, IUnitOfWork unitOfWor) {
+	public CrearVueloHandler(IVueloFactory iVueloFactory, IVueloRepository iVueloRepository, IUnitOfWork unitOfWork) {
 		this._IVueloFactory = iVueloFactory;
 		this._IVueloRepository = iVueloRepository;
-		this._unitOfWor = unitOfWor;
+		this._unitOfWor = unitOfWork;
 	}
 
 	// hilo de ejecucion
@@ -27,8 +27,7 @@ public class CrearVueloHandler implements RequestHandler<CrearVueloCommand, Vuel
 
 		Vuelo vuelo = _IVueloFactory.Create(arg0.nroVuelo, arg0.keyAeronave, arg0.keyAeropuertoOrigen,
 				arg0.keyAeropuertoDestino, arg0.fecha_salida, arg0.fecha_arribe);
-		// creo el evento
-		vuelo.eventCreado();
+		// vuelo.eventCreado();
 		_IVueloRepository.Create(vuelo);
 		_unitOfWor.commit();
 		return vuelo;

@@ -5,8 +5,6 @@ import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 
-import com.google.gson.Gson;
-
 import Event.VueloCreado;
 import Model.Vuelos.ValueObjects.NumeroVuelo;
 import core.AggregateRoot;
@@ -44,7 +42,7 @@ public class Vuelo extends AggregateRoot<UUID> {
         fecha_salida = _fecha_salida;
         fecha_arribe = _fecha_arribe;
         listaTripulante = new ArrayList<Tripulante>();
-        // System.out.println("Se a creado un nuevo vuelo");
+        System.out.println("Se a creado un nuevo vuelo");
     }
 
     public void eventCreado() {
@@ -58,10 +56,4 @@ public class Vuelo extends AggregateRoot<UUID> {
         });
         listaTripulante.add(tripulante);
     }
-
-    @Override
-    public String toString() {
-        return new Gson().toJson(this, Vuelo.class);
-    }
-
 }
