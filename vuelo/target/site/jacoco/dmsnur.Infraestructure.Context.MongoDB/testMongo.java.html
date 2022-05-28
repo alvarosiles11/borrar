@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>testMongo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">vuelo</a> &gt; <a href="index.source.html" class="el_package">dmsnur.Infraestructure.Context.MongoDB</a> &gt; <span class="el_source">testMongo.java</span></div><h1>testMongo.java</h1><pre class="source lang-java linenums">package dmsnur.Infraestructure.Context.MongoDB;
+
+import java.util.List;
+import java.util.Set;
+
+import com.mongodb.DB;
+import com.mongodb.DBCollection;
+import com.mongodb.DBCursor;
+import com.mongodb.DBObject;
+import com.mongodb.MongoClient;
+import com.mongodb.MongoClientURI;
+
+<span class="nc" id="L13">public class testMongo {</span>
+
+    public static MongoClient mongo;
+    // public static MongoDatabase db;
+
+<span class="nc" id="L18">    public static String DB_NAME = &quot;dmsnur_vuelo&quot;;</span>
+<span class="nc" id="L19">    public static String DB_USER = &quot;root&quot;;</span>
+<span class="nc" id="L20">    public static String DB_PASS = &quot;rootpassword&quot;;</span>
+<span class="nc" id="L21">    public static String DB_HOST = &quot;servisofts.com&quot;;</span>
+<span class="nc" id="L22">    public static int DB_PORT = 27017;</span>
+
+<span class="nc" id="L24">    public static String DB_TABLA = &quot;Vuelo&quot;;</span>
+
+    public static void main(String[] args) {
+<span class="nc" id="L27">        MongoClientURI uri = new MongoClientURI(</span>
+                &quot;mongodb://&quot; + DB_USER + &quot;:&quot; + DB_PASS + &quot;@&quot; + DB_HOST + &quot;:&quot; + DB_PORT + &quot;/?authSource=admin&quot;);
+<span class="nc" id="L29">        mongo = new MongoClient(uri);</span>
+<span class="nc" id="L30">        verificarConeccion(mongo);</span>
+<span class="nc" id="L31">    }</span>
+
+    private static void verificarConeccion(MongoClient mongo) {
+<span class="nc bnc" id="L34" title="All 2 branches missed.">        if (mongo != null) {</span>
+<span class="nc" id="L35">            System.out.println(&quot;Conexión MongoDB exitosa&quot;);</span>
+<span class="nc" id="L36">            printDatabases(mongo);</span>
+<span class="nc" id="L37">            printTables(mongo);</span>
+<span class="nc" id="L38">            printTableData(mongo);</span>
+<span class="nc" id="L39">            System.out.println(&quot;Conexión MongoDB exitosa&quot;);</span>
+
+        } else {
+<span class="nc" id="L42">            System.out.println(&quot;Error: Conexión no establecida&quot;);</span>
+        }
+<span class="nc" id="L44">    }</span>
+
+    private static void printDatabases(MongoClient mongo) {
+<span class="nc" id="L47">        List dbs = mongo.getDatabaseNames();</span>
+<span class="nc" id="L48">        System.out.println(&quot;&quot;);</span>
+<span class="nc" id="L49">        System.out.println(&quot;Base de datos&quot;);</span>
+<span class="nc bnc" id="L50" title="All 2 branches missed.">        for (Object db : dbs) {</span>
+<span class="nc" id="L51">            System.out.println(&quot; - &quot; + db);</span>
+<span class="nc" id="L52">        }</span>
+<span class="nc" id="L53">        System.out.println(&quot;&quot;);</span>
+<span class="nc" id="L54">    }</span>
+
+    private static void printTables(MongoClient mongo) {
+<span class="nc" id="L57">        DB db = mongo.getDB(DB_NAME);</span>
+<span class="nc" id="L58">        System.out.println(&quot;BD &quot; + DB_NAME + &quot; Tablas&quot;);</span>
+<span class="nc" id="L59">        Set tables = db.getCollectionNames();</span>
+<span class="nc bnc" id="L60" title="All 2 branches missed.">        for (Object tableName : tables) {</span>
+<span class="nc" id="L61">            System.out.println(&quot; - &quot; + tableName);</span>
+<span class="nc" id="L62">        }</span>
+<span class="nc" id="L63">        System.out.println(&quot;&quot;);</span>
+<span class="nc" id="L64">    }</span>
+
+    private static void printTableData(MongoClient mongo) {
+<span class="nc" id="L67">        DB db = mongo.getDB(DB_NAME);</span>
+<span class="nc" id="L68">        DBCollection tableas = db.getCollection(DB_TABLA);</span>
+<span class="nc" id="L69">        System.out.println(&quot;Tabla: &quot; + DB_TABLA);</span>
+<span class="nc" id="L70">        DBCursor cur3 = tableas.find();</span>
+
+<span class="nc bnc" id="L72" title="All 2 branches missed.">        for (DBObject obj : cur3) {</span>
+<span class="nc" id="L73">            System.out.println(&quot; key: &quot; + obj.get(&quot;key&quot;) +</span>
+<span class="nc" id="L74">                    &quot;\n NroVuelo: &quot; + obj.get(&quot;nroVuelo&quot;) +</span>
+<span class="nc" id="L75">                    &quot;\n keyAeronave: &quot; + obj.get(&quot;keyAeronave&quot;) +</span>
+<span class="nc" id="L76">                    &quot;\n keyAeropuertoOrigen: &quot; + obj.get(&quot;keyAeropuertoOrigen&quot;) +</span>
+<span class="nc" id="L77">                    &quot;\n keyAeropuertoDestino: &quot; + obj.get(&quot;keyAeropuertoDestino&quot;) +</span>
+<span class="nc" id="L78">                    &quot;\n fecha salida: &quot; + obj.get(&quot;fecha_salida&quot;) +</span>
+<span class="nc" id="L79">                    &quot;\n fecha arribe: &quot; + obj.get(&quot;fecha_arribe&quot;) +</span>
+<span class="nc" id="L80">                    &quot;\n Tripulante: &quot; + obj.get(&quot;listaTripulante&quot;));</span>
+<span class="nc" id="L81">            System.out.println(&quot;&quot;);</span>
+<span class="nc" id="L82">        }</span>
+<span class="nc" id="L83">        System.out.println();</span>
+<span class="nc" id="L84">    }</span>
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

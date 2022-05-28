@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>CrearTripulanteHandler.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">vuelo</a> &gt; <a href="index.source.html" class="el_package">dmsnur.Application.UseCases.Command.Tripulantes.Crear</a> &gt; <span class="el_source">CrearTripulanteHandler.java</span></div><h1>CrearTripulanteHandler.java</h1><pre class="source lang-java linenums">package dmsnur.Application.UseCases.Command.Tripulantes.Crear;
+
+import dmsnur.Domain.Factories.ITripulanteFactory;
+import dmsnur.Domain.Model.Vuelos.Tripulante;
+import dmsnur.Domain.Repositories.ITripulanteRepository;
+import dmsnur.Domain.Repositories.IUnitOfWork;
+import dmsnur.SharedKernel.http.Exception.HttpException;
+import dmsnur.SharedKernel.mediator.RequestHandler;
+
+public class CrearTripulanteHandler implements RequestHandler&lt;CrearTripulanteCommand, Tripulante&gt; {
+
+	// Declaro Factory, Repository, UnitOfWork
+	private ITripulanteFactory _ITripulanteFactory;
+	private ITripulanteRepository _ITripulanteRepository;
+	private IUnitOfWork _unitOfWor;
+
+	// Constructor
+	public CrearTripulanteHandler(ITripulanteFactory iTripulanteFactory, ITripulanteRepository iTripulanteRepository,
+<span class="nc" id="L19">			IUnitOfWork unitOfWor) {</span>
+<span class="nc" id="L20">		this._ITripulanteFactory = iTripulanteFactory;</span>
+<span class="nc" id="L21">		this._ITripulanteRepository = iTripulanteRepository;</span>
+<span class="nc" id="L22">		this._unitOfWor = unitOfWor;</span>
+<span class="nc" id="L23">	}</span>
+
+	// hilo de ejecucion
+	@Override
+	public Tripulante handle(CrearTripulanteCommand arg0) throws HttpException {
+<span class="nc" id="L28">		Tripulante tripulante = _ITripulanteFactory.Create(arg0.keyVuelo, arg0.keyTripulante, arg0.cargo);</span>
+<span class="nc" id="L29">		_ITripulanteRepository.Create(tripulante);</span>
+<span class="nc" id="L30">		_unitOfWor.commit();</span>
+<span class="nc" id="L31">		return tripulante;</span>
+	}
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

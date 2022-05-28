@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Vuelo.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">vuelo</a> &gt; <a href="index.source.html" class="el_package">dmsnur.Domain.Model.Vuelos</a> &gt; <span class="el_source">Vuelo.java</span></div><h1>Vuelo.java</h1><pre class="source lang-java linenums">package dmsnur.Domain.Model.Vuelos;
+
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import java.util.UUID;
+
+import com.google.gson.Gson;
+
+import dmsnur.Domain.Event.VueloCreado;
+import dmsnur.Domain.Model.Vuelos.ValueObjects.NumeroVuelo;
+import dmsnur.SharedKernel.core.AggregateRoot;
+import dmsnur.SharedKernel.core.BussinessRuleValidateExeption;
+
+public class Vuelo extends AggregateRoot&lt;UUID&gt; {
+
+    public String nroVuelo;
+    public String keyAeronave;
+    public String keyAeropuertoOrigen;
+    public String keyAeropuertoDestino;
+    public Date fecha_salida;
+    public Date fecha_arribe;
+    public List&lt;Tripulante&gt; listaTripulante;
+
+<span class="nc" id="L25">    public Vuelo() {</span>
+<span class="nc" id="L26">    }</span>
+
+    public Vuelo(String _nroVuelo, String _keyAeronave, String _keyAeropuertoOrigen, String _keyAeropuertoDestino,
+<span class="nc" id="L29">            Date _fecha_salida, Date _fecha_arribe) {</span>
+<span class="nc" id="L30">        key = UUID.randomUUID();</span>
+
+        // validaciones value objects y reglas de negocio
+        try {
+<span class="nc" id="L34">            this.nroVuelo = new NumeroVuelo(_nroVuelo).toString();</span>
+<span class="nc" id="L35">        } catch (BussinessRuleValidateExeption e) {</span>
+<span class="nc" id="L36">            e.printStackTrace();</span>
+<span class="nc" id="L37">            return;</span>
+<span class="nc" id="L38">        }</span>
+
+<span class="nc" id="L40">        nroVuelo = _nroVuelo;</span>
+<span class="nc" id="L41">        keyAeronave = _keyAeronave;</span>
+<span class="nc" id="L42">        keyAeropuertoOrigen = _keyAeropuertoOrigen;</span>
+<span class="nc" id="L43">        keyAeropuertoDestino = _keyAeropuertoDestino;</span>
+<span class="nc" id="L44">        fecha_salida = _fecha_salida;</span>
+<span class="nc" id="L45">        fecha_arribe = _fecha_arribe;</span>
+<span class="nc" id="L46">        listaTripulante = new ArrayList&lt;Tripulante&gt;();</span>
+        // System.out.println(&quot;Se a creado un nuevo vuelo&quot;);
+<span class="nc" id="L48">    }</span>
+
+    public void eventCreado() {
+<span class="nc" id="L51">        addDomainEvent(new VueloCreado(key, nroVuelo, keyAeronave, keyAeropuertoOrigen, keyAeropuertoDestino,</span>
+                fecha_salida, fecha_arribe, listaTripulante));
+<span class="nc" id="L53">    }</span>
+
+    public void AgregarTripulante(Tripulante tripulante) {
+<span class="nc bnc" id="L56" title="All 2 branches missed.">        listaTripulante.parallelStream().filter(p -&gt; p.getKey() == tripulante.getKey()).findFirst().ifPresent(p -&gt; {</span>
+<span class="nc" id="L57">            throw new RuntimeException(&quot;El tripulante ya existe&quot;);</span>
+        });
+<span class="nc" id="L59">        listaTripulante.add(tripulante);</span>
+<span class="nc" id="L60">    }</span>
+
+    @Override
+    public String toString() {
+<span class="nc" id="L64">        return new Gson().toJson(this, Vuelo.class);</span>
+    }
+
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

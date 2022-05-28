@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>MediatorPlanNotify.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">vuelo</a> &gt; <a href="index.source.html" class="el_package">dmsnur.SharedKernel.mediator</a> &gt; <span class="el_source">MediatorPlanNotify.java</span></div><h1>MediatorPlanNotify.java</h1><pre class="source lang-java linenums">package dmsnur.SharedKernel.mediator;
+
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.util.ArrayList;
+import java.util.List;
+
+import dmsnur.SharedKernel.extensions.DependencyInjection;
+
+public class MediatorPlanNotify {
+
+    public static List&lt;NotificationHandler&lt;Notification&gt;&gt; getInstances(
+            Class&lt;?&gt; messageType) {
+<span class="nc" id="L14">        List&lt;NotificationHandler&lt;Notification&gt;&gt; instances = new ArrayList&lt;&gt;();</span>
+<span class="nc" id="L15">        return instances;</span>
+    }
+
+    Method handleMethod;
+    Class handlerInstanceBuilder;
+    Object instance;
+    IMediator mediator;
+
+    public MediatorPlanNotify(Class&lt;?&gt; handlerType, String handlerMethodName, Class&lt;?&gt; messageType,
+<span class="nc" id="L24">            IMediator mediator) {</span>
+<span class="nc" id="L25">        this.mediator = mediator;</span>
+<span class="nc" id="L26">        handlerInstanceBuilder = getBean(handlerType, messageType);</span>
+        try {
+<span class="nc" id="L28">            instance = DependencyInjection.createInstance(handlerInstanceBuilder, mediator);</span>
+<span class="nc" id="L29">            handleMethod = handlerInstanceBuilder.getMethod(handlerMethodName, Notification.class);</span>
+<span class="nc" id="L30">        } catch (Exception e) {</span>
+<span class="nc" id="L31">            System.out.println(&quot;Not found notification handler for &quot; + messageType.getName());</span>
+<span class="nc" id="L32">        }</span>
+<span class="nc" id="L33">    }</span>
+
+    private Class getBean(Class&lt;?&gt; handlerType, Class&lt;?&gt; messageType) {
+<span class="nc" id="L36">        ArrayList&lt;Class&gt; mediators = IMediator.getHandlers();</span>
+<span class="nc bnc" id="L37" title="All 2 branches missed.">        for (Class mediator : mediators) {</span>
+<span class="nc" id="L38">            String name = mediator.getGenericInterfaces()[0].getTypeName();</span>
+<span class="nc" id="L39">            name = name.replaceAll(&quot;&gt;&quot;, &quot;&quot;);</span>
+<span class="nc" id="L40">            String[] parts = name.split(&quot;&lt;&quot;);</span>
+<span class="nc" id="L41">            String[] parts2 = parts[1].split(&quot;,&quot;);</span>
+<span class="nc bnc" id="L42" title="All 2 branches missed.">            if (parts2[0].equals(messageType.getName())) {</span>
+<span class="nc" id="L43">                return mediator;</span>
+            }
+<span class="nc" id="L45">        }</span>
+<span class="nc" id="L46">        return null;</span>
+    }
+
+    public void invoke(Notification notification) throws Exception {
+<span class="nc" id="L50">        handleMethod.invoke(instance, notification);</span>
+<span class="nc" id="L51">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

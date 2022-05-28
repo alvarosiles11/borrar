@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html xmlns="http://www.w3.org/1999/xhtml" lang="es"><head><meta http-equiv="Content-Type" content="text/html;charset=UTF-8"/><link rel="stylesheet" href="../jacoco-resources/report.css" type="text/css"/><link rel="shortcut icon" href="../jacoco-resources/report.gif" type="image/gif"/><title>Extensions.java</title><link rel="stylesheet" href="../jacoco-resources/prettify.css" type="text/css"/><script type="text/javascript" src="../jacoco-resources/prettify.js"></script></head><body onload="window['PR_TAB_WIDTH']=4;prettyPrint()"><div class="breadcrumb" id="breadcrumb"><span class="info"><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span><a href="../index.html" class="el_report">vuelo</a> &gt; <a href="index.source.html" class="el_package">dmsnur.Application</a> &gt; <span class="el_source">Extensions.java</span></div><h1>Extensions.java</h1><pre class="source lang-java linenums">package dmsnur.Application;
+
+import dmsnur.Application.UseCases.Command.Tripulantes.UpdateTripulanteWhenVueloCreadoHandler;
+import dmsnur.Application.UseCases.Command.Tripulantes.Crear.CrearTripulanteHandler;
+import dmsnur.Application.UseCases.Command.Tripulantes.Editar.EditarTripulanteHandler;
+import dmsnur.Application.UseCases.Command.Tripulantes.Eliminar.EliminarTripulanteHandler;
+import dmsnur.Application.UseCases.Command.Vuelos.Crear.CrearVueloHandler;
+import dmsnur.Application.UseCases.Command.Vuelos.Editar.EditarVueloHandler;
+import dmsnur.Application.UseCases.Command.Vuelos.Eliminar.EliminarVueloHandler;
+import dmsnur.Application.UseCases.Queries.Tripulantes.GetAll.GetAllTripulanteHandler;
+import dmsnur.Application.UseCases.Queries.Tripulantes.GetByKey.GetTripulanteByKeyHandler;
+import dmsnur.Application.UseCases.Queries.Vuelos.GetAll.GetAllVueloHandler;
+import dmsnur.Application.UseCases.Queries.Vuelos.GetByKey.GetVueloByKeyHandler;
+import dmsnur.Domain.Factories.ITripulanteFactory;
+import dmsnur.Domain.Factories.IVueloFactory;
+import dmsnur.Domain.Factories.TripulanteFactory;
+import dmsnur.Domain.Factories.VueloFactory;
+import dmsnur.SharedKernel.extensions.IServiceCollection;
+import dmsnur.SharedKernel.mediator.IMediator;
+
+<span class="nc" id="L21">public class Extensions {</span>
+
+    public static void AddApplication() {
+        // INFO:Usamos el IMediator del kernel en cambio del MediatR de Spring
+<span class="nc" id="L25">        IMediator.registerHandler(GetAllVueloHandler.class);</span>
+<span class="nc" id="L26">        IMediator.registerHandler(GetVueloByKeyHandler.class);</span>
+<span class="nc" id="L27">        IMediator.registerHandler(CrearVueloHandler.class);</span>
+<span class="nc" id="L28">        IMediator.registerHandler(EditarVueloHandler.class);</span>
+<span class="nc" id="L29">        IMediator.registerHandler(EliminarVueloHandler.class);</span>
+
+        // INFO:Tripulante
+<span class="nc" id="L32">        IMediator.registerHandler(GetAllTripulanteHandler.class);</span>
+<span class="nc" id="L33">        IMediator.registerHandler(GetTripulanteByKeyHandler.class);</span>
+<span class="nc" id="L34">        IMediator.registerHandler(CrearTripulanteHandler.class);</span>
+<span class="nc" id="L35">        IMediator.registerHandler(EditarTripulanteHandler.class);</span>
+<span class="nc" id="L36">        IMediator.registerHandler(EliminarTripulanteHandler.class);</span>
+
+<span class="nc" id="L38">        IMediator.registerHandler(UpdateTripulanteWhenVueloCreadoHandler.class);</span>
+<span class="nc" id="L39">        IServiceCollection.AddTransient(IVueloFactory.class, VueloFactory.class);</span>
+<span class="nc" id="L40">        IServiceCollection.AddTransient(ITripulanteFactory.class, TripulanteFactory.class);</span>
+<span class="nc" id="L41">    }</span>
+}
+</pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
