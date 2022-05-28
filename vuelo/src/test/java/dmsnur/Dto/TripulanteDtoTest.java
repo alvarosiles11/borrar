@@ -17,25 +17,25 @@ public class TripulanteDtoTest {
 		String keyTripulante = "12345";
 		String cargo = "Piloto";
 
-		TripulanteDto tripulante = new TripulanteDto();
+		// dto
+		TripulanteDto tripulanteDto = new TripulanteDto();
+		Assert.assertEquals(null, tripulanteDto.key);
+		Assert.assertEquals(null, tripulanteDto.keyVuelo);
+		Assert.assertEquals(null, tripulanteDto.keyTripulante);
+		Assert.assertEquals(null, tripulanteDto.cargo);
+		// end dto
 
-		Assert.assertEquals(null, tripulante.key);
-		Assert.assertEquals(null, tripulante.keyVuelo);
-		Assert.assertEquals(null, tripulante.keyTripulante);
-		Assert.assertEquals(null, tripulante.cargo);
+		// Constructor con parametros
+		tripulanteDto = new TripulanteDto(keyVuelo, keyTripulante, cargo);
 
-		tripulante.key = key;
-
-		tripulante.setKeyVuelo(keyVuelo);
-		tripulante.setKeyTripulante(keyTripulante);
-		tripulante.setCargo(cargo);
-
-		Assert.assertEquals(key, tripulante.key);
-
-		Assert.assertEquals(keyVuelo, tripulante.getKeyVuelo());
-		Assert.assertEquals(keyTripulante, tripulante.getKeyTripulante());
-		Assert.assertEquals(cargo, tripulante.getCargo());
-
+		// getters and setters
+		tripulanteDto.key = key;
+		tripulanteDto.setKeyVuelo(keyVuelo);
+		tripulanteDto.setKeyTripulante(keyTripulante);
+		tripulanteDto.setCargo(cargo);
+		Assert.assertEquals(key, tripulanteDto.key);
+		Assert.assertEquals(keyVuelo, tripulanteDto.getKeyVuelo());
+		Assert.assertEquals(keyTripulante, tripulanteDto.getKeyTripulante());
+		Assert.assertEquals(cargo, tripulanteDto.getCargo());
 	}
-
 }

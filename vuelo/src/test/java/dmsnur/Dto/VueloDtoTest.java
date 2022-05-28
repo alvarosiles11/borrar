@@ -24,8 +24,9 @@ public class VueloDtoTest {
 		Date fecha_salida = new Date();
 		Date fecha_arribe = new Date();
 		List<TripulanteDto> listaTripulante = getTripulantes();
-		VueloDto vueloDto = new VueloDto();
 
+		// dto
+		VueloDto vueloDto = new VueloDto();
 		Assert.assertEquals(null, vueloDto.key);
 		Assert.assertNull(vueloDto.nroVuelo);
 		Assert.assertNull(vueloDto.keyAeronave);
@@ -33,31 +34,32 @@ public class VueloDtoTest {
 		Assert.assertNull(vueloDto.keyAeropuertoDestino);
 		Assert.assertNull(vueloDto.fecha_salida);
 		Assert.assertNull(vueloDto.fecha_arribe);
-
 		Assert.assertNotNull(vueloDto.listaTripulante);
 		Assert.assertEquals(0, vueloDto.listaTripulante.size());
+		// end dto
 
 		vueloDto.key = key;
-		vueloDto.nroVuelo = nroVuelo;
-		vueloDto.keyAeronave = keyAeronave;
-		vueloDto.keyAeropuertoOrigen = keyAeropuertoOrigen;
-		vueloDto.keyAeropuertoDestino = keyAeropuertoDestino;
-		vueloDto.fecha_salida = fecha_salida;
-		vueloDto.fecha_arribe = fecha_arribe;
-		vueloDto.listaTripulante = listaTripulante;
+		vueloDto.setNroVuelo(nroVuelo);
+		vueloDto.setKeyAeronave(keyAeronave);
+		vueloDto.setKeyAeropuertoOrigen(keyAeropuertoOrigen);
+		vueloDto.setKeyAeropuertoDestino(keyAeropuertoDestino);
+		vueloDto.setFecha_salida(fecha_salida);
+		vueloDto.setFecha_arribe(fecha_arribe);
+		vueloDto.setListaTripulante(listaTripulante);
+
 		Assert.assertEquals(key, vueloDto.key);
-		Assert.assertEquals(nroVuelo, vueloDto.nroVuelo);
-		Assert.assertEquals(keyAeronave, vueloDto.keyAeronave);
-		Assert.assertEquals(keyAeropuertoOrigen, vueloDto.keyAeropuertoOrigen);
-		Assert.assertEquals(keyAeropuertoDestino, vueloDto.keyAeropuertoDestino);
-		Assert.assertEquals(fecha_salida, vueloDto.fecha_salida);
-		Assert.assertEquals(fecha_arribe, vueloDto.fecha_arribe);
-		Assert.assertEquals(listaTripulante, vueloDto.listaTripulante);
+		Assert.assertEquals(nroVuelo, vueloDto.getNroVuelo());
+		Assert.assertEquals(keyAeronave, vueloDto.getKeyAeronave());
+		Assert.assertEquals(keyAeropuertoOrigen, vueloDto.getKeyAeropuertoOrigen());
+		Assert.assertEquals(keyAeropuertoDestino, vueloDto.getKeyAeropuertoDestino());
+		Assert.assertEquals(fecha_salida, vueloDto.getFecha_salida());
+		Assert.assertEquals(fecha_arribe, vueloDto.getFecha_arribe());
+		Assert.assertEquals(listaTripulante, vueloDto.getListaTripulante());
+
 	}
 
 	private List<TripulanteDto> getTripulantes() {
 		return new ArrayList<>();
-
 	}
 
 }

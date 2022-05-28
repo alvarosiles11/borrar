@@ -20,14 +20,22 @@ public class CrearVueloCommandTest {
 		Date fecha_salida = new Date();
 		Date fecha_arribe = new Date();
 
+		// VueloDto vueloDto = new VueloDto();
+		// vueloDto.nroVuelo = nroVuelo;
+		// vueloDto.keyAeronave = keyAeronave;
+		// vueloDto.keyAeropuertoOrigen = keyAeropuertoOrigen;
+		// vueloDto.keyAeropuertoDestino = keyAeropuertoDestino;
+		// vueloDto.fecha_salida = fecha_salida;
+		// vueloDto.fecha_arribe = fecha_arribe;
 		VueloDto vueloDto = new VueloDto();
-		vueloDto.nroVuelo = nroVuelo;
-		vueloDto.keyAeronave = keyAeronave;
-		vueloDto.keyAeropuertoOrigen = keyAeropuertoOrigen;
-		vueloDto.keyAeropuertoDestino = keyAeropuertoDestino;
-		vueloDto.fecha_salida = fecha_salida;
-		vueloDto.fecha_arribe = fecha_arribe;
+		vueloDto.setNroVuelo(nroVuelo);
+		vueloDto.setKeyAeronave(keyAeronave);
+		vueloDto.setKeyAeropuertoOrigen(keyAeropuertoOrigen);
+		vueloDto.setKeyAeropuertoDestino(keyAeropuertoDestino);
+		vueloDto.setFecha_salida(fecha_salida);
+		vueloDto.setFecha_arribe(fecha_arribe);
 
+		
 		CrearVueloCommand crearVueloCommand = new CrearVueloCommand(vueloDto);
 		Assert.assertEquals(nroVuelo, crearVueloCommand.nroVuelo);
 		Assert.assertEquals(keyAeronave, crearVueloCommand.keyAeronave);

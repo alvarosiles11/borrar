@@ -1,4 +1,5 @@
 package dmsnur.Dto;
+
 import java.util.UUID;
 
 import org.junit.Assert;
@@ -12,16 +13,16 @@ public class AeronaveDtoTest {
 		UUID keyAeronave = UUID.randomUUID();
 		String matricula = "xyz-1990";
 
-		AeronaveDto aeronave = new AeronaveDto();
+		// dto
+		AeronaveDto aeronaveDto = new AeronaveDto();
+		Assert.assertEquals(null, aeronaveDto.keyAeronave);
+		Assert.assertEquals(null, aeronaveDto.matricula);
+		// end dto
 
-		Assert.assertEquals(null, aeronave.keyAeronave);
-		Assert.assertEquals(null, aeronave.matricula);
-
-		aeronave.keyAeronave = keyAeronave;
-		aeronave.setKeyAeronave(keyAeronave);
-		aeronave.setMatricula(matricula);
-
-		Assert.assertEquals(keyAeronave, aeronave.getKeyAeronave());
-		Assert.assertEquals(matricula, aeronave.getMatricula());
+		// getters and setters
+		aeronaveDto.keyAeronave = keyAeronave;
+		aeronaveDto.setMatricula(matricula);
+		Assert.assertEquals(keyAeronave, aeronaveDto.keyAeronave);
+		Assert.assertEquals(matricula, aeronaveDto.getMatricula());
 	}
 }

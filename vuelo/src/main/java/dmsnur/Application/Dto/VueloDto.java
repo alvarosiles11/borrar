@@ -21,6 +21,7 @@ public class VueloDto {
         listaTripulante = new ArrayList<>();
     }
 
+    
     // getters and setters
     public List<TripulanteDto> getListaTripulante() {
         return listaTripulante;
