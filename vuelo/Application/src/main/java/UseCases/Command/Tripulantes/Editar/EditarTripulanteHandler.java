@@ -25,6 +25,8 @@ public class EditarTripulanteHandler implements RequestHandler<EditarTripulanteC
 
     @Override
     public Tripulante handle(EditarTripulanteCommand request) throws HttpException {
+
+        
         Tripulante _Tripulante = _ITripulanteRepository.FindByKey(request._TripulanteDto.key);
         if (_Tripulante == null) {
             throw new HttpException(HttpStatus.BAD_REQUEST, "Tripulante no encontrada");
