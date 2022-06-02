@@ -31,7 +31,7 @@ public class EditarVueloCommandTest {
 		vueloDto.setFecha_salida(fecha_salida);
 		vueloDto.setFecha_arribe(fecha_arribe);
 
-		EditarVueloCommand command = new EditarVueloCommand(vueloDto);
+		EditarVueloCommand command = new EditarVueloCommand(vueloDto.key);
 		Assert.assertEquals(key, vueloDto.key);
 	}
 

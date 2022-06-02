@@ -34,18 +34,38 @@ public class EditarAeronaveHandlerTest {
 		String matricula = "xyz-1990";
 
 		Aeronave aeronave = new Aeronave(matricula);
+		when(_IAeroRep.FindByKey(any())).thenReturn(aeronave);
 
 		EditarAeronaveHandler handler = new EditarAeronaveHandler(_IAeroFact, _IAeroRep, _IUnitOfWork);
 
 		AeronaveDto aeronaveDto = new AeronaveDto();
 		aeronaveDto.keyAeronave = keyAeronave;
 		aeronaveDto.matricula = matricula;
-		when(_IAeroRep.FindByKey(any())).thenReturn(aeronave);
 
-		EditarAeronaveCommand command = new EditarAeronaveCommand(aeronaveDto);
+		EditarAeronaveCommand command = new EditarAeronaveCommand(aeronaveDto.keyAeronave);
+		command._AeronaveDto.keyAeronave = keyAeronave;
+		command._AeronaveDto.matricula = matricula;
 		Aeronave resp = handler.handle(command);
-		// Assert.assertEquals(keyAeronave, resp.key);
-		// Assert.assertEquals(matricula, resp.matricula);
-		verify(_IAeroRep).Update(resp);
+		Assert.assertEquals(keyAeronave, aeronaveDto.keyAeronave); 
+		// verify(_IAeroRep).Update(resp);
+	}
+
+
+	@Test
+	public void HandleFailed() throws HttpException {
+		when(_IAeroRep.FindByKey(any())).thenReturn(null);
+		EditarAeronaveHandler handler = new EditarAeronaveHandler(_IAeroFact, _IAeroRep, _IUnitOfWork);
+		AeronaveDto aeronaveDto = new AeronaveDto();
+		aeronaveDto.keyAeronave = UUID.randomUUID();
+		aeronaveDto.matricula = "ABC";
+
+		EditarAeronaveCommand command = new EditarAeronaveCommand(aeronaveDto.keyAeronave);
+		try {
+			Aeronave resp = handler.handle(command);
+		} catch (HttpException e) {
+			Assert.assertEquals(400, e.getCode());
+
+		}
+
 	}
 }

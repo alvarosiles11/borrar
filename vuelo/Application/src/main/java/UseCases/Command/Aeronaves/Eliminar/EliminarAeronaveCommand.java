@@ -9,8 +9,8 @@ public class EliminarAeronaveCommand implements Request<AeronaveDto> {
 
     public AeronaveDto _AeronaveDto;
 
-    public EliminarAeronaveCommand(UUID key) {
+    public EliminarAeronaveCommand(UUID keyAeronave) {
         this._AeronaveDto = new AeronaveDto();
-        this._AeronaveDto.keyAeronave = key;
+        this._AeronaveDto.keyAeronave = keyAeronave;
     }
 }

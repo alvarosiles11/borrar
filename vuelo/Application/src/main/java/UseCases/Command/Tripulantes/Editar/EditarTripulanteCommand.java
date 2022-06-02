@@ -1,5 +1,7 @@
 package UseCases.Command.Tripulantes.Editar;
 
+import java.util.UUID;
+
 import Dto.TripulanteDto;
 import fourteam.mediator.Request;
 
@@ -7,9 +9,9 @@ public class EditarTripulanteCommand implements Request<TripulanteDto> {
 
     public TripulanteDto _TripulanteDto;
 
-    public EditarTripulanteCommand(TripulanteDto tripulanteDto) {
+    public EditarTripulanteCommand(UUID key) {
 
-        this._TripulanteDto = tripulanteDto;
-        // this._TripulanteDto.keyVuelo = keyVuelo;
+        this._TripulanteDto = new TripulanteDto();
+        this._TripulanteDto.key = key;
     }
 }

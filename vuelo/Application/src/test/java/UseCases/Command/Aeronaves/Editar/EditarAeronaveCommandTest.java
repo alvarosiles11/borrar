@@ -15,22 +15,22 @@ public class EditarAeronaveCommandTest {
 		UUID keyAeronave = UUID.randomUUID();
 		String matricula = "xyz-1990";
 
-	 
 		AeronaveDto aeronaveDto = new AeronaveDto();
+		// aeronaveDto.setKey(keyAeronave);
+
 		aeronaveDto.setKeyAeronave(keyAeronave);
 		aeronaveDto.setMatricula(matricula);
-	 
 
-		EditarAeronaveCommand command = new EditarAeronaveCommand(aeronaveDto);
- 		Assert.assertEquals(keyAeronave, aeronaveDto.keyAeronave);
- 		// Assert.assertEquals(aeronaveDto, command.aeronaveDto);
- 		// Assert.assertEquals(keyAeronave, command.keyAeronave);
- 	
+		EditarAeronaveCommand command = new EditarAeronaveCommand(aeronaveDto.keyAeronave);
+ 		command._AeronaveDto.keyAeronave = keyAeronave;
+		command._AeronaveDto.matricula = matricula;
+		Assert.assertEquals(keyAeronave, aeronaveDto.keyAeronave); 
+
 	}
 
 	@Test
-	public void constructorIsPrivate() {
-		Assert.assertTrue(EditarAeronaveCommand.class.getConstructors()[0].canAccess(null));
-	}
+    public void constructorIsPrivate() {
+        Assert.assertTrue(EditarAeronaveCommand.class.getConstructors()[0].canAccess(null));
+    }
 
 }

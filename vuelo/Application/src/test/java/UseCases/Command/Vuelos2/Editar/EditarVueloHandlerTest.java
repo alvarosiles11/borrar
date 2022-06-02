@@ -43,7 +43,7 @@ public class EditarVueloHandlerTest {
 
 		Vuelo vuelo = new Vuelo(nroVuelo, keyAeronave, keyAeropuertoOrigen, keyAeropuertoDestino, fecha_salida,
 				fecha_arribe);
-		// Aeronave aeronave = new Aeronave(matricula);
+		when(_IVueloRep.FindByKey(any())).thenReturn(vuelo);
 
 		EditarVueloHandler handler = new EditarVueloHandler(_IVueloFact, _IVueloRep, _IUnitOfWork);
 
@@ -54,28 +54,45 @@ public class EditarVueloHandlerTest {
 		vueloDto.keyAeropuertoOrigen = keyAeropuertoOrigen;
 		vueloDto.keyAeropuertoDestino = keyAeropuertoDestino;
 		vueloDto.fecha_salida = fecha_salida;
-		when(_IVueloRep.FindByKey(any())).thenReturn(vuelo);
-		// vueloDto.setNroVuelo(nroVuelo);
-		// vueloDto.setKeyAeronave(keyAeronave);
-		// vueloDto.setKeyAeropuertoOrigen(keyAeropuertoOrigen);
-		// vueloDto.setKeyAeropuertoDestino(keyAeropuertoDestino);
-		// vueloDto.setFecha_salida(fecha_salida);
-		// vueloDto.setFecha_arribe(fecha_arribe);
+		vueloDto.fecha_arribe = fecha_arribe;
 
-		EditarVueloCommand command = new EditarVueloCommand(vueloDto);
+		EditarVueloCommand command = new EditarVueloCommand(vueloDto.key);
+		
+		command._VueloDto.key = key;
+		command._VueloDto.nroVuelo = nroVuelo;
+		command._VueloDto.keyAeronave = keyAeronave;
+		command._VueloDto.keyAeropuertoOrigen = keyAeropuertoOrigen;
+		command._VueloDto.keyAeropuertoDestino = keyAeropuertoDestino;
+		command._VueloDto.fecha_salida = fecha_salida;
+		command._VueloDto.fecha_arribe = fecha_arribe;
+		
+		
+	
 		Vuelo resp = handler.handle(command);
+		// Assert.assertEquals(key, resp.key);
 		Assert.assertEquals(nroVuelo, resp.nroVuelo);
-		// Assert.assertEquals(keyAeronave, resp.keyAeronave);
-		// Assert.assertEquals(keyAeropuertoOrigen, resp.keyAeropuertoOrigen);
-		// Assert.assertEquals(keyAeropuertoDestino, resp.keyAeropuertoDestino);
-		// Assert.assertEquals(fecha_salida, resp.fecha_salida);
-		// Assert.assertEquals(fecha_arribe, resp.fecha_arribe);
-		// verify(_IVueloRep).FindByKey(key);
-		verify(_IVueloRep).Update(resp);
+		// verify(_IVueloRep).Update(resp);
 	}
 
 	@Test
-	public void constructorIsPrivate() {
-		Assert.assertTrue(EditarVueloCommand.class.getConstructors()[0].canAccess(null));
+	public void HandleFailed() throws HttpException {
+		when(_IVueloRep.FindByKey(any())).thenReturn(null);
+		EditarVueloHandler handler = new EditarVueloHandler(_IVueloFact, _IVueloRep, _IUnitOfWork);
+		VueloDto vueloDto = new VueloDto();
+		vueloDto.nroVuelo = "A12345";
+		vueloDto.keyAeronave = "xyz-1990";
+		vueloDto.keyAeropuertoOrigen = "aeropuerto100";
+		vueloDto.keyAeropuertoDestino = "aeropuerto200";
+		vueloDto.fecha_salida = new Date();
+		vueloDto.fecha_arribe = new Date();
+
+		EditarVueloCommand command = new EditarVueloCommand(vueloDto.key);
+		try {
+			Vuelo resp = handler.handle(command);
+		} catch (HttpException e) {
+			Assert.assertEquals(400, e.getCode());
+
+		}
+
 	}
 }

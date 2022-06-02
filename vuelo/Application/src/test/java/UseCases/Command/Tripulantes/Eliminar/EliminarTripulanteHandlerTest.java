@@ -1,14 +1,17 @@
 package UseCases.Command.Tripulantes.Eliminar;
 
 import static org.mockito.ArgumentMatchers.any;
+import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.util.UUID;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import Dto.TripulanteDto;
 import Factories.IAeronaveFactory;
 import Factories.ITripulanteFactory;
 import Model.Aeronaves.Aeronave;
@@ -35,8 +38,42 @@ public class EliminarTripulanteHandlerTest {
 		String cargo = "Piloto";
 		Tripulante tripulante = new Tripulante(keyVuelo, keyTripulante, cargo);
 
+		TripulanteDto tripulanteDto = new TripulanteDto();
+		tripulanteDto.keyVuelo = UUID.randomUUID();
+		tripulanteDto.keyTripulante = "12345";
+		tripulanteDto.cargo = "Piloto";
+
+		EliminarTripulanteCommand command = new EliminarTripulanteCommand(tripulanteDto.keyVuelo);
+
 		EliminarTripulanteHandler handler = new EliminarTripulanteHandler(_ITripFact, _ITripRep, _IUnitOfWork);
+
 		when(_ITripRep.FindByKey(any())).thenReturn(tripulante);
+
+		Tripulante resp = handler.handle(command);
+
+		verify(_ITripRep).Delete(tripulante);
+
+	}
+
+	@Test
+	public void HandleFailed() throws HttpException {
+		when(_ITripRep.FindByKey(any())).thenReturn(null);
+
+		EliminarTripulanteHandler handler = new EliminarTripulanteHandler(_ITripFact, _ITripRep, _IUnitOfWork);
+
+		TripulanteDto tripulanteDto = new TripulanteDto();
+		tripulanteDto.keyVuelo = UUID.randomUUID();
+		tripulanteDto.keyTripulante = "12345";
+		tripulanteDto.cargo = "Piloto";
+
+		EliminarTripulanteCommand command = new EliminarTripulanteCommand(tripulanteDto.keyVuelo);
+
+		try {
+			Tripulante resp = handler.handle(command);
+		} catch (HttpException e) {
+			Assert.assertEquals(400, e.getCode());
+
+		}
 
 	}
 }

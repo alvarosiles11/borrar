@@ -21,7 +21,9 @@ public class EditarTripulanteCommandTest {
 		tripulanteDto.setKeyTripulante(keyTripulante);
 		tripulanteDto.setCargo(cargo);
 
-		EditarTripulanteCommand command = new EditarTripulanteCommand(tripulanteDto);
+		EditarTripulanteCommand command = new EditarTripulanteCommand(tripulanteDto.key);
+		command._TripulanteDto = tripulanteDto;
+		
 		Assert.assertEquals(keyVuelo, tripulanteDto.keyVuelo);
 	}
 }
