@@ -8,6 +8,5 @@ public class ApplicationTest {
         // INFO:Usamos el IMediator del kernel en cambio del MediatR de Spring
         new Application();
         Application.AddApplication();
-
     }
 }

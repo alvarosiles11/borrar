@@ -34,20 +34,17 @@ public class EliminarAeronaveHandlerTest {
 
 		Aeronave aeronave = new Aeronave(matricula);
 
-
-
 		AeronaveDto aeronaveDto = new AeronaveDto();
 		aeronaveDto.keyAeronave = UUID.randomUUID();
 		aeronaveDto.matricula = "ABC";
 
-		EliminarAeronaveCommand  commandElin= new EliminarAeronaveCommand(aeronaveDto.keyAeronave);
+		EliminarAeronaveCommand commandElin = new EliminarAeronaveCommand(aeronaveDto.keyAeronave);
 
 		EliminarAeronaveHandler handler = new EliminarAeronaveHandler(_IAeroFact, _IAeroRep, _IUnitOfWork);
 		when(_IAeroRep.FindByKey(any())).thenReturn(aeronave);
 		Aeronave respuestaELimin = handler.handle(commandElin);
-
 		verify(_IAeroRep).Delete(aeronave);
- 
+
 	}
 
 	@Test
