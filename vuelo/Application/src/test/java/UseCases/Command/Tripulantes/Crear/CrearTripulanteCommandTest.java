@@ -21,6 +21,12 @@ public class CrearTripulanteCommandTest {
 		tripulante.setKeyVuelo(keyVuelo);
 		tripulante.setKeyTripulante(keyTripulante);
 		tripulante.setCargo(cargo);
+
+		// CrearTripulanteCommand  command = new CrearTripulanteCommand(tripulante);
+		// Assert.assertEquals(keyVuelo, command.keyVuelo);
+		// Assert.assertEquals(keyTripulante, command.keyTripulante);
+		// Assert.assertEquals(cargo, command.cargo);
+ 
 	}
 
 	@Test

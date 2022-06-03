@@ -7,9 +7,9 @@ import fourteam.mediator.Request;
 
 public class GetTripulanteByKeyQuery implements Request<VueloDto> {
 
-	public UUID key;
+	public UUID keyVuelo;
 
-	public GetTripulanteByKeyQuery(UUID key) {
-		this.key = key;
+	public GetTripulanteByKeyQuery(UUID keyVuelo) {
+		this.keyVuelo = keyVuelo;
 	}
 }

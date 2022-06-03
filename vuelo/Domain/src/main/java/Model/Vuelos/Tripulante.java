@@ -7,8 +7,9 @@ import core.Entity;
 public class Tripulante extends Entity<UUID> {
 
     public UUID keyVuelo;
-    public String keyTripulante;
-    public String cargo;
+
+    public String keyTripulante; // tripulante
+    public String cargo; // cargo
 
     public Tripulante(UUID _keyVuelo, String _keyTripulante, String _cargo) {
         this.key = UUID.randomUUID();
@@ -16,4 +17,9 @@ public class Tripulante extends Entity<UUID> {
         this.keyTripulante = _keyTripulante;
         this.cargo = _cargo;
     }
+
+    // @Override
+    // public String toString() {
+    // return new Gson().toJson(this, Tripulante.class);
+    // }
 }

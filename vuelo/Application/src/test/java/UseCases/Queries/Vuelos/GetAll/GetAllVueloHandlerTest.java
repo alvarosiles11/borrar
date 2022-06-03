@@ -11,7 +11,12 @@ import Repositories.IVueloRepository;
 
 public class GetAllVueloHandlerTest {
 
-    IVueloRepository _IVueloRepository = Mockito.mock(IVueloRepository.class);
+     IVueloRepository _IVueloRepository = Mockito.mock(IVueloRepository.class);
+ 
+    @Before
+    public void setUp() {
+
+    }
 
     @Test
     public void dataValid() {

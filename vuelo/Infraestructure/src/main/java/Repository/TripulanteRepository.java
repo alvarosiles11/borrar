@@ -29,6 +29,7 @@ public class TripulanteRepository implements ITripulanteRepository {
     @Override
     public void Create(Tripulante objTripulante) {
         _tripulante.Add(objTripulante);
+
     }
 
     @Override
