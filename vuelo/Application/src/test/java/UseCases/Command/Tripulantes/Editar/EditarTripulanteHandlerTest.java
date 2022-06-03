@@ -46,16 +46,10 @@ public class EditarTripulanteHandlerTest {
 		tripulanteDto.cargo = cargo;
 
 		EditarTripulanteCommand command = new EditarTripulanteCommand(tripulanteDto.key);
-		// command._TripulanteDto.key = key;
 		command._TripulanteDto.keyVuelo = keyVuelo;
 		command._TripulanteDto.keyTripulante = keyTripulante;
 		command._TripulanteDto.cargo = cargo;
 		Tripulante resp = handler.handle(command);
-
-		// Assert.assertEquals(keyVuelo, tripulanteDto.keyVuelo);
-		// Assert.assertEquals(keyTripulante, tripulanteDto.keyTripulante);
-		// Assert.assertEquals(cargo, tripulanteDto.cargo);
-		// verify(_ITripRep).Update(resp);
 	}
 
 	@Test
