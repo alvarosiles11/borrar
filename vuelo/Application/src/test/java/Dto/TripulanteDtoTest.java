@@ -24,9 +24,11 @@ public class TripulanteDtoTest {
 		// end dto
 
 		// getters and setters
+		tripulanteDto.setKey(key);
 		tripulanteDto.setKeyVuelo(keyVuelo);
 		tripulanteDto.setKeyTripulante(keyTripulante);
 		tripulanteDto.setCargo(cargo);
+		Assert.assertEquals(key, tripulanteDto.getKey());
 		Assert.assertEquals(keyVuelo, tripulanteDto.getKeyVuelo());
 		Assert.assertEquals(keyTripulante, tripulanteDto.getKeyTripulante());
 		Assert.assertEquals(cargo, tripulanteDto.getCargo());
@@ -35,6 +37,7 @@ public class TripulanteDtoTest {
 	@Test
 	public void CheckConstructor() {
 
+		UUID key = UUID.randomUUID();
 		UUID keyVuelo = UUID.randomUUID();
 		String keyTripulante = "12345";
 		String cargo = "Piloto";
@@ -43,9 +46,11 @@ public class TripulanteDtoTest {
 		TripulanteDto tripulanteDto = new TripulanteDto(keyVuelo, keyTripulante, cargo);
 
 		// getters and setters
+		tripulanteDto.setKey(key);
 		tripulanteDto.setKeyVuelo(keyVuelo);
 		tripulanteDto.setKeyTripulante(keyTripulante);
 		tripulanteDto.setCargo(cargo);
+		Assert.assertEquals(key, tripulanteDto.getKey());
 		Assert.assertEquals(keyVuelo, tripulanteDto.getKeyVuelo());
 		Assert.assertEquals(keyTripulante, tripulanteDto.getKeyTripulante());
 		Assert.assertEquals(cargo, tripulanteDto.getCargo());

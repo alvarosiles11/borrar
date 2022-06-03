@@ -17,7 +17,7 @@ public class GetTripulanteByKeyHandler implements RequestHandler<GetTripulanteBy
 
 	@Override
 	public TripulanteDto handle(GetTripulanteByKeyQuery request) throws HttpException {
-		Tripulante tripulante = _ITripulanteRepository.FindByKey(request.keyVuelo);
+		Tripulante tripulante = _ITripulanteRepository.FindByKey(request.key);
 		if (tripulante == null) {
 			throw new HttpException(HttpStatus.BAD_REQUEST, "tripulante no encontrado");
 		}

@@ -1,7 +1,6 @@
 package UseCases.Command.Tripulantes.Editar;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.util.UUID;
@@ -61,22 +60,25 @@ public class EditarTripulanteHandlerTest {
 
 	@Test
 	public void HandleFailed() throws HttpException {
+
 		when(_ITripRep.FindByKey(any())).thenReturn(null);
+
 		EditarTripulanteHandler handler = new EditarTripulanteHandler(_ITripFact, _ITripRep, _IUnitOfWork);
 
 		TripulanteDto tripulanteDto = new TripulanteDto();
 		tripulanteDto.key = UUID.randomUUID();
+
 		tripulanteDto.keyVuelo = UUID.randomUUID();
 		tripulanteDto.keyTripulante = "12345";
 		tripulanteDto.cargo = "Piloto";
 
 		EditarTripulanteCommand command = new EditarTripulanteCommand(tripulanteDto.key);
-		// try {
-		// 	Tripulante resp = handler.handle(command);
 
-		// } catch (HttpException e) {
-		// 	Assert.assertEquals(404, e.getCode());
-		// }
+		try {
+			Tripulante resp = handler.handle(command);
+		} catch (HttpException e) {
+			Assert.assertEquals(400, e.getCode());
 
+		}
 	}
 }
