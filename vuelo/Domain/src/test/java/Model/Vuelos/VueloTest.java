@@ -1,7 +1,5 @@
 package Model.Vuelos;
 
-import static org.mockito.ArgumentMatchers.any;
-
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
@@ -9,9 +7,6 @@ import java.util.UUID;
 
 import org.junit.Assert;
 import org.junit.Test;
-
-import Event.VueloCreado;
-import fourteam.http.Exception.HttpException;
 
 public class VueloTest {
 	UUID key = UUID.randomUUID();
@@ -21,11 +16,24 @@ public class VueloTest {
 	String keyAeropuertoDestino = UUID.randomUUID().toString();
 	Date fecha_salida = new Date();
 	Date fecha_arribe = new Date();
-	List<Tripulante> listaTripulante = new ArrayList<>();
+	// List<Tripulante> listaTripulante = new ArrayList<>();
 
 	@Test
-	public void CheckConstructor() {
-		Vuelo vuelo2 = new Vuelo();
+	public void constructorVoid_accept() {
+		Assert.assertNotNull(new Vuelo());
+	}
+
+	@Test
+	public void constructor_accept() {
+		UUID key = UUID.randomUUID();
+		String nroVuelo = "A12345";
+		String keyAeronave = "xyz-1990";
+		String keyAeropuertoOrigen = UUID.randomUUID().toString();
+		String keyAeropuertoDestino = UUID.randomUUID().toString();
+		Date fecha_salida = new Date();
+		Date fecha_arribe = new Date();
+		List<Tripulante> listaTripulante = new ArrayList<>();
+
 		Vuelo vuelo = new Vuelo(nroVuelo, keyAeronave, keyAeropuertoOrigen, keyAeropuertoDestino, fecha_salida,
 				fecha_arribe);
 		Assert.assertEquals(nroVuelo, vuelo.nroVuelo);
@@ -38,52 +46,62 @@ public class VueloTest {
 	}
 
 	@Test
-	public void HandleFailed() throws HttpException {
+	public void constructor_denied() {
+		// UUID _key = null;
+		String _nroVuelo = "";
+		String _keyAeronave = "";
+		String _keyAeropuertoOrigen = "";
+		String _keyAeropuertoDestino = "";
+		Date _fecha_salida = null;
+		Date _fecha_arribe = null;
+		// List<Tripulante> listaTripulante = new ArrayList<>();
+		Vuelo vuelo = new Vuelo(_nroVuelo, _keyAeronave, _keyAeropuertoOrigen, _keyAeropuertoDestino, _fecha_salida,
+				_fecha_arribe);
 
-		// validaciones value objects y reglas de negocio
-		// try {
-		// this.nroVuelo = new NumeroVuelo(_nroVuelo).toString();
-		// } catch (BussinessRuleValidateExeption e) {
-		// e.printStackTrace();
-		// return;
-		// }
-
-		// when(_IVueloRep.FindByKey(any())).thenReturn(null);
-		// EliminarVueloHandler handler = new EliminarVueloHandler(_IVueloFact,
-		// _IVueloRep, _IUnitOfWork);
-		// VueloDto vueloDto = new VueloDto();
-		// vueloDto.nroVuelo = "A12345";
-		// vueloDto.keyAeronave = "xyz-1990";
-		// vueloDto.keyAeropuertoOrigen = "aeropuerto100";
-		// vueloDto.keyAeropuertoDestino = "aeropuerto200";
-		// vueloDto.fecha_salida = new Date();
-		// vueloDto.fecha_arribe = new Date();
-		// EliminarVueloCommand command = new EliminarVueloCommand(vueloDto.key);
-		// try {
-		// Vuelo resp = handler.handle(command);
-		// } catch (HttpException e) {
-		// Assert.assertEquals(400, e.getCode());
-		// }
+		Assert.assertEquals(vuelo.nroVuelo, null);
+		Assert.assertEquals(vuelo.keyAeronave, null);
+		Assert.assertEquals(vuelo.keyAeropuertoOrigen, null);
+		Assert.assertEquals(vuelo.keyAeropuertoDestino, null);
+		Assert.assertEquals(vuelo.fecha_salida, null);
+		Assert.assertEquals(vuelo.fecha_arribe, null);
+		// Assert.assertEquals(vuelo.listaTripulante, null);
 
 	}
 
 	@Test
-	public void dataValid() {
-
-		Vuelo vuelos = new Vuelo();
-		// VueloCreado vuelo = new VueloCreado();
-		vuelos.addDomainEvent(new VueloCreado(key, nroVuelo, keyAeronave, keyAeropuertoOrigen, keyAeropuertoDestino,
-				fecha_salida, fecha_arribe, listaTripulante));
-
-		Tripulante tripulante = new Tripulante(UUID.randomUUID(), "xyz-1990", "Piloto");
-		// vuelos.AgregarTripulante(any());
+	public void addDomainEvent_accept() {
+		Vuelo vuelo = new Vuelo(nroVuelo, keyAeronave, keyAeropuertoOrigen, keyAeropuertoDestino, fecha_salida,
+				fecha_arribe);
+		vuelo.eventCreado();
+		Assert.assertEquals(vuelo.domainEvents.size(), 1);
 	}
 
-	// public void AgregarTripulante(Tripulante tripulante) {
-	// listaTripulante.parallelStream().filter(p -> p.getKey() ==
-	// tripulante.getKey()).findFirst().ifPresent(p -> {
-	// throw new RuntimeException("El tripulante ya existe");
-	// });
-	// listaTripulante.add(tripulante);
-	// }
+	@Test
+	public void addTripulante() {
+		Vuelo objVuelo = new Vuelo(nroVuelo, keyAeronave, keyAeropuertoOrigen, keyAeropuertoDestino, fecha_salida,
+				fecha_arribe);
+		objVuelo.AgregarTripulante(new Tripulante(UUID.randomUUID(), "xyz-1990", "Piloto"));
+		objVuelo.eventCreado();
+		Assert.assertEquals(objVuelo.listaTripulante.size(), 1);
+
+	}
+
+	@Test
+	public void addTripulante_denied() {
+		Vuelo vuelo = new Vuelo(nroVuelo, keyAeronave, keyAeropuertoOrigen, keyAeropuertoDestino, fecha_salida,
+				fecha_arribe);
+
+		Tripulante tripulante = new Tripulante(UUID.randomUUID(), "xyz-1990", "Piloto");
+		vuelo.AgregarTripulante(tripulante);
+
+		Tripulante tripulante2 = new Tripulante(UUID.randomUUID(), "xyz-1990", "Piloto");
+		tripulante2.keyTripulante = tripulante.keyTripulante;
+
+		try {
+			vuelo.AgregarTripulante(tripulante2);
+		} catch (Exception e) {
+			Assert.assertTrue(true);
+		}
+
+	}
 }

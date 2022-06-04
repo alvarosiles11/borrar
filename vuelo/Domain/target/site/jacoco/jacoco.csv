@@ -7,4 +7,4 @@ Domain,Factories,AeronaveFactory,0,8,0,0,0,3,0,2,0,2
 Domain,Factories,VueloFactory,0,13,0,0,0,3,0,2,0,2
 Domain,Factories,TripulanteFactory,0,10,0,0,0,3,0,2,0,2
 Domain,Model.Vuelos,Tripulante,0,15,0,0,0,6,0,1,0,1
-Domain,Model.Vuelos,Vuelo,56,43,2,0,9,15,5,2,4,2
+Domain,Model.Vuelos,Vuelo,0,99,0,2,0,24,0,7,0,6

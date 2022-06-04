@@ -30,9 +30,9 @@ public class Vuelo extends AggregateRoot&lt;UUID&gt; {
         // validaciones value objects y reglas de negocio
         try {
 <span class="fc" id="L32">            this.nroVuelo = new NumeroVuelo(_nroVuelo).toString();</span>
-<span class="nc" id="L33">        } catch (BussinessRuleValidateExeption e) {</span>
-<span class="nc" id="L34">            e.printStackTrace();</span>
-<span class="nc" id="L35">            return;</span>
+<span class="fc" id="L33">        } catch (BussinessRuleValidateExeption e) {</span>
+<span class="fc" id="L34">            e.printStackTrace();</span>
+<span class="fc" id="L35">            return;</span>
 <span class="fc" id="L36">        }</span>
 
 <span class="fc" id="L38">        nroVuelo = _nroVuelo;</span>
@@ -46,15 +46,15 @@ public class Vuelo extends AggregateRoot&lt;UUID&gt; {
 <span class="fc" id="L46">    }</span>
 
     public void eventCreado() {
-<span class="nc" id="L49">        addDomainEvent(new VueloCreado(key, nroVuelo, keyAeronave, keyAeropuertoOrigen, keyAeropuertoDestino,</span>
+<span class="fc" id="L49">        addDomainEvent(new VueloCreado(key, nroVuelo, keyAeronave, keyAeropuertoOrigen, keyAeropuertoDestino,</span>
                 fecha_salida, fecha_arribe, listaTripulante));
-<span class="nc" id="L51">    }</span>
+<span class="fc" id="L51">    }</span>
 
     public void AgregarTripulante(Tripulante tripulante) {
-<span class="nc bnc" id="L54" title="All 2 branches missed.">        listaTripulante.parallelStream().filter(p -&gt; p.getKey() == tripulante.getKey()).findFirst().ifPresent(p -&gt; {</span>
-<span class="nc" id="L55">            throw new RuntimeException(&quot;El tripulante ya existe&quot;);</span>
+<span class="fc bfc" id="L54" title="All 2 branches covered.">        listaTripulante.parallelStream().filter(p -&gt; p.getKey() == tripulante.getKey()).findFirst().ifPresent(p -&gt; {</span>
+<span class="fc" id="L55">            throw new RuntimeException(&quot;El tripulante ya existe&quot;);</span>
         });
-<span class="nc" id="L57">        listaTripulante.add(tripulante);</span>
-<span class="nc" id="L58">    }</span>
+<span class="fc" id="L57">        listaTripulante.add(tripulante);</span>
+<span class="fc" id="L58">    }</span>
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
