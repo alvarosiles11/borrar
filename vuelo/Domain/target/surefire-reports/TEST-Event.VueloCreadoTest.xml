@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Event.VueloCreadoTest" time="0.256" tests="2" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="Event.VueloCreadoTest" time="0.083" tests="2" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="C:\Users\ALVARO\Desktop\vuelo\Domain\target\test-classes;C:\Users\ALVARO\Desktop\vuelo\Domain\target\classes;C:\Users\ALVARO\Desktop\vuelo\SharedKernel\target\SharedKernel-1.0.jar;C:\Users\ALVARO\Desktop\vuelo\fourteam\target\fourteam-1.0.jar;C:\Users\ALVARO\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\ALVARO\Desktop\vuelo\fourteam\lib\httpserver-1.0.8.Final.jar;C:\Users\ALVARO\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\ALVARO\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ALVARO\.m2\repository\org\mockito\mockito-core\2.21.0\mockito-core-2.21.0.jar;C:\Users\ALVARO\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ALVARO\.m2\repository\net\bytebuddy\byte-buddy-agent\1.8.15\byte-buddy-agent-1.8.15.jar;C:\Users\ALVARO\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
+    <property name="java.class.path" value="C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\Domain\target\test-classes;C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\Domain\target\classes;C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\SharedKernel\target\SharedKernel-1.0.jar;C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\fourteam\target\fourteam-1.0.jar;C:\Users\ALVARO\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\fourteam\lib\httpserver-1.0.8.Final.jar;C:\Users\ALVARO\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\ALVARO\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ALVARO\.m2\repository\org\mockito\mockito-core\2.21.0\mockito-core-2.21.0.jar;C:\Users\ALVARO\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ALVARO\.m2\repository\net\bytebuddy\byte-buddy-agent\1.8.15\byte-buddy-agent-1.8.15.jar;C:\Users\ALVARO\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.1.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\ALVARO\AppData\Local\Temp\surefire3904312808867079352\surefirebooter17477815120261893004.jar C:\Users\ALVARO\AppData\Local\Temp\surefire3904312808867079352 2022-06-03T22-17-20_726-jvmRun1 surefire13356642814426988888tmp surefire_05928389329668812057tmp"/>
+    <property name="sun.java.command" value="C:\Users\ALVARO\AppData\Local\Temp\surefire16699749809371075606\surefirebooter6933297646630569283.jar C:\Users\ALVARO\AppData\Local\Temp\surefire16699749809371075606 2022-06-03T22-27-31_298-jvmRun1 surefire12858254982878535409tmp surefire_011735555661121959042tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="C:\Users\ALVARO\Desktop\vuelo\Domain\target\test-classes;C:\Users\ALVARO\Desktop\vuelo\Domain\target\classes;C:\Users\ALVARO\Desktop\vuelo\SharedKernel\target\SharedKernel-1.0.jar;C:\Users\ALVARO\Desktop\vuelo\fourteam\target\fourteam-1.0.jar;C:\Users\ALVARO\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\ALVARO\Desktop\vuelo\fourteam\lib\httpserver-1.0.8.Final.jar;C:\Users\ALVARO\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\ALVARO\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ALVARO\.m2\repository\org\mockito\mockito-core\2.21.0\mockito-core-2.21.0.jar;C:\Users\ALVARO\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ALVARO\.m2\repository\net\bytebuddy\byte-buddy-agent\1.8.15\byte-buddy-agent-1.8.15.jar;C:\Users\ALVARO\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
+    <property name="surefire.test.class.path" value="C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\Domain\target\test-classes;C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\Domain\target\classes;C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\SharedKernel\target\SharedKernel-1.0.jar;C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\fourteam\target\fourteam-1.0.jar;C:\Users\ALVARO\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\fourteam\lib\httpserver-1.0.8.Final.jar;C:\Users\ALVARO\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\ALVARO\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ALVARO\.m2\repository\org\mockito\mockito-core\2.21.0\mockito-core-2.21.0.jar;C:\Users\ALVARO\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ALVARO\.m2\repository\net\bytebuddy\byte-buddy-agent\1.8.15\byte-buddy-agent-1.8.15.jar;C:\Users\ALVARO\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\ALVARO"/>
     <property name="user.language" value="es"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2022-04-22"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-18.0.1.1"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="C:\Users\ALVARO\Desktop\vuelo\Domain"/>
+    <property name="basedir" value="C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\Domain"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ALVARO\AppData\Local\Temp\surefire3904312808867079352\surefirebooter17477815120261893004.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ALVARO\AppData\Local\Temp\surefire16699749809371075606\surefirebooter6933297646630569283.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="18.0.1.1+2-6"/>
@@ -44,7 +44,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\ALVARO\AppData\Local\Temp\"/>
     <property name="java.version" value="18.0.1.1"/>
-    <property name="user.dir" value="C:\Users\ALVARO\Desktop\vuelo\Domain"/>
+    <property name="user.dir" value="C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\Domain"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -56,6 +56,6 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="62.0"/>
   </properties>
-  <testcase name="CheckPropertiesValid" classname="Event.VueloCreadoTest" time="0.143"/>
-  <testcase name="CheckConstructor" classname="Event.VueloCreadoTest" time="0.019"/>
+  <testcase name="CheckPropertiesValid" classname="Event.VueloCreadoTest" time="0.066"/>
+  <testcase name="CheckConstructor" classname="Event.VueloCreadoTest" time="0.014"/>
 </testsuite>

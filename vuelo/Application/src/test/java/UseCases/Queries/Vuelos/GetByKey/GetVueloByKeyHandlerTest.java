@@ -12,6 +12,7 @@ import org.mockito.Mockito;
 
 import Dto.TripulanteDto;
 import Dto.VueloDto;
+import Model.Vuelos.Tripulante;
 import Model.Vuelos.Vuelo;
 import Repositories.IVueloRepository;
 import fourteam.http.Exception.HttpException;
@@ -33,7 +34,7 @@ public class GetVueloByKeyHandlerTest {
 
         Vuelo vuelo = new Vuelo(nroVuelo, keyAeronave, keyAeropuertoOrigen, keyAeropuertoDestino, fecha_salida,
                 fecha_arribe);
-
+        vuelo.AgregarTripulante(new Tripulante(UUID.randomUUID(), UUID.randomUUID().toString(), "Piloto"));
         when(_IVueloRep.FindByKey(any())).thenReturn(vuelo);
 
         VueloDto vueloDto = new VueloDto();

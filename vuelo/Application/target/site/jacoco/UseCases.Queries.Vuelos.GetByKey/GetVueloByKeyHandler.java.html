@@ -41,8 +41,8 @@ public class GetVueloByKeyHandler implements RequestHandler&lt;GetVueloByKeyQuer
 
 		// retorno lista de tripulante el dto
 <span class="fc" id="L43">		vuelo.listaTripulante.iterator().forEachRemaining(obj -&gt; {</span>
-<span class="nc" id="L44">			vueloDto.listaTripulante.add(new TripulanteDto(obj.keyVuelo, obj.keyTripulante, obj.cargo));</span>
-<span class="nc" id="L45">		});</span>
+<span class="fc" id="L44">			vueloDto.listaTripulante.add(new TripulanteDto(obj.keyVuelo, obj.keyTripulante, obj.cargo));</span>
+<span class="fc" id="L45">		});</span>
 <span class="fc" id="L46">		return vueloDto;</span>
 	}
 }

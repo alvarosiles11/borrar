@@ -1,28 +1,30 @@
 package UseCases.Command.Tripulantes;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import Event.VueloCreado;
 import Repositories.ITripulanteRepository;
-import fourteam.http.Exception.HttpException;
 
 public class UpdateTripulanteWhenVueloCreadoHandlerTest {
 
     ITripulanteRepository _ITripRep = Mockito.mock(ITripulanteRepository.class);
 
-    // @Override
-    // public void handle(Notification notification) {
-    // System.out.println(notification);
-    // }
+    ITripulanteRepository tripulanteRepository = Mockito.mock(ITripulanteRepository.class);
 
     @Test
-    public void HandleCorrectly() throws HttpException {
+    public void dataValid() {
 
-        UpdateTripulanteWhenVueloCreadoHandler handler = new UpdateTripulanteWhenVueloCreadoHandler(_ITripRep);
+        UpdateTripulanteWhenVueloCreadoHandler handler = new UpdateTripulanteWhenVueloCreadoHandler(
+                tripulanteRepository);
+        handler.handle(new VueloCreado());
+        Assert.assertNotNull(handler);
+    }
 
-        // Notification notification;
-        // handler.handle( );
-
+    @Test
+    public void constructorIsPrivate() {
+        Assert.assertTrue(UpdateTripulanteWhenVueloCreadoHandler.class.getConstructors()[0].canAccess(null));
     }
 
 }

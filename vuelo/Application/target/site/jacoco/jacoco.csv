@@ -1,5 +1,5 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-Application,UseCases.Queries.Vuelos.GetByKey,GetVueloByKeyHandler,14,57,0,2,2,15,1,3,1,2
+Application,UseCases.Queries.Vuelos.GetByKey,GetVueloByKeyHandler,0,71,0,2,0,17,0,4,0,3
 Application,UseCases.Queries.Vuelos.GetByKey,GetVueloByKeyQuery,0,6,0,0,0,3,0,1,0,1
 Application,default,Application,0,33,0,0,0,16,0,2,0,2
 Application,UseCases.Command.Tripulantes.Crear,CrearTripulanteCommand,0,15,0,0,0,5,0,1,0,1
@@ -10,7 +10,7 @@ Application,UseCases.Command.Vuelos.Editar,EditarVueloCommand,0,12,0,0,0,4,0,1,0
 Application,UseCases.Command.Vuelos.Editar,EditarVueloHandler,0,65,0,2,0,16,0,3,0,2
 Application,UseCases.Queries.Tripulantes.GetByKey,GetTripulanteByKeyHandler,0,35,0,2,0,10,0,3,0,2
 Application,UseCases.Queries.Tripulantes.GetByKey,GetTripulanteByKeyQuery,0,6,0,0,0,3,0,1,0,1
-Application,UseCases.Command.Tripulantes,UpdateTripulanteWhenVueloCreadoHandler,4,6,0,0,2,3,1,1,1,1
+Application,UseCases.Command.Tripulantes,UpdateTripulanteWhenVueloCreadoHandler,0,10,0,0,0,5,0,2,0,2
 Application,UseCases.Queries.Tripulantes.GetAll,GetAllTripulanteHandler,0,10,0,0,0,4,0,2,0,2
 Application,UseCases.Queries.Tripulantes.GetAll,GetAllTripulanteQuery,0,3,0,0,0,2,0,1,0,1
 Application,UseCases.Command.Tripulantes.Editar,EditarTripulanteHandler,0,40,0,2,0,11,0,3,0,2
