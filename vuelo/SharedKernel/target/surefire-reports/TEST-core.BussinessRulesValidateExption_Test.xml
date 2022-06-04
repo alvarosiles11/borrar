@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="core.BussinessRulesValidateExption_Test" time="0.013" tests="1" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="core.BussinessRulesValidateExption_Test" time="0.033" tests="1" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="18"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-18.0.1.1\bin"/>
-    <property name="sun.java.command" value="C:\Users\ALVARO\AppData\Local\Temp\surefire13504805129674159699\surefirebooter15962262793753609306.jar C:\Users\ALVARO\AppData\Local\Temp\surefire13504805129674159699 2022-06-04T02-54-37_793-jvmRun1 surefire5958644462157592135tmp surefire_014726798636176022808tmp"/>
+    <property name="sun.java.command" value="C:\Users\ALVARO\AppData\Local\Temp\surefire17844136759497839680\surefirebooter13025064864955228778.jar C:\Users\ALVARO\AppData\Local\Temp\surefire17844136759497839680 2022-06-04T08-10-58_631-jvmRun1 surefire9839072586327525663tmp surefire_010653419953290807858tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\SharedKernel\target\test-classes;C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\SharedKernel\target\classes;C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\fourteam\target\fourteam-1.0.jar;C:\Users\ALVARO\.m2\repository\com\google\code\gson\gson\2.9.0\gson-2.9.0.jar;C:\Users\ALVARO\Documents\GitHub\dms-vuelos\vuelo\fourteam\lib\httpserver-1.0.8.Final.jar;C:\Users\ALVARO\.m2\repository\org\json\json\20210307\json-20210307.jar;C:\Users\ALVARO\.m2\repository\org\yaml\snakeyaml\1.30\snakeyaml-1.30.jar;C:\Users\ALVARO\.m2\repository\junit\junit\4.13.2\junit-4.13.2.jar;C:\Users\ALVARO\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;C:\Users\ALVARO\.m2\repository\org\mockito\mockito-core\2.21.0\mockito-core-2.21.0.jar;C:\Users\ALVARO\.m2\repository\net\bytebuddy\byte-buddy\1.8.15\byte-buddy-1.8.15.jar;C:\Users\ALVARO\.m2\repository\net\bytebuddy\byte-buddy-agent\1.8.15\byte-buddy-agent-1.8.15.jar;C:\Users\ALVARO\.m2\repository\org\objenesis\objenesis\2.6\objenesis-2.6.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\ALVARO\AppData\Local\Temp\surefire13504805129674159699\surefirebooter15962262793753609306.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ALVARO\AppData\Local\Temp\surefire17844136759497839680\surefirebooter13025064864955228778.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="18.0.1.1+2-6"/>

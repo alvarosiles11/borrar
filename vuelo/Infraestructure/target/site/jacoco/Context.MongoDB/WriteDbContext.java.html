@@ -38,7 +38,7 @@ public class WriteDbContext extends IWriteDbContext {
 <span class="fc" id="L38">        Logger mongoLogger = Logger.getLogger(&quot;org.mongodb.driver&quot;);</span>
 <span class="fc" id="L39">        mongoLogger.setLevel(Level.SEVERE);</span>
 <span class="fc" id="L40">        MongoClientURI uri = new MongoClientURI(</span>
-<span class="fc" id="L41">                &quot;mongodb://&quot; + DB_USER + &quot;:&quot; + DB_PASS + &quot;@&quot; + DB_HOST + &quot;:&quot; + DB_PORT + &quot;/?authSource=admin&quot;);</span>
+                &quot;mongodb://&quot; + DB_USER + &quot;:&quot; + DB_PASS + &quot;@&quot; + DB_HOST + &quot;:&quot; + DB_PORT + &quot;/?authSource=admin&quot;);
 <span class="fc" id="L42">        this.client = new MongoClient(uri);</span>
 <span class="fc" id="L43">        this.db = client.getDatabase(DB_NAME);</span>
 <span class="fc" id="L44">        sets.iterator().forEachRemaining(obj -&gt; {</span>
@@ -49,23 +49,23 @@ public class WriteDbContext extends IWriteDbContext {
 
     @Override
     public boolean isConnected() {
-<span class="nc bnc" id="L52" title="All 2 branches missed.">        return this.db != null;</span>
+<span class="pc bpc" id="L52" title="1 of 2 branches missed.">        return this.db != null;</span>
     }
 
     @Override
     public void Commit() {
-<span class="nc" id="L57">        System.out.println(&quot;WriteDbContext::Commit Not implemented&quot;);</span>
-<span class="nc" id="L58">    }</span>
+<span class="fc" id="L57">        System.out.println(&quot;WriteDbContext::Commit Not implemented&quot;);</span>
+<span class="fc" id="L58">    }</span>
 
     @Override
     public void Transaction() {
-<span class="nc" id="L62">        System.out.println(&quot;WriteDbContext::Transaction Not implemented&quot;);</span>
-<span class="nc" id="L63">    }</span>
+<span class="fc" id="L62">        System.out.println(&quot;WriteDbContext::Transaction Not implemented&quot;);</span>
+<span class="fc" id="L63">    }</span>
 
     @Override
     public void Rollback() {
-<span class="nc" id="L67">        System.out.println(&quot;WriteDbContext::Rollback Not implemented&quot;);</span>
-<span class="nc" id="L68">    }</span>
+<span class="fc" id="L67">        System.out.println(&quot;WriteDbContext::Rollback Not implemented&quot;);</span>
+<span class="fc" id="L68">    }</span>
 
     @Override
     public void Add(Object obj, DbSet dbSet) {

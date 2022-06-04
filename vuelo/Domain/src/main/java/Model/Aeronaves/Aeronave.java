@@ -13,7 +13,6 @@ public class Aeronave extends Entity<UUID> {
 
 	public Aeronave(String matricula) {
 		this.key = UUID.randomUUID();
-
 		this.matricula = matricula;
 	}
 

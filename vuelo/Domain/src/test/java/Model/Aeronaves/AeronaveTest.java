@@ -12,9 +12,10 @@ public class AeronaveTest {
 		UUID key = UUID.randomUUID();
 		String matricula = "A12345";
 
+		Aeronave aeronaveA = new Aeronave();
+
 		Aeronave aeronave = new Aeronave(matricula);
-		// Assert.assertEquals(key, aeronave.key);
-		// Assert.assertEquals(matricula, aeronave.matricula);
+		Assert.assertEquals(matricula, aeronave.matricula);
 	}
 
 }

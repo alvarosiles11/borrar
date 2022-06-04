@@ -34,32 +34,32 @@ public class TripulanteController {
 
     @GetMapping(&quot;/&quot;)
     public Response&lt;List&lt;Tripulante&gt;&gt; getAll() throws HttpException {
-<span class="nc" id="L37">        return _mediator.send(new GetAllTripulanteQuery());</span>
+<span class="fc" id="L37">        return _mediator.send(new GetAllTripulanteQuery());</span>
     }
 
     @PostMapping(&quot;/registro&quot;)
     public Response&lt;Tripulante&gt; register(@RequestBody CrearTripulanteCommand _tripulante) throws HttpException {
-<span class="nc" id="L42">        return _mediator.send(_tripulante);</span>
+<span class="fc" id="L42">        return _mediator.send(_tripulante);</span>
     }
 
     @GetMapping(&quot;/{key}&quot;)
     public Response&lt;TripulanteDto&gt; getByKey(@PathVariable GetTripulanteByKeyQuery request) throws HttpException {
-<span class="nc" id="L47">        return _mediator.send(request);</span>
+<span class="fc" id="L47">        return _mediator.send(request);</span>
     }
 
     @PutMapping(&quot;/{key}&quot;)
     public Response&lt;Tripulante&gt; edit(@RequestBody Tripulante _tripulante, @PathVariable EditarTripulanteCommand request)
             throws HttpException {
-<span class="nc" id="L53">        request._TripulanteDto.keyVuelo = _tripulante.keyVuelo;</span>
-<span class="nc" id="L54">        request._TripulanteDto.keyTripulante = _tripulante.keyTripulante;</span>
-<span class="nc" id="L55">        request._TripulanteDto.cargo = _tripulante.cargo;</span>
-<span class="nc" id="L56">        System.out.println(&quot;tripulante edit exitoso&quot;);</span>
-<span class="nc" id="L57">        return _mediator.send(request);</span>
+<span class="fc" id="L53">        request._TripulanteDto.keyVuelo = _tripulante.keyVuelo;</span>
+<span class="fc" id="L54">        request._TripulanteDto.keyTripulante = _tripulante.keyTripulante;</span>
+<span class="fc" id="L55">        request._TripulanteDto.cargo = _tripulante.cargo;</span>
+<span class="fc" id="L56">        System.out.println(&quot;tripulante edit exitoso&quot;);</span>
+<span class="fc" id="L57">        return _mediator.send(request);</span>
     }
 
     @DeleteMapping(&quot;/{key}&quot;)
     public Response&lt;Tripulante&gt; delete(@PathVariable EliminarTripulanteCommand request) throws HttpException {
-<span class="nc" id="L62">        return _mediator.send(request);</span>
+<span class="fc" id="L62">        return _mediator.send(request);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

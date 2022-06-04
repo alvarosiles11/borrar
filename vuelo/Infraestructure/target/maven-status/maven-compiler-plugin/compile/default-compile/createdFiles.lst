@@ -1,7 +1,6 @@
-Repository\AeronaveRepository.class
 UnitOfWork.class
-Repository\VueloRepository.class
-Context\MongoDB\WriteDbContext.class
 Infraestructure.class
+Repository\VueloRepository.class
 Context\IWriteDbContext.class
+Context\MongoDB\WriteDbContext.class
 Repository\TripulanteRepository.class

@@ -17,7 +17,6 @@ public class TripulanteRepositoryTest {
         UUID keyVuelo = UUID.randomUUID();
         String keyTripulante = "12345";
         String cargo = "Piloto";
-        // List<Tripulante> listaTripulante = new ArrayList<>();
 
         IWriteDbContext database = new WriteDbContext();
         TripulanteRepository tripulanteRepository = new TripulanteRepository(database);

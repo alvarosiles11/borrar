@@ -2,22 +2,29 @@ package Controllers;
 
 import static org.mockito.ArgumentMatchers.any;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.UUID;
 
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 
-import Factories.IVueloFactory;
-import Repositories.IVueloRepository;
+import Dto.VueloDto;
+import Model.Vuelos.Vuelo;
+import UseCases.Command.Vuelos.Crear.CrearVueloCommand;
+import UseCases.Command.Vuelos.Editar.EditarVueloCommand;
+import UseCases.Command.Vuelos.Eliminar.EliminarVueloCommand;
+import UseCases.Queries.Vuelos.GetAll.GetAllVueloQuery;
+import UseCases.Queries.Vuelos.GetByKey.GetVueloByKeyQuery;
 import fourteam.http.Exception.HttpException;
 import fourteam.mediator.Mediator;
 
 public class VueloControllerTest {
 
-    // IVueloFactory vueloFactory = Mockito.mock(IVueloFactory.class);
-    // IVueloRepository vueloRepository = Mockito.mock(IVueloRepository.class);
+    Mediator mediator = Mockito.mock(Mediator.class);
 
     @Before
     public void setup() {
@@ -25,6 +32,7 @@ public class VueloControllerTest {
 
     @Test
     public void HandleVueloController_Ok() throws HttpException {
+        VueloController vueloController = new VueloController(mediator);
 
         UUID key = UUID.randomUUID();
         String nroVuelo = "A12345";
@@ -34,9 +42,26 @@ public class VueloControllerTest {
         Date fecha_salida = new Date();
         Date fecha_arribe = new Date();
 
-        VueloController vueloController = new VueloController(any(Mediator.class));
-        // fourteam.mediator.Response<Tripulante> response =
-        // vueloController.register(any(UseCases.Command.Vuelos.Crear.CrearVueloCommand.class));
+        Vuelo vuelo = new Vuelo(nroVuelo, keyAeronave, keyAeropuertoOrigen,
+                keyAeropuertoDestino, fecha_salida, fecha_arribe);
+
+        VueloDto vueloDto = new VueloDto();
+
+        GetAllVueloQuery getAllVueloQuery = new GetAllVueloQuery();
+        vueloController.getAll();
+
+        CrearVueloCommand crearVueloCommand = new CrearVueloCommand(vueloDto);
+        vueloController.register(crearVueloCommand);
+
+        EditarVueloCommand EditarVueloCommand = new EditarVueloCommand(key);
+        vueloController.edit(vuelo, EditarVueloCommand);
+
+        EliminarVueloCommand eliminarVueloCommand = new EliminarVueloCommand(key);
+        vueloController.delete(eliminarVueloCommand);
+
+        GetVueloByKeyQuery getVueloByKeyQuery = new GetVueloByKeyQuery(key);
+        vueloController.getByKey(getVueloByKeyQuery);
+
     }
 
 }
