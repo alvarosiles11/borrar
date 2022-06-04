@@ -1,5 +1,5 @@
 GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
 WebApi,default,App,0,6,0,0,0,4,0,2,0,2
 WebApi,default,WebApi,0,11,0,0,0,6,0,2,0,2
-WebApi,Controllers,VueloController,69,6,0,0,15,3,5,1,5,1
-WebApi,Controllers,TripulanteController,33,6,0,0,6,3,5,1,5,1
+WebApi,Controllers,VueloController,72,6,0,0,16,3,5,1,5,1
+WebApi,Controllers,TripulanteController,45,6,0,0,9,3,5,1,5,1

@@ -34,10 +34,6 @@ public class VueloController {
 
     @GetMapping("/")
     public Response<List<Vuelo>> getAll() throws HttpException {
-        // List<Vuelo> vuelos = new ArrayList<>();
-        // List<Tripulante> tripulantes = new ArrayList<>();
-        // System.out.println("getAll exitoso");
-        // return vuelos;
         System.out.println("vuelo getAll exitoso");
         return _mediator.send(new GetAllVueloQuery());
     }
@@ -63,7 +59,7 @@ public class VueloController {
         request._VueloDto.keyAeropuertoDestino = _Vuelo.keyAeropuertoDestino;
         request._VueloDto.fecha_salida = _Vuelo.fecha_salida;
         request._VueloDto.fecha_arribe = _Vuelo.fecha_arribe;
-        // request._VueloDto.listaTripulante = _Vuelo.listaTripulante;
+        System.out.println("vuelo edit exitoso");
         return _mediator.send(request);
     }
 

@@ -34,43 +34,39 @@ public class VueloController {
 
     @GetMapping(&quot;/&quot;)
     public Response&lt;List&lt;Vuelo&gt;&gt; getAll() throws HttpException {
-        // List&lt;Vuelo&gt; vuelos = new ArrayList&lt;&gt;();
-        // List&lt;Tripulante&gt; tripulantes = new ArrayList&lt;&gt;();
-        // System.out.println(&quot;getAll exitoso&quot;);
-        // return vuelos;
-<span class="nc" id="L41">        System.out.println(&quot;vuelo getAll exitoso&quot;);</span>
-<span class="nc" id="L42">        return _mediator.send(new GetAllVueloQuery());</span>
+<span class="nc" id="L37">        System.out.println(&quot;vuelo getAll exitoso&quot;);</span>
+<span class="nc" id="L38">        return _mediator.send(new GetAllVueloQuery());</span>
     }
 
     @PostMapping(&quot;/registro&quot;)
     public Response&lt;Vuelo&gt; register(@RequestBody CrearVueloCommand _vuelo) throws HttpException {
-<span class="nc" id="L47">        System.out.println(&quot;vuelo register exitoso&quot;);</span>
-<span class="nc" id="L48">        return _mediator.send(_vuelo);</span>
+<span class="nc" id="L43">        System.out.println(&quot;vuelo register exitoso&quot;);</span>
+<span class="nc" id="L44">        return _mediator.send(_vuelo);</span>
     }
 
     @GetMapping(&quot;/{key}&quot;)
     public Response&lt;VueloDto&gt; getByKey(@PathVariable GetVueloByKeyQuery request) throws HttpException {
-<span class="nc" id="L53">        System.out.println(&quot;vuelo getByKey exitoso&quot;);</span>
-<span class="nc" id="L54">        return _mediator.send(request);</span>
+<span class="nc" id="L49">        System.out.println(&quot;vuelo getByKey exitoso&quot;);</span>
+<span class="nc" id="L50">        return _mediator.send(request);</span>
     }
 
     @PutMapping(&quot;/{key}&quot;)
     public Response&lt;Vuelo&gt; edit(@RequestBody Vuelo _Vuelo, @PathVariable EditarVueloCommand request)
             throws HttpException {
-<span class="nc" id="L60">        request._VueloDto.nroVuelo = _Vuelo.nroVuelo;</span>
-<span class="nc" id="L61">        request._VueloDto.keyAeronave = _Vuelo.keyAeronave;</span>
-<span class="nc" id="L62">        request._VueloDto.keyAeropuertoOrigen = _Vuelo.keyAeropuertoOrigen;</span>
-<span class="nc" id="L63">        request._VueloDto.keyAeropuertoDestino = _Vuelo.keyAeropuertoDestino;</span>
-<span class="nc" id="L64">        request._VueloDto.fecha_salida = _Vuelo.fecha_salida;</span>
-<span class="nc" id="L65">        request._VueloDto.fecha_arribe = _Vuelo.fecha_arribe;</span>
-        // request._VueloDto.listaTripulante = _Vuelo.listaTripulante;
-<span class="nc" id="L67">        return _mediator.send(request);</span>
+<span class="nc" id="L56">        request._VueloDto.nroVuelo = _Vuelo.nroVuelo;</span>
+<span class="nc" id="L57">        request._VueloDto.keyAeronave = _Vuelo.keyAeronave;</span>
+<span class="nc" id="L58">        request._VueloDto.keyAeropuertoOrigen = _Vuelo.keyAeropuertoOrigen;</span>
+<span class="nc" id="L59">        request._VueloDto.keyAeropuertoDestino = _Vuelo.keyAeropuertoDestino;</span>
+<span class="nc" id="L60">        request._VueloDto.fecha_salida = _Vuelo.fecha_salida;</span>
+<span class="nc" id="L61">        request._VueloDto.fecha_arribe = _Vuelo.fecha_arribe;</span>
+<span class="nc" id="L62">        System.out.println(&quot;vuelo edit exitoso&quot;);</span>
+<span class="nc" id="L63">        return _mediator.send(request);</span>
     }
 
     @DeleteMapping(&quot;/{key}&quot;)
     public Response&lt;Vuelo&gt; delete(@PathVariable EliminarVueloCommand request) throws HttpException {
-<span class="nc" id="L72">        System.out.println(&quot;vuelo delete exitoso&quot;);</span>
-<span class="nc" id="L73">        return _mediator.send(request);</span>
+<span class="nc" id="L68">        System.out.println(&quot;vuelo delete exitoso&quot;);</span>
+<span class="nc" id="L69">        return _mediator.send(request);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

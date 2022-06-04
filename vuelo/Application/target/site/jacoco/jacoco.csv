@@ -13,7 +13,7 @@ Application,UseCases.Queries.Tripulantes.GetByKey,GetTripulanteByKeyQuery,0,6,0,
 Application,UseCases.Command.Tripulantes,UpdateTripulanteWhenVueloCreadoHandler,0,10,0,0,0,5,0,2,0,2
 Application,UseCases.Queries.Tripulantes.GetAll,GetAllTripulanteHandler,0,10,0,0,0,4,0,2,0,2
 Application,UseCases.Queries.Tripulantes.GetAll,GetAllTripulanteQuery,0,3,0,0,0,2,0,1,0,1
-Application,UseCases.Command.Tripulantes.Editar,EditarTripulanteHandler,0,40,0,2,0,11,0,3,0,2
+Application,UseCases.Command.Tripulantes.Editar,EditarTripulanteHandler,0,55,0,2,0,14,0,3,0,2
 Application,UseCases.Command.Tripulantes.Editar,EditarTripulanteCommand,0,12,0,0,0,4,0,1,0,1
 Application,UseCases.Command.Aeronaves.Eliminar,EliminarAeronaveCommand,0,12,0,0,0,4,0,1,0,1
 Application,UseCases.Command.Aeronaves.Eliminar,EliminarAeronaveHandler,0,33,0,2,0,9,0,3,0,2

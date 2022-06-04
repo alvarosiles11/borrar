@@ -50,13 +50,16 @@ public class TripulanteController {
     @PutMapping(&quot;/{key}&quot;)
     public Response&lt;Tripulante&gt; edit(@RequestBody Tripulante _tripulante, @PathVariable EditarTripulanteCommand request)
             throws HttpException {
-<span class="nc" id="L53">        request._TripulanteDto.key = _tripulante.key;</span>
-<span class="nc" id="L54">        return _mediator.send(request);</span>
+<span class="nc" id="L53">        request._TripulanteDto.keyVuelo = _tripulante.keyVuelo;</span>
+<span class="nc" id="L54">        request._TripulanteDto.keyTripulante = _tripulante.keyTripulante;</span>
+<span class="nc" id="L55">        request._TripulanteDto.cargo = _tripulante.cargo;</span>
+<span class="nc" id="L56">        System.out.println(&quot;tripulante edit exitoso&quot;);</span>
+<span class="nc" id="L57">        return _mediator.send(request);</span>
     }
 
     @DeleteMapping(&quot;/{key}&quot;)
     public Response&lt;Tripulante&gt; delete(@PathVariable EliminarTripulanteCommand request) throws HttpException {
-<span class="nc" id="L59">        return _mediator.send(request);</span>
+<span class="nc" id="L62">        return _mediator.send(request);</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>

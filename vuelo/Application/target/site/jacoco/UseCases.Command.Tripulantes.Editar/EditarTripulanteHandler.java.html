@@ -26,14 +26,16 @@ public class EditarTripulanteHandler implements RequestHandler&lt;EditarTripulan
     @Override
     public Tripulante handle(EditarTripulanteCommand request) throws HttpException {
 
-        
-<span class="fc" id="L30">        Tripulante _Tripulante = _ITripulanteRepository.FindByKey(request._TripulanteDto.key);</span>
-<span class="fc bfc" id="L31" title="All 2 branches covered.">        if (_Tripulante == null) {</span>
-<span class="fc" id="L32">            throw new HttpException(HttpStatus.BAD_REQUEST, &quot;Tripulante no encontrada&quot;);</span>
+<span class="fc" id="L29">        Tripulante _Tripulante = _ITripulanteRepository.FindByKey(request._TripulanteDto.key);</span>
+<span class="fc bfc" id="L30" title="All 2 branches covered.">        if (_Tripulante == null) {</span>
+<span class="fc" id="L31">            throw new HttpException(HttpStatus.BAD_REQUEST, &quot;Tripulante no encontrada&quot;);</span>
         }
-<span class="fc" id="L34">        _Tripulante.key = request._TripulanteDto.key;</span>
-<span class="fc" id="L35">        _ITripulanteRepository.Update(_Tripulante);</span>
-<span class="fc" id="L36">        return _Tripulante;</span>
+<span class="fc" id="L33">        _Tripulante.key = request._TripulanteDto.key;</span>
+<span class="fc" id="L34">        _Tripulante.keyVuelo = request._TripulanteDto.keyVuelo;</span>
+<span class="fc" id="L35">        _Tripulante.keyTripulante = request._TripulanteDto.keyTripulante;</span>
+<span class="fc" id="L36">        _Tripulante.cargo = request._TripulanteDto.cargo;</span>
+<span class="fc" id="L37">        _ITripulanteRepository.Update(_Tripulante);</span>
+<span class="fc" id="L38">        return _Tripulante;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
