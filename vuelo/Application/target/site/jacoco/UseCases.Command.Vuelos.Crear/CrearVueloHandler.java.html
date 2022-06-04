@@ -26,7 +26,7 @@ public class CrearVueloHandler implements RequestHandler&lt;CrearVueloCommand, V
 	public Vuelo handle(CrearVueloCommand arg0) throws HttpException {
 
 <span class="fc" id="L28">		Vuelo vuelo = _IVueloFactory.Create(arg0.nroVuelo, arg0.keyAeronave, arg0.keyAeropuertoOrigen,</span>
-				arg0.keyAeropuertoDestino, arg0.fecha_salida, arg0.fecha_arribe);
+<span class="fc" id="L29">				arg0.keyAeropuertoDestino, arg0.fecha_salida, arg0.fecha_arribe);</span>
 		// vuelo.eventCreado();
 <span class="fc" id="L31">		_IVueloRepository.Create(vuelo);</span>
 <span class="fc" id="L32">		_unitOfWor.commit();</span>

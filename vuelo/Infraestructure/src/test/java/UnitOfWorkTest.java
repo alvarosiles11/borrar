@@ -1,9 +1,14 @@
+import static org.mockito.Mockito.when;
+
+import java.util.ArrayList;
 import java.util.List;
 
+import org.junit.Assert;
 import org.junit.Test;
 import org.mockito.Mockito;
 
 import Context.IWriteDbContext;
+import core.DomainEvent;
 import fourteam.http.Exception.HttpException;
 import fourteam.mediator.Mediator;
 
@@ -13,26 +18,36 @@ public class UnitOfWorkTest {
     Mediator mediator = Mockito.mock(Mediator.class);
 
     @Test
-    public void CheckConstructor() {
+    public void constructorVoid_accept() {
         UnitOfWork unitOfWork = new UnitOfWork(context, mediator);
-        // unitOfWork.setContext(context);
-        // unitOfWork.setMediator(mediator);
+        Assert.assertNotNull(unitOfWork);
 
-        // verify(_IVueloRepository).Create(response);
-        // verify(_IUnitOfWork).commit();
     }
 
     @Test
-    public void CheckCommit() throws HttpException {
+    public void commit_accept() {
         UnitOfWork unitOfWork = new UnitOfWork(context, mediator);
-        unitOfWork.commit();
-        List<Object> events = context.getDomainEvents();
-        for (Object event : events) {
-            System.out.println(event);
+        List<Object> list = new ArrayList<Object>();
+        list.add(new DomainEvent());
+        when(context.getDomainEvents()).thenReturn(list);
+        try {
+            unitOfWork.commit();
+        } catch (HttpException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
         }
-        // verify(_IVueloRepository).Create(response);
-        // verify(_IUnitOfWork).commit();
-        // mediator.notify();
-        // mediator.commit();
+
+    }
+
+    @Test
+    public void commit_denied() {
+        UnitOfWork unitOfWork = new UnitOfWork(context, mediator);
+        try {
+            unitOfWork.commit();
+        } catch (HttpException e) {
+            // TODO Auto-generated catch block
+            e.printStackTrace();
+        }
+
     }
 }

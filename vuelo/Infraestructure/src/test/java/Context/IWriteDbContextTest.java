@@ -1,21 +1,92 @@
 package Context;
 
+import java.util.List;
+
+import org.junit.Assert;
 import org.junit.Test;
-import org.mockito.Mockito;
+
+import Context.MongoDB.WriteDbContext;
+import fourteam.db.DbSet;
 
 public class IWriteDbContextTest {
+    public static class Context extends IWriteDbContext {
 
-    @Test
-    public void CheckConstructor() {
-        IWriteDbContext context = Mockito.mock(IWriteDbContext.class);
-        // IWriteDbContext saDbContext = new IWriteDbContext();
+        public Context() {
+            super(Context.class);
+            // TODO Auto-generated constructor stub
+        }
+
+        @Override
+        public void Transaction() {
+            // TODO Auto-generated method stub
+
+        }
+
+        @Override
+        public void Commit() {
+            // TODO Auto-generated method stub
+
+        }
+
+        @Override
+        public void Rollback() {
+            // TODO Auto-generated method stub
+
+        }
+
+        @Override
+        public boolean isConnected() {
+            // TODO Auto-generated method stub
+            return false;
+        }
+
+        @Override
+        public void onModelCreating(List<DbSet> sets) {
+            // TODO Auto-generated method stub
+
+        }
+
+        @Override
+        public void Add(Object obj, DbSet dbSet) {
+            // TODO Auto-generated method stub
+
+        }
+
+        @Override
+        public void Update(Object obj, BooleanFunction fun, DbSet dbSet) {
+            // TODO Auto-generated method stub
+
+        }
+
+        @Override
+        public void Delete(BooleanFunction fun, DbSet dbSet) {
+            // TODO Auto-generated method stub
+
+        }
+
+        @Override
+        public List All(DbSet dbSet) {
+            // TODO Auto-generated method stub
+            return null;
+        }
+
+        @Override
+        public Object Single(BooleanFunction fun, DbSet dbSet) {
+            // TODO Auto-generated method stub
+            return null;
+        }
+
+        @Override
+        public List Filter(BooleanFunction fun, DbSet dbSet) {
+            // TODO Auto-generated method stub
+            return null;
+        }
+
     }
 
-    // public IWriteDbContext(Class dbContextClass) {
-    // super(dbContextClass);
-    // }
-
-    // public DbSet<Vuelo> Vuelo;
-    // public DbSet<Tripulante> Tripulante;
-    // public DbSet<Aeronave> Aeronave;
+    @Test
+    public void constructor_accept() {
+        IWriteDbContext context = new Context();
+        Assert.assertNotNull(context);
+    }
 }

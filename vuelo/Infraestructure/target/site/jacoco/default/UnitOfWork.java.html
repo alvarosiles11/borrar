@@ -18,10 +18,10 @@ public class UnitOfWork implements IUnitOfWork {
     @Override
     public void commit() throws HttpException {
 <span class="fc" id="L20">        List&lt;Object&gt; events = _context.getDomainEvents();</span>
-<span class="pc bpc" id="L21" title="1 of 2 branches missed.">        for (Object domainEvent : events) {</span>
-<span class="nc" id="L22">            DomainEvent event = (DomainEvent) domainEvent;</span>
-<span class="nc" id="L23">            _mediator.notify(event);</span>
-<span class="nc" id="L24">        }</span>
+<span class="fc bfc" id="L21" title="All 2 branches covered.">        for (Object domainEvent : events) {</span>
+<span class="fc" id="L22">            DomainEvent event = (DomainEvent) domainEvent;</span>
+<span class="fc" id="L23">            _mediator.notify(event);</span>
+        }
 <span class="fc" id="L25">        _context.Commit();</span>
 <span class="fc" id="L26">    }</span>
 }

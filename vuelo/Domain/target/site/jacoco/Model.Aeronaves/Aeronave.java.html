@@ -8,10 +8,14 @@ public class Aeronave extends Entity&lt;UUID&gt; {
 
 	public String matricula;
 
-<span class="fc" id="L11">	public Aeronave(String matricula) {</span>
-<span class="fc" id="L12">		this.key = UUID.randomUUID();</span>
-<span class="fc" id="L13">		this.matricula = matricula;</span>
-<span class="fc" id="L14">	}</span>
+<span class="nc" id="L11">	public Aeronave() {</span>
+<span class="nc" id="L12">	}</span>
+
+<span class="fc" id="L14">	public Aeronave(String matricula) {</span>
+<span class="fc" id="L15">		this.key = UUID.randomUUID();</span>
+
+<span class="fc" id="L17">		this.matricula = matricula;</span>
+<span class="fc" id="L18">	}</span>
 
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.4.201905082037</span></div></body></html>
