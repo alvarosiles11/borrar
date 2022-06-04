@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: Repository.AeronaveRepositoryTest
 -------------------------------------------------------------------------------
-Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.189 s - in Repository.AeronaveRepositoryTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 5.275 s - in Repository.AeronaveRepositoryTest

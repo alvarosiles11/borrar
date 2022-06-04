@@ -1,0 +1,11 @@
+core\ValueObject_Test$1.class
+rule\NotNullRule_Test.class
+core\ValueObject_Test.class
+core\AggregateRoot_Test$1.class
+rule\StringNotNullOrEmptyRule_Test.class
+SharedKernel_Test.class
+core\DomainEvent_Test.class
+core\Entity_Test.class
+core\AggregateRoot_Test.class
+core\BussinessRulesValidateExption_Test.class
+core\Entity_Test$1.class

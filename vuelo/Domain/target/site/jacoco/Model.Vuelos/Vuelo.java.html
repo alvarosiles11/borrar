@@ -51,8 +51,8 @@ public class Vuelo extends AggregateRoot&lt;UUID&gt; {
 <span class="fc" id="L51">    }</span>
 
     public void AgregarTripulante(Tripulante tripulante) {
-<span class="fc bfc" id="L54" title="All 2 branches covered.">        listaTripulante.parallelStream().filter(p -&gt; p.getKey() == tripulante.getKey()).findFirst().ifPresent(p -&gt; {</span>
-<span class="fc" id="L55">            throw new RuntimeException(&quot;El tripulante ya existe&quot;);</span>
+<span class="pc bpc" id="L54" title="1 of 2 branches missed.">        listaTripulante.parallelStream().filter(p -&gt; p.getKey() == tripulante.getKey()).findFirst().ifPresent(p -&gt; {</span>
+<span class="nc" id="L55">            throw new RuntimeException(&quot;El tripulante ya existe&quot;);</span>
         });
 <span class="fc" id="L57">        listaTripulante.add(tripulante);</span>
 <span class="fc" id="L58">    }</span>

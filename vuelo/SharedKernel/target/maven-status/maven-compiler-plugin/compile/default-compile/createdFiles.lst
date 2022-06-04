@@ -1,0 +1,10 @@
+core\Entity.class
+core\BussinessRule.class
+core\ValueObject.class
+rule\NotNullRule.class
+core\AggregateRoot.class
+SharedKernel.class
+core\DomainEvent.class
+core\IRepository.class
+core\BussinessRuleValidateExeption.class
+rule\StringNotNullOrEmptyRule.class
