@@ -12,11 +12,8 @@ import org.junit.Test;
 import org.mockito.Mockito;
 
 import Dto.VueloDto;
-import Factories.IAeronaveFactory;
 import Factories.IVueloFactory;
-import Model.Aeronaves.Aeronave;
 import Model.Vuelos.Vuelo;
-import Repositories.IAeronaveRepository;
 import Repositories.IUnitOfWork;
 import Repositories.IVueloRepository;
 import UseCases.Command.Vuelos.Eliminar.EliminarVueloCommand;

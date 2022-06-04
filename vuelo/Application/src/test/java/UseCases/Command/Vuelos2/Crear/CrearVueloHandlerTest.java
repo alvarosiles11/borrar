@@ -48,7 +48,6 @@ public class CrearVueloHandlerTest {
 
 		CrearVueloHandler handler = new CrearVueloHandler(_IVueloFactory, _IVueloRepository, _IUnitOfWork);
 		VueloDto vueloDto = new VueloDto();
-		// vueloDto.key = key;
 		vueloDto.nroVuelo = nroVuelo;
 		vueloDto.keyAeronave = keyAeronave;
 		vueloDto.keyAeropuertoOrigen = keyAeropuertoOrigen;
@@ -60,10 +59,6 @@ public class CrearVueloHandlerTest {
 		Vuelo response = handler.handle(command);
 		verify(_IVueloRepository).Create(response);
 		verify(_IUnitOfWork).commit();
-
-		// Assert.assertEquals(VueloCreado.class, response.domainEvents.get(0).getClass());
-		// Assert.assertEquals(key, response.key);
-		
 		Assert.assertEquals(nroVuelo, response.nroVuelo);
 		Assert.assertEquals(keyAeronave, response.keyAeronave);
 		Assert.assertEquals(keyAeropuertoOrigen, response.keyAeropuertoOrigen);

@@ -21,8 +21,17 @@ public class TripulanteDto {
     }
 
     // getters and setters
+
     public UUID getKeyVuelo() {
         return keyVuelo;
+    }
+
+    public UUID getKey() {
+        return key;
+    }
+
+    public void setKey(UUID key) {
+        this.key = key;
     }
 
     public void setKeyVuelo(UUID keyVuelo) {

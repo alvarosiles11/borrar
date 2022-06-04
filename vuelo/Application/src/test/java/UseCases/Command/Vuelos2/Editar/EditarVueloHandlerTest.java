@@ -1,7 +1,6 @@
 package UseCases.Command.Vuelos2.Editar;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.util.Date;
@@ -57,7 +56,7 @@ public class EditarVueloHandlerTest {
 		vueloDto.fecha_arribe = fecha_arribe;
 
 		EditarVueloCommand command = new EditarVueloCommand(vueloDto.key);
-		
+
 		command._VueloDto.key = key;
 		command._VueloDto.nroVuelo = nroVuelo;
 		command._VueloDto.keyAeronave = keyAeronave;
@@ -65,13 +64,9 @@ public class EditarVueloHandlerTest {
 		command._VueloDto.keyAeropuertoDestino = keyAeropuertoDestino;
 		command._VueloDto.fecha_salida = fecha_salida;
 		command._VueloDto.fecha_arribe = fecha_arribe;
-		
-		
-	
+
 		Vuelo resp = handler.handle(command);
-		// Assert.assertEquals(key, resp.key);
 		Assert.assertEquals(nroVuelo, resp.nroVuelo);
-		// verify(_IVueloRep).Update(resp);
 	}
 
 	@Test

@@ -2,7 +2,6 @@ package UseCases.Queries.Tripulantes.GetAll;
 
 import java.util.List;
 
-import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 
@@ -12,10 +11,6 @@ import Repositories.ITripulanteRepository;
 public class GetAllTripulanteHandlerTest {
 
     ITripulanteRepository _ITripulanteRepository = Mockito.mock(ITripulanteRepository.class);
-
-    @Before
-    public void setUp() {
-    }
 
     @Test
     public void dataValid() {

@@ -21,8 +21,16 @@ public class VueloDto {
         listaTripulante = new ArrayList<>();
     }
 
-    
     // getters and setters
+
+    public UUID getKey() {
+        return key;
+    }
+
+    public void setKey(UUID key) {
+        this.key = key;
+    }
+
     public List<TripulanteDto> getListaTripulante() {
         return listaTripulante;
     }

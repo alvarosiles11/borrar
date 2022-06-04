@@ -1,7 +1,6 @@
 package UseCases.Command.Aeronaves.Editar;
 
 import static org.mockito.ArgumentMatchers.any;
-import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import java.util.UUID;
@@ -46,10 +45,8 @@ public class EditarAeronaveHandlerTest {
 		command._AeronaveDto.keyAeronave = keyAeronave;
 		command._AeronaveDto.matricula = matricula;
 		Aeronave resp = handler.handle(command);
-		Assert.assertEquals(keyAeronave, aeronaveDto.keyAeronave); 
-		// verify(_IAeroRep).Update(resp);
+		Assert.assertEquals(keyAeronave, aeronaveDto.keyAeronave);
 	}
-
 
 	@Test
 	public void HandleFailed() throws HttpException {

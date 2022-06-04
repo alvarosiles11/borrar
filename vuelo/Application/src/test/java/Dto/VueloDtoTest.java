@@ -36,7 +36,7 @@ public class VueloDtoTest {
 		// end dto
 
 		// getters and setters
-		vueloDto.key = key;
+		vueloDto.setKey(key);
 		vueloDto.setNroVuelo(nroVuelo);
 		vueloDto.setKeyAeronave(keyAeronave);
 		vueloDto.setKeyAeropuertoOrigen(keyAeropuertoOrigen);
@@ -45,7 +45,7 @@ public class VueloDtoTest {
 		vueloDto.setFecha_arribe(fecha_arribe);
 		vueloDto.setListaTripulante(listaTripulante);
 
-		Assert.assertEquals(key, vueloDto.key);
+		Assert.assertEquals(key, vueloDto.getKey());
 		Assert.assertEquals(nroVuelo, vueloDto.getNroVuelo());
 		Assert.assertEquals(keyAeronave, vueloDto.getKeyAeronave());
 		Assert.assertEquals(keyAeropuertoOrigen, vueloDto.getKeyAeropuertoOrigen());
