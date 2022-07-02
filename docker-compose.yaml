@@ -10,14 +10,13 @@ services:
       - 27017:27017
     volumes:
       - ./db/:/data/db
-
   server:
     image: alvarosiles/vuelo-java
     build: ./vuelo
     network_mode: "service:database"
-    
-  # web:
-  #   image: nginx:latest
-  #   network_mode: "service:database"
-  #   volumes:
-  #     - ./nginx/conf.d:/etc/nginx/conf.d
+  web:
+    image: nginx:latest
+    network_mode: "service:database"
+    volumes:
+      - ./html:/usr/share/nginx/html
+      - ./nginx/conf.d:/etc/nginx/conf.d

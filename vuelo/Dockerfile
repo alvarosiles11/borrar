@@ -2,11 +2,6 @@ FROM alpine:3.14
 
 WORKDIR /usr/src/app
 
-
-# RUN apt-get update && \
-#     apt-get install -y openjdk-11-jre-headless && \
-#     apt-get clean;
-
 RUN  apk update \
   && apk upgrade \
   && apk add ca-certificates \
@@ -32,7 +27,5 @@ RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
 COPY . .
-
-# RUN ./compile.sh
 
 CMD ["java", "-jar" , "vuelo.jar"]
