@@ -1,15 +1,38 @@
-FROM ubuntu:20.04
+FROM alpine:3.14
 
 WORKDIR /usr/src/app
 
 
-RUN apt-get update && \
-    apt-get install -y openjdk-11-jre-headless && \
-    apt-get clean;
+# RUN apt-get update && \
+#     apt-get install -y openjdk-11-jre-headless && \
+#     apt-get clean;
+
+RUN  apk update \
+  && apk upgrade \
+  && apk add ca-certificates \
+  && update-ca-certificates \
+  && apk add --update coreutils && rm -rf /var/cache/apk/*   \ 
+  && apk add --update openjdk11 tzdata curl unzip bash \
+  && apk add --no-cache nss \
+  && rm -rf /var/cache/apk/*
+
+ENV MAVEN_VERSION 3.5.4
+ENV MAVEN_HOME /usr/lib/mvn
+ENV PATH $MAVEN_HOME/bin:$PATH
+
+RUN wget http://archive.apache.org/dist/maven/maven-3/$MAVEN_VERSION/binaries/apache-maven-$MAVEN_VERSION-bin.tar.gz && \
+  tar -zxvf apache-maven-$MAVEN_VERSION-bin.tar.gz && \
+  rm apache-maven-$MAVEN_VERSION-bin.tar.gz && \
+  mv apache-maven-$MAVEN_VERSION /usr/lib/mvn
 
 
-EXPOSE 80
+EXPOSE 8080
+
+RUN mkdir -p /usr/src/app
+WORKDIR /usr/src/app
 
 COPY . .
+
+RUN ./compile.sh
 
 CMD ["java", "-jar" , "vuelo.jar"]

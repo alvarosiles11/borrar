@@ -23,10 +23,17 @@ public class WriteDbContext extends IWriteDbContext {
     private MongoClient client;
     private MongoDatabase db;
 
+    // private final String DB_NAME = "dmsnur_vuelo";
+    // private final String DB_USER = "root";
+    // private final String DB_PASS = "rootpassword";
+    // private final String DB_HOST = "servisofts.com";
+    // private final int DB_PORT = 27017;
+
+
     private final String DB_NAME = "dmsnur_vuelo";
     private final String DB_USER = "root";
     private final String DB_PASS = "rootpassword";
-    private final String DB_HOST = "servisofts.com";
+    private final String DB_HOST = "localhost";
     private final int DB_PORT = 27017;
 
     public WriteDbContext() {
