@@ -1,19 +1,18 @@
-# DMSNUR - VUELO
-## Alvaro Siles Estrada
-# 
+### DMS-NUR VUELOS
 
-Creamos el proyecto base
+### Alvaro Siles Estrada
 
-```bash
-mvn archetype:generate -DgroupId=dmsnur -DartifactId=vuelo
-```
+### Testing
 
-Creamos los modulos
+CQRS created in java!
 
-```bash
-mvn archetype:generate -DgroupId=dmsnur -DartifactId=Domain
-mvn archetype:generate -DgroupId=dmsnur -DartifactId=Application
-mvn archetype:generate -DgroupId=dmsnur -DartifactId=Infraestructure
-mvn archetype:generate -DgroupId=dmsnur -DartifactId=SharedKernel
-mvn archetype:generate -DgroupId=dmsnur -DartifactId=WebApi
-```
+### Contenerización de Aplicaciones
+
+docker compose up
+docker compose down
+docker image tag mongo alvarosiles/mongo
+docker compose up
+
+
+docker image push alvarosiles/vuelo-java	
+docker image push alvarosiles/mongo
