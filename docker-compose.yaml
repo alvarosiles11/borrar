@@ -1,4 +1,4 @@
-version: '1.0'
+version: '3.7'
 services:
   database:
     image: mongo:latest
@@ -6,13 +6,12 @@ services:
       MONGO_INITDB_ROOT_USERNAME: root
       MONGO_INITDB_ROOT_PASSWORD: rootpassword
     ports:
-      - 8080:8080
+      - 80:80
       - 27017:27017
     volumes:
       - ./db/:/data/db
-
   server:
-    image: alvarosiles/vuelo-java
+    image: vuelo-java
     build: ./vuelo
     network_mode: "service:database"
     
@@ -20,4 +19,5 @@ services:
     image: nginx:latest
     network_mode: "service:database"
     volumes:
+      - ./html:/usr/share/nginx/html
       - ./nginx/conf.d:/etc/nginx/conf.d

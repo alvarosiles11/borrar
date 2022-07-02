@@ -1,5 +1,19 @@
-### DMS-NUR VUELOS
+# DMSNUR - VUELO
+## Alvaro Siles Estrada
+# 
 
-### Alvaro Siles Estrada
+Creamos el proyecto base
 
-CQRS created in java!
+```bash
+mvn archetype:generate -DgroupId=dmsnur -DartifactId=vuelo
+```
+
+Creamos los modulos
+
+```bash
+mvn archetype:generate -DgroupId=dmsnur -DartifactId=Domain
+mvn archetype:generate -DgroupId=dmsnur -DartifactId=Application
+mvn archetype:generate -DgroupId=dmsnur -DartifactId=Infraestructure
+mvn archetype:generate -DgroupId=dmsnur -DartifactId=SharedKernel
+mvn archetype:generate -DgroupId=dmsnur -DartifactId=WebApi
+```
