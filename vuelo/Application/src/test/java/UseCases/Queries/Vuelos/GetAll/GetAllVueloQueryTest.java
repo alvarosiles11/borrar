@@ -4,9 +4,8 @@ import org.junit.Test;
 
 public class GetAllVueloQueryTest {
 
-    @Test
-    public void dataValid() {
-        GetAllVueloQuery query = new GetAllVueloQuery();
-    }
-
+  @Test
+  public void dataValid() {
+    GetAllVueloQuery query = new GetAllVueloQuery();
+  }
 }

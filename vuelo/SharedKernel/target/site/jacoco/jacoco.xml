@@ -1,1 +1,449 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><!DOCTYPE report PUBLIC "-//JACOCO//DTD Report 1.1//EN" "report.dtd"><report name="SharedKernel"><sessioninfo id="DESKTOP-2U456GH-adddb8b4" start="1654322793273" dump="1654322795591"/><sessioninfo id="DESKTOP-2U456GH-c14e034" start="1654324676785" dump="1654324680086"/><sessioninfo id="DESKTOP-2U456GH-65546f95" start="1654325679354" dump="1654325682316"/><sessioninfo id="DESKTOP-2U456GH-f1d80871" start="1654336683293" dump="1654336687917"/><sessioninfo id="DESKTOP-2U456GH-43f55c08" start="1654337054126" dump="1654337058460"/><sessioninfo id="DESKTOP-2U456GH-15b9a24f" start="1654337199486" dump="1654337204022"/><sessioninfo id="DESKTOP-2U456GH-5dde3b90" start="1654337378088" dump="1654337382453"/><sessioninfo id="DESKTOP-2U456GH-ab8726b0" start="1654337796713" dump="1654337802703"/><sessioninfo id="DESKTOP-2U456GH-528a16e0" start="1654338226166" dump="1654338229934"/><sessioninfo id="DESKTOP-2U456GH-53aa4184" start="1654338434727" dump="1654338440619"/><sessioninfo id="DESKTOP-2U456GH-d678a55f" start="1654338669885" dump="1654338673958"/><sessioninfo id="DESKTOP-2U456GH-9223f79" start="1654338793185" dump="1654338799443"/><sessioninfo id="DESKTOP-2U456GH-18a86200" start="1654338951468" dump="1654338954816"/><sessioninfo id="DESKTOP-2U456GH-deffb96c" start="1654339124874" dump="1654339129508"/><sessioninfo id="DESKTOP-2U456GH-8fb2587" start="1654339554832" dump="1654339559613"/><sessioninfo id="DESKTOP-2U456GH-cb3cb24b" start="1654339728212" dump="1654339731823"/><sessioninfo id="DESKTOP-2U456GH-e9b9ec2b" start="1654339828519" dump="1654339832379"/><sessioninfo id="DESKTOP-2U456GH-6faf5f93" start="1654340088313" dump="1654340093893"/><sessioninfo id="DESKTOP-2U456GH-f95679e8" start="1654340286778" dump="1654340291157"/><sessioninfo id="DESKTOP-2U456GH-8fdf9e53" start="1654340824293" dump="1654340828330"/><sessioninfo id="DESKTOP-2U456GH-1d8238bf" start="1654340895283" dump="1654340898561"/><sessioninfo id="DESKTOP-2U456GH-455c0e51" start="1654341194885" dump="1654341199973"/><sessioninfo id="DESKTOP-2U456GH-e99d255b" start="1654341697907" dump="1654341701251"/><sessioninfo id="DESKTOP-2U456GH-f4dff388" start="1654342024772" dump="1654342028432"/><sessioninfo id="DESKTOP-2U456GH-eed5fc90" start="1654342360174" dump="1654342363729"/><sessioninfo id="DESKTOP-2U456GH-a3d7169d" start="1654342457522" dump="1654342461982"/><sessioninfo id="DESKTOP-2U456GH-f6dd0104" start="1654342733789" dump="1654342738793"/><sessioninfo id="DESKTOP-2U456GH-bef64825" start="1654342850551" dump="1654342853836"/><sessioninfo id="DESKTOP-2U456GH-821ea76d" start="1654343297666" dump="1654343301212"/><sessioninfo id="DESKTOP-2U456GH-f3b46772" start="1654343397684" dump="1654343401367"/><sessioninfo id="DESKTOP-2U456GH-aafcf02f" start="1654343492170" dump="1654343495898"/><sessioninfo id="DESKTOP-2U456GH-aba47b82" start="1654343674574" dump="1654343678368"/><sessioninfo id="DESKTOP-2U456GH-4ac02908" start="1654343894889" dump="1654343898718"/><sessioninfo id="DESKTOP-2U456GH-a74f596e" start="1654344219705" dump="1654344223108"/><sessioninfo id="DESKTOP-2U456GH-db0a646e" start="1654344660088" dump="1654344663530"/><package name=""><class name="SharedKernel" sourcefilename="SharedKernel.java"><method name="&lt;clinit&gt;" desc="()V" line="3"><counter type="INSTRUCTION" missed="0" covered="36"/><counter type="LINE" missed="0" covered="10"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="&lt;init&gt;" desc="()V" line="2"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="AddKernel" desc="()V" line="21"><counter type="INSTRUCTION" missed="0" covered="41"/><counter type="BRANCH" missed="0" covered="2"/><counter type="LINE" missed="0" covered="7"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="80"/><counter type="BRANCH" missed="0" covered="2"/><counter type="LINE" missed="0" covered="18"/><counter type="COMPLEXITY" missed="0" covered="4"/><counter type="METHOD" missed="0" covered="3"/><counter type="CLASS" missed="0" covered="1"/></class><sourcefile name="SharedKernel.java"><line nr="2" mi="0" ci="3" mb="0" cb="0"/><line nr="3" mi="0" ci="5" mb="0" cb="0"/><line nr="4" mi="0" ci="4" mb="0" cb="0"/><line nr="5" mi="0" ci="4" mb="0" cb="0"/><line nr="6" mi="0" ci="4" mb="0" cb="0"/><line nr="7" mi="0" ci="4" mb="0" cb="0"/><line nr="8" mi="0" ci="4" mb="0" cb="0"/><line nr="9" mi="0" ci="4" mb="0" cb="0"/><line nr="13" mi="0" ci="4" mb="0" cb="0"/><line nr="14" mi="0" ci="2" mb="0" cb="0"/><line nr="18" mi="0" ci="1" mb="0" cb="0"/><line nr="21" mi="0" ci="2" mb="0" cb="0"/><line nr="22" mi="0" ci="3" mb="0" cb="0"/><line nr="23" mi="0" ci="16" mb="0" cb="2"/><line nr="24" mi="0" ci="1" mb="0" cb="0"/><line nr="25" mi="0" ci="15" mb="0" cb="0"/><line nr="27" mi="0" ci="3" mb="0" cb="0"/><line nr="28" mi="0" ci="1" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="80"/><counter type="BRANCH" missed="0" covered="2"/><counter type="LINE" missed="0" covered="18"/><counter type="COMPLEXITY" missed="0" covered="4"/><counter type="METHOD" missed="0" covered="3"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><counter type="INSTRUCTION" missed="0" covered="80"/><counter type="BRANCH" missed="0" covered="2"/><counter type="LINE" missed="0" covered="18"/><counter type="COMPLEXITY" missed="0" covered="4"/><counter type="METHOD" missed="0" covered="3"/><counter type="CLASS" missed="0" covered="1"/></package><package name="core"><class name="core/AggregateRoot" sourcefilename="AggregateRoot.java"><method name="&lt;init&gt;" desc="()V" line="6"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/><counter type="CLASS" missed="0" covered="1"/></class><class name="core/Entity" sourcefilename="Entity.java"><method name="getDomainEvents" desc="()Ljava/util/List;" line="15"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="&lt;init&gt;" desc="()V" line="18"><counter type="INSTRUCTION" missed="0" covered="8"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="addDomainEvent" desc="(Lcore/DomainEvent;)V" line="23"><counter type="INSTRUCTION" missed="0" covered="6"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="clearDomainEvent" desc="()V" line="27"><counter type="INSTRUCTION" missed="0" covered="4"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getKey" desc="()Ljava/lang/Object;" line="31"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="setKey" desc="(Ljava/lang/Object;)V" line="34"><counter type="INSTRUCTION" missed="0" covered="4"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="CheckRule" desc="(Lcore/BussinessRule;)V" line="38"><counter type="INSTRUCTION" missed="1" covered="15"/><counter type="BRANCH" missed="1" covered="3"/><counter type="LINE" missed="1" covered="4"/><counter type="COMPLEXITY" missed="1" covered="2"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="1" covered="43"/><counter type="BRANCH" missed="1" covered="3"/><counter type="LINE" missed="1" covered="15"/><counter type="COMPLEXITY" missed="1" covered="8"/><counter type="METHOD" missed="0" covered="7"/><counter type="CLASS" missed="0" covered="1"/></class><class name="core/DomainEvent" sourcefilename="DomainEvent.java"><method name="&lt;init&gt;" desc="()V" line="13"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="&lt;init&gt;" desc="(Ljava/time/LocalDateTime;)V" line="17"><counter type="INSTRUCTION" missed="0" covered="9"/><counter type="LINE" missed="0" covered="4"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getOcurredOn" desc="()Ljava/time/LocalDateTime;" line="23"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getKey" desc="()Ljava/util/UUID;" line="27"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="18"/><counter type="LINE" missed="0" covered="8"/><counter type="COMPLEXITY" missed="0" covered="4"/><counter type="METHOD" missed="0" covered="4"/><counter type="CLASS" missed="0" covered="1"/></class><class name="core/ValueObject" sourcefilename="ValueObject.java"><method name="&lt;init&gt;" desc="()V" line="3"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="CheckRule" desc="(Lcore/BussinessRule;)V" line="6"><counter type="INSTRUCTION" missed="0" covered="16"/><counter type="BRANCH" missed="0" covered="4"/><counter type="LINE" missed="0" covered="5"/><counter type="COMPLEXITY" missed="0" covered="3"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="19"/><counter type="BRANCH" missed="0" covered="4"/><counter type="LINE" missed="0" covered="6"/><counter type="COMPLEXITY" missed="0" covered="4"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></class><class name="core/BussinessRule" sourcefilename="BussinessRule.java"/><class name="core/IRepository" sourcefilename="IRepository.java"/><class name="core/BussinessRuleValidateExeption" sourcefilename="BussinessRuleValidateExeption.java"><method name="&lt;init&gt;" desc="(Ljava/lang/String;)V" line="10"><counter type="INSTRUCTION" missed="0" covered="6"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="&lt;init&gt;" desc="(Lcore/BussinessRule;)V" line="14"><counter type="INSTRUCTION" missed="0" covered="10"/><counter type="LINE" missed="0" covered="4"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getDetails" desc="()Ljava/lang/String;" line="20"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getBrokenRule" desc="()Lcore/BussinessRule;" line="28"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="toString" desc="()Ljava/lang/String;" line="37"><counter type="INSTRUCTION" missed="22" covered="0"/><counter type="BRANCH" missed="2" covered="0"/><counter type="LINE" missed="2" covered="0"/><counter type="COMPLEXITY" missed="2" covered="0"/><counter type="METHOD" missed="1" covered="0"/></method><counter type="INSTRUCTION" missed="22" covered="22"/><counter type="BRANCH" missed="2" covered="0"/><counter type="LINE" missed="2" covered="9"/><counter type="COMPLEXITY" missed="2" covered="4"/><counter type="METHOD" missed="1" covered="4"/><counter type="CLASS" missed="0" covered="1"/></class><sourcefile name="DomainEvent.java"><line nr="13" mi="0" ci="2" mb="0" cb="0"/><line nr="15" mi="0" ci="1" mb="0" cb="0"/><line nr="17" mi="0" ci="2" mb="0" cb="0"/><line nr="18" mi="0" ci="3" mb="0" cb="0"/><line nr="19" mi="0" ci="3" mb="0" cb="0"/><line nr="20" mi="0" ci="1" mb="0" cb="0"/><line nr="23" mi="0" ci="3" mb="0" cb="0"/><line nr="27" mi="0" ci="3" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="18"/><counter type="LINE" missed="0" covered="8"/><counter type="COMPLEXITY" missed="0" covered="4"/><counter type="METHOD" missed="0" covered="4"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><sourcefile name="IRepository.java"/><sourcefile name="BussinessRule.java"/><sourcefile name="BussinessRuleValidateExeption.java"><line nr="10" mi="0" ci="2" mb="0" cb="0"/><line nr="11" mi="0" ci="3" mb="0" cb="0"/><line nr="12" mi="0" ci="1" mb="0" cb="0"/><line nr="14" mi="0" ci="2" mb="0" cb="0"/><line nr="15" mi="0" ci="3" mb="0" cb="0"/><line nr="16" mi="0" ci="4" mb="0" cb="0"/><line nr="17" mi="0" ci="1" mb="0" cb="0"/><line nr="20" mi="0" ci="3" mb="0" cb="0"/><line nr="28" mi="0" ci="3" mb="0" cb="0"/><line nr="37" mi="10" ci="0" mb="2" cb="0"/><line nr="38" mi="12" ci="0" mb="0" cb="0"/><counter type="INSTRUCTION" missed="22" covered="22"/><counter type="BRANCH" missed="2" covered="0"/><counter type="LINE" missed="2" covered="9"/><counter type="COMPLEXITY" missed="2" covered="4"/><counter type="METHOD" missed="1" covered="4"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><sourcefile name="Entity.java"><line nr="15" mi="0" ci="3" mb="0" cb="0"/><line nr="18" mi="0" ci="2" mb="0" cb="0"/><line nr="19" mi="0" ci="5" mb="0" cb="0"/><line nr="20" mi="0" ci="1" mb="0" cb="0"/><line nr="23" mi="0" ci="5" mb="0" cb="0"/><line nr="24" mi="0" ci="1" mb="0" cb="0"/><line nr="27" mi="0" ci="3" mb="0" cb="0"/><line nr="28" mi="0" ci="1" mb="0" cb="0"/><line nr="31" mi="0" ci="3" mb="0" cb="0"/><line nr="34" mi="0" ci="3" mb="0" cb="0"/><line nr="35" mi="0" ci="1" mb="0" cb="0"/><line nr="38" mi="0" ci="2" mb="0" cb="2"/><line nr="40" mi="0" ci="5" mb="0" cb="0"/><line nr="42" mi="0" ci="3" mb="1" cb="1"/><line nr="44" mi="0" ci="5" mb="0" cb="0"/><line nr="46" mi="1" ci="0" mb="0" cb="0"/><counter type="INSTRUCTION" missed="1" covered="43"/><counter type="BRANCH" missed="1" covered="3"/><counter type="LINE" missed="1" covered="15"/><counter type="COMPLEXITY" missed="1" covered="8"/><counter type="METHOD" missed="0" covered="7"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><sourcefile name="AggregateRoot.java"><line nr="6" mi="0" ci="2" mb="0" cb="0"/><line nr="7" mi="0" ci="1" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><sourcefile name="ValueObject.java"><line nr="3" mi="0" ci="3" mb="0" cb="0"/><line nr="6" mi="0" ci="2" mb="0" cb="2"/><line nr="7" mi="0" ci="5" mb="0" cb="0"/><line nr="9" mi="0" ci="3" mb="0" cb="2"/><line nr="10" mi="0" ci="5" mb="0" cb="0"/><line nr="12" mi="0" ci="1" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="19"/><counter type="BRANCH" missed="0" covered="4"/><counter type="LINE" missed="0" covered="6"/><counter type="COMPLEXITY" missed="0" covered="4"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><counter type="INSTRUCTION" missed="23" covered="105"/><counter type="BRANCH" missed="3" covered="7"/><counter type="LINE" missed="3" covered="40"/><counter type="COMPLEXITY" missed="3" covered="21"/><counter type="METHOD" missed="1" covered="18"/><counter type="CLASS" missed="0" covered="5"/></package><package name="rule"><class name="rule/NotNullRule" sourcefilename="NotNullRule.java"><method name="&lt;init&gt;" desc="(Ljava/lang/Object;)V" line="8"><counter type="INSTRUCTION" missed="0" covered="6"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="IsValid" desc="()Z" line="14"><counter type="INSTRUCTION" missed="0" covered="7"/><counter type="BRANCH" missed="0" covered="2"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="1"/></method><method name="Message" desc="()Ljava/lang/String;" line="19"><counter type="INSTRUCTION" missed="0" covered="2"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="15"/><counter type="BRANCH" missed="0" covered="2"/><counter type="LINE" missed="0" covered="5"/><counter type="COMPLEXITY" missed="0" covered="4"/><counter type="METHOD" missed="0" covered="3"/><counter type="CLASS" missed="0" covered="1"/></class><class name="rule/StringNotNullOrEmptyRule" sourcefilename="StringNotNullOrEmptyRule.java"><method name="&lt;init&gt;" desc="(Ljava/lang/String;)V" line="9"><counter type="INSTRUCTION" missed="0" covered="6"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="IsValid" desc="()Z" line="15"><counter type="INSTRUCTION" missed="0" covered="11"/><counter type="BRANCH" missed="1" covered="3"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="1" covered="2"/><counter type="METHOD" missed="0" covered="1"/></method><method name="Message" desc="()Ljava/lang/String;" line="23"><counter type="INSTRUCTION" missed="0" covered="2"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="19"/><counter type="BRANCH" missed="1" covered="3"/><counter type="LINE" missed="0" covered="7"/><counter type="COMPLEXITY" missed="1" covered="4"/><counter type="METHOD" missed="0" covered="3"/><counter type="CLASS" missed="0" covered="1"/></class><sourcefile name="NotNullRule.java"><line nr="8" mi="0" ci="2" mb="0" cb="0"/><line nr="10" mi="0" ci="3" mb="0" cb="0"/><line nr="11" mi="0" ci="1" mb="0" cb="0"/><line nr="14" mi="0" ci="7" mb="0" cb="2"/><line nr="19" mi="0" ci="2" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="15"/><counter type="BRANCH" missed="0" covered="2"/><counter type="LINE" missed="0" covered="5"/><counter type="COMPLEXITY" missed="0" covered="4"/><counter type="METHOD" missed="0" covered="3"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><sourcefile name="StringNotNullOrEmptyRule.java"><line nr="9" mi="0" ci="2" mb="0" cb="0"/><line nr="10" mi="0" ci="3" mb="0" cb="0"/><line nr="11" mi="0" ci="1" mb="0" cb="0"/><line nr="15" mi="0" ci="7" mb="1" cb="3"/><line nr="16" mi="0" ci="2" mb="0" cb="0"/><line nr="18" mi="0" ci="2" mb="0" cb="0"/><line nr="23" mi="0" ci="2" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="19"/><counter type="BRANCH" missed="1" covered="3"/><counter type="LINE" missed="0" covered="7"/><counter type="COMPLEXITY" missed="1" covered="4"/><counter type="METHOD" missed="0" covered="3"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><counter type="INSTRUCTION" missed="0" covered="34"/><counter type="BRANCH" missed="1" covered="5"/><counter type="LINE" missed="0" covered="12"/><counter type="COMPLEXITY" missed="1" covered="8"/><counter type="METHOD" missed="0" covered="6"/><counter type="CLASS" missed="0" covered="2"/></package><counter type="INSTRUCTION" missed="23" covered="219"/><counter type="BRANCH" missed="4" covered="14"/><counter type="LINE" missed="3" covered="70"/><counter type="COMPLEXITY" missed="4" covered="33"/><counter type="METHOD" missed="1" covered="27"/><counter type="CLASS" missed="0" covered="8"/></report>
+<report name="SharedKernel">
+  <sessioninfo id="DESKTOP-2U456GH-adddb8b4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c14e034" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-65546f95" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f1d80871" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-43f55c08" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-15b9a24f" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5dde3b90" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-ab8726b0" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-528a16e0" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-53aa4184" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d678a55f" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-9223f79" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-18a86200" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-deffb96c" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-8fb2587" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-cb3cb24b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e9b9ec2b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-6faf5f93" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f95679e8" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-8fdf9e53" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1d8238bf" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-455c0e51" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e99d255b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f4dff388" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-eed5fc90" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a3d7169d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f6dd0104" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-bef64825" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-821ea76d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f3b46772" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-aafcf02f" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-aba47b82" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-4ac02908" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a74f596e" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-db0a646e" start="" dump="" />
+  <package name="">
+    <class name="SharedKernel" sourcefilename="SharedKernel.java">
+      <method name="&lt;clinit&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="AddKernel" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="BRANCH" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="SharedKernel.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="BRANCH" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="core">
+    <class name="core/AggregateRoot" sourcefilename="AggregateRoot.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="core/Entity" sourcefilename="Entity.java">
+      <method name="getDomainEvents" desc="()Ljava/util/List;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="addDomainEvent" desc="(Lcore/DomainEvent;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="clearDomainEvent" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getKey" desc="()Ljava/lang/Object;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="setKey" desc="(Ljava/lang/Object;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="CheckRule" desc="(Lcore/BussinessRule;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="BRANCH" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="core/DomainEvent" sourcefilename="DomainEvent.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="&lt;init&gt;" desc="(Ljava/time/LocalDateTime;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getOcurredOn" desc="()Ljava/time/LocalDateTime;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getKey" desc="()Ljava/util/UUID;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="core/ValueObject" sourcefilename="ValueObject.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="CheckRule" desc="(Lcore/BussinessRule;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="BRANCH" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="core/BussinessRule" sourcefilename="BussinessRule.java" />
+    <class name="core/IRepository" sourcefilename="IRepository.java" />
+    <class
+      name="core/BussinessRuleValidateExeption"
+      sourcefilename="BussinessRuleValidateExeption.java"
+    >
+      <method name="&lt;init&gt;" desc="(Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="&lt;init&gt;" desc="(Lcore/BussinessRule;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getDetails" desc="()Ljava/lang/String;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getBrokenRule" desc="()Lcore/BussinessRule;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="BRANCH" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="DomainEvent.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="IRepository.java" />
+    <sourcefile name="BussinessRule.java" />
+    <sourcefile name="BussinessRuleValidateExeption.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="Entity.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="AggregateRoot.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="ValueObject.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="BRANCH" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="rule">
+    <class name="rule/NotNullRule" sourcefilename="NotNullRule.java">
+      <method name="&lt;init&gt;" desc="(Ljava/lang/Object;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="IsValid" desc="()Z" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="BRANCH" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="Message" desc="()Ljava/lang/String;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class
+      name="rule/StringNotNullOrEmptyRule"
+      sourcefilename="StringNotNullOrEmptyRule.java"
+    >
+      <method name="&lt;init&gt;" desc="(Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="IsValid" desc="()Z" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="BRANCH" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="Message" desc="()Ljava/lang/String;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="NotNullRule.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="StringNotNullOrEmptyRule.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="BRANCH" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <counter type="INSTRUCTION" missed="" covered="" />
+  <counter type="BRANCH" missed="" covered="" />
+  <counter type="LINE" missed="" covered="" />
+  <counter type="COMPLEXITY" missed="" covered="" />
+  <counter type="METHOD" missed="" covered="" />
+  <counter type="CLASS" missed="" covered="" />
+</report>

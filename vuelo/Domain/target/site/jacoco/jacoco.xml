@@ -1,1 +1,609 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?><!DOCTYPE report PUBLIC "-//JACOCO//DTD Report 1.1//EN" "report.dtd"><report name="Domain"><sessioninfo id="DESKTOP-2U456GH-cf43558c" start="1654322797403" dump="1654322798625"/><sessioninfo id="DESKTOP-2U456GH-6686d0c5" start="1654324682824" dump="1654324684010"/><sessioninfo id="DESKTOP-2U456GH-5c88148f" start="1654325684981" dump="1654325686102"/><sessioninfo id="DESKTOP-2U456GH-b634d156" start="1654336691848" dump="1654336693298"/><sessioninfo id="DESKTOP-2U456GH-9c853e1b" start="1654337062490" dump="1654337064168"/><sessioninfo id="DESKTOP-2U456GH-bdfec2dd" start="1654337208306" dump="1654337209984"/><sessioninfo id="DESKTOP-2U456GH-4691c16" start="1654337386183" dump="1654337387433"/><sessioninfo id="DESKTOP-2U456GH-41e0ce75" start="1654337807205" dump="1654337809138"/><sessioninfo id="DESKTOP-2U456GH-9705631" start="1654338233588" dump="1654338235385"/><sessioninfo id="DESKTOP-2U456GH-d3dd1d45" start="1654338445975" dump="1654338447633"/><sessioninfo id="DESKTOP-2U456GH-92683aac" start="1654338679852" dump="1654338681848"/><sessioninfo id="DESKTOP-2U456GH-bdf0e293" start="1654338803268" dump="1654338805290"/><sessioninfo id="DESKTOP-2U456GH-8a993aed" start="1654338959137" dump="1654338961095"/><sessioninfo id="DESKTOP-2U456GH-e07fc194" start="1654339133741" dump="1654339136059"/><sessioninfo id="DESKTOP-2U456GH-577a3cae" start="1654339563592" dump="1654339565215"/><sessioninfo id="DESKTOP-2U456GH-bcc06998" start="1654339735640" dump="1654339738086"/><sessioninfo id="DESKTOP-2U456GH-99a9d0e0" start="1654339836514" dump="1654339838257"/><sessioninfo id="DESKTOP-2U456GH-56a7e7f3" start="1654340100293" dump="1654340102107"/><sessioninfo id="DESKTOP-2U456GH-7202f71f" start="1654340295586" dump="1654340297250"/><sessioninfo id="DESKTOP-2U456GH-a46e1de9" start="1654340832132" dump="1654340833782"/><sessioninfo id="DESKTOP-2U456GH-e8b08c7d" start="1654340902249" dump="1654340903702"/><sessioninfo id="DESKTOP-2U456GH-8cac9881" start="1654341205938" dump="1654341207945"/><sessioninfo id="DESKTOP-2U456GH-b1cf34f5" start="1654341704630" dump="1654341706577"/><sessioninfo id="DESKTOP-2U456GH-abf4ab2" start="1654342032490" dump="1654342034485"/><sessioninfo id="DESKTOP-2U456GH-69cf70fd" start="1654342366989" dump="1654342368468"/><sessioninfo id="DESKTOP-2U456GH-812c9aa8" start="1654342465673" dump="1654342467388"/><sessioninfo id="DESKTOP-2U456GH-d1d8a450" start="1654342743205" dump="1654342746565"/><sessioninfo id="DESKTOP-2U456GH-f0b3cad3" start="1654342857190" dump="1654342858634"/><sessioninfo id="DESKTOP-2U456GH-92ad4ad8" start="1654343304527" dump="1654343306114"/><sessioninfo id="DESKTOP-2U456GH-e8a937eb" start="1654343404783" dump="1654343406458"/><sessioninfo id="DESKTOP-2U456GH-cde0b6e5" start="1654343500208" dump="1654343502220"/><sessioninfo id="DESKTOP-2U456GH-44ce961d" start="1654343681956" dump="1654343683428"/><sessioninfo id="DESKTOP-2U456GH-c8550e49" start="1654343902179" dump="1654343903715"/><sessioninfo id="DESKTOP-2U456GH-d9f72357" start="1654344226819" dump="1654344228400"/><sessioninfo id="DESKTOP-2U456GH-7e12f3dc" start="1654344667159" dump="1654344668629"/><package name="Repositories"><class name="Repositories/IUnitOfWork" sourcefilename="IUnitOfWork.java"/><class name="Repositories/IAeronaveRepository" sourcefilename="IAeronaveRepository.java"/><class name="Repositories/ITripulanteRepository" sourcefilename="ITripulanteRepository.java"/><class name="Repositories/IVueloRepository" sourcefilename="IVueloRepository.java"/><sourcefile name="IAeronaveRepository.java"/><sourcefile name="IUnitOfWork.java"/><sourcefile name="ITripulanteRepository.java"/><sourcefile name="IVueloRepository.java"/></package><package name=""><class name="Domain" sourcefilename="Domain.java"><method name="&lt;init&gt;" desc="()V" line="1"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="addDomain" desc="()V" line="3"><counter type="INSTRUCTION" missed="0" covered="2"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="5"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></class><sourcefile name="Domain.java"><line nr="1" mi="0" ci="3" mb="0" cb="0"/><line nr="3" mi="0" ci="1" mb="0" cb="0"/><line nr="4" mi="0" ci="1" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="5"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><counter type="INSTRUCTION" missed="0" covered="5"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></package><package name="Model/Aeronaves"><class name="Model/Aeronaves/Aeronave" sourcefilename="Aeronave.java"><method name="&lt;init&gt;" desc="()V" line="11"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="&lt;init&gt;" desc="(Ljava/lang/String;)V" line="14"><counter type="INSTRUCTION" missed="0" covered="9"/><counter type="LINE" missed="0" covered="4"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="12"/><counter type="LINE" missed="0" covered="6"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></class><sourcefile name="Aeronave.java"><line nr="11" mi="0" ci="2" mb="0" cb="0"/><line nr="12" mi="0" ci="1" mb="0" cb="0"/><line nr="14" mi="0" ci="2" mb="0" cb="0"/><line nr="15" mi="0" ci="3" mb="0" cb="0"/><line nr="16" mi="0" ci="3" mb="0" cb="0"/><line nr="17" mi="0" ci="1" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="12"/><counter type="LINE" missed="0" covered="6"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><counter type="INSTRUCTION" missed="0" covered="12"/><counter type="LINE" missed="0" covered="6"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></package><package name="Event"><class name="Event/VueloCreado" sourcefilename="VueloCreado.java"><method name="&lt;init&gt;" desc="()V" line="23"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="&lt;init&gt;" desc="(Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/util/List;)V" line="30"><counter type="INSTRUCTION" missed="0" covered="28"/><counter type="LINE" missed="0" covered="10"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getKeyVuelo" desc="()Ljava/util/UUID;" line="42"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="setKeyVuelo" desc="(Ljava/util/UUID;)V" line="46"><counter type="INSTRUCTION" missed="0" covered="4"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getNroVuelo" desc="()Ljava/lang/String;" line="50"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="setNroVuelo" desc="(Ljava/lang/String;)V" line="54"><counter type="INSTRUCTION" missed="0" covered="4"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getKeyAeronave" desc="()Ljava/lang/String;" line="58"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="setKeyAeronave" desc="(Ljava/lang/String;)V" line="62"><counter type="INSTRUCTION" missed="0" covered="4"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getKeyAeropuertoOrigen" desc="()Ljava/lang/String;" line="66"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="setKeyAeropuertoOrigen" desc="(Ljava/lang/String;)V" line="70"><counter type="INSTRUCTION" missed="0" covered="4"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getKeyAeropuertoDestino" desc="()Ljava/lang/String;" line="74"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="setKeyAeropuertoDestino" desc="(Ljava/lang/String;)V" line="78"><counter type="INSTRUCTION" missed="0" covered="4"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getFecha_salida" desc="()Ljava/util/Date;" line="82"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="setFecha_salida" desc="(Ljava/util/Date;)V" line="86"><counter type="INSTRUCTION" missed="0" covered="4"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getFecha_arribe" desc="()Ljava/util/Date;" line="90"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="setFecha_arribe" desc="(Ljava/util/Date;)V" line="94"><counter type="INSTRUCTION" missed="0" covered="4"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="getListaTripulante" desc="()Ljava/util/List;" line="98"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="setListaTripulante" desc="(Ljava/util/List;)V" line="102"><counter type="INSTRUCTION" missed="0" covered="4"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="87"/><counter type="LINE" missed="0" covered="36"/><counter type="COMPLEXITY" missed="0" covered="18"/><counter type="METHOD" missed="0" covered="18"/><counter type="CLASS" missed="0" covered="1"/></class><sourcefile name="VueloCreado.java"><line nr="23" mi="0" ci="2" mb="0" cb="0"/><line nr="24" mi="0" ci="1" mb="0" cb="0"/><line nr="30" mi="0" ci="3" mb="0" cb="0"/><line nr="31" mi="0" ci="3" mb="0" cb="0"/><line nr="32" mi="0" ci="3" mb="0" cb="0"/><line nr="33" mi="0" ci="3" mb="0" cb="0"/><line nr="34" mi="0" ci="3" mb="0" cb="0"/><line nr="35" mi="0" ci="3" mb="0" cb="0"/><line nr="36" mi="0" ci="3" mb="0" cb="0"/><line nr="37" mi="0" ci="3" mb="0" cb="0"/><line nr="38" mi="0" ci="3" mb="0" cb="0"/><line nr="39" mi="0" ci="1" mb="0" cb="0"/><line nr="42" mi="0" ci="3" mb="0" cb="0"/><line nr="46" mi="0" ci="3" mb="0" cb="0"/><line nr="47" mi="0" ci="1" mb="0" cb="0"/><line nr="50" mi="0" ci="3" mb="0" cb="0"/><line nr="54" mi="0" ci="3" mb="0" cb="0"/><line nr="55" mi="0" ci="1" mb="0" cb="0"/><line nr="58" mi="0" ci="3" mb="0" cb="0"/><line nr="62" mi="0" ci="3" mb="0" cb="0"/><line nr="63" mi="0" ci="1" mb="0" cb="0"/><line nr="66" mi="0" ci="3" mb="0" cb="0"/><line nr="70" mi="0" ci="3" mb="0" cb="0"/><line nr="71" mi="0" ci="1" mb="0" cb="0"/><line nr="74" mi="0" ci="3" mb="0" cb="0"/><line nr="78" mi="0" ci="3" mb="0" cb="0"/><line nr="79" mi="0" ci="1" mb="0" cb="0"/><line nr="82" mi="0" ci="3" mb="0" cb="0"/><line nr="86" mi="0" ci="3" mb="0" cb="0"/><line nr="87" mi="0" ci="1" mb="0" cb="0"/><line nr="90" mi="0" ci="3" mb="0" cb="0"/><line nr="94" mi="0" ci="3" mb="0" cb="0"/><line nr="95" mi="0" ci="1" mb="0" cb="0"/><line nr="98" mi="0" ci="3" mb="0" cb="0"/><line nr="102" mi="0" ci="3" mb="0" cb="0"/><line nr="103" mi="0" ci="1" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="87"/><counter type="LINE" missed="0" covered="36"/><counter type="COMPLEXITY" missed="0" covered="18"/><counter type="METHOD" missed="0" covered="18"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><counter type="INSTRUCTION" missed="0" covered="87"/><counter type="LINE" missed="0" covered="36"/><counter type="COMPLEXITY" missed="0" covered="18"/><counter type="METHOD" missed="0" covered="18"/><counter type="CLASS" missed="0" covered="1"/></package><package name="Model/Vuelos/ValueObjects"><class name="Model/Vuelos/ValueObjects/NumeroVuelo" sourcefilename="NumeroVuelo.java"><method name="&lt;init&gt;" desc="(Ljava/lang/String;)V" line="10"><counter type="INSTRUCTION" missed="0" covered="12"/><counter type="LINE" missed="0" covered="4"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="toString" desc="()Ljava/lang/String;" line="17"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="15"/><counter type="LINE" missed="0" covered="5"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></class><sourcefile name="NumeroVuelo.java"><line nr="10" mi="0" ci="2" mb="0" cb="0"/><line nr="11" mi="0" ci="6" mb="0" cb="0"/><line nr="12" mi="0" ci="3" mb="0" cb="0"/><line nr="13" mi="0" ci="1" mb="0" cb="0"/><line nr="17" mi="0" ci="3" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="15"/><counter type="LINE" missed="0" covered="5"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><counter type="INSTRUCTION" missed="0" covered="15"/><counter type="LINE" missed="0" covered="5"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></package><package name="Factories"><class name="Factories/IAeronaveFactory" sourcefilename="IAeronaveFactory.java"/><class name="Factories/AeronaveFactory" sourcefilename="AeronaveFactory.java"><method name="&lt;init&gt;" desc="()V" line="7"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="Create" desc="(Ljava/lang/String;)LModel/Aeronaves/Aeronave;" line="12"><counter type="INSTRUCTION" missed="0" covered="5"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="8"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></class><class name="Factories/VueloFactory" sourcefilename="VueloFactory.java"><method name="&lt;init&gt;" desc="()V" line="9"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="Create" desc="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;)LModel/Vuelos/Vuelo;" line="15"><counter type="INSTRUCTION" missed="0" covered="10"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="13"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></class><class name="Factories/TripulanteFactory" sourcefilename="TripulanteFactory.java"><method name="&lt;init&gt;" desc="()V" line="9"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="Create" desc="(Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;)LModel/Vuelos/Tripulante;" line="14"><counter type="INSTRUCTION" missed="0" covered="7"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="10"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></class><class name="Factories/ITripulanteFactory" sourcefilename="ITripulanteFactory.java"/><class name="Factories/IVueloFactory" sourcefilename="IVueloFactory.java"/><sourcefile name="IAeronaveFactory.java"/><sourcefile name="VueloFactory.java"><line nr="9" mi="0" ci="2" mb="0" cb="0"/><line nr="10" mi="0" ci="1" mb="0" cb="0"/><line nr="15" mi="0" ci="10" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="13"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><sourcefile name="AeronaveFactory.java"><line nr="7" mi="0" ci="2" mb="0" cb="0"/><line nr="8" mi="0" ci="1" mb="0" cb="0"/><line nr="12" mi="0" ci="5" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="8"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><sourcefile name="IVueloFactory.java"/><sourcefile name="ITripulanteFactory.java"/><sourcefile name="TripulanteFactory.java"><line nr="9" mi="0" ci="2" mb="0" cb="0"/><line nr="10" mi="0" ci="1" mb="0" cb="0"/><line nr="14" mi="0" ci="7" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="10"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="2"/><counter type="METHOD" missed="0" covered="2"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><counter type="INSTRUCTION" missed="0" covered="31"/><counter type="LINE" missed="0" covered="9"/><counter type="COMPLEXITY" missed="0" covered="6"/><counter type="METHOD" missed="0" covered="6"/><counter type="CLASS" missed="0" covered="3"/></package><package name="Model/Vuelos"><class name="Model/Vuelos/Tripulante" sourcefilename="Tripulante.java"><method name="&lt;init&gt;" desc="(Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;)V" line="13"><counter type="INSTRUCTION" missed="0" covered="15"/><counter type="LINE" missed="0" covered="6"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="0" covered="15"/><counter type="LINE" missed="0" covered="6"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/><counter type="CLASS" missed="0" covered="1"/></class><class name="Model/Vuelos/Vuelo" sourcefilename="Vuelo.java"><method name="&lt;init&gt;" desc="()V" line="23"><counter type="INSTRUCTION" missed="0" covered="3"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="&lt;init&gt;" desc="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;)V" line="27"><counter type="INSTRUCTION" missed="0" covered="44"/><counter type="LINE" missed="0" covered="16"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="eventCreado" desc="()V" line="49"><counter type="INSTRUCTION" missed="0" covered="23"/><counter type="LINE" missed="0" covered="2"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="AgregarTripulante" desc="(LModel/Vuelos/Tripulante;)V" line="54"><counter type="INSTRUCTION" missed="0" covered="15"/><counter type="LINE" missed="0" covered="3"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><method name="lambda$AgregarTripulante$1" desc="(LModel/Vuelos/Tripulante;)V" line="55"><counter type="INSTRUCTION" missed="5" covered="0"/><counter type="LINE" missed="1" covered="0"/><counter type="COMPLEXITY" missed="1" covered="0"/><counter type="METHOD" missed="1" covered="0"/></method><method name="lambda$AgregarTripulante$0" desc="(LModel/Vuelos/Tripulante;LModel/Vuelos/Tripulante;)Z" line="54"><counter type="INSTRUCTION" missed="2" covered="7"/><counter type="BRANCH" missed="1" covered="1"/><counter type="LINE" missed="0" covered="1"/><counter type="COMPLEXITY" missed="1" covered="1"/><counter type="METHOD" missed="0" covered="1"/></method><counter type="INSTRUCTION" missed="7" covered="92"/><counter type="BRANCH" missed="1" covered="1"/><counter type="LINE" missed="1" covered="23"/><counter type="COMPLEXITY" missed="2" covered="5"/><counter type="METHOD" missed="1" covered="5"/><counter type="CLASS" missed="0" covered="1"/></class><sourcefile name="Tripulante.java"><line nr="13" mi="0" ci="2" mb="0" cb="0"/><line nr="14" mi="0" ci="3" mb="0" cb="0"/><line nr="15" mi="0" ci="3" mb="0" cb="0"/><line nr="16" mi="0" ci="3" mb="0" cb="0"/><line nr="17" mi="0" ci="3" mb="0" cb="0"/><line nr="18" mi="0" ci="1" mb="0" cb="0"/><counter type="INSTRUCTION" missed="0" covered="15"/><counter type="LINE" missed="0" covered="6"/><counter type="COMPLEXITY" missed="0" covered="1"/><counter type="METHOD" missed="0" covered="1"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><sourcefile name="Vuelo.java"><line nr="23" mi="0" ci="2" mb="0" cb="0"/><line nr="24" mi="0" ci="1" mb="0" cb="0"/><line nr="27" mi="0" ci="2" mb="0" cb="0"/><line nr="28" mi="0" ci="3" mb="0" cb="0"/><line nr="32" mi="0" ci="7" mb="0" cb="0"/><line nr="33" mi="0" ci="1" mb="0" cb="0"/><line nr="34" mi="0" ci="2" mb="0" cb="0"/><line nr="35" mi="0" ci="1" mb="0" cb="0"/><line nr="36" mi="0" ci="1" mb="0" cb="0"/><line nr="38" mi="0" ci="3" mb="0" cb="0"/><line nr="39" mi="0" ci="3" mb="0" cb="0"/><line nr="40" mi="0" ci="3" mb="0" cb="0"/><line nr="41" mi="0" ci="3" mb="0" cb="0"/><line nr="42" mi="0" ci="3" mb="0" cb="0"/><line nr="43" mi="0" ci="3" mb="0" cb="0"/><line nr="44" mi="0" ci="5" mb="0" cb="0"/><line nr="45" mi="0" ci="3" mb="0" cb="0"/><line nr="46" mi="0" ci="1" mb="0" cb="0"/><line nr="49" mi="0" ci="22" mb="0" cb="0"/><line nr="51" mi="0" ci="1" mb="0" cb="0"/><line nr="54" mi="2" ci="16" mb="1" cb="1"/><line nr="55" mi="5" ci="0" mb="0" cb="0"/><line nr="57" mi="0" ci="5" mb="0" cb="0"/><line nr="58" mi="0" ci="1" mb="0" cb="0"/><counter type="INSTRUCTION" missed="7" covered="92"/><counter type="BRANCH" missed="1" covered="1"/><counter type="LINE" missed="1" covered="23"/><counter type="COMPLEXITY" missed="2" covered="5"/><counter type="METHOD" missed="1" covered="5"/><counter type="CLASS" missed="0" covered="1"/></sourcefile><counter type="INSTRUCTION" missed="7" covered="107"/><counter type="BRANCH" missed="1" covered="1"/><counter type="LINE" missed="1" covered="29"/><counter type="COMPLEXITY" missed="2" covered="6"/><counter type="METHOD" missed="1" covered="6"/><counter type="CLASS" missed="0" covered="2"/></package><counter type="INSTRUCTION" missed="7" covered="257"/><counter type="BRANCH" missed="1" covered="1"/><counter type="LINE" missed="1" covered="88"/><counter type="COMPLEXITY" missed="2" covered="36"/><counter type="METHOD" missed="1" covered="36"/><counter type="CLASS" missed="0" covered="9"/></report>
+<report name="Domain">
+  <sessioninfo id="DESKTOP-2U456GH-cf43558c" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-6686d0c5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5c88148f" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-b634d156" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-9c853e1b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-bdfec2dd" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-4691c16" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-41e0ce75" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-9705631" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d3dd1d45" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-92683aac" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-bdf0e293" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-8a993aed" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e07fc194" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-577a3cae" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-bcc06998" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-99a9d0e0" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-56a7e7f3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7202f71f" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a46e1de9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e8b08c7d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-8cac9881" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-b1cf34f5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-abf4ab2" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-69cf70fd" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-812c9aa8" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d1d8a450" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f0b3cad3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-92ad4ad8" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e8a937eb" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-cde0b6e5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-44ce961d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c8550e49" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d9f72357" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7e12f3dc" start="" dump="" />
+  <package name="Repositories">
+    <class name="Repositories/IUnitOfWork" sourcefilename="IUnitOfWork.java" />
+    <class
+      name="Repositories/IAeronaveRepository"
+      sourcefilename="IAeronaveRepository.java"
+    />
+    <class
+      name="Repositories/ITripulanteRepository"
+      sourcefilename="ITripulanteRepository.java"
+    />
+    <class
+      name="Repositories/IVueloRepository"
+      sourcefilename="IVueloRepository.java"
+    />
+    <sourcefile name="IAeronaveRepository.java" />
+    <sourcefile name="IUnitOfWork.java" />
+    <sourcefile name="ITripulanteRepository.java" />
+    <sourcefile name="IVueloRepository.java" />
+  </package>
+  <package name="">
+    <class name="Domain" sourcefilename="Domain.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="addDomain" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="Domain.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Model/Aeronaves">
+    <class name="Model/Aeronaves/Aeronave" sourcefilename="Aeronave.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="&lt;init&gt;" desc="(Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="Aeronave.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Event">
+    <class name="Event/VueloCreado" sourcefilename="VueloCreado.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="&lt;init&gt;"
+        desc="(Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;Ljava/util/List;)V"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getKeyVuelo" desc="()Ljava/util/UUID;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="setKeyVuelo" desc="(Ljava/util/UUID;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getNroVuelo" desc="()Ljava/lang/String;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="setNroVuelo" desc="(Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getKeyAeronave" desc="()Ljava/lang/String;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="setKeyAeronave" desc="(Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getKeyAeropuertoOrigen" desc="()Ljava/lang/String;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="setKeyAeropuertoOrigen" desc="(Ljava/lang/String;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getKeyAeropuertoDestino" desc="()Ljava/lang/String;" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="setKeyAeropuertoDestino"
+        desc="(Ljava/lang/String;)V"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getFecha_salida" desc="()Ljava/util/Date;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="setFecha_salida" desc="(Ljava/util/Date;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getFecha_arribe" desc="()Ljava/util/Date;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="setFecha_arribe" desc="(Ljava/util/Date;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getListaTripulante" desc="()Ljava/util/List;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="setListaTripulante" desc="(Ljava/util/List;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="VueloCreado.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Model/Vuelos/ValueObjects">
+    <class
+      name="Model/Vuelos/ValueObjects/NumeroVuelo"
+      sourcefilename="NumeroVuelo.java"
+    >
+      <method name="&lt;init&gt;" desc="(Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="toString" desc="()Ljava/lang/String;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="NumeroVuelo.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Factories">
+    <class
+      name="Factories/IAeronaveFactory"
+      sourcefilename="IAeronaveFactory.java"
+    />
+    <class
+      name="Factories/AeronaveFactory"
+      sourcefilename="AeronaveFactory.java"
+    >
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="Create"
+        desc="(Ljava/lang/String;)LModel/Aeronaves/Aeronave;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="Factories/VueloFactory" sourcefilename="VueloFactory.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="Create"
+        desc="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;)LModel/Vuelos/Vuelo;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class
+      name="Factories/TripulanteFactory"
+      sourcefilename="TripulanteFactory.java"
+    >
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="Create"
+        desc="(Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;)LModel/Vuelos/Tripulante;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class
+      name="Factories/ITripulanteFactory"
+      sourcefilename="ITripulanteFactory.java"
+    />
+    <class name="Factories/IVueloFactory" sourcefilename="IVueloFactory.java" />
+    <sourcefile name="IAeronaveFactory.java" />
+    <sourcefile name="VueloFactory.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="AeronaveFactory.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="IVueloFactory.java" />
+    <sourcefile name="ITripulanteFactory.java" />
+    <sourcefile name="TripulanteFactory.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Model/Vuelos">
+    <class name="Model/Vuelos/Tripulante" sourcefilename="Tripulante.java">
+      <method
+        name="&lt;init&gt;"
+        desc="(Ljava/util/UUID;Ljava/lang/String;Ljava/lang/String;)V"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="Model/Vuelos/Vuelo" sourcefilename="Vuelo.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="&lt;init&gt;"
+        desc="(Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/lang/String;Ljava/util/Date;Ljava/util/Date;)V"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="eventCreado" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="AgregarTripulante"
+        desc="(LModel/Vuelos/Tripulante;)V"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="lambda$AgregarTripulante$1"
+        desc="(LModel/Vuelos/Tripulante;)V"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="lambda$AgregarTripulante$0"
+        desc="(LModel/Vuelos/Tripulante;LModel/Vuelos/Tripulante;)Z"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="BRANCH" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="Tripulante.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="Vuelo.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="BRANCH" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="BRANCH" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <counter type="INSTRUCTION" missed="" covered="" />
+  <counter type="BRANCH" missed="" covered="" />
+  <counter type="LINE" missed="" covered="" />
+  <counter type="COMPLEXITY" missed="" covered="" />
+  <counter type="METHOD" missed="" covered="" />
+  <counter type="CLASS" missed="" covered="" />
+</report>

@@ -3,23 +3,23 @@ build
 coverage
 
 # Ignore all extension files:
-*.html
-*.yaml
+# *.html
+# *.yaml
 # *.md
 *.jpg
 *.png
 
 
 # Ignore all folder con extensions
-**/.git
-**/.svn
-**/.hg
+# **/.git
+# **/.svn
+# **/.hg
 
 # Ignore all folder:
-**/node_modules
-**/target
-**/test
-**/bin
-**/lib
+# **/node_modules
+# **/target
+# **/test
+# **/bin
+# **/lib
 
 # .vscode

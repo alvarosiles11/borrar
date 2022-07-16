@@ -1,5 +1,3 @@
-/** @format */
-
 function name(params) {
   alert(params);
 }

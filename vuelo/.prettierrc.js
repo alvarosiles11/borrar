@@ -49,4 +49,11 @@ module.exports = {
   // requirePragma : false,
 
   // Sensibilidad de espacios en blanco HTML
+  // htmlWhitespaceSensitivity: 'css',
+  htmlWhitespaceSensitivity: 'strict',
+
+  // Fin de la línea
+  endOfLine: 'auto',
+
+  // documentacion https://prettier.io/docs/en/options.html
 };

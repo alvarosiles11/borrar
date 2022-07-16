@@ -2,15 +2,6 @@ package Controllers;
 
 import static org.mockito.ArgumentMatchers.any;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.UUID;
-
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
-import org.mockito.Mockito;
-
 import Dto.TripulanteDto;
 import Factories.ITripulanteFactory;
 import Model.Vuelos.Tripulante;
@@ -22,44 +13,58 @@ import UseCases.Queries.Tripulantes.GetAll.GetAllTripulanteQuery;
 import UseCases.Queries.Tripulantes.GetByKey.GetTripulanteByKeyQuery;
 import fourteam.http.Exception.HttpException;
 import fourteam.mediator.Mediator;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.UUID;
+import org.junit.Assert;
+import org.junit.Before;
+import org.junit.Test;
+import org.mockito.Mockito;
 
 public class TripulanteControllerTest {
 
-	Mediator mediator = Mockito.mock(Mediator.class);
+  Mediator mediator = Mockito.mock(Mediator.class);
 
-	@Before
-	public void setup() {
+  @Before
+  public void setup() {}
 
-	}
+  @Test
+  public void HandleTripulanteController_Ok() throws HttpException {
+    TripulanteController tripulanteController = new TripulanteController(
+      mediator
+    );
 
-	@Test
-	public void HandleTripulanteController_Ok() throws HttpException {
-		TripulanteController tripulanteController = new TripulanteController(mediator);
+    UUID key = UUID.randomUUID();
+    UUID keyVuelo = UUID.randomUUID();
+    String keyTripulante = UUID.randomUUID().toString();
+    String cargo = "Piloto";
 
-		UUID key = UUID.randomUUID();
-		UUID keyVuelo = UUID.randomUUID();
-		String keyTripulante = UUID.randomUUID().toString();
-		String cargo = "Piloto";
+    Tripulante tripulante = new Tripulante(keyVuelo, keyTripulante, cargo);
+    TripulanteDto tripulanteDto = new TripulanteDto();
 
-		Tripulante tripulante = new Tripulante(keyVuelo, keyTripulante, cargo);
-		TripulanteDto tripulanteDto = new TripulanteDto();
+    // GetAllTripulanteQuery getAllTripulanteQuery = new GetAllTripulanteQuery();
+    // List<Tripulante> listaTripulante = new ArrayList<>();
 
-		// GetAllTripulanteQuery getAllTripulanteQuery = new GetAllTripulanteQuery();
-		// List<Tripulante> listaTripulante = new ArrayList<>();
+    tripulanteController.getAll();
 
-		tripulanteController.getAll();
+    CrearTripulanteCommand crearTripulanteCommand = new CrearTripulanteCommand(
+      tripulanteDto
+    );
+    tripulanteController.register(crearTripulanteCommand);
 
-		CrearTripulanteCommand crearTripulanteCommand = new CrearTripulanteCommand(tripulanteDto);
-		tripulanteController.register(crearTripulanteCommand);
+    EditarTripulanteCommand editarTripulanteCommand = new EditarTripulanteCommand(
+      key
+    );
+    tripulanteController.edit(tripulante, editarTripulanteCommand);
 
-		EditarTripulanteCommand editarTripulanteCommand = new EditarTripulanteCommand(key);
-		tripulanteController.edit(tripulante, editarTripulanteCommand);
+    EliminarTripulanteCommand eliminarTripulanteCommand = new EliminarTripulanteCommand(
+      key
+    );
+    tripulanteController.delete(eliminarTripulanteCommand);
 
-		EliminarTripulanteCommand eliminarTripulanteCommand = new EliminarTripulanteCommand(key);
-		tripulanteController.delete(eliminarTripulanteCommand);
-
-		GetTripulanteByKeyQuery getTripulanteByKeyQuery = new GetTripulanteByKeyQuery(key);
-		tripulanteController.getByKey(getTripulanteByKeyQuery);
-
-	}
+    GetTripulanteByKeyQuery getTripulanteByKeyQuery = new GetTripulanteByKeyQuery(
+      key
+    );
+    tripulanteController.getByKey(getTripulanteByKeyQuery);
+  }
 }

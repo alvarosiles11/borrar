@@ -4,8 +4,8 @@ import org.junit.Test;
 
 public class GetAllTripulanteQueryTest {
 
-    @Test
-    public void dataValid() {
-        GetAllTripulanteQuery query = new GetAllTripulanteQuery();
-    }
+  @Test
+  public void dataValid() {
+    GetAllTripulanteQuery query = new GetAllTripulanteQuery();
+  }
 }
