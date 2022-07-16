@@ -6,6 +6,9 @@ coverage
 *.html
 *.yaml
 *.md
+*.jpg
+*.png
+
 
 # Ignore all folder con extensions
 **/.git
@@ -17,3 +20,6 @@ coverage
 **/target
 **/test
 **/bin
+**/lib
+
+.vscode
