@@ -1,9 +1,12 @@
 package Factories;
 
+import Model.Vuelos.Tripulante;
 import java.util.UUID;
 
-import Model.Vuelos.Tripulante;
-
 public interface ITripulanteFactory {
-    public Tripulante Create(UUID _keyVuelo, String _keyTripulante, String _cargo);
+  public Tripulante Create(
+    UUID _keyVuelo,
+    String _keyTripulante,
+    String _cargo
+  );
 }

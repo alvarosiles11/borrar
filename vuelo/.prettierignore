@@ -1,0 +1,19 @@
+ # Ignore artifacts:
+build
+coverage
+
+# Ignore all extension files:
+*.html
+*.yaml
+*.md
+
+# Ignore all folder con extensions
+**/.git
+**/.svn
+**/.hg
+
+# Ignore all folder:
+**/node_modules
+**/target
+**/test
+**/bin

@@ -3,27 +3,25 @@ package Dto;
 import java.util.UUID;
 
 public class AeronaveDto {
-	
-	public UUID keyAeronave;
-	public String matricula;
 
-	public AeronaveDto() {
-	}
+  public UUID keyAeronave;
+  public String matricula;
 
-	public UUID getKeyAeronave() {
-		return keyAeronave;
-	}
+  public AeronaveDto() {}
 
-	public void setKeyAeronave(UUID keyAeronave) {
-		this.keyAeronave = keyAeronave;
-	}
+  public UUID getKeyAeronave() {
+    return keyAeronave;
+  }
 
-	public String getMatricula() {
-		return matricula;
-	}
+  public void setKeyAeronave(UUID keyAeronave) {
+    this.keyAeronave = keyAeronave;
+  }
 
-	public void setMatricula(String matricula) {
-		this.matricula = matricula;
-	}
+  public String getMatricula() {
+    return matricula;
+  }
 
+  public void setMatricula(String matricula) {
+    this.matricula = matricula;
+  }
 }
