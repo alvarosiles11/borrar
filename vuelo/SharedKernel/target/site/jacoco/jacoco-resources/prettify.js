@@ -99,7 +99,6 @@ window['_pr_isIE6'] = function () {
   };
   return ieVersion;
 };
-
 (function () {
   // Keyword lists for various languages.
   var FLOW_CONTROL_KEYWORDS = 'break continue do else for if return while ';

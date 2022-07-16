@@ -6,7 +6,7 @@ module.exports = {
   // singleQuote: true,
 
   // Especifique la longitud de la línea en la que se ajustará la impresora.
-  printWidth: 80,
+  // printWidth: 80,
 
   /*Especifique el número de espacios por nivel de sangría.*/
   tabWidth: 2,

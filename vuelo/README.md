@@ -15,9 +15,9 @@ consistent coding styles between different editors and IDEs
 #### 📌 Regla en General
 
 ```
-root = true
+root=true
 
-[   *   ]
+[              *       ]
 trim_trailing_whitespace = true (regla no espacios)
 indent_style             = space (regla tabs)
 charset                  = utf-8 (ASCII de 8 bits)
