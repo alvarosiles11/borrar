@@ -9,7 +9,7 @@ root = true # no va heredar de nadie
 
 [*]
 trim_trailing_whitespace = true # regla no espacios
-indent_style             = tab # regla tabs
+indent_style             = space # regla tabs
 # indent_size              = 2 # salto de linea
 charset                  = utf-8 # UTF-8 caracter ASCII para usar puntos de código de 8 bits
 end_of_line              = lf # CRLF y LF son caracteres de control ASCII y Unicode
@@ -29,3 +29,8 @@ indent_style = space
 # typescript/ javascrit -> ESlint
 # Django/ python -> Flake8
 # o en general ->Sonalint
+
+
+[*.rm] # reglas para java
+trim_trailing_whitespace = true # regla no espacios
+indent_style = space

@@ -5,7 +5,7 @@ coverage
 # Ignore all extension files:
 *.html
 *.yaml
-*.md
+# *.md
 *.jpg
 *.png
 
@@ -22,4 +22,4 @@ coverage
 **/bin
 **/lib
 
-.vscode
+# .vscode
