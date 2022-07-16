@@ -8,17 +8,18 @@
 root = true # no va heredar de nadie
 
 [*]
-trim_trailing_whitespace = true # regla no espacios
+trim_trailing_whitespace = true # quita todos los espacios
 indent_style             = space # regla tabs
-# indent_size              = 2 # salto de linea
+indent_size              = 2 # salto de linea
 charset                  = utf-8 # UTF-8 caracter ASCII para usar puntos de código de 8 bits
 end_of_line              = lf # CRLF y LF son caracteres de control ASCII y Unicode
 # insert_final_newline     = true # agrega una linea al final
+max_line_length = 80
 
 
 [*.{cs,vb}] # reglas para c# y Visual Basic
-dotnet_diagnostic.IDE0005.severity = error # Using directive is unnecessary
-dotnet_diagnostic.CA1822.severity = error
+# dotnet_diagnostic.IDE0005.severity = error # Using directive is unnecessary
+# dotnet_diagnostic.CA1822.severity = error
 
 [*.java] # reglas para java
 indent_style = space
@@ -33,4 +34,4 @@ indent_style = space
 
 [*.rm] # reglas para java
 trim_trailing_whitespace = true # regla no espacios
-indent_style = space
+# indent_style = space
