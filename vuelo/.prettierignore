@@ -1,27 +1,16 @@
-<<<<<<< Updated upstream
  # Ignore artifacts:
-=======
-# Ignore artifacts:
->>>>>>> Stashed changes
 build
 coverage
 
 # Ignore all extension files:
-<<<<<<< Updated upstream
 # *.html
 # *.yaml
 # *.md
-=======
-*.html
-*.yaml
-*.md
->>>>>>> Stashed changes
 *.jpg
 *.png
 
 
 # Ignore all folder con extensions
-<<<<<<< Updated upstream
 # **/.git
 # **/.svn
 # **/.hg
@@ -34,17 +23,3 @@ coverage
 # **/lib
 
 # .vscode
-=======
-**/.git
-**/.svn
-**/.hg
-
-# Ignore all folder:
-**/node_modules
-**/target
-**/test
-**/bin
-**/lib
-
- .vscode
->>>>>>> Stashed changes
