@@ -2600,3 +2600,2315 @@
   <counter type="METHOD" missed="" covered="" />
   <counter type="CLASS" missed="" covered="" />
 </report>
+<report name="WebApi">
+  <sessioninfo id="DESKTOP-2U456GH-2ffabb99" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-43600e93" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c6c5aa29" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f8f946f5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-23384188" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-775ef4b4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c39f2145" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c9f27f78" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-68747361" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-556d313" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5ca75d81" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3cc3af87" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1e4aa7fa" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-2f71695a" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c492fb3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a0e3ee00" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7a689b82" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5c77544b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d8995ec9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c7ab0c72" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-4e8b0bb5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-288fe1b3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1c60956d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-b011aa9b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a7ce3ddf" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-152a460" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c4082be2" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7b9d3838" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-ebf8f483" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-cf0b9aa4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-931dd5b9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-69a15808" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-6ca34bd8" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3a4d1a7b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e3c6b8dc" start="" dump="" />
+  <package name="">
+    <class name="App" sourcefilename="App.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="main" desc="([Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="WebApi" sourcefilename="WebApi.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="AddControllers" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="App.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="WebApi.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Controllers">
+    <class
+      name="Controllers/VueloController"
+      sourcefilename="VueloController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Vuelos/Crear/CrearVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Vuelos/GetByKey/GetVueloByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Vuelo;LUseCases/Command/Vuelos/Editar/EditarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Vuelos/Eliminar/EliminarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class
+      name="Controllers/TripulanteController"
+      sourcefilename="TripulanteController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Tripulantes/Crear/CrearTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Tripulantes/GetByKey/GetTripulanteByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Tripulante;LUseCases/Command/Tripulantes/Editar/EditarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Tripulantes/Eliminar/EliminarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="TripulanteController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="VueloController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <counter type="INSTRUCTION" missed="" covered="" />
+  <counter type="LINE" missed="" covered="" />
+  <counter type="COMPLEXITY" missed="" covered="" />
+  <counter type="METHOD" missed="" covered="" />
+  <counter type="CLASS" missed="" covered="" />
+</report>
+<report name="WebApi">
+  <sessioninfo id="DESKTOP-2U456GH-2ffabb99" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-43600e93" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c6c5aa29" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f8f946f5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-23384188" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-775ef4b4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c39f2145" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c9f27f78" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-68747361" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-556d313" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5ca75d81" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3cc3af87" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1e4aa7fa" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-2f71695a" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c492fb3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a0e3ee00" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7a689b82" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5c77544b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d8995ec9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c7ab0c72" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-4e8b0bb5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-288fe1b3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1c60956d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-b011aa9b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a7ce3ddf" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-152a460" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c4082be2" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7b9d3838" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-ebf8f483" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-cf0b9aa4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-931dd5b9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-69a15808" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-6ca34bd8" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3a4d1a7b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e3c6b8dc" start="" dump="" />
+  <package name="">
+    <class name="App" sourcefilename="App.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="main" desc="([Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="WebApi" sourcefilename="WebApi.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="AddControllers" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="App.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="WebApi.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Controllers">
+    <class
+      name="Controllers/VueloController"
+      sourcefilename="VueloController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Vuelos/Crear/CrearVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Vuelos/GetByKey/GetVueloByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Vuelo;LUseCases/Command/Vuelos/Editar/EditarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Vuelos/Eliminar/EliminarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class
+      name="Controllers/TripulanteController"
+      sourcefilename="TripulanteController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Tripulantes/Crear/CrearTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Tripulantes/GetByKey/GetTripulanteByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Tripulante;LUseCases/Command/Tripulantes/Editar/EditarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Tripulantes/Eliminar/EliminarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="TripulanteController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="VueloController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <counter type="INSTRUCTION" missed="" covered="" />
+  <counter type="LINE" missed="" covered="" />
+  <counter type="COMPLEXITY" missed="" covered="" />
+  <counter type="METHOD" missed="" covered="" />
+  <counter type="CLASS" missed="" covered="" />
+</report>
+<report name="WebApi">
+  <sessioninfo id="DESKTOP-2U456GH-2ffabb99" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-43600e93" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c6c5aa29" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f8f946f5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-23384188" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-775ef4b4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c39f2145" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c9f27f78" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-68747361" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-556d313" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5ca75d81" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3cc3af87" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1e4aa7fa" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-2f71695a" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c492fb3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a0e3ee00" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7a689b82" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5c77544b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d8995ec9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c7ab0c72" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-4e8b0bb5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-288fe1b3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1c60956d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-b011aa9b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a7ce3ddf" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-152a460" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c4082be2" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7b9d3838" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-ebf8f483" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-cf0b9aa4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-931dd5b9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-69a15808" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-6ca34bd8" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3a4d1a7b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e3c6b8dc" start="" dump="" />
+  <package name="">
+    <class name="App" sourcefilename="App.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="main" desc="([Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="WebApi" sourcefilename="WebApi.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="AddControllers" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="App.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="WebApi.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Controllers">
+    <class
+      name="Controllers/VueloController"
+      sourcefilename="VueloController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Vuelos/Crear/CrearVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Vuelos/GetByKey/GetVueloByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Vuelo;LUseCases/Command/Vuelos/Editar/EditarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Vuelos/Eliminar/EliminarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class
+      name="Controllers/TripulanteController"
+      sourcefilename="TripulanteController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Tripulantes/Crear/CrearTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Tripulantes/GetByKey/GetTripulanteByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Tripulante;LUseCases/Command/Tripulantes/Editar/EditarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Tripulantes/Eliminar/EliminarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="TripulanteController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="VueloController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <counter type="INSTRUCTION" missed="" covered="" />
+  <counter type="LINE" missed="" covered="" />
+  <counter type="COMPLEXITY" missed="" covered="" />
+  <counter type="METHOD" missed="" covered="" />
+  <counter type="CLASS" missed="" covered="" />
+</report>
+<report name="WebApi">
+  <sessioninfo id="DESKTOP-2U456GH-2ffabb99" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-43600e93" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c6c5aa29" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f8f946f5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-23384188" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-775ef4b4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c39f2145" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c9f27f78" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-68747361" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-556d313" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5ca75d81" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3cc3af87" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1e4aa7fa" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-2f71695a" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c492fb3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a0e3ee00" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7a689b82" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5c77544b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d8995ec9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c7ab0c72" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-4e8b0bb5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-288fe1b3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1c60956d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-b011aa9b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a7ce3ddf" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-152a460" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c4082be2" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7b9d3838" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-ebf8f483" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-cf0b9aa4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-931dd5b9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-69a15808" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-6ca34bd8" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3a4d1a7b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e3c6b8dc" start="" dump="" />
+  <package name="">
+    <class name="App" sourcefilename="App.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="main" desc="([Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="WebApi" sourcefilename="WebApi.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="AddControllers" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="App.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="WebApi.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Controllers">
+    <class
+      name="Controllers/VueloController"
+      sourcefilename="VueloController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Vuelos/Crear/CrearVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Vuelos/GetByKey/GetVueloByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Vuelo;LUseCases/Command/Vuelos/Editar/EditarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Vuelos/Eliminar/EliminarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class
+      name="Controllers/TripulanteController"
+      sourcefilename="TripulanteController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Tripulantes/Crear/CrearTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Tripulantes/GetByKey/GetTripulanteByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Tripulante;LUseCases/Command/Tripulantes/Editar/EditarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Tripulantes/Eliminar/EliminarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="TripulanteController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="VueloController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <counter type="INSTRUCTION" missed="" covered="" />
+  <counter type="LINE" missed="" covered="" />
+  <counter type="COMPLEXITY" missed="" covered="" />
+  <counter type="METHOD" missed="" covered="" />
+  <counter type="CLASS" missed="" covered="" />
+</report>
+<report name="WebApi">
+  <sessioninfo id="DESKTOP-2U456GH-2ffabb99" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-43600e93" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c6c5aa29" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f8f946f5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-23384188" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-775ef4b4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c39f2145" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c9f27f78" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-68747361" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-556d313" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5ca75d81" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3cc3af87" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1e4aa7fa" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-2f71695a" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c492fb3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a0e3ee00" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7a689b82" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5c77544b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d8995ec9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c7ab0c72" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-4e8b0bb5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-288fe1b3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1c60956d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-b011aa9b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a7ce3ddf" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-152a460" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c4082be2" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7b9d3838" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-ebf8f483" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-cf0b9aa4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-931dd5b9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-69a15808" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-6ca34bd8" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3a4d1a7b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e3c6b8dc" start="" dump="" />
+  <package name="">
+    <class name="App" sourcefilename="App.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="main" desc="([Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="WebApi" sourcefilename="WebApi.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="AddControllers" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="App.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="WebApi.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Controllers">
+    <class
+      name="Controllers/VueloController"
+      sourcefilename="VueloController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Vuelos/Crear/CrearVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Vuelos/GetByKey/GetVueloByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Vuelo;LUseCases/Command/Vuelos/Editar/EditarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Vuelos/Eliminar/EliminarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class
+      name="Controllers/TripulanteController"
+      sourcefilename="TripulanteController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Tripulantes/Crear/CrearTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Tripulantes/GetByKey/GetTripulanteByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Tripulante;LUseCases/Command/Tripulantes/Editar/EditarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Tripulantes/Eliminar/EliminarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="TripulanteController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="VueloController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <counter type="INSTRUCTION" missed="" covered="" />
+  <counter type="LINE" missed="" covered="" />
+  <counter type="COMPLEXITY" missed="" covered="" />
+  <counter type="METHOD" missed="" covered="" />
+  <counter type="CLASS" missed="" covered="" />
+</report>
+<report name="WebApi">
+  <sessioninfo id="DESKTOP-2U456GH-2ffabb99" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-43600e93" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c6c5aa29" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f8f946f5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-23384188" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-775ef4b4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c39f2145" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c9f27f78" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-68747361" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-556d313" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5ca75d81" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3cc3af87" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1e4aa7fa" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-2f71695a" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c492fb3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a0e3ee00" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7a689b82" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5c77544b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d8995ec9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c7ab0c72" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-4e8b0bb5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-288fe1b3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1c60956d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-b011aa9b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a7ce3ddf" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-152a460" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c4082be2" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7b9d3838" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-ebf8f483" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-cf0b9aa4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-931dd5b9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-69a15808" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-6ca34bd8" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3a4d1a7b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e3c6b8dc" start="" dump="" />
+  <package name="">
+    <class name="App" sourcefilename="App.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="main" desc="([Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="WebApi" sourcefilename="WebApi.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="AddControllers" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="App.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="WebApi.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Controllers">
+    <class
+      name="Controllers/VueloController"
+      sourcefilename="VueloController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Vuelos/Crear/CrearVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Vuelos/GetByKey/GetVueloByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Vuelo;LUseCases/Command/Vuelos/Editar/EditarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Vuelos/Eliminar/EliminarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class
+      name="Controllers/TripulanteController"
+      sourcefilename="TripulanteController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Tripulantes/Crear/CrearTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Tripulantes/GetByKey/GetTripulanteByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Tripulante;LUseCases/Command/Tripulantes/Editar/EditarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Tripulantes/Eliminar/EliminarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="TripulanteController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="VueloController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <counter type="INSTRUCTION" missed="" covered="" />
+  <counter type="LINE" missed="" covered="" />
+  <counter type="COMPLEXITY" missed="" covered="" />
+  <counter type="METHOD" missed="" covered="" />
+  <counter type="CLASS" missed="" covered="" />
+</report>
+<report name="WebApi">
+  <sessioninfo id="DESKTOP-2U456GH-2ffabb99" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-43600e93" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c6c5aa29" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f8f946f5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-23384188" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-775ef4b4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c39f2145" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c9f27f78" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-68747361" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-556d313" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5ca75d81" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3cc3af87" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1e4aa7fa" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-2f71695a" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c492fb3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a0e3ee00" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7a689b82" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5c77544b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d8995ec9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c7ab0c72" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-4e8b0bb5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-288fe1b3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1c60956d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-b011aa9b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a7ce3ddf" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-152a460" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c4082be2" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7b9d3838" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-ebf8f483" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-cf0b9aa4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-931dd5b9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-69a15808" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-6ca34bd8" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3a4d1a7b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e3c6b8dc" start="" dump="" />
+  <package name="">
+    <class name="App" sourcefilename="App.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="main" desc="([Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="WebApi" sourcefilename="WebApi.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="AddControllers" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="App.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="WebApi.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Controllers">
+    <class
+      name="Controllers/VueloController"
+      sourcefilename="VueloController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Vuelos/Crear/CrearVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Vuelos/GetByKey/GetVueloByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Vuelo;LUseCases/Command/Vuelos/Editar/EditarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Vuelos/Eliminar/EliminarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class
+      name="Controllers/TripulanteController"
+      sourcefilename="TripulanteController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Tripulantes/Crear/CrearTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Tripulantes/GetByKey/GetTripulanteByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Tripulante;LUseCases/Command/Tripulantes/Editar/EditarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Tripulantes/Eliminar/EliminarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="TripulanteController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="VueloController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <counter type="INSTRUCTION" missed="" covered="" />
+  <counter type="LINE" missed="" covered="" />
+  <counter type="COMPLEXITY" missed="" covered="" />
+  <counter type="METHOD" missed="" covered="" />
+  <counter type="CLASS" missed="" covered="" />
+</report>
+<report name="WebApi">
+  <sessioninfo id="DESKTOP-2U456GH-2ffabb99" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-43600e93" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c6c5aa29" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-f8f946f5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-23384188" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-775ef4b4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c39f2145" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c9f27f78" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-68747361" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-556d313" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5ca75d81" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3cc3af87" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1e4aa7fa" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-2f71695a" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c492fb3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a0e3ee00" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7a689b82" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-5c77544b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-d8995ec9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c7ab0c72" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-4e8b0bb5" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-288fe1b3" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-1c60956d" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-b011aa9b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-a7ce3ddf" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-152a460" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-c4082be2" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-7b9d3838" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-ebf8f483" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-cf0b9aa4" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-931dd5b9" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-69a15808" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-6ca34bd8" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-3a4d1a7b" start="" dump="" />
+  <sessioninfo id="DESKTOP-2U456GH-e3c6b8dc" start="" dump="" />
+  <package name="">
+    <class name="App" sourcefilename="App.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="main" desc="([Ljava/lang/String;)V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class name="WebApi" sourcefilename="WebApi.java">
+      <method name="&lt;init&gt;" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="AddControllers" desc="()V" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="App.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="WebApi.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <package name="Controllers">
+    <class
+      name="Controllers/VueloController"
+      sourcefilename="VueloController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Vuelos/Crear/CrearVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Vuelos/GetByKey/GetVueloByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Vuelo;LUseCases/Command/Vuelos/Editar/EditarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Vuelos/Eliminar/EliminarVueloCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <class
+      name="Controllers/TripulanteController"
+      sourcefilename="TripulanteController.java"
+    >
+      <method name="&lt;init&gt;" desc="(Lfourteam/mediator/Mediator;)V" line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method name="getAll" desc="()Lfourteam/mediator/Response;" line="">
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="register"
+        desc="(LUseCases/Command/Tripulantes/Crear/CrearTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="getByKey"
+        desc="(LUseCases/Queries/Tripulantes/GetByKey/GetTripulanteByKeyQuery;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="edit"
+        desc="(LModel/Vuelos/Tripulante;LUseCases/Command/Tripulantes/Editar/EditarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <method
+        name="delete"
+        desc="(LUseCases/Command/Tripulantes/Eliminar/EliminarTripulanteCommand;)Lfourteam/mediator/Response;"
+        line=""
+      >
+        <counter type="INSTRUCTION" missed="" covered="" />
+        <counter type="LINE" missed="" covered="" />
+        <counter type="COMPLEXITY" missed="" covered="" />
+        <counter type="METHOD" missed="" covered="" />
+      </method>
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </class>
+    <sourcefile name="TripulanteController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <sourcefile name="VueloController.java">
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <line nr="" mi="" ci="" mb="" cb="" />
+      <counter type="INSTRUCTION" missed="" covered="" />
+      <counter type="LINE" missed="" covered="" />
+      <counter type="COMPLEXITY" missed="" covered="" />
+      <counter type="METHOD" missed="" covered="" />
+      <counter type="CLASS" missed="" covered="" />
+    </sourcefile>
+    <counter type="INSTRUCTION" missed="" covered="" />
+    <counter type="LINE" missed="" covered="" />
+    <counter type="COMPLEXITY" missed="" covered="" />
+    <counter type="METHOD" missed="" covered="" />
+    <counter type="CLASS" missed="" covered="" />
+  </package>
+  <counter type="INSTRUCTION" missed="" covered="" />
+  <counter type="LINE" missed="" covered="" />
+  <counter type="COMPLEXITY" missed="" covered="" />
+  <counter type="METHOD" missed="" covered="" />
+  <counter type="CLASS" missed="" covered="" />
+</report>

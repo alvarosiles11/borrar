@@ -38,22 +38,23 @@ public class VueloController {
 
   @PostMapping("/registro")
   public Response<Vuelo> register(@RequestBody CrearVueloCommand _vuelo)
-      throws HttpException {
+    throws HttpException {
     System.out.println("vuelo register exitoso");
     return _mediator.send(_vuelo);
   }
 
   @GetMapping("/{key}")
   public Response<VueloDto> getByKey(@PathVariable GetVueloByKeyQuery request)
-      throws HttpException {
+    throws HttpException {
     System.out.println("vuelo getByKey exitoso");
     return _mediator.send(request);
   }
 
   @PutMapping("/{key}")
   public Response<Vuelo> edit(
-      @RequestBody Vuelo _Vuelo,
-      @PathVariable EditarVueloCommand request) throws HttpException {
+    @RequestBody Vuelo _Vuelo,
+    @PathVariable EditarVueloCommand request
+  ) throws HttpException {
     request._VueloDto.nroVuelo = _Vuelo.nroVuelo;
     request._VueloDto.keyAeronave = _Vuelo.keyAeronave;
     request._VueloDto.keyAeropuertoOrigen = _Vuelo.keyAeropuertoOrigen;
@@ -66,7 +67,7 @@ public class VueloController {
 
   @DeleteMapping("/{key}")
   public Response<Vuelo> delete(@PathVariable EliminarVueloCommand request)
-      throws HttpException {
+    throws HttpException {
     System.out.println("vuelo delete exitoso");
     return _mediator.send(request);
   }
