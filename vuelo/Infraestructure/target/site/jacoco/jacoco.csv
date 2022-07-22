@@ -1,7 +1,0 @@
-GROUP,PACKAGE,CLASS,INSTRUCTION_MISSED,INSTRUCTION_COVERED,BRANCH_MISSED,BRANCH_COVERED,LINE_MISSED,LINE_COVERED,COMPLEXITY_MISSED,COMPLEXITY_COVERED,METHOD_MISSED,METHOD_COVERED
-Infraestructure,default,UnitOfWork,0,35,0,2,0,11,0,3,0,2
-Infraestructure,default,Infraestructure,0,18,0,0,0,8,0,2,0,2
-Infraestructure,Context,IWriteDbContext,0,4,0,0,0,2,0,1,0,1
-Infraestructure,Repository,TripulanteRepository,0,58,0,0,0,11,0,9,0,9
-Infraestructure,Repository,VueloRepository,0,58,0,0,0,11,0,9,0,9
-Infraestructure,Context.MongoDB,WriteDbContext,42,250,6,8,9,56,7,20,2,18
