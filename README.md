@@ -20,8 +20,6 @@ docker image push alvarosiles/mongo
 
 //en consola vsc
 npm init --yes
-
-//ejecuto en cmd
 npx husky-init && npm install
 
 //archivo precommit
