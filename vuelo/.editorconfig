@@ -30,8 +30,12 @@ indent_style = space
 # typescript/ javascrit -> ESlint
 # Django/ python -> Flake8
 # o en general ->Sonalint
+<<<<<<< Updated upstream
 
 
 [*.rm] # reglas para java
 trim_trailing_whitespace = true # regla no espacios
 # indent_style = space
+=======
+# si
+>>>>>>> Stashed changes
