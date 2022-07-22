@@ -1,0 +1,16 @@
+Factories\AeronaveFactory.class
+Factories\IVueloFactory.class
+Factories\TripulanteFactory.class
+Model\Vuelos\Tripulante.class
+Repositories\IUnitOfWork.class
+Factories\ITripulanteFactory.class
+Repositories\IVueloRepository.class
+Repositories\IAeronaveRepository.class
+Model\Aeronaves\Aeronave.class
+Model\Vuelos\ValueObjects\NumeroVuelo.class
+Factories\IAeronaveFactory.class
+Domain.class
+Repositories\ITripulanteRepository.class
+Event\VueloCreado.class
+Model\Vuelos\Vuelo.class
+Factories\VueloFactory.class

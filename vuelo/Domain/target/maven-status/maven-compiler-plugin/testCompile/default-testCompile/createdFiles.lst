@@ -1,0 +1,8 @@
+Factories\AeronaveFactoryTest.class
+Model\Vuelos\TripulanteTest.class
+Model\Vuelos\VueloTest.class
+Factories\VueloFactoryTest.class
+Model\Aeronaves\AeronaveTest.class
+Event\VueloCreadoTest.class
+Factories\TripulanteFactoryTest.class
+DomainTest.class

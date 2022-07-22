@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="../jacoco-resources/report.css"
+      type="text/css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../jacoco-resources/report.gif"
+      type="image/gif"
+    />
+    <title>TripulanteRepository.java</title>
+    <link
+      rel="stylesheet"
+      href="../jacoco-resources/prettify.css"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="../jacoco-resources/prettify.js"
+    ></script>
+  </head>
+  <body onload="window['PR_TAB_WIDTH']=4;prettyPrint()">
+    <div class="breadcrumb" id="breadcrumb">
+      <span class="info"
+        ><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span
+      ><a href="../index.html" class="el_report">Infraestructure</a> &gt;
+      <a href="index.source.html" class="el_package">Repository</a> &gt;
+      <span class="el_source">TripulanteRepository.java</span>
+    </div>
+    <h1>TripulanteRepository.java</h1>
+    <pre class="source lang-java linenums">package Repository;
+
+import java.util.List;
+import java.util.UUID;
+
+import Model.Vuelos.Tripulante;
+import Repositories.ITripulanteRepository;
+import Context.IWriteDbContext;
+import fourteam.db.DbSet;
+
+public class TripulanteRepository implements ITripulanteRepository {
+
+    private DbSet&lt;Tripulante&gt; _tripulante;
+
+<span class="fc" id="L15">    public TripulanteRepository(IWriteDbContext database) {</span>
+<span class="fc" id="L16">        _tripulante = database.Tripulante;</span>
+<span class="fc" id="L17">    }</span>
+
+    @Override
+    public List&lt;Tripulante&gt; GetAll() {
+<span class="fc" id="L21">        return _tripulante.All();</span>
+    }
+
+    @Override
+    public Tripulante FindByKey(UUID key) {
+<span class="fc" id="L26">        return _tripulante.Single(obj -&gt; obj.key.equals(key));</span>
+    }
+
+    @Override
+    public void Create(Tripulante objTripulante) {
+<span class="fc" id="L31">        _tripulante.Add(objTripulante);</span>
+<span class="fc" id="L32">    }</span>
+
+    @Override
+    public Tripulante Update(Tripulante objTripulante) {
+<span class="fc" id="L36">        _tripulante.Update(objTripulante, (it -&gt; it.key.equals(objTripulante.key)));</span>
+<span class="fc" id="L37">        return objTripulante;</span>
+    }
+
+    @Override
+    public Tripulante Delete(Tripulante objTripulante) {
+<span class="fc" id="L42">        _tripulante.Delete((it -&gt; it.key.equals(objTripulante.key)));</span>
+<span class="fc" id="L43">        return objTripulante;</span>
+    }
+}
+</pre>
+    <div class="footer">
+      <span class="right"
+        >Created with
+        <a href="http://www.jacoco.org/jacoco">JaCoCo</a>
+        0.8.4.201905082037</span
+      >
+    </div>
+  </body>
+</html>

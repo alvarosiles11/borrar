@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?><!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <link
+      rel="stylesheet"
+      href="../jacoco-resources/report.css"
+      type="text/css"
+    />
+    <link
+      rel="shortcut icon"
+      href="../jacoco-resources/report.gif"
+      type="image/gif"
+    />
+    <title>CrearVueloHandler.java</title>
+    <link
+      rel="stylesheet"
+      href="../jacoco-resources/prettify.css"
+      type="text/css"
+    />
+    <script
+      type="text/javascript"
+      src="../jacoco-resources/prettify.js"
+    ></script>
+  </head>
+  <body onload="window['PR_TAB_WIDTH']=4;prettyPrint()">
+    <div class="breadcrumb" id="breadcrumb">
+      <span class="info"
+        ><a href="../jacoco-sessions.html" class="el_session">Sessions</a></span
+      ><a href="../index.html" class="el_report">Application</a> &gt;
+      <a href="index.source.html" class="el_package"
+        >UseCases.Command.Vuelos.Crear</a
+      >
+      &gt; <span class="el_source">CrearVueloHandler.java</span>
+    </div>
+    <h1>CrearVueloHandler.java</h1>
+    <pre
+      class="source lang-java linenums"
+    >package UseCases.Command.Vuelos.Crear;
+
+import Factories.IVueloFactory;
+import Model.Vuelos.Vuelo;
+import Repositories.IUnitOfWork;
+import Repositories.IVueloRepository;
+import fourteam.http.Exception.HttpException;
+import fourteam.mediator.RequestHandler;
+
+public class CrearVueloHandler implements RequestHandler&lt;CrearVueloCommand, Vuelo&gt; {
+
+	// Declaro Factory, Repository, UnitOfWork
+	private IVueloFactory _IVueloFactory;
+	private IVueloRepository _IVueloRepository;
+	private IUnitOfWork _unitOfWor;
+
+	// Constructor
+<span class="fc" id="L18">	public CrearVueloHandler(IVueloFactory iVueloFactory, IVueloRepository iVueloRepository, IUnitOfWork unitOfWork) {</span>
+<span class="fc" id="L19">		this._IVueloFactory = iVueloFactory;</span>
+<span class="fc" id="L20">		this._IVueloRepository = iVueloRepository;</span>
+<span class="fc" id="L21">		this._unitOfWor = unitOfWork;</span>
+<span class="fc" id="L22">	}</span>
+
+	// hilo de ejecucion
+	@Override
+	public Vuelo handle(CrearVueloCommand arg0) throws HttpException {
+
+<span class="fc" id="L28">		Vuelo vuelo = _IVueloFactory.Create(arg0.nroVuelo, arg0.keyAeronave, arg0.keyAeropuertoOrigen,</span>
+<span class="fc" id="L29">				arg0.keyAeropuertoDestino, arg0.fecha_salida, arg0.fecha_arribe);</span>
+		// vuelo.eventCreado();
+<span class="fc" id="L31">		_IVueloRepository.Create(vuelo);</span>
+<span class="fc" id="L32">		_unitOfWor.commit();</span>
+<span class="fc" id="L33">		return vuelo;</span>
+	}
+}
+</pre>
+    <div class="footer">
+      <span class="right"
+        >Created with
+        <a href="http://www.jacoco.org/jacoco">JaCoCo</a>
+        0.8.4.201905082037</span
+      >
+    </div>
+  </body>
+</html>
