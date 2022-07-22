@@ -9,7 +9,11 @@ import fourteam.http.HttpStatus;
 import fourteam.mediator.RequestHandler;
 
 public class EliminarTripulanteHandler
+<<<<<<< Updated upstream
   implements RequestHandler<EliminarTripulanteCommand, Tripulante> {
+=======
+    implements RequestHandler<EliminarTripulanteCommand, Tripulante> {
+>>>>>>> Stashed changes
 
   // Declaro Factory, Repository, UnitOfWork
   protected ITripulanteFactory _ITripulanteFactory;
@@ -18,10 +22,16 @@ public class EliminarTripulanteHandler
 
   // Constructor
   public EliminarTripulanteHandler(
+<<<<<<< Updated upstream
     ITripulanteFactory iTripulanteFactory,
     ITripulanteRepository iTripulanteRepository,
     IUnitOfWork unitOfWor
   ) {
+=======
+      ITripulanteFactory iTripulanteFactory,
+      ITripulanteRepository iTripulanteRepository,
+      IUnitOfWork unitOfWor) {
+>>>>>>> Stashed changes
     this._ITripulanteFactory = iTripulanteFactory;
     this._ITripulanteRepository = iTripulanteRepository;
     this._unitOfWor = unitOfWor;
@@ -29,6 +39,7 @@ public class EliminarTripulanteHandler
 
   @Override
   public Tripulante handle(EliminarTripulanteCommand request)
+<<<<<<< Updated upstream
     throws HttpException {
     Tripulante _Tripulante = _ITripulanteRepository.FindByKey(
       request._TripulanteDto.key
@@ -42,3 +53,16 @@ public class EliminarTripulanteHandler
     return _ITripulanteRepository.Delete(_Tripulante);
   }
 }
+=======
+      throws HttpException {
+    Tripulante _Tripulante = _ITripulanteRepository.FindByKey(
+        request._TripulanteDto.key);
+    if (_Tripulante == null) {
+      throw new HttpException(
+          HttpStatus.BAD_REQUEST,
+          "Tripulante no encontrada");
+    }
+    return _ITripulanteRepository.Delete(_Tripulante);
+  }
+}
+>>>>>>> Stashed changes
