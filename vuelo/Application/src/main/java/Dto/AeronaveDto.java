@@ -4,24 +4,25 @@ import java.util.UUID;
 
 public class AeronaveDto {
 
-  public UUID keyAeronave;
-  public String matricula;
+	public UUID keyAeronave
+	public String matricula
 
-  public AeronaveDto() {}
+	public AeronaveDto() {
+	}
 
-  public UUID getKeyAeronave() {
-    return keyAeronave;
-  }
+	public UUID getKeyAeronave() {
+		return keyAeronave;
+	}
 
-  public void setKeyAeronave(UUID keyAeronave) {
-    this.keyAeronave = keyAeronave;
-  }
+	public void setKeyAeronave(UUID keyAeronave) {
+		this.keyAeronave = keyAeronave;
+	}
 
-  public String getMatricula() {
-    return matricula;
-  }
+	public String getMatricula() {
+		return matricula;
+	}
 
-  public void setMatricula(String matricula) {
-    this.matricula = matricula;
-  }
+	public void setMatricula(String matricula) {
+		this.matricula = matricula;
+	}
 }
