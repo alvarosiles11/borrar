@@ -5,6 +5,8 @@ salad[1];
 salad[3];
 salad[4];
 salad[5];
+salad[6];
+salad[7];
 let greaterTen = [];
 for (let i = 0; i < numbers.length; i++) {
   var currentNumber = numbers[i];
