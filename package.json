@@ -87,6 +87,9 @@
   "lint-staged": {
     "*.{html,css,scss,js,ts,tsx,json,md,yaml,java}": [
       "prettier --write"
+    ],
+    "*.{js,jsx,ts,tsx}": [
+      "eslint"
     ]
   }
 }
