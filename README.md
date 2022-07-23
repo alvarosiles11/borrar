@@ -24,7 +24,7 @@ npx husky-init && npm install
 
 //archivo precommit
 npx lint-staged --relative
-
+<!-- npx lint-staged --relative -->
 //en consola cmd
 npm install --save-dev lint-staged
 https://www.npmjs.com/package/lint-staged
