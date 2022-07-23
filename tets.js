@@ -1,6 +1,8 @@
 const salad = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 salad[0];
 salad[2];
+salad[1];
+
 salad[3];
 salad[4];
 salad[5];
