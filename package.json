@@ -66,6 +66,7 @@
     "yaml": "^2.1.1"
   },
   "devDependencies": {
+    "eslint": "^8.20.0",
     "husky": "^8.0.0",
     "lint-staged": "^13.0.3"
   },
@@ -86,7 +87,8 @@
   "homepage": "https://github.com/alvarosiles11/dms-vuelos#readme",
   "lint-staged": {
     "*.{html,css,scss,js,ts,tsx,json,md,yaml,java}": [
-      "prettier --write"
+      "npx prettier --write ."
     ]
-  }
+  },
+  "eslint": "eslint --ignore-path .gitignore ."
 }

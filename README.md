@@ -30,5 +30,13 @@ npm install --save-dev lint-staged
 		"eslint --fix"
    ]
 } -->
+npm install -g eslint
+npx eslint --init
 
+npm install eslint --save-dev
+Add in package.json this script : "eslint": "eslint --ignore-path .gitignore ."
+
+https://nx.dev/packages/linter/executors/eslint
  https://www.npmjs.com/package/lint-staged
+
+ https://lenguajejs.com/javascript/caracteristicas/eslint/
