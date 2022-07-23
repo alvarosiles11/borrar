@@ -37,3 +37,29 @@ https://www.npmjs.com/package/lint-staged
       "git add"
     ]
   }
+
+
+
+	"*.{css,scss}": [
+			"prettier --write",
+			"stylelint"
+		],
+		"*.{html,js,java}": [
+			"prettier --write"
+		],
+		"*.json": [
+			"prettier --write"
+		],
+		"*.md": [
+			"prettier --write"
+		],
+		"*.yml": [
+			"prettier --write"
+		],
+		"*.yaml": [
+			"prettier --write"
+		],
+		"*.{ts,tsx}": [
+			"prettier --write",
+			"eslint --fix"
+		]
