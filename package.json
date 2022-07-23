@@ -86,8 +86,7 @@
   "homepage": "https://github.com/alvarosiles11/dms-vuelos#readme",
   "lint-staged": {
     "*.{html,css,scss,js,ts,tsx,json,md,yaml,java}": [
-      "npx prettier --write .",
-      "prettier --write"
+      "npx prettier --write ."
     ]
   }
 }
