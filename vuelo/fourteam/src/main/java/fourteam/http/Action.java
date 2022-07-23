@@ -30,7 +30,7 @@ public class Action {
     GET,
     POST,
     PUT,
-    DELETE,
+    DELETE
   }
 
   private ActionType type;

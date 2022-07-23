@@ -39,14 +39,14 @@ module.exports = {
   rangeEnd: Infinity,
 
   // /** @format */
-  // insertPragma: true,
+  insertPragma: false,
 
   // Se formateará un archivo con lo siguiente como su primer comentario cuando se proporcione --require - pragma
   // requirePragma : false,
 
   // Sensibilidad de espacios en blanco HTML
-  // htmlWhitespaceSensitivity: 'css',
-  htmlWhitespaceSensitivity: 'strict'
+  htmlWhitespaceSensitivity: 'css',
+  // htmlWhitespaceSensitivity: 'strict',
 
   // Fin de la línea
   // endOfLine: 'auto',
@@ -58,4 +58,7 @@ module.exports = {
   // importOrderSeparation: true,
   // importOrderSortSpecifiers: true,
   // documentacion https://prettier.io/docs/en/options.html
+
+  embeddedLanguageFormatting: 'auto',
+  proseWrap: 'preserve'
 };

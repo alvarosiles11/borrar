@@ -11,7 +11,7 @@ public class SharedKernel {
 
     // rule
     rule.NotNullRule.class,
-    rule.StringNotNullOrEmptyRule.class,
+    rule.StringNotNullOrEmptyRule.class
     // mediator
 
   };
