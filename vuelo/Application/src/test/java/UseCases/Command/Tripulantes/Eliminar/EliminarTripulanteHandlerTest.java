@@ -5,11 +5,8 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.Mockito.when;
 
 import Dto.TripulanteDto;
-import Factories.IAeronaveFactory;
 import Factories.ITripulanteFactory;
-import Model.Aeronaves.Aeronave;
 import Model.Vuelos.Tripulante;
-import Repositories.IAeronaveRepository;
 import Repositories.ITripulanteRepository;
 import Repositories.IUnitOfWork;
 import fourteam.http.Exception.HttpException;

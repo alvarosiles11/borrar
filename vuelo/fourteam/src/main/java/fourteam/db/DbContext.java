@@ -1,6 +1,5 @@
 package fourteam.db;
 
-import fourteam.mediator.Notification;
 import java.lang.reflect.Field;
 import java.util.ArrayList;
 import java.util.List;

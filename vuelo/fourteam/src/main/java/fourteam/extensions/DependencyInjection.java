@@ -3,7 +3,6 @@ package fourteam.extensions;
 import fourteam.mediator.IMediator;
 import java.lang.reflect.Constructor;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class DependencyInjection {
 

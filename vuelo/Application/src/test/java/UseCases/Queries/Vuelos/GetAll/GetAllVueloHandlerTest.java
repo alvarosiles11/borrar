@@ -3,7 +3,6 @@ package UseCases.Queries.Vuelos.GetAll;
 import Model.Vuelos.Vuelo;
 import Repositories.IVueloRepository;
 import java.util.List;
-import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 

@@ -1,12 +1,8 @@
 package core;
 
-import static org.mockito.Mockito.when;
-
 import java.time.LocalDateTime;
-import java.util.UUID;
 import org.junit.Assert;
 import org.junit.Test;
-import org.mockito.Mockito;
 
 public class DomainEvent_Test {
 

@@ -1,22 +1,14 @@
 package Controllers;
 
-import static org.mockito.ArgumentMatchers.any;
-
 import Dto.TripulanteDto;
-import Factories.ITripulanteFactory;
 import Model.Vuelos.Tripulante;
-import Repositories.ITripulanteRepository;
 import UseCases.Command.Tripulantes.Crear.CrearTripulanteCommand;
 import UseCases.Command.Tripulantes.Editar.EditarTripulanteCommand;
 import UseCases.Command.Tripulantes.Eliminar.EliminarTripulanteCommand;
-import UseCases.Queries.Tripulantes.GetAll.GetAllTripulanteQuery;
 import UseCases.Queries.Tripulantes.GetByKey.GetTripulanteByKeyQuery;
 import fourteam.http.Exception.HttpException;
 import fourteam.mediator.Mediator;
-import java.util.ArrayList;
-import java.util.List;
 import java.util.UUID;
-import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;

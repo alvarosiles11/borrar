@@ -1,6 +1,5 @@
 package fourteam.http;
 
-import fourteam.extensions.DependencyInjection;
 import fourteam.http.Exception.HttpCodeException;
 import fourteam.http.Exception.HttpException;
 import fourteam.http.annotation.RequestMapping;
