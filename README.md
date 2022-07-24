@@ -40,3 +40,10 @@ https://nx.dev/packages/linter/executors/eslint
  https://www.npmjs.com/package/lint-staged
 
  https://lenguajejs.com/javascript/caracteristicas/eslint/
+
+   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "husky install",
+    "alvaro": "npx prettier --write . && eslint **/* --ext .js,.ts,.tsx",
+    "romeo": "eslint src --ext .js,.ts,.tsx"
+  },
