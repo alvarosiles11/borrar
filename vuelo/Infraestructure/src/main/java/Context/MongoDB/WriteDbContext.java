@@ -18,17 +18,17 @@ public class WriteDbContext extends IWriteDbContext {
   private MongoClient client;
   private MongoDatabase db;
 
-  // private final String DB_NAME = "dmsnur_vuelo";
-  // private final String DB_USER = "root";
-  // private final String DB_PASS = "rootpassword";
-  // private final String DB_HOST = "servisofts.com";
-  // private final int DB_PORT = 27017;
-
   private final String DB_NAME = "dmsnur_vuelo";
   private final String DB_USER = "root";
   private final String DB_PASS = "rootpassword";
-  private final String DB_HOST = "localhost";
+  private final String DB_HOST = "servisofts.com";
   private final int DB_PORT = 27017;
+
+  // private final String DB_NAME = "dmsnur_vuelo";
+  // private final String DB_USER = "root";
+  // private final String DB_PASS = "rootpassword";
+  // private final String DB_HOST = "localhost";
+  // private final int DB_PORT = 27017;
 
   public WriteDbContext() {
     super(WriteDbContext.class);
@@ -38,17 +38,17 @@ public class WriteDbContext extends IWriteDbContext {
   public void onModelCreating(List<DbSet> sets) {
     Logger mongoLogger = Logger.getLogger("org.mongodb.driver");
     mongoLogger.setLevel(Level.SEVERE);
-    MongoClientURI uri = new MongoClientURI(
-      "mongodb://" +
-      DB_USER +
-      ":" +
-      DB_PASS +
-      "@" +
-      DB_HOST +
-      ":" +
-      DB_PORT +
-      "/?authSource=admin"
-    );
+    // MongoClientURI uri = new MongoClientURI(
+    // "mongodb://" +
+    // DB_USER +
+    // ":" +
+    // DB_PASS +
+    // "@" +
+    // DB_HOST +
+    // ":" +
+    // DB_PORT +
+    // "/?authSource=admin");
+    MongoClientURI uri = new MongoClientURI("mongodb://localhost:27017");
     this.client = new MongoClient(uri);
     this.db = client.getDatabase(DB_NAME);
     sets
