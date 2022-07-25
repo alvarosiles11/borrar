@@ -30,6 +30,7 @@ public class EditarVueloCommandTest {
 
     EditarVueloCommand command = new EditarVueloCommand(vueloDto.key);
     Assert.assertEquals(key, vueloDto.key);
+    System.out.println(command);
   }
 
   @Test

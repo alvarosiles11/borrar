@@ -18,5 +18,6 @@ public class VueloFactoryTest {
       new Date(),
       new Date()
     );
+    System.out.println(vuelo);
   }
 }

@@ -15,5 +15,6 @@ public class GetAllVueloHandlerTest {
     GetAllVueloHandler handler = new GetAllVueloHandler(_IVueloRepository);
     GetAllVueloQuery query = new GetAllVueloQuery();
     List<Vuelo> listaVuelos = handler.handle(query);
+    System.out.println(listaVuelos);
   }
 }

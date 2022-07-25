@@ -10,5 +10,6 @@ public class GetTripulanteByKeyQueryTest {
   public void HandleCorrectly() throws HttpException {
     UUID key = UUID.randomUUID();
     GetTripulanteByKeyQuery query = new GetTripulanteByKeyQuery(key);
+    System.out.println(query);
   }
 }

@@ -50,7 +50,7 @@ public class EliminarTripulanteHandlerTest {
     when(_ITripRep.FindByKey(any())).thenReturn(tripulante);
 
     Tripulante resp = handler.handle(command);
-
+    System.out.println(resp);
     verify(_ITripRep).Delete(tripulante);
   }
 
@@ -75,6 +75,7 @@ public class EliminarTripulanteHandlerTest {
 
     try {
       Tripulante resp = handler.handle(command);
+      System.out.println(resp);
     } catch (HttpException e) {
       Assert.assertEquals(400, e.getCode());
     }

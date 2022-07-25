@@ -69,6 +69,7 @@ public class GetVueloByKeyHandlerTest {
       });
 
     VueloDto result = handler.handle(command);
+    System.out.println(result);
   }
 
   @Test
@@ -125,6 +126,7 @@ public class GetVueloByKeyHandlerTest {
 
     try {
       VueloDto resp = handler.handle(command);
+      System.out.println(vuelo + "" + resp);
     } catch (HttpException e) {
       Assert.assertEquals(400, e.getCode());
     }

@@ -19,5 +19,6 @@ public class GetAllTripulanteHandlerTest {
     );
     GetAllTripulanteQuery query = new GetAllTripulanteQuery();
     List<Tripulante> listaTripulante = handler.handle(query);
+    System.out.println(listaTripulante);
   }
 }

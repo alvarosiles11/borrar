@@ -36,6 +36,7 @@ public class CrearVueloHandlerTest {
     String keyAeropuertoDestino = "aeropuerto200";
     Date fecha_salida = new Date();
     Date fecha_arribe = new Date();
+    System.out.println(key);
 
     Vuelo vuelo = new Vuelo(
       nroVuelo,

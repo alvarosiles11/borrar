@@ -39,6 +39,7 @@ public class GetTripulanteByKeyHandlerTest {
       tripulanteDto.key
     );
     TripulanteDto resp = handler.handle(command);
+    System.out.println(resp);
   }
 
   @Test
@@ -65,9 +66,10 @@ public class GetTripulanteByKeyHandlerTest {
     GetTripulanteByKeyQuery command = new GetTripulanteByKeyQuery(
       tripulanteDto.key
     );
-
+    System.out.println(key);
     try {
       TripulanteDto respa = handler.handle(command);
+      System.out.println(tripulante + "" + respa);
     } catch (HttpException e) {
       Assert.assertEquals(400, e.getCode());
     }

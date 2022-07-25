@@ -18,7 +18,6 @@ public class CrearVueloCommandTest {
     String keyAeropuertoDestino = "aeropuerto200";
     Date fecha_salida = new Date();
     Date fecha_arribe = new Date();
-
     VueloDto vueloDto = new VueloDto();
 
     vueloDto.setNroVuelo(nroVuelo);
@@ -35,6 +34,7 @@ public class CrearVueloCommandTest {
     Assert.assertEquals(keyAeropuertoDestino, command.keyAeropuertoDestino);
     Assert.assertEquals(fecha_salida, command.fecha_salida);
     Assert.assertEquals(fecha_arribe, command.fecha_arribe);
+    System.out.println(key);
   }
 
   @Test

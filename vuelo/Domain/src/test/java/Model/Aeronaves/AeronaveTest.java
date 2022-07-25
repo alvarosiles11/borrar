@@ -15,5 +15,6 @@ public class AeronaveTest {
 
     Aeronave aeronave = new Aeronave(matricula);
     Assert.assertEquals(matricula, aeronave.matricula);
+    System.out.println(key + "" + aeronaveA);
   }
 }

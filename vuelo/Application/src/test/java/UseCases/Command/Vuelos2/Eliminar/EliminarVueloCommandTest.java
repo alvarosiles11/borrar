@@ -15,6 +15,7 @@ public class EliminarVueloCommandTest {
     vueloDto.key = key;
     EliminarVueloCommand command = new EliminarVueloCommand(vueloDto.key);
     Assert.assertEquals(key, vueloDto.key);
+    System.out.println(command);
   }
 
   @Test

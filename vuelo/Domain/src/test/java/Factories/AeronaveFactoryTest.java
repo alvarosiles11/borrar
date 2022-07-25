@@ -9,5 +9,6 @@ public class AeronaveFactoryTest {
   public void dataValid() {
     AeronaveFactory aeronaveFactory = new AeronaveFactory();
     Aeronave aeronave = aeronaveFactory.Create("xyz-1990");
+    System.out.println(aeronave);
   }
 }

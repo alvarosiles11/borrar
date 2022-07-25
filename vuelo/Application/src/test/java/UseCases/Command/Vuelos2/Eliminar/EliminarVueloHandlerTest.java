@@ -54,7 +54,7 @@ public class EliminarVueloHandlerTest {
     );
     when(_IVueloRep.FindByKey(any())).thenReturn(vuelo);
     Vuelo resp = handler.handle(command);
-
+    System.out.println(resp);
     verify(_IVueloRep).Delete(vuelo);
   }
 
@@ -77,6 +77,7 @@ public class EliminarVueloHandlerTest {
     EliminarVueloCommand command = new EliminarVueloCommand(vueloDto.key);
     try {
       Vuelo resp = handler.handle(command);
+      System.out.println(resp);
     } catch (HttpException e) {
       Assert.assertEquals(400, e.getCode());
     }

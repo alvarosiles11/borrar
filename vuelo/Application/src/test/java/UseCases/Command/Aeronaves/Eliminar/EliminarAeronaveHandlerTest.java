@@ -46,6 +46,7 @@ public class EliminarAeronaveHandlerTest {
     );
     when(_IAeroRep.FindByKey(any())).thenReturn(aeronave);
     Aeronave respuestaELimin = handler.handle(commandElin);
+    System.out.println(respuestaELimin);
     verify(_IAeroRep).Delete(aeronave);
   }
 
@@ -66,6 +67,7 @@ public class EliminarAeronaveHandlerTest {
     );
     try {
       Aeronave resp = handler.handle(command);
+      System.out.println(resp);
     } catch (HttpException e) {
       Assert.assertEquals(400, e.getCode());
     }

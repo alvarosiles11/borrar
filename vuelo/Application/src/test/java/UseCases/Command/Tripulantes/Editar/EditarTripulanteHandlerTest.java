@@ -53,6 +53,7 @@ public class EditarTripulanteHandlerTest {
     command._TripulanteDto.keyTripulante = keyTripulante;
     command._TripulanteDto.cargo = cargo;
     Tripulante resp = handler.handle(command);
+    System.out.println(resp);
   }
 
   @Test
@@ -78,6 +79,7 @@ public class EditarTripulanteHandlerTest {
 
     try {
       Tripulante resp = handler.handle(command);
+      System.out.println(resp);
     } catch (HttpException e) {
       Assert.assertEquals(400, e.getCode());
     }

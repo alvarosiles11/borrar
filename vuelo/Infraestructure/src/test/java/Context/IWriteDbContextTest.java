@@ -11,72 +11,46 @@ public class IWriteDbContextTest {
 
     public Context() {
       super(Context.class);
-      // TODO Auto-generated constructor stub
     }
 
     @Override
-    public void Transaction() {
-      // TODO Auto-generated method stub
-
-    }
+    public void Transaction() {}
 
     @Override
-    public void Commit() {
-      // TODO Auto-generated method stub
-
-    }
+    public void Commit() {}
 
     @Override
-    public void Rollback() {
-      // TODO Auto-generated method stub
-
-    }
+    public void Rollback() {}
 
     @Override
     public boolean isConnected() {
-      // TODO Auto-generated method stub
       return false;
     }
 
     @Override
-    public void onModelCreating(List<DbSet> sets) {
-      // TODO Auto-generated method stub
-
-    }
+    public void onModelCreating(List<DbSet> sets) {}
 
     @Override
-    public void Add(Object obj, DbSet dbSet) {
-      // TODO Auto-generated method stub
-
-    }
+    public void Add(Object obj, DbSet dbSet) {}
 
     @Override
-    public void Update(Object obj, BooleanFunction fun, DbSet dbSet) {
-      // TODO Auto-generated method stub
-
-    }
+    public void Update(Object obj, BooleanFunction fun, DbSet dbSet) {}
 
     @Override
-    public void Delete(BooleanFunction fun, DbSet dbSet) {
-      // TODO Auto-generated method stub
-
-    }
+    public void Delete(BooleanFunction fun, DbSet dbSet) {}
 
     @Override
     public List All(DbSet dbSet) {
-      // TODO Auto-generated method stub
       return null;
     }
 
     @Override
     public Object Single(BooleanFunction fun, DbSet dbSet) {
-      // TODO Auto-generated method stub
       return null;
     }
 
     @Override
     public List Filter(BooleanFunction fun, DbSet dbSet) {
-      // TODO Auto-generated method stub
       return null;
     }
   }

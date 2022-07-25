@@ -14,5 +14,6 @@ public class TripulanteFactoryTest {
       UUID.randomUUID().toString(),
       "Piloto"
     );
+    System.out.println(tripulante);
   }
 }

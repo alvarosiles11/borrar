@@ -50,6 +50,7 @@ public class VueloTest {
     Assert.assertEquals(fecha_salida, vuelo.fecha_salida);
     Assert.assertEquals(fecha_arribe, vuelo.fecha_arribe);
     Assert.assertEquals(listaTripulante, vuelo.listaTripulante);
+    System.out.println(key);
   }
 
   @Test

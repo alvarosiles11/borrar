@@ -16,6 +16,7 @@ public class EliminarAeronaveCommandTest {
       aeronaveDto.keyAeronave
     );
     Assert.assertEquals(keyAeronave, aeronaveDto.keyAeronave);
+    System.out.println(command);
   }
 
   @Test

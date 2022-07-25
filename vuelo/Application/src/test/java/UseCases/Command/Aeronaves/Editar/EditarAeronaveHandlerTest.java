@@ -49,6 +49,7 @@ public class EditarAeronaveHandlerTest {
     command._AeronaveDto.matricula = matricula;
     Aeronave resp = handler.handle(command);
     Assert.assertEquals(keyAeronave, aeronaveDto.keyAeronave);
+    System.out.println(resp);
   }
 
   @Test
@@ -68,6 +69,7 @@ public class EditarAeronaveHandlerTest {
     );
     try {
       Aeronave resp = handler.handle(command);
+      System.out.println(resp);
     } catch (HttpException e) {
       Assert.assertEquals(400, e.getCode());
     }

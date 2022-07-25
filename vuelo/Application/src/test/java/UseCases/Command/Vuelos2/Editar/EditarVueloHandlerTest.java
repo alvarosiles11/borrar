@@ -95,6 +95,7 @@ public class EditarVueloHandlerTest {
     EditarVueloCommand command = new EditarVueloCommand(vueloDto.key);
     try {
       Vuelo resp = handler.handle(command);
+      System.out.println(resp);
     } catch (HttpException e) {
       Assert.assertEquals(400, e.getCode());
     }
