@@ -11,41 +11,39 @@ import fourteam.mediator.RequestHandler;
 public class GetVueloByKeyHandler
   implements RequestHandler<GetVueloByKeyQuery, VueloDto> {
 
-  private IVueloRepository _IVueloRepository;
+  private IVueloRepository iVueloRepository;
 
   public GetVueloByKeyHandler(IVueloRepository iVueloRepository) {
-    this._IVueloRepository = iVueloRepository;
+    this.iVueloRepository = iVueloRepository;
   }
 
   @Override
   public VueloDto handle(GetVueloByKeyQuery request) throws HttpException {
-    // obtengo el vuelo
-    Vuelo vuelo = _IVueloRepository.FindByKey(request.Key);
+    Vuelo vuelo = iVueloRepository.FindByKey(request.Key);
 
-    // verifico si no existe el vuelo
     if (vuelo == null) {
-      // return null;
       throw new HttpException(HttpStatus.BAD_REQUEST, "Vuelo no encontrado");
     }
 
-    // creo el dto
     VueloDto vueloDto = new VueloDto();
 
-    // lleno el dto
-    vueloDto.nroVuelo = vuelo.nroVuelo;
-    vueloDto.keyAeronave = vuelo.keyAeronave;
-    vueloDto.keyAeropuertoOrigen = vuelo.keyAeropuertoOrigen;
-    vueloDto.keyAeropuertoDestino = vuelo.keyAeropuertoDestino;
-    vueloDto.fecha_salida = vuelo.fecha_salida;
-    vueloDto.fecha_arribe = vuelo.fecha_arribe;
-    // vueloDto.listaTripulante = vuelo.listaTripulante;
+    vueloDto.setNroVuelo(vuelo.getNroVuelo());
+    vueloDto.setKeyAeronave(vuelo.getKeyAeronave());
+    vueloDto.setKeyAeropuertoOrigen(vuelo.getKeyAeropuertoOrigen());
+    vueloDto.setKeyAeropuertoDestino(vuelo.getKeyAeropuertoDestino());
+    vueloDto.setfechaSalida(vuelo.getfechaSalida());
+    vueloDto.setfechaArribe(vuelo.getfechaArribe());
 
     // retorno lista de tripulante el dto
     vuelo.listaTripulante
       .iterator()
       .forEachRemaining(obj -> {
         vueloDto.listaTripulante.add(
-          new TripulanteDto(obj.keyVuelo, obj.keyTripulante, obj.cargo)
+          new TripulanteDto(
+            obj.getKeyVuelo(),
+            obj.getKeyTripulante(),
+            obj.getCargo()
+          )
         );
       });
     return vueloDto;

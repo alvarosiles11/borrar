@@ -48,8 +48,8 @@ public class GetVueloByKeyHandlerTest {
     vueloDto.setKeyAeronave(keyAeronave);
     vueloDto.setKeyAeropuertoOrigen(keyAeropuertoOrigen);
     vueloDto.setKeyAeropuertoDestino(keyAeropuertoDestino);
-    vueloDto.setFecha_salida(fecha_salida);
-    vueloDto.setFecha_arribe(fecha_arribe);
+    vueloDto.setfechaSalida(fecha_salida);
+    vueloDto.setfechaArribe(fecha_arribe);
 
     GetVueloByKeyHandler handler = new GetVueloByKeyHandler(_IVueloRep);
     GetVueloByKeyQuery command = new GetVueloByKeyQuery(key);
@@ -88,8 +88,8 @@ public class GetVueloByKeyHandlerTest {
     vueloDto.setKeyAeronave(keyAeronave);
     vueloDto.setKeyAeropuertoOrigen(keyAeropuertoOrigen);
     vueloDto.setKeyAeropuertoDestino(keyAeropuertoDestino);
-    vueloDto.setFecha_salida(fecha_salida);
-    vueloDto.setFecha_arribe(fecha_arribe);
+    vueloDto.setfechaSalida(fecha_salida);
+    vueloDto.setfechaArribe(fecha_arribe);
 
     TripulanteDto tripulanteDto = new TripulanteDto();
     tripulanteDto.setKey(UUID.randomUUID());

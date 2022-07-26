@@ -5,14 +5,38 @@ import java.util.UUID;
 
 public class Tripulante extends Entity<UUID> {
 
-  public UUID keyVuelo;
-  public String keyTripulante;
-  public String cargo;
+  protected UUID keyVuelo;
+  protected String keyTripulante;
+  protected String cargo;
 
-  public Tripulante(UUID _keyVuelo, String _keyTripulante, String _cargo) {
+  public Tripulante(UUID keyVuelo, String keyTripulante, String cargo) {
     this.key = UUID.randomUUID();
-    this.keyVuelo = _keyVuelo;
-    this.keyTripulante = _keyTripulante;
-    this.cargo = _cargo;
+    this.keyVuelo = keyVuelo;
+    this.keyTripulante = keyTripulante;
+    this.cargo = cargo;
+  }
+
+  public UUID getKeyVuelo() {
+    return keyVuelo;
+  }
+
+  public void setKeyVuelo(UUID keyVuelo) {
+    this.keyVuelo = keyVuelo;
+  }
+
+  public String getKeyTripulante() {
+    return keyTripulante;
+  }
+
+  public void setKeyTripulante(String keyTripulante) {
+    this.keyTripulante = keyTripulante;
+  }
+
+  public String getCargo() {
+    return cargo;
+  }
+
+  public void setCargo(String cargo) {
+    this.cargo = cargo;
   }
 }

@@ -32,11 +32,11 @@ public class EliminarAeronaveHandlerTest {
     Aeronave aeronave = new Aeronave(matricula);
 
     AeronaveDto aeronaveDto = new AeronaveDto();
-    aeronaveDto.keyAeronave = UUID.randomUUID();
-    aeronaveDto.matricula = "ABC";
+    aeronaveDto.setKeyAeronave(UUID.randomUUID());
+    aeronaveDto.setMatricula("ABC");
 
     EliminarAeronaveCommand commandElin = new EliminarAeronaveCommand(
-      aeronaveDto.keyAeronave
+      aeronaveDto.getKeyAeronave()
     );
 
     EliminarAeronaveHandler handler = new EliminarAeronaveHandler(
@@ -59,11 +59,11 @@ public class EliminarAeronaveHandlerTest {
       _IUnitOfWork
     );
     AeronaveDto aeronaveDto = new AeronaveDto();
-    aeronaveDto.keyAeronave = UUID.randomUUID();
-    aeronaveDto.matricula = "ABC";
+    aeronaveDto.setKeyAeronave(UUID.randomUUID());
+    aeronaveDto.setMatricula("ABC");
 
     EliminarAeronaveCommand command = new EliminarAeronaveCommand(
-      aeronaveDto.keyAeronave
+      aeronaveDto.getKeyAeronave()
     );
     try {
       Aeronave resp = handler.handle(command);

@@ -13,17 +13,15 @@ public class EditarAeronaveCommandTest {
     String matricula = "xyz-1990";
 
     AeronaveDto aeronaveDto = new AeronaveDto();
-    // aeronaveDto.setKey(keyAeronave);
-
     aeronaveDto.setKeyAeronave(keyAeronave);
     aeronaveDto.setMatricula(matricula);
 
     EditarAeronaveCommand command = new EditarAeronaveCommand(
-      aeronaveDto.keyAeronave
+      aeronaveDto.getKeyAeronave()
     );
-    command._AeronaveDto.keyAeronave = keyAeronave;
-    command._AeronaveDto.matricula = matricula;
-    Assert.assertEquals(keyAeronave, aeronaveDto.keyAeronave);
+    command.aeronaveDto.setKeyAeronave(keyAeronave);
+    command.aeronaveDto.setMatricula(matricula);
+    Assert.assertEquals(keyAeronave, aeronaveDto.getKeyAeronave());
   }
 
   @Test

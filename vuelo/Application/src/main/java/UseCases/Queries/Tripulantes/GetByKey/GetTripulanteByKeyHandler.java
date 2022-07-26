@@ -10,30 +10,31 @@ import fourteam.mediator.RequestHandler;
 public class GetTripulanteByKeyHandler
   implements RequestHandler<GetTripulanteByKeyQuery, TripulanteDto> {
 
-  private ITripulanteRepository _ITripulanteRepository;
+  protected ITripulanteRepository iTripulanteRepository;
 
   public GetTripulanteByKeyHandler(
     ITripulanteRepository iTripulanteRepository
   ) {
-    this._ITripulanteRepository = iTripulanteRepository;
+    this.iTripulanteRepository = iTripulanteRepository;
   }
 
   @Override
   public TripulanteDto handle(GetTripulanteByKeyQuery request)
     throws HttpException {
-    Tripulante tripulante = _ITripulanteRepository.FindByKey(request.key);
+    Tripulante tripulante = iTripulanteRepository.FindByKey(request.key);
     if (tripulante == null) {
       throw new HttpException(
         HttpStatus.BAD_REQUEST,
         "tripulante no encontrado"
       );
     }
-    // creo el dto
     TripulanteDto tripulanteDto = new TripulanteDto();
-    // lleno el dto
-    tripulanteDto.keyTripulante = tripulante.keyTripulante;
-    tripulanteDto.cargo = tripulante.cargo;
-    // devuelvo el dto
+
+    tripulanteDto.setKey(tripulante.getKey());
+    tripulanteDto.setKeyVuelo(tripulante.getKeyVuelo());
+    tripulanteDto.setKeyTripulante(tripulante.getKeyTripulante());
+    tripulanteDto.setCargo(tripulante.getCargo());
+
     return tripulanteDto;
   }
 }

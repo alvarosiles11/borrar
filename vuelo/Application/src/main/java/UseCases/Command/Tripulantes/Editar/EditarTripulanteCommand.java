@@ -6,10 +6,10 @@ import java.util.UUID;
 
 public class EditarTripulanteCommand implements Request<TripulanteDto> {
 
-  public TripulanteDto _TripulanteDto;
+  public TripulanteDto tripulanteDto;
 
   public EditarTripulanteCommand(UUID key) {
-    this._TripulanteDto = new TripulanteDto();
-    this._TripulanteDto.key = key;
+    tripulanteDto = new TripulanteDto();
+    tripulanteDto.setKey(key);
   }
 }

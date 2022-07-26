@@ -6,10 +6,10 @@ import java.util.UUID;
 
 public class EliminarTripulanteCommand implements Request<TripulanteDto> {
 
-  TripulanteDto _TripulanteDto;
+  TripulanteDto tripulanteDto;
 
   public EliminarTripulanteCommand(UUID key) {
-    this._TripulanteDto = new TripulanteDto();
-    this._TripulanteDto.key = key;
+    this.tripulanteDto = new TripulanteDto();
+    this.tripulanteDto.setKey(key);
   }
 }

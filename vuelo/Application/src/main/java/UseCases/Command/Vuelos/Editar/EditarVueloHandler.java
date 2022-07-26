@@ -11,36 +11,35 @@ import fourteam.mediator.RequestHandler;
 public class EditarVueloHandler
   implements RequestHandler<EditarVueloCommand, Vuelo> {
 
-  // Declaro Factory, Repository, UnitOfWork
-  protected IVueloFactory _IVueloFactory;
-  protected IVueloRepository _IVueloRepository;
-  protected IUnitOfWork _unitOfWor;
+  protected IVueloFactory iVueloFactory;
+  protected IVueloRepository iVueloRepository;
+  protected IUnitOfWork unitOfWor;
 
-  // Constructor
   public EditarVueloHandler(
     IVueloFactory iVueloFactory,
     IVueloRepository iVueloRepository,
     IUnitOfWork unitOfWor
   ) {
-    this._IVueloFactory = iVueloFactory;
-    this._IVueloRepository = iVueloRepository;
-    this._unitOfWor = unitOfWor;
+    this.iVueloFactory = iVueloFactory;
+    this.iVueloRepository = iVueloRepository;
+    this.unitOfWor = unitOfWor;
   }
 
   @Override
   public Vuelo handle(EditarVueloCommand request) throws HttpException {
-    Vuelo _Vuelo = _IVueloRepository.FindByKey(request._VueloDto.key);
-    if (_Vuelo == null) {
+    Vuelo vuelo = iVueloRepository.FindByKey(request.vueloDto.getKey());
+    if (vuelo == null) {
       throw new HttpException(HttpStatus.BAD_REQUEST, "Vuelo no encontrada");
     }
-    _Vuelo.nroVuelo = request._VueloDto.nroVuelo;
-    _Vuelo.keyAeronave = request._VueloDto.keyAeronave;
-    _Vuelo.keyAeropuertoOrigen = request._VueloDto.keyAeropuertoOrigen;
-    _Vuelo.keyAeropuertoDestino = request._VueloDto.keyAeropuertoDestino;
-    _Vuelo.fecha_salida = request._VueloDto.fecha_salida;
-    _Vuelo.fecha_arribe = request._VueloDto.fecha_arribe;
+
+    vuelo.setNroVuelo(request.vueloDto.getNroVuelo());
+    vuelo.setKeyAeronave(request.vueloDto.getKeyAeronave());
+    vuelo.setKeyAeropuertoOrigen(request.vueloDto.getKeyAeropuertoOrigen());
+    vuelo.setKeyAeropuertoDestino(request.vueloDto.getKeyAeropuertoDestino());
+    vuelo.setfechaSalida(request.vueloDto.getfechaSalida());
+    vuelo.setfechaArribe(request.vueloDto.getfechaArribe());
     // _Vuelo.listaTripulante = request._VueloDto.listaTripulante;
-    _IVueloRepository.Update(_Vuelo);
-    return _Vuelo;
+    iVueloRepository.Update(vuelo);
+    return vuelo;
   }
 }

@@ -6,10 +6,10 @@ import java.util.UUID;
 
 public class EliminarVueloCommand implements Request<VueloDto> {
 
-  VueloDto _VueloDto;
+  VueloDto vueloDto;
 
   public EliminarVueloCommand(UUID key) {
-    this._VueloDto = new VueloDto();
-    this._VueloDto.key = key;
+    this.vueloDto = new VueloDto();
+    this.vueloDto.setKey(key);
   }
 }

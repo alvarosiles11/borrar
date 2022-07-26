@@ -51,12 +51,13 @@ public class TripulanteController {
 
   @PutMapping("/{key}")
   public Response<Tripulante> edit(
-    @RequestBody Tripulante _tripulante,
+    @RequestBody Tripulante tripulante,
     @PathVariable EditarTripulanteCommand request
   ) throws HttpException {
-    request._TripulanteDto.keyVuelo = _tripulante.keyVuelo;
-    request._TripulanteDto.keyTripulante = _tripulante.keyTripulante;
-    request._TripulanteDto.cargo = _tripulante.cargo;
+    request.tripulanteDto.setKeyVuelo(tripulante.getKeyVuelo());
+    request.tripulanteDto.setKeyTripulante(tripulante.getKeyTripulante());
+    request.tripulanteDto.setCargo(tripulante.getCargo());
+
     System.out.println("tripulante edit exitoso");
     return _mediator.send(request);
   }

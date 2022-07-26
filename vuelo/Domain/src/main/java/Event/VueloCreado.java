@@ -9,38 +9,38 @@ import java.util.UUID;
 
 public class VueloCreado extends DomainEvent {
 
-  public UUID keyVuelo;
-  public String nroVuelo;
-  public String keyAeronave;
-  public String keyAeropuertoOrigen;
-  public String keyAeropuertoDestino;
-  public Date fecha_salida;
-  public Date fecha_arribe;
-  public List<Tripulante> listaTripulante;
+  protected UUID keyVuelo;
+  protected String nroVuelo;
+  protected String keyAeronave;
+  protected String keyAeropuertoOrigen;
+  protected String keyAeropuertoDestino;
+  protected Date fechaSalida;
+  protected Date fechaArribe;
+  protected List<Tripulante> listaTripulante;
 
   public VueloCreado() {
     super();
   }
 
   public VueloCreado(
-    UUID _keyVuelo,
-    String _nroVuelo,
-    String _keyAeronave,
-    String _keyAeropuertoOrigen,
-    String _keyAeropuertoDestino,
-    Date _fecha_salida,
-    Date _fecha_arribe,
-    List<Tripulante> _listaTripulante
+    UUID keyVuelo,
+    String nroVuelo,
+    String keyAeronave,
+    String keyAeropuertoOrigen,
+    String keyAeropuertoDestino,
+    Date fechaSalida,
+    Date fechaArribe,
+    List<Tripulante> listaTripulante
   ) {
     super(LocalDateTime.now());
-    keyVuelo = _keyVuelo;
-    nroVuelo = _nroVuelo;
-    keyAeronave = _keyAeronave;
-    keyAeropuertoOrigen = _keyAeropuertoOrigen;
-    keyAeropuertoDestino = _keyAeropuertoDestino;
-    fecha_salida = _fecha_salida;
-    fecha_arribe = _fecha_arribe;
-    listaTripulante = _listaTripulante;
+    this.keyVuelo = keyVuelo;
+    this.nroVuelo = nroVuelo;
+    this.keyAeronave = keyAeronave;
+    this.keyAeropuertoOrigen = keyAeropuertoOrigen;
+    this.keyAeropuertoDestino = keyAeropuertoDestino;
+    this.fechaSalida = fechaSalida;
+    this.fechaArribe = fechaArribe;
+    this.listaTripulante = listaTripulante;
   }
 
   public UUID getKeyVuelo() {
@@ -83,20 +83,20 @@ public class VueloCreado extends DomainEvent {
     this.keyAeropuertoDestino = keyAeropuertoDestino;
   }
 
-  public Date getFecha_salida() {
-    return fecha_salida;
+  public Date getfechaSalida() {
+    return fechaSalida;
   }
 
-  public void setFecha_salida(Date fecha_salida) {
-    this.fecha_salida = fecha_salida;
+  public void setfechaSalida(Date fechaSalida) {
+    this.fechaSalida = fechaSalida;
   }
 
-  public Date getFecha_arribe() {
-    return fecha_arribe;
+  public Date getfechaArribe() {
+    return fechaArribe;
   }
 
-  public void setFecha_arribe(Date fecha_arribe) {
-    this.fecha_arribe = fecha_arribe;
+  public void setfechaArribe(Date fechaArribe) {
+    this.fechaArribe = fechaArribe;
   }
 
   public List<Tripulante> getListaTripulante() {

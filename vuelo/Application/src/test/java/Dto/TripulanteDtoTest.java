@@ -6,23 +6,20 @@ import org.junit.Test;
 
 public class TripulanteDtoTest {
 
+  private UUID key = UUID.randomUUID();
+  private UUID keyVuelo = UUID.randomUUID();
+  private String keyTripulante = "12345";
+  private String cargo = "Piloto";
+
   @Test
   public void CheckPropertiesValid() {
-    UUID key = UUID.randomUUID();
-    UUID keyVuelo = UUID.randomUUID();
-    String keyTripulante = "12345";
-    String cargo = "Piloto";
+    TripulanteDto tripulanteDto = new TripulanteDto(); // dto
+    Assert.assertEquals(null, tripulanteDto.getKey());
+    Assert.assertEquals(null, tripulanteDto.getKeyVuelo());
+    Assert.assertEquals(null, tripulanteDto.getKeyTripulante());
+    Assert.assertEquals(null, tripulanteDto.getCargo());
 
-    // dto
-    TripulanteDto tripulanteDto = new TripulanteDto();
-    Assert.assertEquals(null, tripulanteDto.key);
-    Assert.assertEquals(null, tripulanteDto.keyVuelo);
-    Assert.assertEquals(null, tripulanteDto.keyTripulante);
-    Assert.assertEquals(null, tripulanteDto.cargo);
-    // end dto
-
-    // getters and setters
-    tripulanteDto.setKey(key);
+    tripulanteDto.setKey(key); // getters and setters
     tripulanteDto.setKeyVuelo(keyVuelo);
     tripulanteDto.setKeyTripulante(keyTripulante);
     tripulanteDto.setCargo(cargo);
@@ -34,19 +31,11 @@ public class TripulanteDtoTest {
 
   @Test
   public void CheckConstructor() {
-    UUID key = UUID.randomUUID();
-    UUID keyVuelo = UUID.randomUUID();
-    String keyTripulante = "12345";
-    String cargo = "Piloto";
-
-    // dto
     TripulanteDto tripulanteDto = new TripulanteDto(
       keyVuelo,
       keyTripulante,
       cargo
     );
-
-    // getters and setters
     tripulanteDto.setKey(key);
     tripulanteDto.setKeyVuelo(keyVuelo);
     tripulanteDto.setKeyTripulante(keyTripulante);

@@ -24,19 +24,19 @@ public class EditarVueloHandlerTest {
   IVueloRepository _IVueloRep = Mockito.mock(IVueloRepository.class);
   IUnitOfWork _IUnitOfWork = Mockito.mock(IUnitOfWork.class);
 
+  private UUID key = UUID.randomUUID();
+  private String nroVuelo = "A12345";
+  private String keyAeronave = "xyz-1990";
+  private String keyAeropuertoOrigen = "aeropuerto100";
+  private String keyAeropuertoDestino = "aeropuerto200";
+  private Date fecha_salida = new Date();
+  private Date fecha_arribe = new Date();
+
   @Before
   public void setUp() {}
 
   @Test
   public void HandleCorrectly() throws HttpException {
-    UUID key = UUID.randomUUID();
-    String nroVuelo = "A12345";
-    String keyAeronave = "xyz-1990";
-    String keyAeropuertoOrigen = "aeropuerto100";
-    String keyAeropuertoDestino = "aeropuerto200";
-    Date fecha_salida = new Date();
-    Date fecha_arribe = new Date();
-
     Vuelo vuelo = new Vuelo(
       nroVuelo,
       keyAeronave,
@@ -54,26 +54,26 @@ public class EditarVueloHandlerTest {
     );
 
     VueloDto vueloDto = new VueloDto();
-    vueloDto.key = key;
-    vueloDto.nroVuelo = nroVuelo;
-    vueloDto.keyAeronave = keyAeronave;
-    vueloDto.keyAeropuertoOrigen = keyAeropuertoOrigen;
-    vueloDto.keyAeropuertoDestino = keyAeropuertoDestino;
-    vueloDto.fecha_salida = fecha_salida;
-    vueloDto.fecha_arribe = fecha_arribe;
+    vueloDto.setKey(key);
+    vueloDto.setNroVuelo(nroVuelo);
+    vueloDto.setKeyAeronave(keyAeronave);
+    vueloDto.setKeyAeropuertoOrigen(keyAeropuertoOrigen);
+    vueloDto.setKeyAeropuertoDestino(keyAeropuertoDestino);
+    vueloDto.setfechaSalida(fecha_salida);
+    vueloDto.setfechaArribe(fecha_arribe);
 
-    EditarVueloCommand command = new EditarVueloCommand(vueloDto.key);
+    EditarVueloCommand command = new EditarVueloCommand(vueloDto.getKey());
 
-    command._VueloDto.key = key;
-    command._VueloDto.nroVuelo = nroVuelo;
-    command._VueloDto.keyAeronave = keyAeronave;
-    command._VueloDto.keyAeropuertoOrigen = keyAeropuertoOrigen;
-    command._VueloDto.keyAeropuertoDestino = keyAeropuertoDestino;
-    command._VueloDto.fecha_salida = fecha_salida;
-    command._VueloDto.fecha_arribe = fecha_arribe;
+    command.vueloDto.setKey(key);
+    command.vueloDto.setNroVuelo(nroVuelo);
+    command.vueloDto.setKeyAeronave(keyAeronave);
+    command.vueloDto.setKeyAeropuertoOrigen(keyAeropuertoOrigen);
+    command.vueloDto.setKeyAeropuertoDestino(keyAeropuertoDestino);
+    command.vueloDto.setfechaSalida(fecha_salida);
+    command.vueloDto.setfechaArribe(fecha_arribe);
 
     Vuelo resp = handler.handle(command);
-    Assert.assertEquals(nroVuelo, resp.nroVuelo);
+    Assert.assertEquals(nroVuelo, resp.getNroVuelo());
   }
 
   @Test
@@ -85,14 +85,14 @@ public class EditarVueloHandlerTest {
       _IUnitOfWork
     );
     VueloDto vueloDto = new VueloDto();
-    vueloDto.nroVuelo = "A12345";
-    vueloDto.keyAeronave = "xyz-1990";
-    vueloDto.keyAeropuertoOrigen = "aeropuerto100";
-    vueloDto.keyAeropuertoDestino = "aeropuerto200";
-    vueloDto.fecha_salida = new Date();
-    vueloDto.fecha_arribe = new Date();
+    vueloDto.setNroVuelo("A12345");
+    vueloDto.setKeyAeronave("xyz-1990");
+    vueloDto.setKeyAeropuertoOrigen("aeropuerto100");
+    vueloDto.setKeyAeropuertoDestino("aeropuerto200");
+    vueloDto.setfechaSalida(new Date());
+    vueloDto.setfechaArribe(new Date());
 
-    EditarVueloCommand command = new EditarVueloCommand(vueloDto.key);
+    EditarVueloCommand command = new EditarVueloCommand(vueloDto.getKey());
     try {
       Vuelo resp = handler.handle(command);
       System.out.println(resp);

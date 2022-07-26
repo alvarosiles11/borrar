@@ -7,21 +7,18 @@ import java.util.UUID;
 
 public class VueloDto {
 
-  public UUID key;
-  public String nroVuelo;
-  public String keyAeronave;
-  public String keyAeropuertoOrigen;
-  public String keyAeropuertoDestino;
-  public Date fecha_salida;
-  public Date fecha_arribe;
+  private UUID key;
+  private String nroVuelo;
+  private String keyAeronave;
+  private String keyAeropuertoOrigen;
+  private String keyAeropuertoDestino;
+  private Date fechaSalida;
+  private Date fechaArribe;
   public List<TripulanteDto> listaTripulante;
 
-  // Constructor
   public VueloDto() {
     listaTripulante = new ArrayList<>();
   }
-
-  // getters and setters
 
   public UUID getKey() {
     return key;
@@ -71,19 +68,19 @@ public class VueloDto {
     this.keyAeropuertoDestino = keyAeropuertoDestino;
   }
 
-  public Date getFecha_salida() {
-    return fecha_salida;
+  public Date getfechaSalida() {
+    return fechaSalida;
   }
 
-  public void setFecha_salida(Date fecha_salida) {
-    this.fecha_salida = fecha_salida;
+  public void setfechaSalida(Date fechaSalida) {
+    this.fechaSalida = fechaSalida;
   }
 
-  public Date getFecha_arribe() {
-    return fecha_arribe;
+  public Date getfechaArribe() {
+    return fechaArribe;
   }
 
-  public void setFecha_arribe(Date fecha_arribe) {
-    this.fecha_arribe = fecha_arribe;
+  public void setfechaArribe(Date fechaArribe) {
+    this.fechaArribe = fechaArribe;
   }
 }

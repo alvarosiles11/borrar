@@ -10,15 +10,15 @@ public class CrearVueloCommand implements Request<VueloDto> {
   public String keyAeronave;
   public String keyAeropuertoOrigen;
   public String keyAeropuertoDestino;
-  public Date fecha_salida;
-  public Date fecha_arribe;
+  public Date fechaSalida;
+  public Date fechaArribe;
 
   public CrearVueloCommand(VueloDto vueloDto) {
-    this.nroVuelo = vueloDto.nroVuelo;
-    this.keyAeronave = vueloDto.keyAeronave;
-    this.keyAeropuertoOrigen = vueloDto.keyAeropuertoOrigen;
-    this.keyAeropuertoDestino = vueloDto.keyAeropuertoDestino;
-    this.fecha_salida = vueloDto.fecha_salida;
-    this.fecha_arribe = vueloDto.fecha_arribe;
+    this.nroVuelo = vueloDto.getNroVuelo();
+    this.keyAeronave = vueloDto.getKeyAeronave();
+    this.keyAeropuertoOrigen = vueloDto.getKeyAeropuertoOrigen();
+    this.keyAeropuertoDestino = vueloDto.getKeyAeropuertoDestino();
+    this.fechaSalida = vueloDto.getfechaSalida();
+    this.fechaArribe = vueloDto.getfechaArribe();
   }
 }

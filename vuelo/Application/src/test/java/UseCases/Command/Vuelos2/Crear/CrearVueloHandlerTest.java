@@ -34,8 +34,8 @@ public class CrearVueloHandlerTest {
     String keyAeronave = "xyz-1990";
     String keyAeropuertoOrigen = "aeropuerto100";
     String keyAeropuertoDestino = "aeropuerto200";
-    Date fecha_salida = new Date();
-    Date fecha_arribe = new Date();
+    Date fechaSalida = new Date();
+    Date fechaArribe = new Date();
     System.out.println(key);
 
     Vuelo vuelo = new Vuelo(
@@ -43,8 +43,8 @@ public class CrearVueloHandlerTest {
       keyAeronave,
       keyAeropuertoOrigen,
       keyAeropuertoDestino,
-      fecha_salida,
-      fecha_arribe
+      fechaSalida,
+      fechaArribe
     );
     when(
       _IVueloFactory.Create(
@@ -52,8 +52,8 @@ public class CrearVueloHandlerTest {
         keyAeronave,
         keyAeropuertoOrigen,
         keyAeropuertoDestino,
-        fecha_salida,
-        fecha_arribe
+        fechaSalida,
+        fechaArribe
       )
     )
       .thenReturn(vuelo);
@@ -64,22 +64,26 @@ public class CrearVueloHandlerTest {
       _IUnitOfWork
     );
     VueloDto vueloDto = new VueloDto();
-    vueloDto.nroVuelo = nroVuelo;
-    vueloDto.keyAeronave = keyAeronave;
-    vueloDto.keyAeropuertoOrigen = keyAeropuertoOrigen;
-    vueloDto.keyAeropuertoDestino = keyAeropuertoDestino;
-    vueloDto.fecha_salida = fecha_salida;
-    vueloDto.fecha_arribe = fecha_arribe;
+    vueloDto.setNroVuelo(nroVuelo);
+    vueloDto.setKeyAeronave(keyAeronave);
+    vueloDto.setKeyAeropuertoOrigen(keyAeropuertoOrigen);
+    vueloDto.setKeyAeropuertoDestino(keyAeropuertoDestino);
+    vueloDto.setfechaSalida(fechaSalida);
+    vueloDto.setfechaArribe(fechaArribe);
 
     CrearVueloCommand command = new CrearVueloCommand(vueloDto);
     Vuelo response = handler.handle(command);
     verify(_IVueloRepository).Create(response);
     verify(_IUnitOfWork).commit();
-    Assert.assertEquals(nroVuelo, response.nroVuelo);
-    Assert.assertEquals(keyAeronave, response.keyAeronave);
-    Assert.assertEquals(keyAeropuertoOrigen, response.keyAeropuertoOrigen);
-    Assert.assertEquals(keyAeropuertoDestino, response.keyAeropuertoDestino);
-    Assert.assertEquals(fecha_salida, response.fecha_salida);
-    Assert.assertEquals(fecha_arribe, response.fecha_arribe);
+
+    Assert.assertEquals(nroVuelo, response.getNroVuelo());
+    Assert.assertEquals(keyAeronave, response.getKeyAeronave());
+    Assert.assertEquals(keyAeropuertoOrigen, response.getKeyAeropuertoOrigen());
+    Assert.assertEquals(
+      keyAeropuertoDestino,
+      response.getKeyAeropuertoDestino()
+    );
+    Assert.assertEquals(fechaSalida, response.getfechaSalida());
+    Assert.assertEquals(fechaArribe, response.getfechaArribe());
   }
 }

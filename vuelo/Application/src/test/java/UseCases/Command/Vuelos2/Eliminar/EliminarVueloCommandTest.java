@@ -12,9 +12,9 @@ public class EliminarVueloCommandTest {
   public void dataValid() {
     UUID key = UUID.randomUUID();
     VueloDto vueloDto = new VueloDto();
-    vueloDto.key = key;
-    EliminarVueloCommand command = new EliminarVueloCommand(vueloDto.key);
-    Assert.assertEquals(key, vueloDto.key);
+    vueloDto.setKey(key);
+    EliminarVueloCommand command = new EliminarVueloCommand(vueloDto.getKey());
+    Assert.assertEquals(key, vueloDto.getKey());
     System.out.println(command);
   }
 

@@ -39,16 +39,16 @@ public class EditarAeronaveHandlerTest {
     );
 
     AeronaveDto aeronaveDto = new AeronaveDto();
-    aeronaveDto.keyAeronave = keyAeronave;
-    aeronaveDto.matricula = matricula;
+    aeronaveDto.setKeyAeronave(keyAeronave);
+    aeronaveDto.setMatricula(matricula);
 
     EditarAeronaveCommand command = new EditarAeronaveCommand(
-      aeronaveDto.keyAeronave
+      aeronaveDto.getKeyAeronave()
     );
-    command._AeronaveDto.keyAeronave = keyAeronave;
-    command._AeronaveDto.matricula = matricula;
+    command.aeronaveDto.setKeyAeronave(keyAeronave);
+    command.aeronaveDto.setMatricula(matricula);
     Aeronave resp = handler.handle(command);
-    Assert.assertEquals(keyAeronave, aeronaveDto.keyAeronave);
+    Assert.assertEquals(keyAeronave, aeronaveDto.getKeyAeronave());
     System.out.println(resp);
   }
 
@@ -61,11 +61,11 @@ public class EditarAeronaveHandlerTest {
       _IUnitOfWork
     );
     AeronaveDto aeronaveDto = new AeronaveDto();
-    aeronaveDto.keyAeronave = UUID.randomUUID();
-    aeronaveDto.matricula = "ABC";
+    aeronaveDto.setKeyAeronave(UUID.randomUUID());
+    aeronaveDto.setMatricula("xyz-1990");
 
     EditarAeronaveCommand command = new EditarAeronaveCommand(
-      aeronaveDto.keyAeronave
+      aeronaveDto.getKeyAeronave()
     );
     try {
       Aeronave resp = handler.handle(command);

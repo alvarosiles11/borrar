@@ -36,7 +36,7 @@ public class GetTripulanteByKeyHandlerTest {
       _ITripRep
     );
     GetTripulanteByKeyQuery command = new GetTripulanteByKeyQuery(
-      tripulanteDto.key
+      tripulanteDto.getKey()
     );
     TripulanteDto resp = handler.handle(command);
     System.out.println(resp);
@@ -64,7 +64,7 @@ public class GetTripulanteByKeyHandlerTest {
       _ITripRep
     );
     GetTripulanteByKeyQuery command = new GetTripulanteByKeyQuery(
-      tripulanteDto.key
+      tripulanteDto.getKey()
     );
     System.out.println(key);
     try {

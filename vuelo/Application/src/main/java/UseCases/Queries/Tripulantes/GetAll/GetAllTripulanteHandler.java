@@ -8,14 +8,14 @@ import java.util.List;
 public class GetAllTripulanteHandler
   implements RequestHandler<GetAllTripulanteQuery, List<Tripulante>> {
 
-  private ITripulanteRepository _iTripulanteRepository;
+  private ITripulanteRepository iTripulanteRepository;
 
   public GetAllTripulanteHandler(ITripulanteRepository iTripulanteRepository) {
-    this._iTripulanteRepository = iTripulanteRepository;
+    this.iTripulanteRepository = iTripulanteRepository;
   }
 
   @Override
   public List<Tripulante> handle(GetAllTripulanteQuery request) {
-    return _iTripulanteRepository.GetAll();
+    return iTripulanteRepository.GetAll();
   }
 }

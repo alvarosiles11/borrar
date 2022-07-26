@@ -39,14 +39,14 @@ public class EliminarVueloHandlerTest {
     );
 
     VueloDto vueloDto = new VueloDto();
-    vueloDto.nroVuelo = "A12345";
-    vueloDto.keyAeronave = "xyz-1990";
-    vueloDto.keyAeropuertoOrigen = "aeropuerto100";
-    vueloDto.keyAeropuertoDestino = "aeropuerto200";
-    vueloDto.fecha_salida = new Date();
-    vueloDto.fecha_arribe = new Date();
-    EliminarVueloCommand command = new EliminarVueloCommand(vueloDto.key);
+    vueloDto.setNroVuelo("A12345");
+    vueloDto.setKeyAeronave("xyz-1990");
+    vueloDto.setKeyAeropuertoOrigen("aeropuerto100");
+    vueloDto.setKeyAeropuertoDestino("aeropuerto200");
+    vueloDto.setfechaSalida(new Date());
+    vueloDto.setfechaArribe(new Date());
 
+    EliminarVueloCommand command = new EliminarVueloCommand(vueloDto.getKey());
     EliminarVueloHandler handler = new EliminarVueloHandler(
       _IVueloFact,
       _IVueloRep,
@@ -67,14 +67,15 @@ public class EliminarVueloHandlerTest {
       _IUnitOfWork
     );
     VueloDto vueloDto = new VueloDto();
-    vueloDto.nroVuelo = "A12345";
-    vueloDto.keyAeronave = "xyz-1990";
-    vueloDto.keyAeropuertoOrigen = "aeropuerto100";
-    vueloDto.keyAeropuertoDestino = "aeropuerto200";
-    vueloDto.fecha_salida = new Date();
-    vueloDto.fecha_arribe = new Date();
 
-    EliminarVueloCommand command = new EliminarVueloCommand(vueloDto.key);
+    vueloDto.setNroVuelo("A12345");
+    vueloDto.setKeyAeronave("xyz-1990");
+    vueloDto.setKeyAeropuertoOrigen("aeropuerto100");
+    vueloDto.setKeyAeropuertoDestino("aeropuerto200");
+    vueloDto.setfechaSalida(new Date());
+    vueloDto.setfechaArribe(new Date());
+
+    EliminarVueloCommand command = new EliminarVueloCommand(vueloDto.getKey());
     try {
       Vuelo resp = handler.handle(command);
       System.out.println(resp);

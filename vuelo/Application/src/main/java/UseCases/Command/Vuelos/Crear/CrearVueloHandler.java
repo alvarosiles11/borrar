@@ -10,36 +10,32 @@ import fourteam.mediator.RequestHandler;
 public class CrearVueloHandler
   implements RequestHandler<CrearVueloCommand, Vuelo> {
 
-  // Declaro Factory, Repository, UnitOfWork
-  private IVueloFactory _IVueloFactory;
-  private IVueloRepository _IVueloRepository;
-  private IUnitOfWork _unitOfWor;
+  private IVueloFactory iVueloFactory;
+  private IVueloRepository iVueloRepository;
+  private IUnitOfWork unitOfWor;
 
-  // Constructor
   public CrearVueloHandler(
     IVueloFactory iVueloFactory,
     IVueloRepository iVueloRepository,
     IUnitOfWork unitOfWork
   ) {
-    this._IVueloFactory = iVueloFactory;
-    this._IVueloRepository = iVueloRepository;
-    this._unitOfWor = unitOfWork;
+    this.iVueloFactory = iVueloFactory;
+    this.iVueloRepository = iVueloRepository;
+    this.unitOfWor = unitOfWork;
   }
 
-  // hilo de ejecucion
   @Override
   public Vuelo handle(CrearVueloCommand arg0) throws HttpException {
-    Vuelo vuelo = _IVueloFactory.Create(
+    Vuelo vuelo = iVueloFactory.Create(
       arg0.nroVuelo,
       arg0.keyAeronave,
       arg0.keyAeropuertoOrigen,
       arg0.keyAeropuertoDestino,
-      arg0.fecha_salida,
-      arg0.fecha_arribe
+      arg0.fechaSalida,
+      arg0.fechaArribe
     );
-    // vuelo.eventCreado();
-    _IVueloRepository.Create(vuelo);
-    _unitOfWor.commit();
+    iVueloRepository.Create(vuelo);
+    unitOfWor.commit();
     return vuelo;
   }
 }

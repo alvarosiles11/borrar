@@ -41,8 +41,8 @@ public class CrearAeronaveHandlerTest {
     );
 
     AeronaveDto aeronaveDto = new AeronaveDto();
-    aeronaveDto.keyAeronave = keyAeronave;
-    aeronaveDto.matricula = matricula;
+    aeronaveDto.setKeyAeronave(keyAeronave);
+    aeronaveDto.setMatricula(matricula);
 
     CrearAeronaveCommand command = new CrearAeronaveCommand(aeronaveDto);
     Aeronave resp = handler.handle(command);

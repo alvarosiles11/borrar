@@ -10,12 +10,10 @@ import fourteam.mediator.RequestHandler;
 public class CrearTripulanteHandler
   implements RequestHandler<CrearTripulanteCommand, Tripulante> {
 
-  // Declaro Factory, Repository, UnitOfWork
   private ITripulanteFactory _ITripulanteFactory;
   private ITripulanteRepository _ITripulanteRepository;
   private IUnitOfWork _unitOfWor;
 
-  // Constructor
   public CrearTripulanteHandler(
     ITripulanteFactory iTripulanteFactory,
     ITripulanteRepository iTripulanteRepository,

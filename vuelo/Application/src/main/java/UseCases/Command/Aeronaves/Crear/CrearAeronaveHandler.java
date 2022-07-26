@@ -10,28 +10,25 @@ import fourteam.mediator.RequestHandler;
 public class CrearAeronaveHandler
   implements RequestHandler<CrearAeronaveCommand, Aeronave> {
 
-  // Declaro Factory, Repository, UnitOfWork
-  private IAeronaveFactory _IAeronaveFactory;
-  private IAeronaveRepository _IAeronaveRepository;
-  private IUnitOfWork _unitOfWor;
+  protected IAeronaveFactory iAeronaveFactory;
+  protected IAeronaveRepository iAeronaveRepository;
+  protected IUnitOfWork unitOfWor;
 
-  // Constructor
   public CrearAeronaveHandler(
     IAeronaveFactory iAeronaveFactory,
     IAeronaveRepository iAeronaveRepository,
     IUnitOfWork unitOfWor
   ) {
-    this._IAeronaveFactory = iAeronaveFactory;
-    this._IAeronaveRepository = iAeronaveRepository;
-    this._unitOfWor = unitOfWor;
+    this.iAeronaveFactory = iAeronaveFactory;
+    this.iAeronaveRepository = iAeronaveRepository;
+    this.unitOfWor = unitOfWor;
   }
 
-  // hilo de ejecucion
   @Override
   public Aeronave handle(CrearAeronaveCommand arg0) throws HttpException {
-    Aeronave aeronave = _IAeronaveFactory.Create(arg0.matricula);
-    _IAeronaveRepository.Create(aeronave);
-    _unitOfWor.commit();
+    Aeronave aeronave = iAeronaveFactory.Create(arg0.matricula);
+    iAeronaveRepository.Create(aeronave);
+    unitOfWor.commit();
     return aeronave;
   }
 }

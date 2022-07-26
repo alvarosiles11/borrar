@@ -22,23 +22,24 @@ public class EliminarTripulanteHandlerTest {
   ITripulanteRepository _ITripRep = Mockito.mock(ITripulanteRepository.class);
   IUnitOfWork _IUnitOfWork = Mockito.mock(IUnitOfWork.class);
 
+  private UUID keyVuelo = UUID.randomUUID();
+  private String keyTripulante = "12345";
+  private String cargo = "Piloto";
+
   @Before
   public void setUp() {}
 
   @Test
   public void HandleCorrectly() throws HttpException {
-    UUID keyVuelo = UUID.randomUUID();
-    String keyTripulante = "12345";
-    String cargo = "Piloto";
     Tripulante tripulante = new Tripulante(keyVuelo, keyTripulante, cargo);
 
     TripulanteDto tripulanteDto = new TripulanteDto();
-    tripulanteDto.keyVuelo = UUID.randomUUID();
-    tripulanteDto.keyTripulante = "12345";
-    tripulanteDto.cargo = "Piloto";
+    tripulanteDto.setKeyVuelo(UUID.randomUUID());
+    tripulanteDto.setKeyTripulante("12345");
+    tripulanteDto.setCargo("Piloto");
 
     EliminarTripulanteCommand command = new EliminarTripulanteCommand(
-      tripulanteDto.keyVuelo
+      tripulanteDto.getKeyVuelo()
     );
 
     EliminarTripulanteHandler handler = new EliminarTripulanteHandler(
@@ -65,12 +66,12 @@ public class EliminarTripulanteHandlerTest {
     );
 
     TripulanteDto tripulanteDto = new TripulanteDto();
-    tripulanteDto.keyVuelo = UUID.randomUUID();
-    tripulanteDto.keyTripulante = "12345";
-    tripulanteDto.cargo = "Piloto";
+    tripulanteDto.setKeyVuelo(UUID.randomUUID());
+    tripulanteDto.setKeyTripulante("12345");
+    tripulanteDto.setCargo("Piloto");
 
     EliminarTripulanteCommand command = new EliminarTripulanteCommand(
-      tripulanteDto.keyVuelo
+      tripulanteDto.getKeyVuelo()
     );
 
     try {

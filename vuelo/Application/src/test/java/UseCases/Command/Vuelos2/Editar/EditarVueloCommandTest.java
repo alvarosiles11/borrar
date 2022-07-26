@@ -20,16 +20,16 @@ public class EditarVueloCommandTest {
     Date fecha_arribe = new Date();
 
     VueloDto vueloDto = new VueloDto();
-    vueloDto.key = key;
+    vueloDto.setKey(key);
     vueloDto.setNroVuelo(nroVuelo);
     vueloDto.setKeyAeronave(keyAeronave);
     vueloDto.setKeyAeropuertoOrigen(keyAeropuertoOrigen);
     vueloDto.setKeyAeropuertoDestino(keyAeropuertoDestino);
-    vueloDto.setFecha_salida(fecha_salida);
-    vueloDto.setFecha_arribe(fecha_arribe);
+    vueloDto.setfechaSalida(fecha_salida);
+    vueloDto.setfechaArribe(fecha_arribe);
 
-    EditarVueloCommand command = new EditarVueloCommand(vueloDto.key);
-    Assert.assertEquals(key, vueloDto.key);
+    EditarVueloCommand command = new EditarVueloCommand(vueloDto.getKey());
+    Assert.assertEquals(key, vueloDto.getKey());
     System.out.println(command);
   }
 

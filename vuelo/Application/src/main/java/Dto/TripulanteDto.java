@@ -4,22 +4,18 @@ import java.util.UUID;
 
 public class TripulanteDto {
 
-  public UUID key; // key del tripulante
-  public UUID keyVuelo; // key del vuelo
-  public String keyTripulante; // tripulante
-  public String cargo; // cargo
+  private UUID key; // key del tripulante
+  private UUID keyVuelo; // key del vuelo
+  private String keyTripulante; // tripulante
+  private String cargo; // cargo
 
-  // Constructor
   public TripulanteDto() {}
 
-  // Constructor
   public TripulanteDto(UUID keyVuelo, String keyTripulante, String cargo) {
     this.keyVuelo = keyVuelo;
     this.keyTripulante = keyTripulante;
     this.cargo = cargo;
   }
-
-  // getters and setters
 
   public UUID getKeyVuelo() {
     return keyVuelo;

@@ -15,9 +15,9 @@ public class EliminarTripulanteCommandTest {
     tripulanteDto.setKeyVuelo(keyVuelo);
 
     EliminarTripulanteCommand command = new EliminarTripulanteCommand(
-      tripulanteDto.keyVuelo
+      tripulanteDto.getKeyVuelo()
     );
-    Assert.assertEquals(keyVuelo, tripulanteDto.keyVuelo);
+    Assert.assertEquals(keyVuelo, tripulanteDto.getKeyVuelo());
     System.out.println(command);
   }
 }

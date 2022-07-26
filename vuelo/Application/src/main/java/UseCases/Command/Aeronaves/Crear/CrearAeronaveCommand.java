@@ -5,9 +5,9 @@ import fourteam.mediator.Request;
 
 public class CrearAeronaveCommand implements Request<AeronaveDto> {
 
-  public String matricula;
+  protected String matricula;
 
   public CrearAeronaveCommand(AeronaveDto vueloDto) {
-    this.matricula = vueloDto.matricula;
+    this.matricula = vueloDto.getMatricula();
   }
 }

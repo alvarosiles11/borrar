@@ -4,10 +4,8 @@ import java.util.UUID;
 
 public class AeronaveDto {
 
-  public UUID keyAeronave;
-  public String matricula;
-
-  public AeronaveDto() {}
+  private UUID keyAeronave;
+  private String matricula;
 
   public UUID getKeyAeronave() {
     return keyAeronave;

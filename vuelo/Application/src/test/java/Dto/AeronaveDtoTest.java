@@ -10,15 +10,10 @@ public class AeronaveDtoTest {
   public void CheckPropertiesValid() {
     UUID keyAeronave = UUID.randomUUID();
     String matricula = "xyz-1990";
-
-    // dto
-    AeronaveDto aeronaveDto = new AeronaveDto();
-    Assert.assertEquals(null, aeronaveDto.keyAeronave);
-    Assert.assertEquals(null, aeronaveDto.matricula);
-    // end dto
-
-    // getters and setters
-    aeronaveDto.setKeyAeronave(keyAeronave);
+    AeronaveDto aeronaveDto = new AeronaveDto(); // dto
+    Assert.assertEquals(null, aeronaveDto.getKeyAeronave());
+    Assert.assertEquals(null, aeronaveDto.getMatricula());
+    aeronaveDto.setKeyAeronave(keyAeronave); // getters and setters
     aeronaveDto.setMatricula(matricula);
     Assert.assertEquals(keyAeronave, aeronaveDto.getKeyAeronave());
     Assert.assertEquals(matricula, aeronaveDto.getMatricula());

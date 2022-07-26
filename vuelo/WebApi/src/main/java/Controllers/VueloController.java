@@ -52,15 +52,16 @@ public class VueloController {
 
   @PutMapping("/{key}")
   public Response<Vuelo> edit(
-    @RequestBody Vuelo _Vuelo,
+    @RequestBody Vuelo vuelo,
     @PathVariable EditarVueloCommand request
   ) throws HttpException {
-    request._VueloDto.nroVuelo = _Vuelo.nroVuelo;
-    request._VueloDto.keyAeronave = _Vuelo.keyAeronave;
-    request._VueloDto.keyAeropuertoOrigen = _Vuelo.keyAeropuertoOrigen;
-    request._VueloDto.keyAeropuertoDestino = _Vuelo.keyAeropuertoDestino;
-    request._VueloDto.fecha_salida = _Vuelo.fecha_salida;
-    request._VueloDto.fecha_arribe = _Vuelo.fecha_arribe;
+    request.vueloDto.setNroVuelo(vuelo.getNroVuelo());
+    request.vueloDto.setKeyAeronave(vuelo.getKeyAeronave());
+    request.vueloDto.setKeyAeropuertoOrigen(vuelo.getKeyAeropuertoOrigen());
+    request.vueloDto.setKeyAeropuertoDestino(vuelo.getKeyAeropuertoDestino());
+    request.vueloDto.setfechaSalida(vuelo.getfechaSalida());
+    request.vueloDto.setfechaArribe(vuelo.getfechaArribe());
+
     System.out.println("vuelo edit exitoso");
     return _mediator.send(request);
   }

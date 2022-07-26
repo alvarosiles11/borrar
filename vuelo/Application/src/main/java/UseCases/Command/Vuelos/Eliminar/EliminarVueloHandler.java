@@ -11,28 +11,26 @@ import fourteam.mediator.RequestHandler;
 public class EliminarVueloHandler
   implements RequestHandler<EliminarVueloCommand, Vuelo> {
 
-  // Declaro Factory, Repository, UnitOfWork
-  protected IVueloFactory _IVueloFactory;
-  protected IVueloRepository _IVueloRepository;
-  protected IUnitOfWork _unitOfWor;
+  protected IVueloFactory iVueloFactory;
+  protected IVueloRepository iVueloRepository;
+  protected IUnitOfWork unitOfWor;
 
-  // Constructor
   public EliminarVueloHandler(
     IVueloFactory iVueloFactory,
     IVueloRepository iVueloRepository,
     IUnitOfWork unitOfWor
   ) {
-    _IVueloFactory = iVueloFactory;
-    this._IVueloRepository = iVueloRepository;
-    this._unitOfWor = unitOfWor;
+    this.iVueloFactory = iVueloFactory;
+    this.iVueloRepository = iVueloRepository;
+    this.unitOfWor = unitOfWor;
   }
 
   @Override
   public Vuelo handle(EliminarVueloCommand request) throws HttpException {
-    Vuelo _Vuelo = _IVueloRepository.FindByKey(request._VueloDto.key);
-    if (_Vuelo == null) {
+    Vuelo vuelo = iVueloRepository.FindByKey(request.vueloDto.getKey());
+    if (vuelo == null) {
       throw new HttpException(HttpStatus.BAD_REQUEST, "Vuelo no encontrada");
     }
-    return _IVueloRepository.Delete(_Vuelo);
+    return iVueloRepository.Delete(vuelo);
   }
 }

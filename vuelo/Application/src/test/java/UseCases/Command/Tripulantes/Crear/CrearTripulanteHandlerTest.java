@@ -44,17 +44,18 @@ public class CrearTripulanteHandlerTest {
       _IUnitOfWork
     );
     TripulanteDto tripulanteDto = new TripulanteDto();
-    tripulanteDto.keyVuelo = keyVuelo;
-    tripulanteDto.keyTripulante = keyTripulante;
-    tripulanteDto.cargo = cargo;
 
+    tripulanteDto.setKeyVuelo(keyVuelo);
+    tripulanteDto.setKeyTripulante(keyTripulante);
+    tripulanteDto.setCargo(cargo);
     CrearTripulanteCommand command = new CrearTripulanteCommand(tripulanteDto);
-    Tripulante resp = handler.handle(command);
 
+    Tripulante resp = handler.handle(command);
     verify(_ITripulanteRepository).Create(resp);
+
     verify(_IUnitOfWork).commit();
-    Assert.assertEquals(keyVuelo, resp.keyVuelo);
-    Assert.assertEquals(keyTripulante, resp.keyTripulante);
-    Assert.assertEquals(cargo, resp.cargo);
+    Assert.assertEquals(keyVuelo, resp.getKeyVuelo());
+    Assert.assertEquals(keyTripulante, resp.getKeyTripulante());
+    Assert.assertEquals(cargo, resp.getCargo());
   }
 }

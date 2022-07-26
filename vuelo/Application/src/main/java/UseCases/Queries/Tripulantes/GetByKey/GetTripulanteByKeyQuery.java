@@ -6,7 +6,7 @@ import java.util.UUID;
 
 public class GetTripulanteByKeyQuery implements Request<VueloDto> {
 
-  public UUID key;
+  protected UUID key;
 
   public GetTripulanteByKeyQuery(UUID key) {
     this.key = key;
