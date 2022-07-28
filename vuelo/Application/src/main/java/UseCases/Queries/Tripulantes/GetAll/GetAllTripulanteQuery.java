@@ -5,5 +5,7 @@ import fourteam.mediator.Request;
 
 public class GetAllTripulanteQuery implements Request<TripulanteDto> {
 
-  public GetAllTripulanteQuery() {}
+  public GetAllTripulanteQuery() {
+    super();
+  }
 }

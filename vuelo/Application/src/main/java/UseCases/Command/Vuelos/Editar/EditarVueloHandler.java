@@ -38,7 +38,6 @@ public class EditarVueloHandler
     vuelo.setKeyAeropuertoDestino(request.vueloDto.getKeyAeropuertoDestino());
     vuelo.setfechaSalida(request.vueloDto.getfechaSalida());
     vuelo.setfechaArribe(request.vueloDto.getfechaArribe());
-    // _Vuelo.listaTripulante = request._VueloDto.listaTripulante;
     iVueloRepository.Update(vuelo);
     return vuelo;
   }
