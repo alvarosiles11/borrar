@@ -94,3 +94,11 @@ yarn-error.log*
 
 # package-lock.json
 # package.json
+
+**/target/
+.classpath
+**/.classpath
+.project
+**/.project
+.settings/
+**/.settings/
