@@ -1,7 +1,0 @@
-UnitOfWorkTest.class
-Context\IWriteDbContextTest$Context.class
-Context\MongoDB\WriteDbContextTest.class
-Repository\TripulanteRepositoryTest.class
-InfraestructureTest.class
-Repository\VueloRepositoryTest.class
-Context\IWriteDbContextTest.class
