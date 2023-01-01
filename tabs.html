@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  <title>Material Design Bootstrap</title>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/mdb.min.css">
+
+
+</head>
+
+<body class="fixed-sn white-skin">
+
+
+
+  <style>
+    .section {
+      background: #0a192f;
+    }
+
+    /* main {
+      background: #0a192f;
+    } */
+
+    a {
+      /* font-size: 13px; */
+      color: #8892b0;
+      text-decoration: none;
+      background-color: #0a192f;
+      height: 42px;
+      width: 190px;
+    }
+
+    /* li .nav-link .active {
+      background-color: blue;
+    } */
+    /* 120 */
+
+
+    .nav-pills .nav-link {
+      border-radius: 0;
+    }
+
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+      color: #64ffda;
+      background-color: #112240;
+    }
+
+    /* font-size: 13px;
+    color: #8892b0; */
+
+    /* @media (max-width: 768em)
+.section-title {
+    font-size: 24px; */
+    /* } */
+
+    .section-title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      width: 100%;
+      white-space: nowrap;
+      font-size: 32px;
+      font-weight: 600;
+      color: #ccd6f6;
+      font-family: Calibre, San Francisco, SF Pro Text, -apple-system, system-ui, BlinkMacSystemFont, Roboto, Helvetica Neue, Segoe UI, Arial, sans-serif;
+      margin: 0 0 10px;
+    }
+
+
+    .section-title:after {
+      content: "";
+      display: block;
+      height: 1px;
+      width: 300px;
+      background-color: #303c55;
+      position: relative;
+      /* top: -5px; */
+      margin-left: 20px;
+    }
+
+    .nav-pills {
+      /* border-left: 4px solid #112240; */
+      border-left: 4px solid red;
+    }
+  </style>
+  <main>
+
+    <h3 class="section-title">hola a todos</h3>
+    <div class="  row ">
+      <div class="col-1.5">
+        <!-- <ul class="nav flex-column md-tabs  nav-pills  " role="tablist" aria-orientation="vertical" -->
+        <ul class="nav flex-column    nav-pills  " role="tablist" aria-orientation="vertical">
+          <li class="nav-item waves-effect waves-light">
+            <a class="nav-link active" data-toggle="tab" href="#panel5" role="tab"><i class="fas fa-user"></i>
+              Profile</a>
+          </li>
+          <li class="nav-item waves-effect waves-light">
+            <a class="nav-link" data-toggle="tab" href="#panel6" role="tab"><i class="fas fa-heart"></i>
+              Follow</a>
+          </li>
+
+          <li class="nav-item waves-effect waves-light">
+            <a class="nav-link" data-toggle="tab" href="#panel7" role="tab">
+              Transportadora Roart</a>
+          </li>
+          <li class="nav-item waves-effect waves-light">
+            <a class="nav-link" data-toggle="tab" href="#panel7" role="tab">
+              Universidad Nur</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-7">
+        <div class="  tab-content" style="border: 1px solid red; padding: 16px;">
+          <div class="tab-pane fade in show active" id="panel5" role="tabpanel" style="border: 1px solid yellow;">
+            <!-- <br> -->
+            ss
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta
+              doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur.
+              Tempora, placeat ratione porro voluptate odit minima.</p>
+          </div>
+          <div class="tab-pane fade" id="panel6" role="tabpanel">
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta
+              doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur.
+              Tempora, placeat ratione porro voluptate odit minima.</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta
+              doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur.
+              Tempora, placeat ratione porro voluptate odit minima.</p>
+          </div>
+          <div class="tab-pane fade" id="panel7" role="tabpanel">
+            <br>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil odit magnam minima, soluta
+              doloribus reiciendis molestiae placeat unde eos molestias. Quisquam aperiam, pariatur.
+              Tempora, placeat ratione porro voluptate odit minima.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.min.js"></script>
+  <!-- Custom scripts -->
+  <script>
+    // SideNav Initialization
+    $(".button-collapse").sideNav();
+
+    var container = document.querySelector('.custom-scrollbar');
+    var ps = new PerfectScrollbar(container, {
+      wheelSpeed: 2,
+      wheelPropagation: true,
+      minScrollbarLength: 20
+    });
+
+  </script>
+</body>
+
+</html>
