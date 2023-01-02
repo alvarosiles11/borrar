@@ -361,15 +361,41 @@ p {
   width: 90%;
 }
 
+.section-about ul {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(140px, 200px));
+  overflow: hidden;
+  padding: 0;
+  margin: 20px 0 0;
+  list-style: none;
+}
+
 .section-about li {
   color: var(--Green);
 }
 
-.section-about img {
+.content-img {
+  width: 300px;
   margin-top: 40px;
-  width: 280px;
-  height: 280px;
-  border: 3px solid var(--Green);
+  margin-left: 100px;
+}
+.content-img::after {
+  content: "";
+  border: 2px solid #64ffda;
+  z-index: 0;
+  display: block;
+  position: relative;
+  width: 300px;
+  height: 300px;
+  border-radius: 3px;
+  left: 10px;
+  top: 10px;
+}
+.content-img img {
+  width: 300px;
+  height: 300px;
+  z-index: 2;
+  position: absolute;
 }
 
 /* table */
@@ -379,12 +405,12 @@ p {
     width: 100%;
   }
 
-  .section-about .content-img {
+  .content-img {
+    width: 100%;
     margin: 0;
   }
-
-  .section-about img {
-    margin-top: 50px;
+  .content-img::after,
+  .content-img img {
     width: 260px;
     height: 260px;
   }
@@ -396,15 +422,15 @@ p {
     margin-bottom: 8px;
     width: 100%;
   }
-
-  .section-about .content-img {
-    margin-top: 20px;
+  .content-img {
     display: grid;
     place-items: center;
-  }
-
-  .section-about img {
+    width: 100%;
     margin: 0;
+    margin-top: 40px;
+  }
+  .content-img::after,
+  .content-img img {
     width: 180px;
     height: 180px;
   }
@@ -418,10 +444,12 @@ p {
 ███████╗██╔╝╚██╗██║░░░░░███████╗██║░░██║██║███████╗██║░╚███║╚█████╔╝███████╗
 ╚══════╝╚═╝░░╚═╝╚═╝░░░░░╚══════╝╚═╝░░╚═╝╚═╝╚══════╝╚═╝░░╚══╝░╚════╝░╚══════╝ */
 
-a {
+.section-experience h1 {
   color: #8892b0;
-  text-decoration: none;
-  background-color: #0a192f;
+  margin-bottom: 50px;
+}
+.section-experience h1 span {
+  color: white;
 }
 
 /* menu */
@@ -431,104 +459,51 @@ a {
   color: #8892b0;
 }
 
+/* menu activado */
 .nav-pills .nav-link.active,
 .nav-pills .show > .nav-link {
   color: #64ffda;
   background-color: #112240;
 }
 
+/* linea border */
 .nav-pills {
   border-left: 2px solid #8892b0;
 }
-
-/* details */
-.section-experience .detalle * {
-  background-color: green;
-  width: 100%;
+.section-experience .detalle .cargo {
+  color: white;
 }
-
-/* .section-experience h1 span {
-  color: var(--White);
+.section-experience .detalle .cargo span {
+  color: #64ffda;
+}
+.section-experience .detalle .cargo {
+  font-size: 22px;
   font-weight: 600;
+  margin-bottom: 5px;
 }
+.section-experience .detalle .tiempo {
+  font-size: 14px;
+  margin-bottom: 24px;
+  font-weight: 600;
 
-.section-experience h4 {
-  font-size: 24px;
+  color: #8892b0;
 }
-
-.section-experience h5,
-li {
-  font-size: 18px;
-}
-
-.section-experience h4 {
-  color: var(--White);
-  margin-bottom: 8px;
-}
-
-.section-experience h5 {
-  color: var(--color-primary);
-  margin-bottom: 30px;
-}
-
-.section-experience .menu li {
-  color: var(--Green);
-}
-
 .section-experience .detalle li {
-  width: 70%;
-  color: var(--color-primary);
-} */
-
-/* table */
-/* @media (min-width: 768px) and (max-width: 992px) {
-  .section-experience h4 {
-    font-size: 24px;
-  }
-
-  .section-experience h5,
-  li {
-    font-size: 16px;
-  }
-
-  .section-experience h4,
-  li {
-    margin-bottom: 4px;
-  }
-
-  .section-experience h5 {
-    margin: 0px 0px 16px 0px;
-  }
-
-  .section-experience .detalle li {
-    width: 90%;
-  }
-} */
+  font-size: 16px;
+  padding-bottom: 10px;
+  color: #8892b0;
+}
 
 /* mobil */
-/* @media (min-width: 320px) and (max-width: 425px) {
-  .section-experience h4 {
-    font-size: 18px;
+@media (min-width: 320px) and (max-width: 425px) {
+  .section-experience h1 {
+    color: #8892b0;
+    margin-bottom: 40px;
   }
-
-  .section-experience h5,
-  li {
-    font-size: 14px;
+  .menu {
+    margin-bottom: 40px;
   }
-
-  .section-experience h4,
-  li {
-    margin-bottom: 4px;
-  }
-
-  .section-experience h5 {
-    margin: 0px 0px 16px 0px;
-  }
-
-  .section-experience .detalle li {
-    width: 95%;
-  }
-} */
+}
 
 /* 
 ██████╗░██████╗░░█████╗░░░░░░██╗███████╗░█████╗░████████╗░██████╗
