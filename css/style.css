@@ -428,6 +428,7 @@ p {
     width: 100%;
     margin: 0;
     margin-top: 40px;
+    background-color: coral;
   }
   .content-img::after,
   .content-img img {
@@ -442,6 +443,7 @@ p {
     width: 100%;
     margin: 0;
     margin-top: 40px;
+    background-color: brown;
   }
   .content-img::after,
   .content-img img {
