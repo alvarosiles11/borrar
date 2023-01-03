@@ -75,8 +75,16 @@
   /* margin-top: 20px; */
   padding-right: 10px;
 }
-.redes img {
+.redes img,
+svg,
+object {
   height: 40px;
+}
+
+.redes svg:hover,
+object:hover,
+img:hover {
+  fill: red;
 }
 
 /* table */
