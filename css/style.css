@@ -429,13 +429,13 @@ p {
     width: 100%;
     margin: 0;
     margin-top: 40px;
-    background-color: coral;
+    /* background-color: coral; */
   }
   .content-img::after,
   .content-img img {
+    border: 0;
     width: 180px;
     height: 180px;
-    margin: 0;
   }
 }
 @media (max-width: 320px) {
@@ -445,7 +445,7 @@ p {
     width: 100%;
     margin: 0;
     margin-top: 40px;
-    background-color: brown;
+    /* background-color: brown; */
   }
   .content-img::after,
   .content-img img {
@@ -535,52 +535,205 @@ p {
 ██║░░░░░██║░░██║╚█████╔╝╚█████╔╝███████╗╚█████╔╝░░░██║░░░██████╔╝
 ╚═╝░░░░░╚═╝░░╚═╝░╚════╝░░╚════╝░╚══════╝░╚════╝░░░░╚═╝░░░╚═════╝░ */
 
-/* .section-projects h4,
-h5 {
-  text-align: right;
-  font-size: 24px;
-} */
+.section-projects h1 {
+  margin-bottom: 60px;
+}
 .section-projects h1 span {
   color: var(--White);
   font-weight: 600;
 }
 
-.section-projects img {
-  /* width: 110%; */
-  width: 100%;
-  margin-top: 50px;
-  /* position: absolute; */
+.izquierda,
+.derecha {
+  margin-bottom: 120px;
 }
-
-.section-projects h4 {
-  margin-top: 100px;
-  text-align: right;
+.proyecto-foto img {
+  /* border: 10px solid #64ffda; */
+  width: 91%;
+  height: 360px;
+}
+.proyecto-descripcion {
+  height: 360px;
+  /* border: 1px solid rebeccapurple; */
+  position: relative;
+}
+.proyecto-descripcion h4 {
   font-size: 14px;
   color: var(--Green);
   font-family: var(--Font2);
 }
-
-.section-projects h5 {
-  text-align: right;
+.proyecto-descripcion h5 {
   font-size: 26px;
   color: var(--White);
   font-family: var(--Font1);
 }
-
-.mensaje {
+.proyecto-descripcion .mensaje {
   background-color: #112240;
   padding: 20px;
-  /* position: absolute; */
-  /* float: left; */
-  /* right: 50px; */
+  width: 550px;
 }
-
-.mensaje p {
+.proyecto-descripcion .mensaje p {
   color: var(--White);
-  text-align: left;
   font-size: 16px;
   margin: 0;
   width: 95%;
+}
+.proyecto-descripcion ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  margin-top: 20px;
+}
+.proyecto-descripcion li {
+  padding-right: 10px;
+  color: var(--Green);
+}
+/* *********************************** */
+.izquierda .proyecto-foto {
+  float: right;
+}
+.izquierda .proyecto-foto img {
+  float: right;
+}
+.izquierda .proyecto-descripcion {
+  float: left;
+}
+.izquierda .proyecto-descripcion .proyecto-float {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.izquierda h4 {
+  text-align: left;
+}
+.izquierda h5 {
+  text-align: left;
+}
+.izquierda .mensaje p {
+  text-align: left;
+}
+.izquierda li {
+  float: left;
+}
+/* *********************************** */
+.derecha .proyecto-foto {
+  float: left;
+}
+
+.derecha .proyecto-foto img {
+  float: left;
+}
+.derecha .proyecto-descripcion {
+  float: right;
+}
+.derecha .proyecto-descripcion .proyecto-float {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.derecha h4 {
+  text-align: right;
+}
+.derecha h5 {
+  text-align: right;
+}
+.derecha .mensaje p {
+  text-align: right;
+}
+.derecha li {
+  float: right;
+}
+
+/* table */
+@media (min-width: 768px) and (max-width: 992px) {
+  .section-projects h1 {
+    margin-bottom: 40px;
+  }
+
+  .izquierda,
+  .derecha {
+    margin-bottom: 40px;
+  }
+
+  .proyecto-foto img {
+    /* border: 10px solid #64ffda; */
+    width: 100%;
+    height: 180px;
+  }
+  .proyecto-descripcion {
+    height: 180px;
+    /* border: 1px solid rebeccapurple; */
+    position: relative;
+  }
+  .proyecto-descripcion h4 {
+    font-size: 12px;
+  }
+  .proyecto-descripcion h5 {
+    font-size: 18px;
+  }
+  .proyecto-descripcion .mensaje {
+    padding: 8px;
+    width: 450px;
+  }
+  .proyecto-descripcion .mensaje p {
+    font-size: 14px;
+    margin: 0;
+    width: 99%;
+  }
+  .proyecto-descripcion ul {
+    margin-top: 8px;
+  }
+  .proyecto-descripcion li {
+    font-size: 14px;
+    padding-right: 8px;
+  }
+}
+
+/* mobil */
+@media (min-width: 320px) and (max-width: 425px) {
+  .section-projects h1 {
+    margin-bottom: 40px;
+  }
+
+  .izquierda,
+  .derecha {
+    margin-bottom: 40px;
+  }
+
+  .proyecto-foto img {
+    /* border: 1px solid #64ffda; */
+    width: 100%;
+    height: 120px;
+  }
+  .proyecto-descripcion {
+    height: 180px;
+    /* border: 1px solid rebeccapurple; */
+    position: relative;
+  }
+  .proyecto-descripcion h4 {
+    font-size: 12px;
+    width: 100px;
+  }
+  .proyecto-descripcion h5 {
+    font-size: 14px;
+  }
+  .proyecto-descripcion .mensaje {
+    padding: 8px;
+    width: 280px;
+  }
+  .proyecto-descripcion .mensaje p {
+    font-size: 12px;
+    margin: 0;
+    width: 100%;
+  }
+  .proyecto-descripcion ul {
+    margin-top: 8px;
+  }
+  .proyecto-descripcion li {
+    font-size: 12px;
+    padding-right: 8px;
+  }
 }
 
 /* 
