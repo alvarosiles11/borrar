@@ -66,6 +66,19 @@
   height: 15px;
 }
 
+.redes a {
+  color: var(--Green);
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  /* margin-top: 20px; */
+  padding-right: 10px;
+}
+.redes img {
+  height: 40px;
+}
+
 /* table */
 @media (min-width: 767px) and (max-width: 992px) {
   /* .navbar a .nav-item {
