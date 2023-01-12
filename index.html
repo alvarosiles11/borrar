@@ -223,98 +223,12 @@
 
             <h1 class=" linea">02. <span>Experiencia</span></h1>
 
+            <!-- <ul class="nav flex-column md-tabs  nav-pills  " role="tablist" aria-orientation="vertical" -->
 
-            <div class="col-12  col-md-4 col-lg-4 col-xl-3 menu">
-              <!-- <ul class="nav flex-column md-tabs  nav-pills  " role="tablist" aria-orientation="vertical" -->
-              <ul class="nav flex-column    nav-pills  " role="tablist" aria-orientation="vertical">
-                <li class="nav-item waves-effect waves-light">
-                  <a class="nav-link active" data-toggle="tab" href="#panel5" role="tab"><i class="fas fa-user"></i>
-                    SERVISOFTS SRL</a>
-                </li>
-                <li class="nav-item waves-effect waves-light">
-                  <a class="nav-link" data-toggle="tab" href="#panel6" role="tab"><i class="fas fa-heart"></i>
-                    SYSLINK BOLIVIA</a>
-                </li>
-                <li class="nav-item waves-effect waves-light">
-                  <a class="nav-link" data-toggle="tab" href="#panel6" role="tab"><i class="fas fa-heart"></i>
-                    EL MORDISCO</a>
-                </li>
-                <li class="nav-item waves-effect waves-light">
-                  <a class="nav-link" data-toggle="tab" href="#panel6" role="tab"><i class="fas fa-heart"></i>
-                    MEGASYSTEM SRL</a>
-                </li>
-                <li class="nav-item waves-effect waves-light">
-                  <a class="nav-link" data-toggle="tab" href="#panel6" role="tab"><i class="fas fa-heart"></i>
-                    MALL FACILITO</a>
-                </li>
-
-                <li class="nav-item waves-effect waves-light">
-                  <a class="nav-link" data-toggle="tab" href="#panel7" role="tab">
-                    CHINREPUESTOS</a>
-                </li>
-                <li class="nav-item waves-effect waves-light">
-                  <a class="nav-link" data-toggle="tab" href="#panel7" role="tab">
-                    Transp. Roart</a>
-                </li>
-                <li class="nav-item waves-effect waves-light">
-                  <a class="nav-link" data-toggle="tab" href="#panel7" role="tab">
-                    Universidad Nur</a>
-                </li>
-              </ul>
+            <div id="exp_menu" class="col-12  col-md-4 col-lg-4   menu">
             </div>
 
-            <div class="col-12  col-md-8 col-lg-8 col-xl-9 detalle">
-
-              <div class="  tab-content">
-                <div class="tab-pane fade in show active" id="panel5" role="tabpanel">
-
-                  <h4 class="cargo"> Fullstack | <span> SERVISOFTS SRL </span> </h4>
-                  <h5 class="tiempo">Diciembre 2019 - Actualidad</h5>
-                  <li>
-                    Creación y mantenimiento de una plataforma de monitorio con gráficos
-                    en Wordpress.
-                  </li>
-                  <li>
-                    Programación funcional en plantillas y plugins para añadir las
-                    características necesarias de monitoreo.
-                  </li>
-                  <li>Implementación de integración continua y respaldos diarios.</li>
-                  <li>
-                    Creación y mantenimiento de una segunda plataforma de Monitoreo
-                    Realizada en Angular, Angular Material, Laravel, Mysql, RxJS, Sass con
-                    gráficos (configurables), sistema de alarmas, y gestión de usuarios y
-                    configuración de parámetros generales.
-                  </li>
-                  <li>Reuniones de planificación en informes.</li>
-                </div>
-                <div class="tab-pane fade" id="panel6" role="tabpanel">
-
-                  <h4 class="cargo"> Fullstack | <span> SERVISOFTS SRL </span> </h4>
-                  <h5 class="tiempo">Diciembre 2019 - Actualidad</h5>
-                  <li>
-                    Creación y mantenimiento de una plataforma de monitorio con gráficos
-                    en Wordpress.
-                  </li>
-                  <li>
-                    Programación funcional en plantillas y plugins para añadir las
-                    características necesarias de monitoreo.
-                  </li>
-                  <li>Implementación de integración continua y respaldos diarios.</li>
-                  <li>
-                    Creación y mantenimiento de una segunda plataforma de Monitoreo
-                    Realizada en Angular, Angular Material, Laravel, Mysql, RxJS, Sass con
-                    gráficos (configurables), sistema de alarmas, y gestión de usuarios y
-                    configuración de parámetros generales.
-                  </li>
-                  <li>Reuniones de planificación en informes.</li>
-                </div>
-                <div class="tab-pane fade" id="panel6" role="tabpanel">
-                  <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est minima corrupti ratione maxime. Harum
-                    quod minima tenetur voluptatum quia ratione ipsum quasi vitae exercitationem, aliquam dignissimos
-                    impedit culpa nesciunt unde!.</p>
-                </div>
-
-              </div>
+            <div id="exp_detalle" class="col-12  col-md-8 col-lg-8   detalle">
             </div>
 
           </div>
@@ -487,6 +401,126 @@
     });
 
   </script>
+
+  <script>
+    // Treeview Initialization
+    $(document).ready(function () {
+      $(".treeview-animated").mdbTreeview();
+    });
+
+    const data = [
+      {
+        cargo: "desarrollador",
+        empresa: "servisofts",
+        time: "FEB 2022",
+        tareas: ["cableador", "carpintero", "pintor", "albañil", "tecnico"],
+      },
+      {
+        cargo: "desarrollador",
+        empresa: "servisis",
+        time: "FEB 2022",
+        tareas: [
+          "cableador888888888",
+          "carpintero",
+          "pintor",
+          "albañil",
+          "tecnico",
+        ],
+      },
+      {
+        cargo: "desarrollador",
+        empresa: "strasol",
+        time: "FEB 2022",
+        tareas: [
+          "cableador888888888",
+          "carpintero",
+          "pintor",
+          "albañil",
+          "tecnico",
+        ],
+      },
+      {
+        cargo: "desarrollador",
+        empresa: "el deber",
+        time: "FEB 2022",
+        tareas: [
+          "cableador888888888",
+          "carpintero",
+          "pintor",
+          "albañil",
+          "tecnico",
+        ],
+      },
+      {
+        cargo: "desarrollador",
+        empresa: "unitel",
+        time: "FEB 2022",
+        tareas: [
+          "cableador888888888",
+          "carpintero",
+          "pintor",
+          "albañil",
+          "tecnico",
+        ],
+      },
+      {
+        cargo: "desarrollador",
+        empresa: "el mundo",
+        time: "FEB 2022",
+        tareas: [
+          "cableador888888888",
+          "carpintero",
+          "pintor",
+          "albañil",
+          "tecnico",
+        ],
+      },
+    ];
+
+
+    function activar(value) {
+      if (value == "0") {
+        return "active";
+      } else {
+        return " ";
+      }
+    }
+    function activar1(value) {
+      if (value == "0") {
+        return "in show  active";
+      } else {
+        return " ";
+      }
+    }
+
+    let html0 = ``;
+    html0 += ` <ul class="nav flex-column nav-pills  " role="tablist" aria-orientation="vertical">`;
+    html0 += `<li class="nav-item waves-effect waves-light">`;
+    data.map((obj, keys) => {
+      html0 += `<a class="nav-link  ` + activar(keys) + `   "   data-toggle="tab" href="#panel` + keys + `" role="tab"><i class="fas fa-user"></i>${obj.empresa}</a>`;
+    });
+    html0 += `</li>`;
+    html0 += `</ul>`;
+    document.getElementById("exp_menu").innerHTML += html0;
+
+
+
+
+    let html = ``;
+    html += `<div class="tab-content col-12">`;
+    data.map((obj, keys) => {
+      html += `<div class="tab-pane fade   ` + activar1(keys) + `   " id="panel` + keys + `" role="tabpanel">`;
+      html += `<h4 class="cargo"> ${obj.cargo} | <span>  ${obj.empresa} </span> </h4>`;
+      html += `<h5 class="tiempo">Diciembre ${obj.time} - Actualidad</h5>`;
+      for (let clave in obj.tareas) {
+        html += ` <li>${obj.tareas[clave]}</li>`;
+      }
+      html += `</div>`;
+    });
+    html += `</div>`;
+    document.getElementById("exp_detalle").innerHTML += html;
+  </script>
+
 </body>
 
 </html>
