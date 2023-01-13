@@ -645,6 +645,10 @@ p {
   float: right;
 }
 
+#exp_detalle div {
+  width: 500px;
+  /* width: 100%; */
+}
 /* table */
 @media (min-width: 768px) and (max-width: 992px) {
   .section-projects h1 {
@@ -687,6 +691,10 @@ p {
   .proyecto-descripcion li {
     font-size: 14px;
     padding-right: 8px;
+  }
+  #exp_detalle div {
+    /* width: 320px; */
+    width: 100%;
   }
 }
 
@@ -733,6 +741,10 @@ p {
   .proyecto-descripcion li {
     font-size: 12px;
     padding-right: 8px;
+  }
+  #exp_detalle div {
+    width: 100%;
+    /* width: 400px; */
   }
 }
 
