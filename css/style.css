@@ -359,24 +359,45 @@ p {
 
 .section-about p {
   width: 90%;
+  margin-bottom: 30px;
 }
 
 .section-about ul {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(140px, 200px));
-  overflow: hidden;
+  column-count: 3;
   padding: 0;
-  margin: 20px 0 0;
+  margin: 0;
   list-style: none;
+}
+
+.section-about li::before {
+  content: "\25b9";
+  color: #64ffda;
+  font-size: 14px;
+  line-height: 12px;
 }
 
 .section-about li {
   color: var(--Green);
+
+  font-size: 16px;
+  /* position: relative; */
+}
+.section-about .active {
+  /* color: var(--White); */
+  color: #feffff;
+
+  font-weight: 500;
+  content: "";
+}
+.section-about .active::before {
+  color: var(--White);
+  font-weight: 500;
+  content: "";
 }
 
 .content-img {
   width: 300px;
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 100px;
 }
 .content-img::after {
