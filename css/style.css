@@ -374,6 +374,7 @@ p {
   color: #64ffda;
   font-size: 14px;
   line-height: 12px;
+  padding-right: 2px;
 }
 
 .section-about li {
@@ -531,6 +532,16 @@ p {
   font-size: 16px;
   padding-bottom: 10px;
   color: #8892b0;
+  /* padding: 0;
+  margin: 0; */
+  list-style: none;
+}
+.section-experience .detalle li::before {
+  content: "\25b9";
+  color: #64ffda;
+  font-size: 14px;
+  line-height: 12px;
+  padding-right: 5px;
 }
 
 /* mobil */
