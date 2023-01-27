@@ -1,4 +1,4 @@
-# [miQr.com](alvarosiles11.github.io/miQr.com)
+# [miQr.com](https://alvarosiles11.github.io/miQr.com)
 
 https://www.webtoolkitonline.com/qrcode-generator.html
 
