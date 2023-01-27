@@ -1,3 +1,5 @@
+# [miQr.com](alvarosiles11.github.io/miQr.com)
+
 https://www.webtoolkitonline.com/qrcode-generator.html
 
 no siempre puedes esperar al momento perfecto, a veces tienes que atreverte a saltar.
