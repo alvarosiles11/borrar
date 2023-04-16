@@ -3,8 +3,6 @@
 <img alt="GitHub watchers" src="https://img.shields.io/github/watchers/alvarosiles11/alvarosiles11?style=social"> <img alt="GitHub followers" src="https://img.shields.io/github/followers/alvarosiles11?style=social"> <img alt="GitHub forks" src="https://img.shields.io/github/forks/alvarosiles11/alvarosiles11?style=social">
 </p>
 
-
-
 [![Status](https://img.shields.io/badge/status-active-success.svg)]() <a href="https://github.com/alvarosiles11/miQr.com/network/members"><img src="https://img.shields.io/github/forks/alvarosiles11/miQr.com" alt="Forks Badge"/></a> <a href="https://github.com/alvarosiles11/miQr.com/pulls"><img src="https://img.shields.io/github/issues-pr/alvarosiles11/miQr.com" alt="Pull Requests Badge"/></a> <a href="https://github.com/alvarosiles11/alvarosiles11/issues"><img src="https://img.shields.io/github/issues/alvarosiles11/miQr.com" alt="Issues Badge"/></a> <a href="https://github.com/alvarosiles11/miQr.com/graphs/contributors"><img alt="GitHub contributors" src="https://img.shields.io/github/contributors/alvarosiles11/miQr.com?color=2b9348"></a> ![GitHub last commit](https://img.shields.io/github/last-commit/alvarosiles11/miQr.com) ![GitHub All Releases](https://img.shields.io/github/downloads/alvarosiles11/miQr.com/total) <a href="https://github.com/alvarosiles11/miQr.com/blob/main/LICENSE"><img src="https://img.shields.io/github/license/alvarosiles11/miQr.com?color=2b9348" alt="License Badge"/></a>
 
 ## 🤝🏻 Connect with Me
