@@ -23,3 +23,7 @@ alivio sintomático de los dolores ocasionales leves o moderados, como dolores d
 
 <!-- Dexametasona
 Alivia la inflamación (hinchazón, calor, enrojecimiento y dolor) y se usa para tratar ciertas formas de artritis; trastornos de la piel, la sangre. -->
+
+
+
+
